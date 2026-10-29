@@ -6,3 +6,10 @@ projects/*/clips/raw/
 *.log
 .DS_Store
 __pycache__/
+.local-video-build/
+.local-video.lock
+projects/*/.local-video.lock
+.watch-state.json
+.watch.lock
+watch-log.md
+_site/

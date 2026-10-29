@@ -1,6 +1,6 @@
 # Evaluation: desert-beggars-vampires
 
-Overall: 9.7/10 — shipping ready: True
+Plan score: 10.0/10 — shipping ready: False
 
 Tension: Tension range 3-10, climax at position 7/9
 
@@ -10,7 +10,7 @@ Tension: Tension range 3-10, climax at position 7/9
 - variety: 10/10
 - action: 10/10
 - sound: 10/10
-- tension: 6/10
+- tension: 10/10
 - continuity: 10/10
 - background: 10/10
 - choreography: 10/10
@@ -20,6 +20,10 @@ Tension: Tension range 3-10, climax at position 7/9
 - departments: 10/10
 
 ## Findings
-- [minor] tension: Final tension above 4 — the film does not resolve, it stops
+- [none] -: No findings.
+
+## Delivery checks
+- Saved video verification failed: [Errno 2] No such file or directory: 'projects/desert-beggars-vampires/final/final-manifest.json'
+- Project has open critiques
 
 Muse cannot watch generated video back. This report scores the plan, prompts, and metadata. Visual quality still requires a human watch per batch, recorded in critiques/.

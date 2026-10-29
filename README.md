@@ -1,6 +1,24 @@
 # MuseVideoWorkflow
 
-A robust, reusable video definition and asset pipeline. One project definition
+The [cutting room](https://tomaslin.github.io/MuseVideoWorkflow/) shows real
+projects, short-shot trims, footage availability and selective redo requests.
+The [storyboard](https://tomaslin.github.io/MuseVideoWorkflow/storyboard.html)
+uses the same repository data.
+
+**Local processing on macOS:** [Swift video intake, edit, redo and verification](docs/local-video.md).
+Download Muse clips, import them, then stitch the strongest 2–4 seconds per shot:
+
+```bash
+./scripts/local-video.sh import projects/desert-beggars-vampires /path/to/clips
+./scripts/local-video.sh assemble projects/desert-beggars-vampires
+./scripts/local-video.sh verify projects/desert-beggars-vampires
+```
+
+Earlier takes are preserved, normalized trims are cached, and `edit.json` records
+exact source in-points and durations. A requested redo blocks that take until a
+replacement is imported. Actual footage review is separate from a plan score.
+
+A reusable video definition and asset pipeline. One project definition
 drives everything: brief, treatment, script, look bible, characters, sequences,
 shots, prompts, generated clips, critiques, assembly, and a final merged video.
 
@@ -42,24 +60,18 @@ through 15 Archive & Provenance). Each chapter states its billable
 unit, its tension function, inputs, outputs, gates, cost drivers, and
 how it maps to a storyboard.
 
-## The studio UI — now on GitHub Pages
+## The cutting room on GitHub Pages
 
-`apps/studio/` is a prompt-first, no-server UI for the whole pipeline.
-Open `apps/studio/index.html` locally, or — once the repo is published
-— at the GitHub Pages URL (`https://<owner>.github.io/MuseVideoWorkflow/`,
-deployed by `.github/workflows/pages.yml` from `apps/studio/`; see
-`docs/github-pages.md`). You get: the video-idea prompt bar, every
-pipeline stage, every intermediary artifact to view and edit, a
-state-machine display, an append-only history log, and variant
-branching — change something via a prompt and you get an alternate
-reality of the video, with the original untouched and the lineage
-recorded. Auto-advance is on by default: no approval gate at each
-stage, but every check, edit, generation, and waiver is logged.
-The storyboard view (`apps/studio/storyboard.html`) renders every shot
-as a visual panel plus a tension curve, so you can see the arc before
-generating a single clip.
-See `docs/variants-and-history.md` and `docs/gaps-and-fixes.md`
-(10-second chaining, sound stems, determinism).
+The studio packages real project files with `scripts/build-studio.py`. It shows
+shot footage when available, recorded tension, production notes, short-shot
+trim controls and an individual redo request for every shot. Download `edit.json`
+and save it in the project before running local assembly. Copy redo prompts to
+Muse, then import the downloaded replacements. Browser changes stay local until
+exported; the static site does not call the generation API itself.
+
+`.github/workflows/pages.yml` builds and deploys `_site/` on main pushes. A cloud
+build can only include committed media; raw local takes remain ignored. See
+[GitHub Pages](docs/github-pages.md) and [local video processing](docs/local-video.md).
 
 ## How a project flows
 
@@ -161,8 +173,8 @@ See [docs/assembly-and-checkin.md](docs/assembly-and-checkin.md) for the
 encoding target, the GitHub 100 MB file limit, and the check-in route.
 Important, stated plainly: the Muse GitHub connector pushes text files, not
 binary video. The final `video.mp4` is checked into `projects/<slug>/final/`
-by the documented git check-in (`scripts/checkin-final.sh`, run where git
-credentials live), and the pipeline then verifies it in place. The text
+by `scripts/checkin-final.sh`, which verifies the saved media and manifest before
+committing and pushing it. Web MP4s below 100 MiB use ordinary Git blobs. The text
 definitions, manifests, EDL, and critiques go in through Muse directly.
 
 ## Quickstart

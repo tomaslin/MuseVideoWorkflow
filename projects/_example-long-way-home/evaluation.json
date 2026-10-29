@@ -20,6 +20,11 @@
   "tension_note": "Tension range 2-9, climax at position 15/24",
   "findings": [],
   "blockers": [],
-  "shipping_ready": true,
+  "plan_ready": true,
+  "media_verified": false,
+  "shipping_ready": false,
+  "shipping_findings": [
+    "Saved video verification failed: [Errno 2] No such file or directory: 'projects/_example-long-way-home/final/final-manifest.json'"
+  ],
   "limit_note": "Muse cannot watch generated video back. This report scores the plan, prompts, and metadata. Visual quality still requires a human watch per batch, recorded in critiques/."
 }

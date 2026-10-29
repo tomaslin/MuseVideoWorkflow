@@ -1,50 +1,22 @@
-# GitHub Pages: visual access to the studio
+# GitHub Pages
 
-The studio UI is a static site, so GitHub Pages is the visual remedy:
-no server, no install, just a URL you can open and share.
+Public studio: https://tomaslin.github.io/MuseVideoWorkflow/
 
-## How it is deployed
+`.github/workflows/pages.yml` builds `_site/` with
+`python3 scripts/build-studio.py --out _site`, then configures Pages, uploads
+that directory and deploys it. It runs on main pushes and manual dispatch.
+The artifact contains a real project catalog and verified committed final
+videos, as well as both cutting room and storyboard views. Copying only
+`apps/studio/` is insufficient: it does not contain the project catalog.
 
-`.github/workflows/pages.yml` deploys `apps/studio/` to GitHub Pages
-on every push to `main`, using GitHub Actions. The workflow uploads
-only the studio folder as the Pages artifact, so the published site
-is exactly the UI — index, storyboard view, styles, and script.
+Pages must use **GitHub Actions** as its publishing source. The workflow attempts
+to enable Pages automatically. If GitHub denies site creation, an administrator
+must select Settings → Pages → Source → GitHub Actions, then rerun the workflow.
+The source setting requires administration capability; ordinary Contents write
+permission alone does not provide it. A successful code push is not a successful
+deployment: confirm the workflow and the public URL before claiming it is live.
 
-## Enabling it (one setting, once the repo exists)
-
-In the repo: Settings → Pages → Build and deployment → Source:
-**GitHub Actions**. After the first successful workflow run, the site
-is live at:
-
-```
-https://<owner>.github.io/MuseVideoWorkflow/
-```
-
-For this project, once pushed under `tomaslin`, that is
-`https://tomaslin.github.io/MuseVideoWorkflow/` — verify the actual
-URL from the workflow run / Pages settings after the first deploy,
-and record it in the repo README.
-
-## What you can see there
-
-- The prompt-first pipeline UI (`apps/studio/index.html`): stages,
-  artifacts, editing, variants, state machine, history.
-- The storyboard view (`apps/studio/storyboard.html`): every shot as
-  a visual panel (size, movement, action, sound cue, tension value),
-  plus a tension curve drawn from the panels' tension values. This is
-  the visual check that the story's tension actually rises and falls
-  before any clip is generated.
-- The UI stores its working project in the browser's local storage
-  and can export/import project JSON. The repo remains the record of
-  truth for shipped projects; the Pages site is the visual working
-  surface, not a separate database.
-
-## Local preview (before Pages is live)
-
-```bash
-cd apps/studio && python3 -m http.server 8000
-# open http://localhost:8000/
-```
-
-Do not open `index.html` directly from disk if your browser blocks
-local scripts; the local server above avoids that.
+Raw clips are local ignored work files. Commit the verified final with
+`scripts/checkin-final.sh <slug>` to include it in the next cloud build. Do not
+use LFS pointers for web media. See `docs/local-video.md` for the intake/edit/redo
+flow and local preview commands.

@@ -1,0 +1,17 @@
+name: Verify local video workflow
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  media:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install FFmpeg
+        run: brew install ffmpeg
+      - name: Swift integration tests with real media
+        run: python3 -m unittest discover -s tests -v
+      - name: Build static project catalog
+        run: python3 scripts/build-studio.py --out _site
+      - name: Check browser scripts
+        run: node --check apps/studio/app.js

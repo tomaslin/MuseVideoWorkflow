@@ -1,0 +1,18 @@
+{
+  "title": "Desert Beggars — fast trailer cut",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "shots": [
+    {"shotId": "s01", "inSec": 1, "durationSec": 3},
+    {"shotId": "s02", "inSec": 3, "durationSec": 2},
+    {"shotId": "s03", "inSec": 4, "durationSec": 2},
+    {"shotId": "s04", "inSec": 3, "durationSec": 3},
+    {"shotId": "s05", "inSec": 3, "durationSec": 2},
+    {"shotId": "s06", "inSec": 6, "durationSec": 3},
+    {"shotId": "s07", "inSec": 4, "durationSec": 2},
+    {"shotId": "s08", "inSec": 5, "durationSec": 3},
+    {"shotId": "s09", "inSec": 6, "durationSec": 4}
+  ],
+  "reviewState": "draft-trims-awaiting-footage-review"
+}

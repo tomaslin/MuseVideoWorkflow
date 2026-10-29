@@ -13,6 +13,7 @@ Scoring is 0-10 per dimension, with findings that name the exact shot,
 field, or file. A dimension below 5 is a blocker for shipping.
 """
 import argparse, json, math, os, sys
+from musevideo import verify_final
 
 def load_json(p):
     with open(p) as f:
@@ -73,11 +74,12 @@ def evaluate(d):
         vals = [p.get("tension") for p in panels if isinstance(p.get("tension"), (int, float))]
         if vals:
             tension_note = f"Tension range {min(vals)}-{max(vals)}, climax at position {vals.index(max(vals))+1}/{len(vals)}"
-            tension_score = 10 if max(vals) >= 9 and vals[-1] <= 4 else 6
+            trailer = proj.get("format") == "trailer" or "trailer" in proj.get("title", "").lower() or any("trailer" in p.get("note", "").lower() for p in panels)
+            tension_score = 10 if max(vals) >= 9 and (vals[-1] <= 4 or trailer) else 6
             if max(vals) < 9:
                 findings.append({"severity": "major", "dimension": "tension",
                                  "detail": "Tension never reaches 9-10 — the film has no climax, only a plateau"})
-            if vals[-1] > 4:
+            if vals[-1] > 4 and not trailer:
                 findings.append({"severity": "minor", "dimension": "tension",
                                  "detail": "Final tension above 4 — the film does not resolve, it stops"})
     # Continuity: same character blocks across shots
@@ -133,11 +135,26 @@ def evaluate(d):
               "lighting": lighting_score, "lore": lore_score,
               "departments": departments_score}
     overall = round(sum(scores.values()) / len(scores), 1)
+    plan_ready = overall >= 7 and not any(f["severity"] == "blocker" for f in findings)
+    shipping_findings = []
+    verified = False
+    try:
+        final = verify_final(d)
+        verified = True
+        if final.get("reviewState") not in ("approved", "locked") or not final.get("reviewedBy"):
+            shipping_findings.append("Final video has not been watched and approved by a named reviewer")
+    except Exception as exc:
+        shipping_findings.append(f"Saved video verification failed: {exc}")
+    state_path = os.path.join(d, "state.json")
+    if os.path.exists(state_path) and load_json(state_path).get("openCritiques"):
+        shipping_findings.append("Project has open critiques")
     report = {"project": proj.get("slug", os.path.basename(d.rstrip("/"))),
               "shots": len(shots), "scores": scores, "overall": overall,
               "tension_note": tension_note, "findings": findings,
               "blockers": [f for f in findings if f["severity"] == "blocker"],
-              "shipping_ready": overall >= 7 and not any(f["severity"] == "blocker" for f in findings),
+              "plan_ready": plan_ready, "media_verified": verified,
+              "shipping_ready": plan_ready and verified and not shipping_findings,
+              "shipping_findings": shipping_findings,
               "limit_note": "Muse cannot watch generated video back. This report scores the plan, prompts, and metadata. Visual quality still requires a human watch per batch, recorded in critiques/."}
     return report
 
@@ -152,13 +169,16 @@ def main():
         json.dump(report, f, indent=2)
     md = os.path.join(args.project, "evaluation.md")
     with open(md, "w") as f:
-        f.write(f"# Evaluation: {report['project']}\n\nOverall: {report['overall']}/10 — shipping ready: {report['shipping_ready']}\n\n")
+        f.write(f"# Evaluation: {report['project']}\n\nPlan score: {report['overall']}/10 — shipping ready: {report['shipping_ready']}\n\n")
         f.write(f"Tension: {report['tension_note']}\n\n## Scores\n")
         for k, v in report["scores"].items():
             f.write(f"- {k}: {v}/10\n")
         f.write("\n## Findings\n")
         for fn in report["findings"] or [{"severity": "none", "dimension": "-", "detail": "No findings."}]:
             f.write(f"- [{fn['severity']}] {fn['dimension']}: {fn['detail']}\n")
+        f.write("\n## Delivery checks\n")
+        for detail in report["shipping_findings"]:
+            f.write(f"- {detail}\n")
         f.write(f"\n{report['limit_note']}\n")
     print(f"Overall {report['overall']}/10, shipping_ready={report['shipping_ready']}, findings={len(report['findings'])}")
     print(f"Wrote {out} and {md}")

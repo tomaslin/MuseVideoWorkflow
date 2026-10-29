@@ -1,82 +1,82 @@
 #!/usr/bin/env python3
-"""Watch MuseVideoWorkflow for new/changed source files (stdlib only).
+"""One idempotent watch tick. Schedule every 2 minutes; no media generation here.
 
-Tracked sources: projects/*/brief.md, treatment.md, script.md,
-look-bible.md, characters.md, project.json, sequences/*.json, and
-top-level docs/pipeline/schemas/chapters. Deliberately excluded:
-clips/ (binary work files), evaluation.json/md and critiques/ (outputs
-of this watch itself — tracking them would re-trigger forever),
-watch-log.md and .watch-state.json.
-
-Usage: watch.py [--init]  — --init records the current snapshot without
-reporting, for first run. Otherwise prints NEW/CHANGED/REMOVED lines
-and, for each changed project, runs pipeline/evaluate.py, appending
-the result to watch-log.md. If a project has a brief/script but no
-prompts/ yet, it also runs prompt-pack, so a new idea gets Muse-authored
-prompt packets automatically (as a new variant, never overwriting).
-State: .watch-state.json next to this script.
+Only authoring inputs are tracked. Changed prompts are regenerated from actual
+shot definitions; failed evaluations remain pending for the next tick. Muse's
+separate state-driven generation worker consumes generation-queue.json.
 """
-import hashlib, json, os, subprocess, sys
+import argparse
+import fcntl
+import hashlib
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+from datetime import datetime, timezone
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
-STATE = os.path.join(ROOT, ".watch-state.json")
-LOG = os.path.join(ROOT, "watch-log.md")
-EXCLUDE_DIRS = {"clips", "critiques", "variants"}
-EXCLUDE_FILES = {"evaluation.json", "evaluation.md", "watch-log.md", ".watch-state.json"}
+ROOT = Path(__file__).resolve().parent
+STATE = ROOT / '.watch-state.json'
+SOURCE_NAMES = {'project.json', 'brief.md', 'treatment.md', 'script.md', 'look-bible.md', 'characters.md', 'lore-bible.md', 'storyboard.json', 'edit.json'}
 
 def tracked():
-    out = {}
-    for dirpath, dirnames, filenames in os.walk(ROOT):
-        dirnames[:] = sorted(d for d in dirnames if d not in EXCLUDE_DIRS and d != "__pycache__" and not d.startswith("."))
-        for fn in sorted(filenames):
-            if fn in EXCLUDE_FILES or fn.endswith((".mp4", ".jpg", ".png", ".webp")):
-                continue
-            full = os.path.join(dirpath, fn)
-            rel = os.path.relpath(full, ROOT)
-            try:
-                with open(full, "rb") as f:
-                    out[rel] = hashlib.sha256(f.read()).hexdigest()[:16]
-            except OSError:
-                pass
-    return out
+    paths = list((ROOT / 'pipeline').glob('*.py')) + list((ROOT / 'schemas').glob('*.json'))
+    for project in (ROOT / 'projects').iterdir():
+        if project.is_dir():
+            paths += [p for p in project.iterdir() if p.name in SOURCE_NAMES and p.is_file()]
+            paths += list((project / 'sequences').glob('*.json')) + list((project / 'departments').glob('*.md'))
+    return {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
+
+def tick(init=False):
+    current = tracked()
+    previous = json.loads(STATE.read_text()) if STATE.exists() else {}
+    if init:
+        STATE.write_text(json.dumps(current, indent=2, sort_keys=True))
+        print(f'watch: baseline recorded, {len(current)} authoring inputs')
+        return 0
+    changed = sorted(p for p in current.keys() | previous.keys() if current.get(p) != previous.get(p))
+    if not changed:
+        print('watch: no changes')
+        return 0
+    global_change = any(p.startswith(('pipeline/', 'schemas/')) for p in changed)
+    projects = {p.split('/')[1] for p in changed if p.startswith('projects/')}
+    if global_change:
+        projects.update(p.parent.name for p in (ROOT / 'projects').glob('*/project.json'))
+    failures = []
+    lines = [f'\n## {datetime.now(timezone.utc).isoformat()}'] + [f'- CHANGED {p}' for p in changed]
+    for name in sorted(projects):
+        directory = ROOT / 'projects' / name
+        if not (directory / 'project.json').exists():
+            continue
+        for command in ([sys.executable, str(ROOT / 'pipeline/musevideo.py'), 'validate', str(directory)],
+                        [sys.executable, str(ROOT / 'pipeline/musevideo.py'), 'prompt-pack', str(directory)],
+                        [sys.executable, str(ROOT / 'pipeline/evaluate.py'), str(directory)]):
+            result = subprocess.run(command, capture_output=True, text=True, cwd=ROOT)
+            lines.append(f'- {name}: {result.stdout.strip()} {result.stderr.strip()}')
+            if result.returncode:
+                failures.append(name)
+                break
+    with (ROOT / 'watch-log.md').open('a') as log:
+        log.write('\n'.join(lines) + '\n')
+    # Do not acknowledge failed source changes; retry them on the next tick.
+    if not failures:
+        temp = STATE.with_suffix('.tmp')
+        temp.write_text(json.dumps(current, indent=2, sort_keys=True))
+        os.replace(temp, STATE)
+    print(f'watch: {len(changed)} input changes, projects={sorted(projects)}, failures={failures}')
+    return 1 if failures else 0
 
 def main():
-    cur = tracked()
-    prev = {}
-    if os.path.exists(STATE):
-        prev = json.load(open(STATE))
-    if "--init" in sys.argv or not prev:
-        json.dump(cur, open(STATE, "w"), indent=2, sort_keys=True)
-        print(f"watch: baseline recorded, {len(cur)} files")
-        return 0
-    new = sorted(set(cur) - set(prev))
-    changed = sorted(k for k in set(cur) & set(prev) if cur[k] != prev[k])
-    removed = sorted(set(prev) - set(cur))
-    if not new and not changed and not removed:
-        print("watch: no changes")
-        return 0
-    with open(LOG, "a") as log:
-        from datetime import datetime, timezone
-        log.write(f"\n## {datetime.now(timezone.utc).isoformat()}\n")
-        for k in new: log.write(f"- NEW {k}\n")
-        for k in changed: log.write(f"- CHANGED {k}\n")
-        for k in removed: log.write(f"- REMOVED {k}\n")
-    projects = {p.split("/")[1] for p in new + changed if p.startswith("projects/")}
-    for proj in sorted(projects):
-        pdir = os.path.join(ROOT, "projects", proj)
-        r = subprocess.run([sys.executable, os.path.join(ROOT, "pipeline", "evaluate.py"), pdir],
-                           capture_output=True, text=True)
-        with open(LOG, "a") as log:
-            log.write(f"- EVALUATE {proj}: {r.stdout.strip()}\n")
-        prompts = os.path.join(pdir, "prompts")
-        if os.path.exists(os.path.join(pdir, "brief.md")) and not os.path.isdir(prompts):
-            r2 = subprocess.run([sys.executable, os.path.join(ROOT, "pipeline", "musevideo.py"),
-                                 "prompt-pack", pdir], capture_output=True, text=True)
-            with open(LOG, "a") as log:
-                log.write(f"- PROMPT-PACK {proj}: {r2.stdout.strip() or r2.stderr.strip()}\n")
-    json.dump(cur, open(STATE, "w"), indent=2, sort_keys=True)
-    print(f"watch: new={len(new)} changed={len(changed)} removed={len(removed)} projects={sorted(projects)}")
-    return 0
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--init', action='store_true')
+    args = parser.parse_args()
+    with (ROOT / '.watch.lock').open('w') as lock:
+        try:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            print('watch: another tick is running; skipped')
+            return 0
+        return tick(args.init)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     sys.exit(main())

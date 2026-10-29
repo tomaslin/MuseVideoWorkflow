@@ -7,7 +7,7 @@
     "variety": 10,
     "action": 10,
     "sound": 10,
-    "tension": 6,
+    "tension": 10,
     "continuity": 10,
     "background": 10,
     "choreography": 10,
@@ -16,16 +16,16 @@
     "lore": 10,
     "departments": 10
   },
-  "overall": 9.7,
+  "overall": 10.0,
   "tension_note": "Tension range 3-10, climax at position 7/9",
-  "findings": [
-    {
-      "severity": "minor",
-      "dimension": "tension",
-      "detail": "Final tension above 4 \u2014 the film does not resolve, it stops"
-    }
-  ],
+  "findings": [],
   "blockers": [],
-  "shipping_ready": true,
+  "plan_ready": true,
+  "media_verified": false,
+  "shipping_ready": false,
+  "shipping_findings": [
+    "Saved video verification failed: [Errno 2] No such file or directory: 'projects/desert-beggars-vampires/final/final-manifest.json'",
+    "Project has open critiques"
+  ],
   "limit_note": "Muse cannot watch generated video back. This report scores the plan, prompts, and metadata. Visual quality still requires a human watch per batch, recorded in critiques/."
 }

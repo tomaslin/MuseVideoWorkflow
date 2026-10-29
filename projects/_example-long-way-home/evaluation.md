@@ -1,6 +1,6 @@
 # Evaluation: _example-long-way-home
 
-Overall: 10.0/10 — shipping ready: True
+Plan score: 10.0/10 — shipping ready: False
 
 Tension: Tension range 2-9, climax at position 15/24
 
@@ -21,5 +21,8 @@ Tension: Tension range 2-9, climax at position 15/24
 
 ## Findings
 - [none] -: No findings.
+
+## Delivery checks
+- Saved video verification failed: [Errno 2] No such file or directory: 'projects/_example-long-way-home/final/final-manifest.json'
 
 Muse cannot watch generated video back. This report scores the plan, prompts, and metadata. Visual quality still requires a human watch per batch, recorded in critiques/.

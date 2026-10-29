@@ -186,47 +186,68 @@ def cmd_edl(args):
 
 
 def cmd_assemble(args):
-    d = args.project
-    clips_dir = os.path.join(d, "clips")
-    shots = all_shots(d)
-    concat = os.path.join(d, "final", "concat.txt")
-    with open(concat, "w") as f:
-        for sh in shots:
-            clip = os.path.join(clips_dir, f"{sh['shotId']}.mp4")
-            if not os.path.exists(clip):
-                print(f"Missing locked clip: {clip}")
-                return 1
-            f.write(f"file '{os.path.abspath(clip)}'\n")
-    out = os.path.join(d, "final", "video.mp4")
-    cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", concat,
-           "-c:v", "libx264", "-pix_fmt", "yuv420p", "-vf", "scale=1280:720",
-           "-b:v", "2500k", "-c:a", "aac", "-b:a", "160k", out]
-    subprocess.run(cmd, check=True)
-    print(f"Assembled {out} — run verify-final after recording its checksum.")
+    # Use the same tested local renderer for both entry points.
+    from pathlib import Path
+    root = Path(__file__).resolve().parents[1]
+    return subprocess.run([str(root / "scripts/local-video.sh"), "assemble", args.project]).returncode
+
+
+def verify_final(d):
+    """Verify saved media, exact timeline, current prompts and manifest."""
+    from pathlib import Path
+    final = Path(d) / "final"
+    video = final / "video.mp4"
+    man = load(final / "final-manifest.json")
+    edl = load(final / "edl.json")
+    if man.get("file") != "video.mp4":
+        raise ValueError("final-manifest file must be video.mp4")
+    h = hashlib.sha256()
+    with video.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            h.update(chunk)
+    if h.hexdigest() != man.get("sha256"):
+        raise ValueError("final SHA256 mismatch")
+    entries = edl.get("entries", [])
+    order = [e["shotId"] for e in entries]
+    if not entries or order != edl.get("shotOrder") or order != man.get("shotOrder"):
+        raise ValueError("EDL/manifest shot order mismatch")
+    known = {s["shotId"] for s in all_shots(d)}
+    cursor = 0
+    for entry in entries:
+        if entry["shotId"] not in known:
+            raise ValueError("EDL references unknown shot")
+        if abs(entry["startSec"] - cursor) > .001 or entry["endSec"] <= cursor:
+            raise ValueError("EDL has a gap, overlap or invalid duration")
+        if "promptSha256" in entry:
+            packet = Path(d) / "prompts" / (entry["shotId"] + ".txt")
+            if hashlib.sha256(packet.read_bytes()).hexdigest() != entry["promptSha256"]:
+                raise ValueError("final uses stale prompt: " + entry["shotId"])
+        cursor = entry["endSec"]
+    if abs(cursor - edl["totalSec"]) > .001:
+        raise ValueError("EDL duration mismatch")
+    probe = subprocess.run(["ffprobe", "-v", "error", "-show_format", "-show_streams", "-of", "json", str(video)], capture_output=True, text=True, check=True)
+    media = json.loads(probe.stdout)
+    duration = float(media["format"]["duration"])
+    streams = media["streams"]
+    v = next(s for s in streams if s["codec_type"] == "video")
+    audio = next((s for s in streams if s["codec_type"] == "audio"), {})
+    if v["codec_name"] != "h264" or audio.get("codec_name") != "aac":
+        raise ValueError("final must contain H.264 video and AAC audio")
+    if abs(duration - cursor) > .12 or abs(duration - man["durationSec"]) > .12:
+        raise ValueError("media duration does not match EDL/manifest")
+    if man.get("resolution") != f"{v['width']}x{v['height']}":
+        raise ValueError("media resolution does not match manifest")
+    return man
 
 
 def cmd_verify_final(args):
-    d = args.project
-    final = os.path.join(d, "final")
-    manifest_path = os.path.join(final, "final-manifest.json")
-    video = os.path.join(final, "video.mp4")
-    if not os.path.exists(video):
-        print("No final video in final/ — not checked in yet.")
+    try:
+        man = verify_final(args.project)
+        print(f"VERIFIED: checksum, timeline, duration, H.264/AAC, resolution; review={man.get('reviewState', 'unreviewed')}")
+        return 0
+    except (OSError, ValueError, KeyError, StopIteration, subprocess.SubprocessError) as exc:
+        print(f"FINAL VERIFICATION FAILED: {exc}")
         return 1
-    if not os.path.exists(manifest_path):
-        print("No final-manifest.json — assemble/check-in step incomplete.")
-        return 1
-    man = load(manifest_path)
-    h = hashlib.sha256()
-    with open(video, "rb") as f:
-        for chunk in iter(lambda: f.read(1024 * 1024), b""):
-            h.update(chunk)
-    ok = h.hexdigest() == man.get("sha256")
-    size = os.path.getsize(video)
-    print(f"video: {size} bytes ({size/1e6:.1f} MB), sha256 match: {ok}")
-    if size > 100 * 1024 * 1024:
-        print("WARNING: over GitHub 100 MB file limit — re-encode or use LFS.")
-    return 0 if ok else 1
 
 
 def main():
