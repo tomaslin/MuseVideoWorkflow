@@ -1,1 +1,134 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","properties":{"action":{"type":"string"},"characters":{"items":{"type":"string"},"type":"array"},"durationSec":{"type":"number"},"emotionalBeat":{"type":"string"},"location":{"type":"string"},"lockedCharacterBlocks":{"type":"object"},"lockedLookBlock":{"type":"string"},"movement":{"enum":["locked-off","push-in","pull-back","pan","tilt","tracking","crane","handheld"]},"order":{"minimum":1,"type":"integer"},"sequenceId":{"type":"string"},"shotId":{"type":"string"},"size":{"enum":["EWS","WS","FS","MWS","MS","MCU","CU","ECU"]},"soundMood":{"type":"string"},"transitionIn":{"type":"string"}},"required":["shotId","sequenceId","order","size","movement","action","location","characters","emotionalBeat","durationSec","soundMood","lockedLookBlock"],"title":"Shot","type":"object"}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "action": {
+      "type": "string"
+    },
+    "characters": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "durationSec": {
+      "type": "number"
+    },
+    "emotionalBeat": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "lockedCharacterBlocks": {
+      "type": "object"
+    },
+    "lockedLookBlock": {
+      "type": "string"
+    },
+    "movement": {
+      "enum": [
+        "locked-off",
+        "push-in",
+        "pull-back",
+        "pan",
+        "tilt",
+        "tracking",
+        "crane",
+        "handheld"
+      ]
+    },
+    "order": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "sequenceId": {
+      "type": "string"
+    },
+    "shotId": {
+      "type": "string"
+    },
+    "size": {
+      "enum": [
+        "EWS",
+        "WS",
+        "FS",
+        "MWS",
+        "MS",
+        "MCU",
+        "CU",
+        "ECU"
+      ]
+    },
+    "soundMood": {
+      "type": "string"
+    },
+    "transitionIn": {
+      "type": "string"
+    },
+    "background": {
+      "type": "string",
+      "description": "Foreground, midground, deep background; what moves in each"
+    },
+    "choreography": {
+      "type": "string",
+      "description": "Numbered beats with timing inside the 10s, ending in a payoff beat"
+    },
+    "cameraChoreography": {
+      "type": "string",
+      "description": "Camera path, speed, start and end framing, height"
+    },
+    "lighting": {
+      "type": "string",
+      "description": "Key, fill, practicals, time of day, change within shot"
+    },
+    "lensMm": {
+      "type": "number",
+      "description": "Focal length in mm"
+    },
+    "focus": {
+      "type": "string",
+      "description": "Focus behaviour: rack, deep, shallow, locked"
+    },
+    "motion": {
+      "type": "string",
+      "description": "Subject motion, background motion, and camera/subject relationship"
+    },
+    "extras": {
+      "type": "string",
+      "description": "Background performers and what they do"
+    },
+    "loreNotes": {
+      "type": "string",
+      "description": "Which lore/world rules this shot exercises"
+    },
+    "departments": {
+      "type": "object",
+      "description": "Per-department notes keyed by department name"
+    }
+  },
+  "required": [
+    "action",
+    "background",
+    "cameraChoreography",
+    "characters",
+    "choreography",
+    "durationSec",
+    "emotionalBeat",
+    "extras",
+    "focus",
+    "lensMm",
+    "lighting",
+    "location",
+    "lockedLookBlock",
+    "loreNotes",
+    "motion",
+    "movement",
+    "order",
+    "sequenceId",
+    "shotId",
+    "size",
+    "soundMood"
+  ],
+  "title": "Shot",
+  "type": "object"
+}

@@ -1,6 +1,6 @@
 # Evaluation: desert-beggars-vampires
 
-Overall: 9.4/10 — shipping ready: True
+Overall: 9.7/10 — shipping ready: True
 
 Tension: Tension range 3-10, climax at position 7/9
 
@@ -12,6 +12,12 @@ Tension: Tension range 3-10, climax at position 7/9
 - sound: 10/10
 - tension: 6/10
 - continuity: 10/10
+- background: 10/10
+- choreography: 10/10
+- camera: 10/10
+- lighting: 10/10
+- lore: 10/10
+- departments: 10/10
 
 ## Findings
 - [minor] tension: Final tension above 4 — the film does not resolve, it stops

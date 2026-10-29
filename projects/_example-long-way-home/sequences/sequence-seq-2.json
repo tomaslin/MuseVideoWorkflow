@@ -24,7 +24,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: workshop doorway and threshold. Midground: the man entering the workshop. Deep background: workshop interior with tools left in place on benches and walls, dust in light beams.",
+      "choreography": "Beat 1 (0-3s): man opens the workshop door and steps in. Beat 2 (3-7s): he surveys the tools left in place, turning slowly. Beat 3, payoff (7-10s): hold on his survey \u2014 returning to work left undone, not discovering a new place.",
+      "cameraChoreography": "Locked-off: camera does not move, wide framing with the workshop's full interior visible, so the tools left in place read as a set, not as props.",
+      "lighting": "Late light through workshop windows, dust in light beams, tools in warm light, corners in shadow.",
+      "focus": "Deep focus: man, benches, and tools all readable.",
+      "motion": "Subject motion: enter, turn, survey, hold. Background motion: dust in light beams. Camera still \u2014 the workshop is the subject as much as the man.",
+      "extras": "No background performers; the workshop is empty.",
+      "loreNotes": "Workshop rule: tools left in place, not moved between shots except when the man moves them to work. This is work left undone, not abandonment.",
+      "departments": {
+        "production-design": "Tools on benches and walls must be the same tools in s10-s16, in the same places unless the man moves them",
+        "costume": "Jacket unchanged, sawdust not yet on it in this shot",
+        "sound": "Door creak, dust in light, no music"
+      },
+      "lensMm": 35
     },
     {
       "shotId": "s10",
@@ -44,7 +58,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: workshop bench edge and wood shavings. Midground: the half-finished wooden chair. Deep background: workshop tools and window light, out of focus, so the chair is the only readable object.",
+      "choreography": "Beat 1 (0-3s): man's hand enters frame and finds the chair rail. Beat 2 (3-7s): his hand runs along the unfinished rail, slowly. Beat 3, payoff (7-10s): hold on the hand on the rail \u2014 recognition, not inspection.",
+      "cameraChoreography": "Push-in: from a close shot at 2 metres to a closer framing at 1 metre, ending on the hand and the rail.",
+      "lighting": "Workshop window light on the chair rail, hand in warm light, background tools in shadow.",
+      "focus": "Shallow focus: hand and rail sharp, workshop behind blurred.",
+      "motion": "Subject motion: hand finding, running along, holding. Background motion: dust in light. Camera pushes in slowly, matching the hand's pace.",
+      "extras": "No background performers; the workshop is empty except for the man.",
+      "loreNotes": "Chair rule: half-finished at the start, finished only at s17-s18. Never a different chair, never a bought chair, never finished early.",
+      "departments": {
+        "production-design": "Chair rail must be visibly unfinished \u2014 raw wood, no finish, no seat yet",
+        "costume": "Jacket sleeve and hand, sawdust beginning",
+        "sound": "Wood grain, his breath, no music"
+      },
+      "lensMm": 85
     },
     {
       "shotId": "s11",
@@ -64,7 +92,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: wood plane and a curling shaving, extreme close. Midground: the man's hands holding the plane. Deep background: workshop bench, out of focus.",
+      "choreography": "Beat 1 (0-3s): hands set the plane on the board. Beat 2 (3-7s): plane moves slowly along the board, shavings curling. Beat 3, payoff (7-10s): hold on the curling shaving \u2014 patience as action, the work itself as the beat.",
+      "cameraChoreography": "Locked-off: camera does not move, extreme close framing on the hands, plane, and shaving, so the work's rhythm reads.",
+      "lighting": "Workshop window light on the hands and board, shavings catching the light, background in shadow.",
+      "focus": "Shallow focus: plane and shaving sharp, hands slightly soft at the edges.",
+      "motion": "Subject motion: slow, rhythmic planing, one stroke per few seconds. Background motion: shavings curling and falling. Camera still \u2014 rhythm is in the hands, not the camera.",
+      "extras": "No background performers; the workshop is empty except for the man's hands.",
+      "loreNotes": "Work rule: patience as action. Planing is not a montage shortcut; it is shown at its real, slow pace, because the pace is the character.",
+      "departments": {
+        "production-design": "Board and plane must match s10's chair materials \u2014 same wood, same workshop",
+        "costume": "Hands and jacket sleeves, sawdust on them",
+        "sound": "Plane on wood, rhythmic, no music"
+      },
+      "lensMm": 100
     },
     {
       "shotId": "s12",
@@ -72,7 +114,7 @@
       "order": 12,
       "size": "MS",
       "movement": "locked-off",
-      "action": "reads an unsent letter, folds it carefully, does not tear it",
+      "action": "reads an unsent letter, then folds it carefully",
       "location": "a workshop bench",
       "characters": [
         "The Man"
@@ -84,7 +126,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: workshop bench with paper and a pencil. Midground: the man reading the unsent letter. Deep background: workshop tools and window, out of focus.",
+      "choreography": "Beat 1 (0-4s): man reads the letter, eyes moving across the page. Beat 2 (4-8s): he folds the letter carefully, in two precise folds. Beat 3, payoff (8-10s): he holds the folded letter, not tearing it, hold on the choice not to destroy the past.",
+      "cameraChoreography": "Locked-off: camera does not move, medium framing on the man and the letter, so reading and folding read as two beats and the hold as a third.",
+      "lighting": "Workshop window light on the letter paper, man's face in soft side light, background in shadow.",
+      "focus": "Focus on the letter in beat 1, on the man's hands in beat 2, on his face in the hold.",
+      "motion": "Subject motion: reading, folding, holding \u2014 three sequential beats, not simultaneous actions. Background motion: dust in light. Camera still.",
+      "extras": "No background performers; the workshop is empty.",
+      "loreNotes": "Letter rule: unsent, read once, folded carefully, never torn, never mailed, never read aloud. The choice not to destroy it is the midpoint reversal.",
+      "departments": {
+        "production-design": "Letter paper must be the same paper in any later shot where it appears, folded, never torn",
+        "costume": "Jacket unchanged, hands on paper",
+        "sound": "Paper, silence \u2014 silence after folding is the beat, not an absence"
+      },
+      "lensMm": 50
     },
     {
       "shotId": "s13",
@@ -104,7 +160,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: wall beside the telephone, faded paint. Midground: the silent telephone on the wall. Deep background: workshop doorway, out of focus.",
+      "choreography": "Beat 1 (0-3s): man looks at the telephone. Beat 2 (3-7s): he stands, looking, not reaching for it. Beat 3, payoff (7-10s): he turns back to the work, hold on turning away \u2014 no call will fix this.",
+      "cameraChoreography": "Locked-off: camera does not move, close framing on the telephone and the man's face beside it.",
+      "lighting": "Workshop light on the telephone, man's face in shadow, no artificial light.",
+      "focus": "Focus on the telephone in beat 1, on the man's face in beat 3.",
+      "motion": "Subject motion: look, stand, turn \u2014 three small moves. Background motion: none. Camera still \u2014 the beat is a decision not to act.",
+      "extras": "No background performers; the workshop is empty.",
+      "loreNotes": "Telephone rule: silent, looked at here and turned away from. No call is made, no call arrives. The rule is: no call will fix this.",
+      "departments": {
+        "production-design": "Telephone on the same hallway/workshop wall system as the photograph and mirror, but a distinct wall section",
+        "costume": "Jacket unchanged",
+        "sound": "Silence, held"
+      },
+      "lensMm": 85
     },
     {
       "shotId": "s14",
@@ -124,7 +194,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: workshop window frame and rain on glass. Midground: the man watching the window. Deep background: workshop tools waiting behind him, out of focus.",
+      "choreography": "Beat 1 (0-3s): man stands at the window, watching rain. Beat 2 (3-7s): rain runs down the glass, man still. Beat 3, payoff (7-10s): hold on watching \u2014 weather as feeling, not a metaphor forced by narration or music.",
+      "cameraChoreography": "Locked-off: camera does not move, wide framing with the window, the man, and the tools behind him in one composition.",
+      "lighting": "Grey rain light through the window, man's face in cool light, workshop behind him in shadow.",
+      "focus": "Focus on the rain on glass in beat 1, on the man's face in beat 3.",
+      "motion": "Subject motion: standing and watching, almost none. Background motion: rain on glass, the only large movement. Camera still.",
+      "extras": "No background performers; the workshop is empty.",
+      "loreNotes": "Weather rule: rain in the reckoning sequence, not in arrival or release. Weather progresses with the story's clock, it does not reset.",
+      "departments": {
+        "production-design": "Workshop window is the same window as s09's light source, now in rain",
+        "costume": "Jacket damp at the shoulders from the workshop door, not soaked",
+        "sound": "Rain on glass, no music"
+      },
+      "lensMm": 35
     },
     {
       "shotId": "s15",
@@ -144,7 +228,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: hallway mirror frame, worn wood. Midground: the man's reflection in the mirror. Deep background: hallway behind him in the mirror, out of focus.",
+      "choreography": "Beat 1 (0-3s): man looks at himself in the mirror. Beat 2 (3-7s): he looks honestly, without flinching, face still. Beat 3, payoff (7-10s): hold on the reflection \u2014 self-reckoning, not vanity, not performance.",
+      "cameraChoreography": "Push-in: from a medium close shot at 2 metres to a closer framing at 1 metre, ending on the reflection's face.",
+      "lighting": "Hallway light on the mirror, reflection lit, man's back in shadow, no artificial light.",
+      "focus": "Focus on the reflection, never on the man's back \u2014 the audience sees the face he sees.",
+      "motion": "Subject motion: look, hold, hold longer. Background motion: none. Camera pushes in slowly, matching the reckoning's pace.",
+      "extras": "No background performers; the hallway is empty.",
+      "loreNotes": "Mirror rule: the man looks at himself honestly, without flinching. The mirror is not used for exposition, and the reflection is never a different face.",
+      "departments": {
+        "production-design": "Mirror on the hallway wall, distinct from the photograph wall, same hallway layout",
+        "costume": "Jacket and face in reflection, unchanged",
+        "sound": "Silence, held"
+      },
+      "lensMm": 65
     },
     {
       "shotId": "s16",
@@ -152,7 +250,7 @@
       "order": 16,
       "size": "MS",
       "movement": "locked-off",
-      "action": "glues and clamps the chair joint, and waits",
+      "action": "glues and clamps the chair joint, then waits",
       "location": "a workshop bench with glue and clamps",
       "characters": [
         "The Man"
@@ -164,7 +262,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: workshop bench with glue bottle and clamps. Midground: the man's hands gluing and clamping the chair joint. Deep background: workshop tools, out of focus.",
+      "choreography": "Beat 1 (0-3s): hands apply glue to the chair joint, carefully. Beat 2 (3-7s): hands set the clamp on the joint and tighten it, one click. Beat 3, payoff (7-10s): hands rest on the clamped joint, waiting, hold on the first repair waiting to set.",
+      "cameraChoreography": "Locked-off: camera does not move, medium framing on the bench, hands, and joint, so gluing, clamping, and waiting read as sequential beats.",
+      "lighting": "Workshop window light on the bench and joint, hands in warm light, background in shadow.",
+      "focus": "Focus on the joint throughout, hands sharp, background blurred.",
+      "motion": "Subject motion: glue, clamp, wait \u2014 sequential, not simultaneous. Background motion: dust in light. Camera still \u2014 waiting is the beat.",
+      "extras": "No background performers; the workshop is empty except for the man's hands.",
+      "loreNotes": "Chair rule: the first repair. The joint clamped here must be the joint finished in s17-s18, not a different joint.",
+      "departments": {
+        "production-design": "Glue and clamps must be the same tools as s09's workshop set",
+        "costume": "Hands with sawdust, jacket sleeves",
+        "sound": "Clamp click, room tone, no music"
+      },
+      "lensMm": 50
     }
   ]
 }

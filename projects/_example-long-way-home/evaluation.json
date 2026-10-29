@@ -5,20 +5,20 @@
     "coverage": 10,
     "locked_blocks": 10,
     "variety": 10,
-    "action": 6,
+    "action": 10,
     "sound": 10,
     "tension": 10,
-    "continuity": 10
+    "continuity": 10,
+    "background": 10,
+    "choreography": 10,
+    "camera": 10,
+    "lighting": 10,
+    "lore": 10,
+    "departments": 10
   },
-  "overall": 9.4,
+  "overall": 10.0,
   "tension_note": "Tension range 2-9, climax at position 15/24",
-  "findings": [
-    {
-      "severity": "minor",
-      "dimension": "action",
-      "detail": "Shots that may contain two actions: s16 \u2014 split them or the clip will drift mid-shot"
-    }
-  ],
+  "findings": [],
   "blockers": [],
   "shipping_ready": true,
   "limit_note": "Muse cannot watch generated video back. This report scores the plan, prompts, and metadata. Visual quality still requires a human watch per batch, recorded in critiques/."

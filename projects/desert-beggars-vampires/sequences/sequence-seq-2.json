@@ -17,7 +17,22 @@
       "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
       "lockedCharacterBlocks": {
         "Jiangshi": "hopping vampires in rotting dark Qing robes with faded gold trim, paper talismans on their foreheads, arms held stiffly forward, green-grey skin, moving in stiff, hopping formation"
-      }
+      },
+      "background": "Foreground: tomb steps half-buried in sand. Midground: three tomb doors with carved lintels, the centre door open and dark. Deep background: dune face at night, moonlit, no vegetation.",
+      "choreography": "Beat 1 (0-3s): Darkness in the centre tomb door, dust falling. Beat 2 (3-7s): Jiangshi hop out in formation, in unison, one hop per second. Beat 3, payoff (7-10s): The line of vampires holds formation facing the caravanserai lights, hold on the formation.",
+      "cameraChoreography": "Locked-off: camera does not move, so the hopping formation reads clearly against the dune face, wide framing with all tomb doors visible.",
+      "lighting": "Cold moonlight from above, lantern light from the caravanserai far behind the camera, tomb interiors pitch dark.",
+      "lensMm": 35,
+      "focus": "Deep focus: tomb doors, vampires, and dune face all sharp.",
+      "motion": "Subject motion: stiff hopping in unison, arms forward. Background motion: dust falling from the tomb door, nothing else. Camera still, subjects move \u2014 the horror is in the contrast.",
+      "extras": "No beggar extras; the vampires are the only figures, in a line of five.",
+      "loreNotes": "Jiangshi rules 1, 2, 3, 5: hop only, blind, no speech, no tiring, arms stiffly forward. Rule 4: eyes closed or downcast while sealed.",
+      "departments": {
+        "production-design": "Lintel motif: sun disc with a line through it, same on both tomb doors",
+        "makeup-sfx": "Eyes closed or downcast in s04; skin green-grey, cracked at knuckles",
+        "sound": "Rhythmic hopping thuds in unison, dry cloth rustle, no music"
+      },
+      "durationSec": 10
     },
     {
       "shotId": "s05",
@@ -36,7 +51,22 @@
       "lockedCharacterBlocks": {
         "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, and a knotted wooden staff, moving with slow, deliberate authority",
         "Jiangshi": "hopping vampires in rotting dark Qing robes with faded gold trim, paper talismans on their foreheads, arms held stiffly forward, green-grey skin, moving in stiff, hopping formation"
-      }
+      },
+      "background": "Foreground: courtyard dust kicked up by hopping. Midground: Hong facing the first vampire in the courtyard centre. Deep background: lantern line with five lanterns, three lit, torn awning moving.",
+      "choreography": "Beat 1 (0-3s): Vampire hops forward toward Hong, arms stiff, Hong plants his feet, staff grounded. Beat 2 (3-7s): Hong swings the staff in a low arc, striking the vampire's stiff arms, vampire staggers back one hop, talisman corner lifting. Beat 3, payoff (7-10s): Hong holds the staff across his body, breathing hard, vampire reeling but not fallen, hold on Hong's face.",
+      "cameraChoreography": "Tracking: camera tracks Hong from his right side, keeping both fighters in frame, ending on Hong's held pose.",
+      "lighting": "Cold moonlight with warm lantern light from the left, staff and faces lit, courtyard shadows deep.",
+      "lensMm": 40,
+      "focus": "Focus on Hong and the vampire, lanterns soft behind.",
+      "motion": "Subject motion: hop, swing, stagger, hold. Background motion: dust and awning cloth. Camera tracks the swing, then stops on the hold.",
+      "extras": "Two beggar extras at the courtyard edge, frozen, watching \u2014 they do not join this fight yet.",
+      "loreNotes": "Jiangshi rules 1, 5, 7: hop only, arms stiff, stopped not killed by staff blows. The vampire must not fall or be destroyed here, or the threat collapses.",
+      "departments": {
+        "choreography": "Dog-Beating Staff style: low arcs, trips, blocks, never high flourishes",
+        "makeup-sfx": "Talisman corner lifts in beat 2, no other talisman moves",
+        "sound": "Staff crack sharp and woody, one low drum hit on the strike, then nothing"
+      },
+      "durationSec": 10
     },
     {
       "shotId": "s06",
@@ -53,7 +83,22 @@
       "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
       "lockedCharacterBlocks": {
         "Jiangshi": "hopping vampires in rotting dark Qing robes with faded gold trim, paper talismans on their foreheads, arms held stiffly forward, green-grey skin, moving in stiff, hopping formation"
-      }
+      },
+      "background": "Foreground: the vampire's shoulder and rotting robe edge, out of focus at the frame edge. Midground: the vampire's forehead and talisman, centred. Deep background: courtyard dark, one lantern glow blurred.",
+      "choreography": "Beat 1 (0-3s): Close on the talisman, one corner lifting in wind. Beat 2 (3-7s): The talisman flutters loose and falls away from the forehead. Beat 3, payoff (7-10s): The vampire's eyes open fully and black, hold on the eyes in silence.",
+      "cameraChoreography": "Locked-off: camera does not move, so the talisman flutter and the eye opening read as the only movement in frame.",
+      "lighting": "Single lantern light on the vampire's face, rest of the frame dark, eyes catching the light as they open.",
+      "lensMm": 85,
+      "focus": "Shallow focus: talisman and eyes sharp, shoulder and background blurred.",
+      "motion": "Subject motion: almost none except the talisman flutter and the eyes opening. Background motion: none. Camera still \u2014 stillness is the scare.",
+      "extras": "No extras in frame; this is a two-figure moment isolated to one face.",
+      "loreNotes": "Jiangshi rule 4, the trailer's mechanism: talisman seals the vampire, eyes closed while sealed; when it loosens, eyes open fully and the vampire becomes faster and more dangerous. This happens to exactly one vampire, the lead, only here.",
+      "departments": {
+        "makeup-sfx": "Eyes black and fully open only from beat 3 onward, never earlier",
+        "costume": "Talisman yellow paper, black seal script, centre-forehead, missing from this vampire from s06 onward",
+        "sound": "Paper flutter close and dry, then three seconds of sudden silence"
+      },
+      "durationSec": 10
     }
   ]
 }

@@ -24,7 +24,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: workshop bench and sandpaper. Midground: the man sanding the chair in morning light. Deep background: workshop window with morning sun, dust in the sunbeam.",
+      "choreography": "Beat 1 (0-3s): man sands the chair, slow strokes. Beat 2 (3-7s): dust rises in the sunbeam as he sands. Beat 3, payoff (7-10s): hold on the chair in morning light, dust settling \u2014 work finishing, not finished yet.",
+      "cameraChoreography": "Locked-off: camera does not move, wide framing with the workshop, the chair, and the morning sunbeam in one composition.",
+      "lighting": "Morning light through the workshop window, warm and clear, dust visible in the sunbeam, rest of the workshop in soft shadow. Morning light here is the release sequence's light, distinct from arrival's golden hour.",
+      "focus": "Deep focus: man, chair, and sunbeam all sharp.",
+      "motion": "Subject motion: slow sanding strokes, rhythmic. Background motion: dust in the sunbeam. Camera still \u2014 the light, not the camera, moves the shot.",
+      "extras": "No background performers; the workshop is empty.",
+      "loreNotes": "Chair rule: sanding is the finishing stage, after gluing in s16 and before the finished chair in s18. Light rule: release in morning light.",
+      "departments": {
+        "production-design": "Chair must now be visibly closer to finished \u2014 joints set, surfaces smoothed, but not yet the finished chair of s18",
+        "costume": "Sawdust on jacket and trousers, heaviest here",
+        "sound": "Sandpaper, birds, no music"
+      },
+      "lensMm": 35
     },
     {
       "shotId": "s18",
@@ -44,7 +58,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: finished chair edge, smooth wood. Midground: the man's hand running over the finished chair. Deep background: workshop window with morning light, out of focus.",
+      "choreography": "Beat 1 (0-3s): hand finds the finished chair's rail. Beat 2 (3-7s): hand runs over the finished surface, slowly. Beat 3, payoff (7-10s): man nods once, then a soft exhale, hold on quiet satisfaction \u2014 no smile, no celebration, just a nod.",
+      "cameraChoreography": "Locked-off: camera does not move, close framing on the hand, the chair, and the man's face in profile.",
+      "lighting": "Morning light on the finished chair, hand in warm light, background in soft shadow.",
+      "focus": "Shallow focus: hand and chair sharp, man's face slightly soft in profile.",
+      "motion": "Subject motion: hand running, nod, exhale \u2014 the smallest possible celebration. Background motion: dust settling in morning light. Camera still.",
+      "extras": "No background performers; the workshop is empty.",
+      "loreNotes": "Chair rule: finished here, for the first time. The nod is the film's quietest climax \u2014 it must not be played as triumph, only as satisfaction.",
+      "departments": {
+        "production-design": "Finished chair must be the same chair as s10-s17, now with a finished surface, same wood, same proportions",
+        "costume": "Jacket with sawdust, hands on finished wood",
+        "sound": "Silence, then a soft exhale \u2014 the exhale is the sound cue, not music"
+      },
+      "lensMm": 85
     },
     {
       "shotId": "s19",
@@ -64,7 +92,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: garden gate and gatepost, morning light on worn paint. Midground: the man at the gate. Deep background: garden path and drive in morning light, birdsong audible.",
+      "choreography": "Beat 1 (0-3s): man reaches the gate from the house side. Beat 2 (3-7s): he opens the gate to morning light. Beat 3, payoff (7-10s): he stands in the open gate, looking out, hold on opening, not closing \u2014 the reverse of s02.",
+      "cameraChoreography": "Push-in: from a wide shot at 4 metres to a closer framing at 2 metres, ending with the man in the open gate and morning light behind him.",
+      "lighting": "Morning light, clear and warm, gate wood lit, garden in bright light \u2014 the reverse of s02's fading golden hour.",
+      "focus": "Focus on the man and the gate, garden and drive slightly soft behind.",
+      "motion": "Subject motion: reach, open, stand \u2014 the reverse threshold of s02. Background motion: garden in morning light, birds. Camera pushes in steadily.",
+      "extras": "No background performers; the garden is empty at this moment.",
+      "loreNotes": "Gate rule: s19 is the reverse of s02 \u2014 opening, not closing, morning, not dusk. The gate must be the same gate, same paint, same post.",
+      "departments": {
+        "production-design": "Gate is the same gate as s02, now in morning light",
+        "costume": "Jacket unchanged, boots on the path",
+        "sound": "Gate latch, birdsong, no music"
+      },
+      "lensMm": 35
     },
     {
       "shotId": "s20",
@@ -84,7 +126,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: garden path gravel and edging stones. Midground: the man walking the garden path. Deep background: garden fence and a neighbour at the fence, waving, out of focus.",
+      "choreography": "Beat 1 (0-3s): man walks the garden path, slowly. Beat 2 (3-7s): neighbour waves from the fence; man returns the wave, briefly, without stopping. Beat 3, payoff (7-10s): man continues walking, hold on rejoining the world, briefly \u2014 not a reunion, just a wave.",
+      "cameraChoreography": "Tracking: camera tracks with the man along the path at his pace, ending in a medium shot with the fence and neighbour behind him.",
+      "lighting": "Morning light on the path and garden, neighbour in soft light at the fence, no artificial light.",
+      "focus": "Focus on the man, neighbour slightly soft at the fence \u2014 the wave is brief, not a scene.",
+      "motion": "Subject motion: walk, wave, walk on \u2014 the wave does not stop the walk. Background motion: garden in morning light. Camera tracks, then holds.",
+      "extras": "One background performer: a neighbour at the garden fence, waving once, not approaching, not speaking at length.",
+      "loreNotes": "World rule: rejoining the world, briefly. The neighbour is not a new character with a story; the wave is the whole relationship in this film.",
+      "departments": {
+        "production-design": "Garden fence and path must match s02/s19's garden, same gate system",
+        "costume": "Jacket unchanged",
+        "sound": "Footsteps on gravel, a distant voice, no music"
+      },
+      "lensMm": 50
     },
     {
       "shotId": "s21",
@@ -104,7 +160,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: porch boards and a broom, worn bristles. Midground: the man sweeping the porch. Deep background: garden and drive in morning light, out of focus.",
+      "choreography": "Beat 1 (0-3s): man sweeps the porch, slow strokes. Beat 2 (3-7s): he sweeps methodically, covering the porch in order. Beat 3, payoff (7-10s): hold on the swept porch \u2014 care as a closing act, the house kept, not just visited.",
+      "cameraChoreography": "Locked-off: camera does not move, medium framing with the porch, the broom, and the man in one composition.",
+      "lighting": "Morning light on the porch boards, broom and dust in warm light, garden behind in bright light.",
+      "focus": "Focus on the man and the broom, porch boards sharp, garden soft.",
+      "motion": "Subject motion: slow, methodical sweeping, one stroke per few seconds. Background motion: dust moving with the broom. Camera still \u2014 method is the beat.",
+      "extras": "No background performers; the porch is empty.",
+      "loreNotes": "House rule: empty but kept, dust not ruin. Sweeping the porch is the keeping, made visible \u2014 it is not cleaning for a visitor, it is care.",
+      "departments": {
+        "production-design": "Porch boards, rail, and door must match s03's porch",
+        "costume": "Jacket unchanged, boots on porch boards",
+        "sound": "Broom on wood, no music"
+      },
+      "lensMm": 50
     },
     {
       "shotId": "s22",
@@ -124,7 +194,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: porch wall and light switch, worn plate. Midground: the man's hand reaching for the switch. Deep background: porch and garden at dusk, out of focus.",
+      "choreography": "Beat 1 (0-3s): hand reaches for the porch light switch. Beat 2 (3-7s): hand switches the light on, click audible. Beat 3, payoff (7-10s): hold on the porch light glowing warm at dusk \u2014 the house left lit, the film's central image, switched on deliberately.",
+      "cameraChoreography": "Locked-off: camera does not move, close framing on the switch, the hand, and the light fixture, so the click and the glow read as one beat.",
+      "lighting": "Dusk light fading, porch light warm and glowing from the fixture, hand in warm light, garden darkening behind.",
+      "focus": "Focus on the switch and fixture, hand sharp, garden blurred.",
+      "motion": "Subject motion: reach, switch, hold \u2014 the smallest action with the largest meaning. Background motion: dusk darkening. Camera still.",
+      "extras": "No background performers; the porch is empty.",
+      "loreNotes": "Porch light rule: switched on here at dusk, left on in s23-s24. The house is left lit, not locked in darkness. Turning it off would reverse the film's meaning.",
+      "departments": {
+        "production-design": "Porch light fixture must be the same fixture as s03's unlit fixture",
+        "costume": "Hand and jacket sleeve, unchanged",
+        "sound": "Switch click, warm lamp hum, no music"
+      },
+      "lensMm": 85
     },
     {
       "shotId": "s23",
@@ -144,7 +228,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: window frame from outside, dusk light on glass. Midground: the finished chair inside the window, lit from inside. Deep background: house interior warm light, porch light glow at the frame edge.",
+      "choreography": "Beat 1 (0-3s): man places the finished chair in the window, carefully. Beat 2 (3-7s): he steps back, leaving the chair in the window. Beat 3, payoff (7-10s): hold on the chair in the window, lit from inside \u2014 the work kept, visible, not hidden away.",
+      "cameraChoreography": "Locked-off: camera does not move, wide framing from outside the window, with the chair, the window, and the house's warm light in one composition.",
+      "lighting": "Dusk outside, warm lamp light inside, chair lit from inside, window glass catching the dusk.",
+      "focus": "Focus on the chair in the window, house interior slightly soft behind it.",
+      "motion": "Subject motion: place, step back, hold. Background motion: evening light fading outside, lamp light steady inside. Camera still \u2014 the chair, not the man, is the subject of the hold.",
+      "extras": "No background performers; the house is empty except for the man placing the chair.",
+      "loreNotes": "Chair rule: finished chair, placed in the window, lit from inside. The work is kept and visible \u2014 not stored, not hidden, not given away in this film.",
+      "departments": {
+        "production-design": "Window must be the same window as s08's kitchen window system, but the chair in it is the finished workshop chair, placed deliberately",
+        "costume": "Man placing the chair, jacket unchanged",
+        "sound": "Evening birds, lamp warmth, no music"
+      },
+      "lensMm": 35
     },
     {
       "shotId": "s24",
@@ -164,7 +262,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: dirt drive at dusk, dry grass at the edges. Midground: the man walking back down the drive. Deep background: house lit behind him, porch light glowing, windows warm, dusk sky.",
+      "choreography": "Beat 1 (0-3s): man walks back down the drive, slower and lighter than in s01. Beat 2 (3-7s): he continues down the drive, house lit behind him growing smaller in frame. Beat 3, payoff (7-10s): hold on the man walking away with the house lit behind him \u2014 release, not departure, the house left lit, not abandoned.",
+      "cameraChoreography": "Pull-back: camera pulls back slowly from a wide shot to an extreme wide shot, ending with the man small on the drive and the lit house behind him.",
+      "lighting": "Dusk light fading, house lit warm from inside and by the porch light, man in silhouette against the lit house, sky darkening.",
+      "focus": "Deep focus: man, drive, and lit house all sharp, so the rhyme with s01 reads \u2014 same drive, same house, now lit.",
+      "motion": "Subject motion: slow walk away, lighter than s01. Background motion: dusk darkening, house light steady. Camera pulls back, the only large camera move in the film's ending, matching the release.",
+      "extras": "No background performers; the drive is empty except for the man.",
+      "loreNotes": "Release rule: walks back down the drive at dusk, slower and lighter, house lit behind him. This is the reverse of s01's arrival, with the light changed \u2014 the film's final image is a lit house, not a dark one.",
+      "departments": {
+        "production-design": "Drive and house must match s01 exactly, except for the light: dark in s01, lit in s24",
+        "costume": "Jacket unchanged, boots on the drive",
+        "sound": "Wind, distant birds, silence under it, no music"
+      },
+      "lensMm": 35
     }
   ]
 }

@@ -19,7 +19,22 @@
       "lockedCharacterBlocks": {
         "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, and a knotted wooden staff, moving with slow, deliberate authority",
         "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, and a rope whip at her belt, moving fast and light across the sand"
-      }
+      },
+      "background": "Foreground: loose sand and fresh footprints. Midground: the beggar band in a loose line. Deep background: rolling ochre dunes to the horizon, a single dead tree on a far ridge, morning haze.",
+      "choreography": "Beat 1 (0-4s): band enters frame left, walking uphill in a loose line. Beat 2 (4-7s): Sparrow weaves between the others, laughing, Hong leads. Beat 3, payoff (7-10s): band crests the dune and pauses, looking down at the caravanserai valley below, hold on the pause.",
+      "cameraChoreography": "Crane: starts low at sand level, rises to 3 metres as the band crests the dune, ending in a wide framing with the band left and the valley right.",
+      "lighting": "Low dawn sun from frame right, warm gold on sand crests, long shadows to the left, no fill light yet.",
+      "lensMm": 35,
+      "focus": "Deep focus: band and distant dead tree both sharp.",
+      "motion": "Subject motion: steady uphill walk, sand slipping back underfoot. Background motion: wind rippling dune crests. Camera leads the band, rising with them.",
+      "extras": "Five to seven beggar extras in distinct patched robes, each with a distinct prop: bowl, rope, short staff, sack, flute.",
+      "loreNotes": "Beggar sect rule: lowest sect, survives on what others discard; no swords, only staffs, bowls, ropes. Geography rule: open dunes only, no fourth location.",
+      "departments": {
+        "production-design": "Dead tree on far ridge must appear in s01 and s09",
+        "costume": "No clean garments; Hong ankle-length robe, Sparrow knee-length robe",
+        "sound": "No music yet in s01; wind, footsteps, distant laughter only"
+      },
+      "durationSec": 10
     },
     {
       "shotId": "s02",
@@ -36,7 +51,22 @@
       "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
       "lockedCharacterBlocks": {
         "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, and a knotted wooden staff, moving with slow, deliberate authority"
-      }
+      },
+      "background": "Foreground: caravanserai gate threshold and broken cart wheel. Midground: courtyard with wellhead and stacked water jars. Deep background: broken arch gate with five lanterns, three lit at night, torn awning cloth moving in wind.",
+      "choreography": "Beat 1 (0-3s): Hong walks to the gate threshold. Beat 2 (3-7s): Hong plants his staff in the sand with both hands. Beat 3, payoff (7-10s): Hong stands still, staff grounded, looking toward the horizon, hold on the claim staked.",
+      "cameraChoreography": "Tracking: camera moves with Hong from 5 metres to 2 metres, ending in a wide shot with the arch behind him and the staff centred.",
+      "lighting": "Dusk light, blood-red low sun behind the arch, warm lantern light beginning on the courtyard, long shadows.",
+      "lensMm": 40,
+      "focus": "Focus on Hong and staff, arch slightly soft behind him.",
+      "motion": "Subject motion: single deliberate walk and plant, then stillness. Background motion: awning cloth and lantern sway in wind. Camera follows, then stops with him.",
+      "extras": "Two beggar extras unloading a sack by the wellhead, not looking at Hong.",
+      "loreNotes": "Staff rule: the staff is passed, not inherited, and is the chief's symbol of authority. Planting it stakes a claim on the caravanserai.",
+      "departments": {
+        "production-design": "Broken arch: top-left voussoir missing, same in every caravanserai shot",
+        "costume": "Hong rope belt with three knots, wine gourd on a cord",
+        "sound": "Staff thud single and dry, then two seconds of silence"
+      },
+      "durationSec": 10
     },
     {
       "shotId": "s03",
@@ -53,7 +83,22 @@
       "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
       "lockedCharacterBlocks": {
         "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, and a rope whip at her belt, moving fast and light across the sand"
-      }
+      },
+      "background": "Foreground: caravanserai roof tiles and a loose tile edge. Midground: Sparrow standing on the roofline. Deep background: a sandstorm wall on the horizon, darkening the sky from the east.",
+      "choreography": "Beat 1 (0-3s): Sparrow steps to the roof edge, hand shading her eyes. Beat 2 (3-7s): She watches the storm wall approach, smile fading. Beat 3, payoff (7-10s): She turns back toward the courtyard and calls out, hold on her turned face.",
+      "cameraChoreography": "Push-in: from a medium shot at 4 metres to a closer framing at 2 metres, ending on Sparrow's face with the storm wall behind her.",
+      "lighting": "Dusk light failing, storm wall darkening the sky, last warm light on Sparrow's face from the west.",
+      "lensMm": 50,
+      "focus": "Rack focus from Sparrow to the storm wall in beat 2, back to Sparrow in beat 3.",
+      "motion": "Subject motion: step, watch, turn \u2014 three clear moves. Background motion: storm wall advancing slowly, dust rising. Camera pushes in steadily.",
+      "extras": "No extras on the roof; one beggar extra in the courtyard below, looking up.",
+      "loreNotes": "Sparrow rule: she is scout and messenger, which is why she is on the roof. Storm rule: the storm uncovers the tombs; it is cause, not atmosphere.",
+      "departments": {
+        "production-design": "Roofline is the same caravanserai roof as s02's courtyard",
+        "costume": "Sparrow straw sandals, right strap broken, visible in this shot",
+        "sound": "No music; wind rising, sand hissing, Sparrow's breath"
+      },
+      "durationSec": 10
     }
   ]
 }

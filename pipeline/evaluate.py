@@ -92,9 +92,46 @@ def evaluate(d):
     if drift:
         findings.append({"severity": "blocker", "dimension": "continuity",
                          "detail": f"Character block changed mid-project in: {', '.join(drift)} — a character who changes description changes face"})
+    # Robust fields: background, choreography, camera, lighting/lens, lore
+    def field_score(field, min_len=40):
+        bad = [s["shotId"] for s in shots if not s.get(field) or len(str(s.get(field, ""))) < min_len]
+        if bad:
+            findings.append({"severity": "major", "dimension": field,
+                             "detail": f"Missing or too short ({field}) in: {', '.join(bad)} — a shot that cannot answer this is not shootable"})
+        return 10 if not bad else max(0, 10 - len(bad))
+    background_score = field_score("background")
+    choreography_score = field_score("choreography")
+    camera_score = field_score("cameraChoreography")
+    lighting_score = field_score("lighting")
+    lore_score = field_score("loreNotes")
+    # Choreography must end in a payoff beat in the last third: heuristic —
+    # a choreography string without a payoff/landing/final beat marker
+    no_payoff = [s["shotId"] for s in shots if s.get("choreography") and not any(w in s["choreography"].lower() for w in ("payoff", "landing", "final", "hold", "cut", "beat 3", "7-10", "7–10"))]
+    if no_payoff:
+        findings.append({"severity": "minor", "dimension": "choreography-payoff",
+                         "detail": f"Choreography with no clear payoff/landing beat in: {', '.join(no_payoff)} — a clip ending mid-action cannot cut cleanly"})
+    # Departments: a project is not ready if its departments/ folder or
+    # lore bible is missing, or if a referenced reference image does not exist
+    dept_dir = os.path.join(d, "departments")
+    dept_files = os.listdir(dept_dir) if os.path.isdir(dept_dir) else []
+    if len(dept_files) < 3:
+        findings.append({"severity": "blocker", "dimension": "departments",
+                         "detail": f"Only {len(dept_files)} department packet(s) in departments/ — every role in docs/production-roles-medium-budget.md must own an artifact"})
+        departments_score = 4
+    else:
+        departments_score = 10
+    if not os.path.exists(os.path.join(d, "lore-bible.md")):
+        findings.append({"severity": "minor", "dimension": "lore-bible",
+                         "detail": "No lore-bible.md — invented or folkloric worlds need written rules, or the next prompt will contradict them"})
+    # Note: reference images listed in characters.md but not yet generated
+    # are tracked as open blockers in state.json, not scored here, because
+    # their paths are project-relative and vary by project layout.
     scores = {"coverage": coverage, "locked_blocks": locked, "variety": variety,
               "action": action_score, "sound": sound, "tension": tension_score,
-              "continuity": continuity}
+              "continuity": continuity, "background": background_score,
+              "choreography": choreography_score, "camera": camera_score,
+              "lighting": lighting_score, "lore": lore_score,
+              "departments": departments_score}
     overall = round(sum(scores.values()) / len(scores), 1)
     report = {"project": proj.get("slug", os.path.basename(d.rstrip("/"))),
               "shots": len(shots), "scores": scores, "overall": overall,

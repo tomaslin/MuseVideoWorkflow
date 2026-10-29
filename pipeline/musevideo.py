@@ -81,9 +81,16 @@ def cmd_validate(args):
         errors.append("no shots found (sequence*.json with shots)")
     for sh in shots:
         for field in ("shotId", "sequenceId", "size", "movement", "action",
-                      "location", "emotionalBeat", "soundMood", "lockedLookBlock"):
+                      "location", "emotionalBeat", "soundMood", "lockedLookBlock",
+                      "background", "choreography", "cameraChoreography",
+                      "lighting", "lensMm", "focus", "motion", "extras",
+                      "loreNotes"):
             if not sh.get(field):
                 errors.append(f"{sh.get('shotId', '?')}: missing {field}")
+        for field in ("background", "choreography", "cameraChoreography",
+                      "lighting", "motion", "loreNotes"):
+            if sh.get(field) and len(str(sh[field])) < 40:
+                errors.append(f"{sh['shotId']}: {field} too short to be shootable (<40 chars)")
         if sh.get("lockedLookBlock") and len(sh["lockedLookBlock"]) < 40:
             errors.append(f"{sh['shotId']}: locked look block looks truncated")
         for ch in sh.get("characters", []):
@@ -134,6 +141,28 @@ def cmd_prompt_pack(args):
         parts.append(f"Shot: {sh['size']}, {sh['movement']}, {sh['location']}. "
                      f"Action: {sh['action']} Emotional beat: {sh['emotionalBeat']} "
                      f"Sound mood: {sh['soundMood']}.")
+        # Robust fields: a prompt must reflect the whole production, not
+        # just look + characters. Each field is rendered verbatim when
+        # present, in a fixed order, so prompts are auditable against shots.
+        if sh.get("background"):
+            parts.append(f"Background: {sh['background']}")
+        if sh.get("cameraChoreography"):
+            parts.append(f"Camera choreography: {sh['cameraChoreography']}")
+        if sh.get("choreography"):
+            parts.append(f"Choreography: {sh['choreography']}")
+        if sh.get("lighting"):
+            parts.append(f"Lighting: {sh['lighting']}")
+        if sh.get("lensMm"):
+            parts.append(f"Lens: {sh['lensMm']}mm, focus: {sh.get('focus', '')}.")
+        if sh.get("motion"):
+            parts.append(f"Motion: {sh['motion']}")
+        if sh.get("extras"):
+            parts.append(f"Background performers: {sh['extras']}")
+        if sh.get("loreNotes"):
+            parts.append(f"World rules: {sh['loreNotes']}")
+        if sh.get("departments"):
+            dept = "; ".join(f"{k}: {v}" for k, v in sh["departments"].items())
+            parts.append(f"Department notes: {dept}")
         prompt = " ".join(p for p in parts if p)
         with open(os.path.join(out, f"{sh['shotId']}.txt"), "w") as f:
             f.write(prompt + "\n")

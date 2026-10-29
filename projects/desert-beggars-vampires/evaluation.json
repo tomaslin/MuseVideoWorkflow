@@ -8,9 +8,15 @@
     "action": 10,
     "sound": 10,
     "tension": 6,
-    "continuity": 10
+    "continuity": 10,
+    "background": 10,
+    "choreography": 10,
+    "camera": 10,
+    "lighting": 10,
+    "lore": 10,
+    "departments": 10
   },
-  "overall": 9.4,
+  "overall": 9.7,
   "tension_note": "Tension range 3-10, climax at position 7/9",
   "findings": [
     {

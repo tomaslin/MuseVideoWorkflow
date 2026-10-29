@@ -24,7 +24,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: dry grass and dirt at the drive's edge. Midground: the man walking up the drive. Deep background: the empty house at the drive's end, dark windows, golden-hour sky behind it.",
+      "choreography": "Beat 1 (0-4s): man enters frame at the drive's far end, walking slowly. Beat 2 (4-7s): he continues up the drive, pace unchanging. Beat 3, payoff (7-10s): he pauses briefly, looking at the house, then continues, hold on the pause.",
+      "cameraChoreography": "Locked-off: camera does not move, so the man's slow approach and the house's stillness read against each other, extreme wide framing with drive leading to house.",
+      "lighting": "Golden-hour sun low behind the house, warm light on the drive, house in shadow, long shadows across the dirt.",
+      "focus": "Deep focus: man, drive, and house all sharp.",
+      "motion": "Subject motion: slow, deliberate walk, no hurry. Background motion: dry grass moving in wind. Camera still \u2014 the man moves through a still world.",
+      "extras": "No background performers; the drive and house are empty, which is the point of the arrival.",
+      "loreNotes": "House rule: empty but kept, dust not ruin. Man rule: moves slowly and deliberately, never hurries. Light rule: arrival at golden hour.",
+      "departments": {
+        "production-design": "Drive in s01 and s24 must be the same drive, same side, so the rhyme reads",
+        "costume": "Boots dusted from the drive, jacket worn, no change of clothes",
+        "sound": "No music; wind in dry grass, distant birds only"
+      },
+      "lensMm": 35
     },
     {
       "shotId": "s02",
@@ -44,7 +58,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: weathered garden gate and gatepost, paint worn. Midground: the man at the gate. Deep background: garden path and house porch, golden light fading.",
+      "choreography": "Beat 1 (0-3s): man reaches the gate and stops. Beat 2 (3-7s): he opens the gate, steps through, and closes it behind him \u2014 one continuous threshold action, not three separate actions. Beat 3, payoff (7-10s): he stands on the house side of the gate, hand still on the latch, hold on the crossing.",
+      "cameraChoreography": "Push-in: from a wide shot at 4 metres to a closer framing at 2 metres, ending with the man and the gate centred and the porch behind him.",
+      "lighting": "Golden-hour light fading, warm on the gate wood, porch in soft shadow, no artificial light yet.",
+      "focus": "Focus on the man and the gate latch, garden and porch slightly soft behind.",
+      "motion": "Subject motion: stop, open, step, close, stand \u2014 a single threshold sequence. Background motion: garden grass in wind. Camera pushes in steadily, then holds.",
+      "extras": "No background performers; the garden is empty.",
+      "loreNotes": "Threshold rule: the gate is a crossing, not a door to be opened and forgotten. Closing it behind him matters \u2014 he is shutting himself in with the past, deliberately.",
+      "departments": {
+        "production-design": "Gate is the same gate as s19, but at dusk in s02 and in morning light in s19",
+        "costume": "Jacket and boots unchanged from s01",
+        "sound": "Gate latch click, gravel under boots, no music"
+      },
+      "lensMm": 35
     },
     {
       "shotId": "s03",
@@ -64,7 +92,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: wooden porch boards and a porch rail. Midground: the man crossing the porch. Deep background: front door, closed, with a porch light fixture beside it, unlit.",
+      "choreography": "Beat 1 (0-4s): man crosses the porch slowly. Beat 2 (4-7s): he reaches the front door and pauses, hand near the handle but not turning it. Beat 3, payoff (7-10s): he stands at the door, hesitating, hold on the hesitation before entering.",
+      "cameraChoreography": "Tracking: camera tracks with the man across the porch at his pace, ending in a medium shot with the door beside him.",
+      "lighting": "Late golden light on the porch boards, door in shadow, porch light fixture unlit \u2014 the light that will be switched on in s22 is not yet on.",
+      "focus": "Focus on the man, door slightly soft behind him.",
+      "motion": "Subject motion: slow walk, then stillness at the door. Background motion: wind in the garden beyond the porch. Camera tracks, then stops with him.",
+      "extras": "No background performers; the porch is empty.",
+      "loreNotes": "Man rule: slow and deliberate, never hurries. Porch light rule: unlit until s22, when it is switched on and left on.",
+      "departments": {
+        "production-design": "Porch boards, rail, and door must match s21-s22's porch",
+        "costume": "Boots on wood, jacket unchanged",
+        "sound": "Wood creak, wind, no music"
+      },
+      "lensMm": 50
     },
     {
       "shotId": "s04",
@@ -84,7 +126,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: hallway floorboards and a runner rug, worn. Midground: the man standing in the hallway. Deep background: hallway stretching to the kitchen at the far end, a clock ticking somewhere off-frame.",
+      "choreography": "Beat 1 (0-3s): man enters the hallway and stops. Beat 2 (3-7s): he stands still, listening, head slightly turned. Beat 3, payoff (7-10s): he remains still, hold on listening \u2014 the house is present, not ruined, and he is hearing it again.",
+      "cameraChoreography": "Locked-off: camera does not move, wide framing with the hallway's length visible, so stillness reads as listening, not as a frozen frame.",
+      "lighting": "Late light through a hallway window, warm on the floorboards, rest of the hallway in soft shadow, no artificial light.",
+      "focus": "Deep focus: man, hallway, and kitchen doorway all readable.",
+      "motion": "Subject motion: enter, then stillness. Background motion: light moving slightly, dust in a sunbeam. Camera still \u2014 stillness is the action.",
+      "extras": "No background performers; the house is empty.",
+      "loreNotes": "House rule: empty but kept, dust not ruin. Layout rule: front door at one end, kitchen at the other, workshop door off the side.",
+      "departments": {
+        "production-design": "Hallway layout fixed: door, kitchen, workshop door in the same positions in every hallway shot",
+        "costume": "Jacket unchanged, boots on floorboards",
+        "sound": "Room tone, clock ticking far off, no music"
+      },
+      "lensMm": 35
     },
     {
       "shotId": "s05",
@@ -104,7 +160,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: kitchen countertop edge, worn patch visible. Midground: the man standing in the kitchen, hand on the countertop. Deep background: kitchen window with late light, faint birds outside the window.",
+      "choreography": "Beat 1 (0-3s): man stands in the kitchen, hand finding the countertop. Beat 2 (3-7s): his hand rests on the worn patch, fingers still. Beat 3, payoff (7-10s): he looks out of the window, hold on memory surfacing without a flashback.",
+      "cameraChoreography": "Push-in: from a medium shot at 3 metres to a closer framing at 1.5 metres, ending on his hand on the countertop and his face in profile.",
+      "lighting": "Late light through the kitchen window, warm on the countertop, man's face in soft side light, no artificial light.",
+      "focus": "Rack focus from the countertop wear to the man's face in beat 3.",
+      "motion": "Subject motion: hand finding, resting, looking \u2014 small, deliberate moves. Background motion: light through the window, birds outside. Camera pushes in slowly.",
+      "extras": "No background performers; the kitchen is empty.",
+      "loreNotes": "Object rule: the countertop wear is a continuity anchor \u2014 same worn patch, same side, in every kitchen shot. Memory rule: memory surfaces, it is not shown as a flashback.",
+      "departments": {
+        "production-design": "Countertop worn patch must be the same patch in every kitchen shot",
+        "costume": "Jacket sleeve on the countertop, no change of clothes",
+        "sound": "Kettle silence, faint birds outside, no music"
+      },
+      "lensMm": 50
     },
     {
       "shotId": "s06",
@@ -124,7 +194,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: hallway wall edge, faded wallpaper. Midground: the faded photograph on the wall. Deep background: hallway stretching away, out of focus, so the photograph is the only readable object.",
+      "choreography": "Beat 1 (0-3s): man looks at the photograph. Beat 2 (3-7s): he looks away, not smiling, face still. Beat 3, payoff (7-10s): hold on his face after looking away \u2014 grief without performance, no tear, no smile, no explanation.",
+      "cameraChoreography": "Locked-off: camera does not move, close framing on the photograph and the man's face beside it, so looking and looking away read as two beats.",
+      "lighting": "Late light on the hallway wall, photograph in soft light, man's face in shadow, no artificial light.",
+      "focus": "Shallow focus: photograph sharp in beat 1, man's face sharp in beat 2, never both sharp at once \u2014 the audience cannot read the photograph and his face at the same time, by design.",
+      "motion": "Subject motion: look, look away, hold. Background motion: none. Camera still \u2014 the beat is in the eyes, not in movement.",
+      "extras": "No background performers; the hallway is empty.",
+      "loreNotes": "Photograph rule: faded, looked at once here, then looked away from, not smiling. Never taken down, never shown as a readable image, never explained.",
+      "departments": {
+        "production-design": "Photograph on the same hallway wall as the mirror in s15, but a different wall section",
+        "costume": "Jacket shoulder in frame, unchanged",
+        "sound": "Silence, held \u2014 silence is the cue, not an absence"
+      },
+      "lensMm": 85
     },
     {
       "shotId": "s07",
@@ -144,7 +228,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: empty room floorboards and a window sill. Midground: sunlight moving across the empty room. Deep background: far wall with a window, late light through it, room otherwise empty.",
+      "choreography": "Beat 1 (0-3s): man stands at the room's edge, watching. Beat 2 (3-7s): sunlight moves across the floor, visibly, as time passes in the shot. Beat 3, payoff (7-10s): hold on the empty room with the light moved \u2014 time passing, visibly, is the beat.",
+      "cameraChoreography": "Locked-off: camera does not move, wide framing with the whole room and its window visible, so the light's movement is measurable against the room.",
+      "lighting": "Late light through the window, moving across the floor during the shot, room otherwise in soft shadow.",
+      "focus": "Deep focus: room, window, and light patch all sharp.",
+      "motion": "Subject motion: man almost still, watching. Background motion: sunlight moving across the floor \u2014 the only large movement, and it is the point. Camera still.",
+      "extras": "No background performers; the room is empty.",
+      "loreNotes": "Light rule: time of day progresses \u2014 arrival at golden hour, reckoning in late light. Light moving in this shot is time passing, not a lighting change for its own sake.",
+      "departments": {
+        "production-design": "Empty room must be genuinely empty \u2014 no furniture introduced to fill the frame",
+        "costume": "Man at the room's edge, jacket unchanged",
+        "sound": "Soft wind through a cracked window, no music"
+      },
+      "lensMm": 35
     },
     {
       "shotId": "s08",
@@ -164,7 +262,21 @@
       "lockedCharacterBlocks": {
         "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
       },
-      "transitionIn": "cut"
+      "transitionIn": "cut",
+      "background": "Foreground: kitchen chair by the window, wooden, worn. Midground: the man sitting by the window. Deep background: window with late light and garden beyond, out of focus.",
+      "choreography": "Beat 1 (0-3s): man sits down by the window, slowly. Beat 2 (3-7s): he rests his hands on his knees, still. Beat 3, payoff (7-10s): hold on sitting still \u2014 accepting the stillness, not waiting for something to happen.",
+      "cameraChoreography": "Locked-off: camera does not move, medium framing with the chair, the man, and the window in one composition.",
+      "lighting": "Late light through the window on the man's face and hands, chair in warm light, rest of the kitchen in shadow.",
+      "focus": "Focus on the man's hands on his knees, chair and window slightly soft.",
+      "motion": "Subject motion: sit, rest, hold \u2014 the smallest possible moves. Background motion: light through the window, garden beyond. Camera still.",
+      "extras": "No background performers; the kitchen is empty.",
+      "loreNotes": "Man rule: slow and deliberate. Stillness rule: sitting still is an action in this film, not a pause between actions.",
+      "departments": {
+        "production-design": "Chair by the window is not the workshop chair \u2014 it is a kitchen chair, and must not be confused with the half-finished chair",
+        "costume": "Jacket and trousers as he sits, no change",
+        "sound": "Room tone, breathing space, no music"
+      },
+      "lensMm": 50
     }
   ]
 }
