@@ -51,3 +51,16 @@ the missing media exists, and do not repeatedly retry the same failing input.
 A later batch also reported `integrity_check_failed` for s10, s11, s12, s14
 and s15. Those shots are paused in `provider-failures.json`. This error's cause
 is still unknown; a provider success on s13 does not establish a general fix.
+
+Muse subsequently reported `check_type: media_guard` alongside the
+`integrity_check_failed` errors on s02, s03, s04, s08, s09, s10, s11,
+s12, s14, s15 and s17. The response supplied no more specific cause. All
+11 are paused; no prompt changes or retries should be made to evade the check.
+The provider did return s16. s18 was not attempted because its group reference
+is not approved. S13 was saved but is flagged for a landscape redo.
+
+- **s16 — redo.** Lan and Wen face each other in a legible two-shot, but in
+  sampled frames the blade appears to overlap Wen's throat; the intended clear
+  air gap is not readable. Preserve the take, and request a side-on medium
+  shot with the sword stopped clearly short, a visible gap, no contact, and
+  Wen unharmed. Review motion and framing before accepting the replacement.

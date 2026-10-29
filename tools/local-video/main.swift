@@ -166,6 +166,8 @@ func status(_ project: Project) throws {
     let manifest = try project.manifest(); var queue: [[String: Any]] = []; var localPending: [String] = []
     let failureURL = try project.path("provider-failures.json")
     let failures = fm.fileExists(atPath: failureURL.path) ? ((try read(failureURL))["shots"] as? [String: [String: Any]] ?? [:]) : [:]
+    let blockersURL = try project.path("generation-blockers.json")
+    let blockers = fm.fileExists(atPath: blockersURL.path) ? ((try read(blockersURL))["shots"] as? [String: [String: Any]] ?? [:]) : [:]
     for shot in project.shots {
         let id = shot["shotId"] as! String
         var state = "missing"
@@ -181,12 +183,13 @@ func status(_ project: Project) throws {
             else {
                 var job: [String: Any] = ["shotId": id, "reason": state, "promptSha256": try project.prompt(id)]
                 if let failure = failures[id] { job["providerFailure"] = failure }
+                if let blocker = blockers[id] { job["blocker"] = blocker }
                 if state == "redo", let requests = manifest["redoRequests"] as? [[String: Any]], let last = requests.last(where: { $0["shotId"] as? String == id }), let detail = last["reason"] as? String { job["redoReason"] = detail }
                 queue.append(job)
             }
         }
     }
-    try write(["pending": queue, "nextBatch": Array(queue.filter { $0["providerFailure"] == nil }.prefix(6)), "localPending": localPending, "complete": queue.isEmpty && localPending.isEmpty], project.path("generation-queue.json"))
+    try write(["pending": queue, "nextBatch": Array(queue.filter { $0["providerFailure"] == nil && $0["blocker"] == nil }.prefix(6)), "localPending": localPending, "complete": queue.isEmpty && localPending.isEmpty], project.path("generation-queue.json"))
 }
 func publishPreview(_ project: Project, _ id: String) throws {
     var manifest = try project.manifest(); var clips = manifest["clips"] as? [[String: Any]] ?? []

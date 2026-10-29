@@ -45,6 +45,7 @@ def pending(directory):
     manifest=load(directory/'manifest.json',{})
     selected={c['shotId']:c for c in manifest.get('clips',[]) if c.get('selected')}
     failures=load(directory/'provider-failures.json',{}).get('shots',{})
+    blockers=load(directory/'generation-blockers.json',{}).get('shots',{})
     shots=[]
     for sequence in sorted((directory/'sequences').glob('*.json')):
         shots.extend(load(sequence).get('shots',[]))
@@ -72,6 +73,7 @@ def pending(directory):
                 reason='missing-or-corrupt'
         job={'project':directory.name,'shotId':sid,'reason':reason,'promptFile':str(packet.relative_to(directory.parent.parent)),'promptSha256':prompt_hash,'characters':shot.get('characters',[])}
         if sid in failures:job['providerFailure']=failures[sid]
+        if sid in blockers:job['blocker']=blockers[sid]
         if reason == 'redo':
             request=next((r for r in reversed(manifest.get('redoRequests',[])) if r.get('shotId')==sid),None)
             if request:job['redoReason']=request.get('reason','')
@@ -85,7 +87,7 @@ def plan(root, state=None, limit=6, now=None):
     state=state or {};now=time.time() if now is None else now
     blocked=state.get('providerFailures',{})
     leased={(j['project'],j['shotId']) for lease in state.get('leases',[]) if lease['status']=='running' and lease['expiresAt']>now for j in lease['jobs']}
-    queues={d.name:[j for j in pending(d) if (j['project'],j['shotId']) not in leased and state.get('retryAfter',{}).get(j['project']+':'+j['shotId'],0)<=now and j['shotId'] not in load(root/'projects'/j['project']/'provider-failures.json',{}).get('shots',{}) and j['project']+':'+j['shotId'] not in blocked] for d,p in projects(root)}
+    queues={d.name:[j for j in pending(d) if (j['project'],j['shotId']) not in leased and state.get('retryAfter',{}).get(j['project']+':'+j['shotId'],0)<=now and 'providerFailure' not in j and 'blocker' not in j and j['project']+':'+j['shotId'] not in blocked] for d,p in projects(root)}
     names=sorted(queues)
     last=state.get('lastProject')
     if last in names:

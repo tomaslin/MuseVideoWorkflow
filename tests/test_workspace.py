@@ -45,6 +45,15 @@ class WorkspaceTests(unittest.TestCase):
             clear_failure(root,'a','s01')
             self.assertIn('s01',[j['shotId'] for j in batch(root)['jobs']])
 
+    def test_unapproved_reference_blocks_generation(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);self.make_project(root,'a')
+            path=root/'projects/a/generation-blockers.json'
+            path.write_text(json.dumps({'shots':{'s01':{'type':'unapproved-reference'}}}))
+            self.assertNotIn('s01',[j['shotId'] for j in batch(root)['jobs']])
+            path.write_text(json.dumps({'shots':{}}))
+            self.assertIn('s01',[j['shotId'] for j in batch(root)['jobs']])
+
     def test_lease_expiry_and_total_limit(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp);self.make_project(root,'a')

@@ -17,16 +17,6 @@
       "shotId" : "s06"
     },
     {
-      "promptSha256" : "13152c4fdd8a88222e3f4130a7a7f360e7e86ae46f75326d03888d54fd465211",
-      "reason" : "missing",
-      "shotId" : "s08"
-    },
-    {
-      "promptSha256" : "1bff6658613b91f10ed3830309370cac0f68a18fd109887e206f1d5a4042f50a",
-      "reason" : "missing",
-      "shotId" : "s09"
-    },
-    {
       "promptSha256" : "0a419d764e52ba10c60c5b87a7cc8efbae11a4b1d015d8e2094145fdb9b57103",
       "reason" : "redo",
       "redoReason" : "The source is portrait 672x1344, while this trailer and shot plan use a landscape 16:9 composition. Generate a medium close-up of Wen in 16:9, facing screen-left with an unbound wrist and space for her eyeline; preserve her calm free choice.",
@@ -34,7 +24,8 @@
     },
     {
       "promptSha256" : "cd46cf43518b3802816c25d5c9b16ac09c50c7523a1d926faca5c5160975198e",
-      "reason" : "missing",
+      "reason" : "redo",
+      "redoReason" : "The sword appears to overlap Wen’s throat in the sampled frames, so the intended gap cannot be read. Keep a clear hand-width air gap in a side-on 16:9 medium shot; Wen stays unharmed and freely standing.",
       "shotId" : "s16"
     }
   ],
@@ -48,9 +39,9 @@
     {
       "promptSha256" : "582f78da58c7f0d6003b924751bffd5dc6ab96432864b3d3b5b4a0570e6daf97",
       "providerFailure" : {
-        "error" : "integrity_check_failed",
+        "error" : "integrity_check_failed:media_guard",
         "promptSha256" : "582f78da58c7f0d6003b924751bffd5dc6ab96432864b3d3b5b4a0570e6daf97",
-        "recordedAt" : 1793315247.818162
+        "recordedAt" : 1793315476.8031371
       },
       "reason" : "missing",
       "shotId" : "s02"
@@ -58,9 +49,9 @@
     {
       "promptSha256" : "2ae2e57edc05347f36e30fb4cb5898d1515b83525c89b85e13c6ed3cb045ff35",
       "providerFailure" : {
-        "error" : "integrity_check_failed",
+        "error" : "integrity_check_failed:media_guard",
         "promptSha256" : "2ae2e57edc05347f36e30fb4cb5898d1515b83525c89b85e13c6ed3cb045ff35",
-        "recordedAt" : 1793315247.867924
+        "recordedAt" : 1793315476.850142
       },
       "reason" : "missing",
       "shotId" : "s03"
@@ -68,9 +59,9 @@
     {
       "promptSha256" : "534cef4470c4ae3978aa3e1ae8336b1d65fef6a2232560ab378d030f349cf9a5",
       "providerFailure" : {
-        "error" : "integrity_check_failed",
+        "error" : "integrity_check_failed:media_guard",
         "promptSha256" : "534cef4470c4ae3978aa3e1ae8336b1d65fef6a2232560ab378d030f349cf9a5",
-        "recordedAt" : 1793315247.927783
+        "recordedAt" : 1793315476.9012671
       },
       "reason" : "missing",
       "shotId" : "s04"
@@ -83,20 +74,30 @@
     },
     {
       "promptSha256" : "13152c4fdd8a88222e3f4130a7a7f360e7e86ae46f75326d03888d54fd465211",
+      "providerFailure" : {
+        "error" : "integrity_check_failed:media_guard",
+        "promptSha256" : "13152c4fdd8a88222e3f4130a7a7f360e7e86ae46f75326d03888d54fd465211",
+        "recordedAt" : 1793315476.948642
+      },
       "reason" : "missing",
       "shotId" : "s08"
     },
     {
       "promptSha256" : "1bff6658613b91f10ed3830309370cac0f68a18fd109887e206f1d5a4042f50a",
+      "providerFailure" : {
+        "error" : "integrity_check_failed:media_guard",
+        "promptSha256" : "1bff6658613b91f10ed3830309370cac0f68a18fd109887e206f1d5a4042f50a",
+        "recordedAt" : 1793315476.997251
+      },
       "reason" : "missing",
       "shotId" : "s09"
     },
     {
       "promptSha256" : "ed37bf4f0ab53f76539090a5e04e5ee41193fb711bfc820b25f5df1569b17eda",
       "providerFailure" : {
-        "error" : "integrity_check_failed",
+        "error" : "integrity_check_failed:media_guard",
         "promptSha256" : "ed37bf4f0ab53f76539090a5e04e5ee41193fb711bfc820b25f5df1569b17eda",
-        "recordedAt" : 1793315342.7748029
+        "recordedAt" : 1793315477.0429671
       },
       "reason" : "missing",
       "shotId" : "s10"
@@ -104,9 +105,9 @@
     {
       "promptSha256" : "d86bb34eb9057e2711a5030080e24d205674a3db9c365463c61018fcfdf68ce7",
       "providerFailure" : {
-        "error" : "integrity_check_failed",
+        "error" : "integrity_check_failed:media_guard",
         "promptSha256" : "d86bb34eb9057e2711a5030080e24d205674a3db9c365463c61018fcfdf68ce7",
-        "recordedAt" : 1793315342.823482
+        "recordedAt" : 1793315477.0917969
       },
       "reason" : "missing",
       "shotId" : "s11"
@@ -114,9 +115,9 @@
     {
       "promptSha256" : "829e8638c26110398237707e8ea9977084e9d9cab86edbabd6b972d93035ad16",
       "providerFailure" : {
-        "error" : "integrity_check_failed",
+        "error" : "integrity_check_failed:media_guard",
         "promptSha256" : "829e8638c26110398237707e8ea9977084e9d9cab86edbabd6b972d93035ad16",
-        "recordedAt" : 1793315342.8720629
+        "recordedAt" : 1793315477.1402559
       },
       "reason" : "missing",
       "shotId" : "s12"
@@ -130,9 +131,9 @@
     {
       "promptSha256" : "15d35f6809c190604a5fa7116e08ae4964401a98706f9dc3b01cd24f3756e398",
       "providerFailure" : {
-        "error" : "integrity_check_failed",
+        "error" : "integrity_check_failed:media_guard",
         "promptSha256" : "15d35f6809c190604a5fa7116e08ae4964401a98706f9dc3b01cd24f3756e398",
-        "recordedAt" : 1793315342.9206982
+        "recordedAt" : 1793315477.1858718
       },
       "reason" : "missing",
       "shotId" : "s14"
@@ -140,24 +141,34 @@
     {
       "promptSha256" : "936aa8206400fcaed07ea847db0cb8034481daf81a5464851079fb07fc919c3a",
       "providerFailure" : {
-        "error" : "integrity_check_failed",
+        "error" : "integrity_check_failed:media_guard",
         "promptSha256" : "936aa8206400fcaed07ea847db0cb8034481daf81a5464851079fb07fc919c3a",
-        "recordedAt" : 1793315342.971086
+        "recordedAt" : 1793315477.2312489
       },
       "reason" : "missing",
       "shotId" : "s15"
     },
     {
       "promptSha256" : "cd46cf43518b3802816c25d5c9b16ac09c50c7523a1d926faca5c5160975198e",
-      "reason" : "missing",
+      "reason" : "redo",
+      "redoReason" : "The sword appears to overlap Wen’s throat in the sampled frames, so the intended gap cannot be read. Keep a clear hand-width air gap in a side-on 16:9 medium shot; Wen stays unharmed and freely standing.",
       "shotId" : "s16"
     },
     {
       "promptSha256" : "fdeddc9671e87f7a5084dfbff3614fec3586b89e6169f93b9345900bb643df52",
+      "providerFailure" : {
+        "error" : "integrity_check_failed:media_guard",
+        "promptSha256" : "fdeddc9671e87f7a5084dfbff3614fec3586b89e6169f93b9345900bb643df52",
+        "recordedAt" : 1793315477.276932
+      },
       "reason" : "missing",
       "shotId" : "s17"
     },
     {
+      "blocker" : {
+        "detail" : "The five-person group reference appears to give Reed a left hand despite the fixed one-arm continuity. Resolve and approve a group reference before generating the full-group tableau.",
+        "type" : "unapproved-reference"
+      },
       "promptSha256" : "9054170034cd68063ff6ea1fcb0ae8f34e4c6bd6eafeb9e13e62982bbb24c426",
       "reason" : "missing",
       "shotId" : "s18"

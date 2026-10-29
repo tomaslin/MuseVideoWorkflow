@@ -38,6 +38,8 @@ def build(out):
         selected = {c['shotId']: c for c in manifest.get('clips', []) if c.get('selected')}
         failures_path = project_dir / 'provider-failures.json'
         failures = json.loads(failures_path.read_text()).get('shots', {}) if failures_path.exists() else {}
+        blockers_path = project_dir / 'generation-blockers.json'
+        blockers = json.loads(blockers_path.read_text()).get('shots', {}) if blockers_path.exists() else {}
         data_dir = out / 'data' / slug
         data_dir.mkdir(parents=True, exist_ok=True)
         for shot in shots:
@@ -47,6 +49,7 @@ def build(out):
             clip = selected.get(shot['shotId'])
             shot['status'] = clip.get('status', 'generated') if clip else 'missing'
             if shot['shotId'] in failures: shot['status'] = 'provider error: ' + failures[shot['shotId']].get('error', 'unknown')
+            elif shot['shotId'] in blockers: shot['status'] = 'blocked: ' + blockers[shot['shotId']].get('type', 'production dependency')
             if clip:
                 for rel in [clip.get('file'),clip.get('publishedPreviewFile')]:
                     if not rel: continue

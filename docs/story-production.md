@@ -73,11 +73,10 @@ python3 pipeline/workspace.py complete <lease-id> --failed project-slug:s04
 
 The planner rotates between active projects, prioritizes redos within a project,
 checks prompt and media hashes, excludes local titles, and reserves claimed jobs
-with an expiring lease. Another claim cannot select a reserved shot. A completed
+with an expiring lease. Another claim on the same Mac cannot select a reserved shot. The lease file is local and does not coordinate an independently running Muse workspace. A completed
 lease requires the exact claimed prompt and a locally imported verified file,
 not merely a provider's textual success message. The planner does not invoke
-Muse itself. A single Muse scheduler can consume these batches across projects;
-do not leave old per-project workers generating the same sources. Local renders
+Muse itself. No unattended Muse scheduler is enabled: Muse and the Mac have separate filesystems, and a cross-host lease/synchronization service has not yet been established. Do not run competing workers against these local leases. Local renders
 may run for separate projects concurrently; each has its own file lock.
 
 A repeated opaque provider error is recorded for the affected project/shot:
