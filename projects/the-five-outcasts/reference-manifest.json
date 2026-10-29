@@ -61,6 +61,19 @@
       "status": "needs-correction",
       "note": "Exactly five figures, but Reed’s left side is hidden; the above-elbow absence is not visible enough to approve group continuity.",
       "sha256": "df1ee72db8dcb48623dc2b5f5b10c138c4dbb09ce3b340ff9576c05af0fa7536"
+    },
+    {
+      "file": "references/five-outcasts-group-v4-front-facing.png",
+      "characters": [
+        "Rook",
+        "Reed",
+        "Bell",
+        "Ash",
+        "Heel"
+      ],
+      "status": "needs-correction",
+      "note": "Reed’s one-armed silhouette is visible and the group has five people, but Rook has rings on both wrists instead of three on his left wrist; group continuity is not approved.",
+      "sha256": "f86ad046bccb62d8cecef86d65bb16bec7bbdfd2eb9193f4fd037ca949e8ee2e"
     }
   ]
 }
