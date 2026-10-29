@@ -1,0 +1,3 @@
+# Production design and props
+
+One location system: dry battlefield leads east into a broken salt-shrine gate. Near/far ranks have red/indigo pennants, mutual sword/spear kills and equally ruined armour. One broad salt line crosses the path. Shrine contains exactly five seated/standing places, one shared water bowl and no prison equipment. Reuse split lintel, crescent stone and red lantern to establish geography across reverses. Black thread is thick enough to read at normal playback, fastened to practical rings and soldier wrist knots. Bloody arm in s09 keeps the armour cuff seen in s08. Do not generate readable banners; insignia are simple red/indigo colour blocks. Title is created in post.

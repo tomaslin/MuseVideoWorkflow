@@ -1,0 +1,194 @@
+{
+  "panels": [
+    {
+      "shotId": "s01",
+      "size": "EWS",
+      "movement": "locked-off",
+      "action": "Two opposing dead soldiers remain locked on each other’s weapons beneath red and indigo pennants.",
+      "tension": 2,
+      "editMotivation": "Cut on the pennant scrape to a dead hand; establishes the mutual killing before any outcast appears.",
+      "panelId": "s01",
+      "soundCue": "Dry wind; envoy VO: They stole a woman from our city."
+    },
+    {
+      "shotId": "s02",
+      "size": "ECU",
+      "movement": "locked-off",
+      "action": "A dead red-armoured hand closes around a broken indigo pennant.",
+      "tension": 4,
+      "editMotivation": "Cut on the fist closure to the heroes’ boots advancing in the same direction.",
+      "panelId": "s02",
+      "soundCue": "Knuckle crack, cloth scrape; first faint bell."
+    },
+    {
+      "shotId": "s03",
+      "size": "FS",
+      "movement": "tracking",
+      "action": "Shen and Lan advance left-to-right toward the field.",
+      "tension": 4,
+      "editMotivation": "Match movement out of the fist insert; cut to Shen’s small gesture of disgust.",
+      "panelId": "s03",
+      "soundCue": "Two boot strikes; envoy VO: Bring her home."
+    },
+    {
+      "shotId": "s04",
+      "size": "CU",
+      "movement": "locked-off",
+      "action": "Shen raises his spotless right cuff over his nose.",
+      "tension": 5,
+      "editMotivation": "Eyeline cut from disgust to the five people he is judging.",
+      "panelId": "s04",
+      "soundCue": "Shen VO: This is where they live?"
+    },
+    {
+      "shotId": "s05",
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "Exactly five outcasts hold their places beneath the broken lintel.",
+      "tension": 6,
+      "editMotivation": "Rook’s hand movement motivates the ring insert, rather than a random montage.",
+      "panelId": "s05",
+      "soundCue": "Breath and flies; percussion withheld."
+    },
+    {
+      "shotId": "s06",
+      "size": "ECU",
+      "movement": "locked-off",
+      "action": "Rook rotates one iron ring and a black thread pulls taut.",
+      "tension": 7,
+      "editMotivation": "Match cut from taut thread to soldiers pivoting; cause precedes effect.",
+      "panelId": "s06",
+      "soundCue": "Iron click, taut thread creak; low drum pulse."
+    },
+    {
+      "shotId": "s07",
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "Both dead ranks pivot outward to form a guarded corridor.",
+      "tension": 8,
+      "editMotivation": "Cut on unified armour clack to the hero’s sword; the hero chooses violence first.",
+      "panelId": "s07",
+      "soundCue": "Unison armour clack; hand drum accelerates."
+    },
+    {
+      "shotId": "s08",
+      "size": "MS",
+      "movement": "locked-off",
+      "action": "Shen severs a corpse guard’s extended forearm with one horizontal cut.",
+      "tension": 9,
+      "editMotivation": "Cut on falling severed arm to thread retrieving that same arm, without repeating the impact.",
+      "panelId": "s08",
+      "soundCue": "Sharp blade crack; short wet impact; no heroic sting."
+    },
+    {
+      "shotId": "s09",
+      "size": "CU",
+      "movement": "locked-off",
+      "action": "A black thread drags the severed red-armoured forearm back behind the salt line.",
+      "tension": 8,
+      "editMotivation": "Arm stops at boundary; cut to Lan stopping at the same boundary.",
+      "panelId": "s09",
+      "soundCue": "Dry drag on stone, thread creak, music drops."
+    },
+    {
+      "shotId": "s10",
+      "size": "MCU",
+      "movement": "locked-off",
+      "action": "Lan looks from the stopped corpse guard to the refuge beyond.",
+      "tension": 6,
+      "editMotivation": "Eyeline match to the woman’s unbound hand inside the refuge.",
+      "panelId": "s10",
+      "soundCue": "Lan VO: We were sent for the woman."
+    },
+    {
+      "shotId": "s11",
+      "size": "CU",
+      "movement": "locked-off",
+      "action": "Wen freely accepts a water bowl from Reed’s only hand.",
+      "tension": 5,
+      "editMotivation": "Cut from voluntary acceptance to Wen passing Ash without being stopped.",
+      "panelId": "s11",
+      "soundCue": "Bowl ring; all percussion falls away."
+    },
+    {
+      "shotId": "s12",
+      "size": "MS",
+      "movement": "locked-off",
+      "action": "Ash lowers his flute to let Wen pass him toward the heroes.",
+      "tension": 5,
+      "editMotivation": "Flute stopping motivates silence before Wen’s statement.",
+      "panelId": "s12",
+      "soundCue": "Bone-flute note cuts off; Wen’s single step."
+    },
+    {
+      "shotId": "s13",
+      "size": "MCU",
+      "movement": "push-in",
+      "action": "Wen plants her feet beside the outcasts and meets the heroes’ eyes.",
+      "tension": 7,
+      "editMotivation": "Hold through the whole declaration, then cut to the blood-stained cuff instead of a reaction montage.",
+      "panelId": "s13",
+      "soundCue": "Wen separate VO: I came here myself."
+    },
+    {
+      "shotId": "s14",
+      "size": "ECU",
+      "movement": "locked-off",
+      "action": "A bead of stage blood rolls down Shen’s white cuff onto his sword grip.",
+      "tension": 8,
+      "editMotivation": "Blood bead falls on the syllable back; cut to his sword being deflected.",
+      "panelId": "s14",
+      "soundCue": "Shen VO: You will come back."
+    },
+    {
+      "shotId": "s15",
+      "size": "MS",
+      "movement": "locked-off",
+      "action": "Reed’s taut thread turns Shen’s thrust down into stone.",
+      "tension": 9,
+      "editMotivation": "Cut on metal-to-stone to Lan’s blade stopping, contrasting force with decision.",
+      "panelId": "s15",
+      "soundCue": "Spindle click; metallic scrape; two fast drum beats."
+    },
+    {
+      "shotId": "s16",
+      "size": "MS",
+      "movement": "locked-off",
+      "action": "Lan arrests her sword a hand’s breadth short of Wen.",
+      "tension": 10,
+      "editMotivation": "Cut on deliberate silence to guard sealing the gate; do not fake contact.",
+      "panelId": "s16",
+      "soundCue": "Cymbal choke, controlled breath, then silence."
+    },
+    {
+      "shotId": "s17",
+      "size": "FS",
+      "movement": "locked-off",
+      "action": "One dead indigo guard plants its shield across the threshold and stops.",
+      "tension": 9,
+      "editMotivation": "Shield thud cues final wide shelter tableau.",
+      "panelId": "s17",
+      "soundCue": "Single shield thud; footsteps cease."
+    },
+    {
+      "shotId": "s18",
+      "size": "EWS",
+      "movement": "pull-back",
+      "action": "Both dead ranks kneel inward to shelter Wen and the five while the two heroes remain outside.",
+      "tension": 9,
+      "editMotivation": "First cut at 3s then continue the same source at 4–7s only if clean; a final sustained tableau earns the title.",
+      "panelId": "s18",
+      "soundCue": "Rook VO: Leave us what you threw away. Lan VO: Then who needs rescuing?"
+    },
+    {
+      "shotId": "title",
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "The title holds in vermilion serif letters on black.",
+      "tension": 8,
+      "editMotivation": "Hard cut to title on the last question, then leave a single bell and silence.",
+      "panelId": "title",
+      "soundCue": "One bronze bell, decay, then two seconds silence."
+    }
+  ]
+}

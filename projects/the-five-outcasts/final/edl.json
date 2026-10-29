@@ -1,0 +1,228 @@
+{
+  "shotOrder": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s09",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18",
+    "s18",
+    "title"
+  ],
+  "entries": [
+    {
+      "shotId": "s01",
+      "sequenceId": "seq-1",
+      "sourceInSec": 1,
+      "sourceOutSec": 5,
+      "startSec": 0,
+      "endSec": 4,
+      "transitionIn": "cut",
+      "editMotivation": "Cut on the pennant scrape to a dead hand; establishes the mutual killing before any outcast appears."
+    },
+    {
+      "shotId": "s02",
+      "sequenceId": "seq-1",
+      "sourceInSec": 1,
+      "sourceOutSec": 3,
+      "startSec": 4,
+      "endSec": 6,
+      "transitionIn": "cut",
+      "editMotivation": "Cut on the fist closure to the heroes’ boots advancing in the same direction."
+    },
+    {
+      "shotId": "s03",
+      "sequenceId": "seq-1",
+      "sourceInSec": 1,
+      "sourceOutSec": 4,
+      "startSec": 6,
+      "endSec": 9,
+      "transitionIn": "cut",
+      "editMotivation": "Match movement out of the fist insert; cut to Shen’s small gesture of disgust."
+    },
+    {
+      "shotId": "s04",
+      "sequenceId": "seq-1",
+      "sourceInSec": 1,
+      "sourceOutSec": 3,
+      "startSec": 9,
+      "endSec": 11,
+      "transitionIn": "cut",
+      "editMotivation": "Eyeline cut from disgust to the five people he is judging."
+    },
+    {
+      "shotId": "s05",
+      "sequenceId": "seq-1",
+      "sourceInSec": 1,
+      "sourceOutSec": 5,
+      "startSec": 11,
+      "endSec": 15,
+      "transitionIn": "cut",
+      "editMotivation": "Rook’s hand movement motivates the ring insert, rather than a random montage."
+    },
+    {
+      "shotId": "s06",
+      "sequenceId": "seq-2",
+      "sourceInSec": 1,
+      "sourceOutSec": 4,
+      "startSec": 15,
+      "endSec": 18,
+      "transitionIn": "cut",
+      "editMotivation": "Match cut from taut thread to soldiers pivoting; cause precedes effect."
+    },
+    {
+      "shotId": "s07",
+      "sequenceId": "seq-2",
+      "sourceInSec": 1,
+      "sourceOutSec": 4,
+      "startSec": 18,
+      "endSec": 21,
+      "transitionIn": "cut",
+      "editMotivation": "Cut on unified armour clack to the hero’s sword; the hero chooses violence first."
+    },
+    {
+      "shotId": "s08",
+      "sequenceId": "seq-2",
+      "sourceInSec": 1.0,
+      "sourceOutSec": 3.0,
+      "startSec": 21,
+      "endSec": 23,
+      "transitionIn": "cut",
+      "editMotivation": "Cut on falling severed arm to thread retrieving that same arm, without repeating the impact."
+    },
+    {
+      "shotId": "s09",
+      "sequenceId": "seq-2",
+      "sourceInSec": 1,
+      "sourceOutSec": 4,
+      "startSec": 23,
+      "endSec": 26,
+      "transitionIn": "cut",
+      "editMotivation": "Arm stops at boundary; cut to Lan stopping at the same boundary."
+    },
+    {
+      "shotId": "s10",
+      "sequenceId": "seq-2",
+      "sourceInSec": 1,
+      "sourceOutSec": 4,
+      "startSec": 26,
+      "endSec": 29,
+      "transitionIn": "cut",
+      "editMotivation": "Eyeline match to the woman’s unbound hand inside the refuge."
+    },
+    {
+      "shotId": "s11",
+      "sequenceId": "seq-3",
+      "sourceInSec": 1,
+      "sourceOutSec": 4,
+      "startSec": 29,
+      "endSec": 32,
+      "transitionIn": "cut",
+      "editMotivation": "Cut from voluntary acceptance to Wen passing Ash without being stopped."
+    },
+    {
+      "shotId": "s12",
+      "sequenceId": "seq-3",
+      "sourceInSec": 1,
+      "sourceOutSec": 3,
+      "startSec": 32,
+      "endSec": 34,
+      "transitionIn": "cut",
+      "editMotivation": "Flute stopping motivates silence before Wen’s statement."
+    },
+    {
+      "shotId": "s13",
+      "sequenceId": "seq-3",
+      "sourceInSec": 1,
+      "sourceOutSec": 5,
+      "startSec": 34,
+      "endSec": 38,
+      "transitionIn": "cut",
+      "editMotivation": "Hold through the whole declaration, then cut to the blood-stained cuff instead of a reaction montage."
+    },
+    {
+      "shotId": "s14",
+      "sequenceId": "seq-3",
+      "sourceInSec": 1,
+      "sourceOutSec": 3,
+      "startSec": 38,
+      "endSec": 40,
+      "transitionIn": "cut",
+      "editMotivation": "Blood bead falls on the syllable back; cut to his sword being deflected."
+    },
+    {
+      "shotId": "s15",
+      "sequenceId": "seq-4",
+      "sourceInSec": 1,
+      "sourceOutSec": 4,
+      "startSec": 40,
+      "endSec": 43,
+      "transitionIn": "cut",
+      "editMotivation": "Cut on metal-to-stone to Lan’s blade stopping, contrasting force with decision."
+    },
+    {
+      "shotId": "s16",
+      "sequenceId": "seq-4",
+      "sourceInSec": 1,
+      "sourceOutSec": 4,
+      "startSec": 43,
+      "endSec": 46,
+      "transitionIn": "cut",
+      "editMotivation": "Cut on deliberate silence to guard sealing the gate; do not fake contact."
+    },
+    {
+      "shotId": "s17",
+      "sequenceId": "seq-4",
+      "sourceInSec": 1,
+      "sourceOutSec": 4,
+      "startSec": 46,
+      "endSec": 49,
+      "transitionIn": "cut",
+      "editMotivation": "Shield thud cues final wide shelter tableau."
+    },
+    {
+      "shotId": "s18",
+      "sequenceId": "seq-4",
+      "sourceInSec": 1,
+      "sourceOutSec": 4,
+      "startSec": 49,
+      "endSec": 52,
+      "transitionIn": "cut",
+      "editMotivation": "First cut at 3s then continue the same source at 4–7s only if clean; a final sustained tableau earns the title."
+    },
+    {
+      "shotId": "s18",
+      "sequenceId": "seq-4",
+      "sourceInSec": 4,
+      "sourceOutSec": 7,
+      "startSec": 52,
+      "endSec": 55,
+      "transitionIn": "cut",
+      "editMotivation": "First cut at 3s then continue the same source at 4–7s only if clean; a final sustained tableau earns the title."
+    },
+    {
+      "shotId": "title",
+      "sequenceId": "seq-4",
+      "sourceInSec": 0,
+      "sourceOutSec": 5,
+      "startSec": 55,
+      "endSec": 60,
+      "transitionIn": "cut",
+      "editMotivation": "Hard cut to title on the last question, then leave a single bell and silence."
+    }
+  ],
+  "totalSec": 60,
+  "status": "planned-not-rendered"
+}

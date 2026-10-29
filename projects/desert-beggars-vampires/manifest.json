@@ -1,0 +1,92 @@
+{
+  "clips" : [
+    {
+      "durationSec" : 10,
+      "file" : "clips/raw/s01-c2d054f916ad4d586184823dddaa0fa259af71bfb3f9896bce9dde73e81f7998.mp4",
+      "height" : 720,
+      "importedAt" : "2026-10-29T18:35:03Z",
+      "promptProvenance" : "operator-mapped-to-current-packet",
+      "promptSha256" : "c06703c56b91449c40d7aebda73148fbb189bdeb73343f4964377898cda2cf13",
+      "selected" : true,
+      "sha256" : "c2d054f916ad4d586184823dddaa0fa259af71bfb3f9896bce9dde73e81f7998",
+      "shotId" : "s01",
+      "sourceName" : "s01.mp4",
+      "status" : "generated",
+      "width" : 1280
+    },
+    {
+      "durationSec" : 10,
+      "file" : "clips/raw/s02-edfbb8799a2190a7931ae1174fc02eb110d7dad4460b05c4d9e64c7ca1f42452.mp4",
+      "height" : 720,
+      "importedAt" : "2026-10-29T18:35:03Z",
+      "promptProvenance" : "operator-mapped-to-current-packet",
+      "promptSha256" : "e8703af2a3accf40b7702ef0444c0e7508bd3db83dad61234f3862eba02798e7",
+      "selected" : true,
+      "sha256" : "edfbb8799a2190a7931ae1174fc02eb110d7dad4460b05c4d9e64c7ca1f42452",
+      "shotId" : "s02",
+      "sourceName" : "s02.mp4",
+      "status" : "generated",
+      "width" : 1280
+    },
+    {
+      "durationSec" : 10,
+      "file" : "clips/raw/s03-15a0d5577b521a0ccc1ae04c7db0111d4f23287b6c800a4f9feccb764c856d83.mp4",
+      "height" : 720,
+      "importedAt" : "2026-10-29T18:35:03Z",
+      "promptProvenance" : "operator-mapped-to-current-packet",
+      "promptSha256" : "77cad2aac950f4e3a16451b95b755ef59ee58cf806ba3f9ccfda65ebbdaa708f",
+      "selected" : true,
+      "sha256" : "15a0d5577b521a0ccc1ae04c7db0111d4f23287b6c800a4f9feccb764c856d83",
+      "shotId" : "s03",
+      "sourceName" : "s03.mp4",
+      "status" : "generated",
+      "width" : 1280
+    },
+    {
+      "durationSec" : 10,
+      "file" : "clips/raw/s04-e3e90ae28f16ea5e4ba2830b059936aef3c42fafa62e3fbdc41c91034563aaa1.mp4",
+      "height" : 720,
+      "importedAt" : "2026-10-29T18:35:03Z",
+      "promptProvenance" : "operator-mapped-to-current-packet",
+      "promptSha256" : "09d6be64c830abf90d4ac31075f8037c86032e8146c747a69243fdf333223ec7",
+      "selected" : true,
+      "sha256" : "e3e90ae28f16ea5e4ba2830b059936aef3c42fafa62e3fbdc41c91034563aaa1",
+      "shotId" : "s04",
+      "sourceName" : "s04.mp4",
+      "status" : "generated",
+      "width" : 1280
+    },
+    {
+      "durationSec" : 10,
+      "file" : "clips/raw/s05-1b5551bd4a3b08cc42cc8d01c9024febdc993d029320b3736f5ff0c8cdf02175.mp4",
+      "height" : 720,
+      "importedAt" : "2026-10-29T18:35:03Z",
+      "promptProvenance" : "operator-mapped-to-current-packet",
+      "promptSha256" : "bb011cc2855ff84aa333e001f9aa6cb1db1ed52ccf02520b4d5faa4258c0f975",
+      "selected" : true,
+      "sha256" : "1b5551bd4a3b08cc42cc8d01c9024febdc993d029320b3736f5ff0c8cdf02175",
+      "shotId" : "s05",
+      "sourceName" : "s05.mp4",
+      "status" : "generated",
+      "width" : 1280
+    },
+    {
+      "durationSec" : 10,
+      "file" : "clips/raw/s06-5d4371a0f5001e7f0a915f7acc13745fa5b4d62fe6755e13e3fc187f096a78f9.mp4",
+      "height" : 720,
+      "importedAt" : "2026-10-29T18:35:04Z",
+      "promptProvenance" : "operator-mapped-to-current-packet",
+      "promptSha256" : "8453b5bc08c48a5ea82c194f5fe5d5065ae1a8053e5a2f4a77d160f61277f244",
+      "selected" : true,
+      "sha256" : "5d4371a0f5001e7f0a915f7acc13745fa5b4d62fe6755e13e3fc187f096a78f9",
+      "shotId" : "s06",
+      "sourceName" : "s06.mp4",
+      "status" : "generated",
+      "width" : 1280
+    }
+  ],
+  "redoRequests" : [
+
+  ],
+  "version" : 1
+}

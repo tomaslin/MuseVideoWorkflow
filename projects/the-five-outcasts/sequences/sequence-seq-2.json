@@ -1,0 +1,201 @@
+{
+  "sequenceId": "seq-2",
+  "title": "The dead are a wall",
+  "intent": "Reveal control, a hard boundary and the cost of heroic intrusion.",
+  "shots": [
+    {
+      "shotId": "s06",
+      "durationSec": 3,
+      "sourceDurationSec": 10,
+      "kind": "generated",
+      "size": "ECU",
+      "movement": "locked-off",
+      "lensMm": 85,
+      "characters": [
+        "Rook"
+      ],
+      "location": "shrine threshold",
+      "action": "Rook rotates one iron ring and a black thread pulls taut.",
+      "emotionalBeat": "A small exertion commands an appalling force.",
+      "soundMood": "Iron click, taut thread creak; low drum pulse.",
+      "background": "One right hand, left-wrist cord and iron ring foreground; taut thread runs out toward screen left, stone wall soft behind.",
+      "choreography": "0–1s thumb touches ring; 1–4s one quarter-turn tensions one visible thread; 4–10s hold tension and planted hand.",
+      "cameraChoreography": "Tight prop insert; do not add other hands, magic beams or illegible symbols.",
+      "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+      "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+      "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+      "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+      "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+      "departments": {
+        "direction": "A small exertion commands an appalling force.",
+        "editorial": "Match cut from taut thread to soldiers pivoting; cause precedes effect.",
+        "sound": "Iron click, taut thread creak; low drum pulse."
+      },
+      "generationBrief": "ECU, 85mm, locked-off; shrine threshold. Rook rotates one iron ring and a black thread pulls taut. Screen direction: city/hero side left, refuge side right. 0–1s thumb touches ring; 1–4s one quarter-turn tensions one visible thread; 4–10s hold tension and planted hand. Tight prop insert; do not add other hands, magic beams or illegible symbols. Clean silhouettes; one continuous shot and one readable action.",
+      "editMotivation": "Match cut from taut thread to soldiers pivoting; cause precedes effect.",
+      "tension": 7,
+      "sequenceId": "seq-2",
+      "order": 6,
+      "lockedLookBlock": "1970s Hong Kong studio wuxia horror on 35mm Eastmancolor: theatrical rock-and-temple sets, painted indigo night skies, hard vermilion lantern keys and cyan rim light, dense black shadows, visible film grain, slightly imperfect optical texture, practical wax prosthetics and thick crimson stage blood. Classical frontal blocking, legible full-body martial action, deliberate close-ups and restrained motivated camera moves. Unsettling, operatic and cruel, never a glossy fantasy game. Real cloth, solid props, coherent anatomy. One continuous take per source, no generated writing, no morphing bodies, no comic beggar army.",
+      "lockedCharacterBlocks": {
+        "Rook": "Rook, an adult male outcast aged fifty with a pronounced twisted upper back, one high shoulder, a lined watchful face, worn charcoal hemp layers and three heavy iron rings on a cord at his left wrist; he is physically powerful, moves with practiced balance and uses his right hand to turn one ring."
+      }
+    },
+    {
+      "shotId": "s07",
+      "durationSec": 3,
+      "sourceDurationSec": 10,
+      "kind": "generated",
+      "size": "WS",
+      "movement": "locked-off",
+      "lensMm": 35,
+      "characters": [
+        "Red Squadron",
+        "Indigo Squadron"
+      ],
+      "location": "salt boundary outside shrine",
+      "action": "Both dead ranks pivot outward to form a guarded corridor.",
+      "emotionalBeat": "The dead protect a boundary instead of advancing on the city.",
+      "soundMood": "Unison armour clack; hand drum accelerates.",
+      "background": "Three clearly readable red soldiers near rank, three indigo far rank; further pennants imply the two larger squadrons without crowd clutter.",
+      "choreography": "0–1s two ranks already upright; 1–4s near red and far indigo ranks pivot together toward screen left; 4–10s stop at the salt line.",
+      "cameraChoreography": "Hold south-of-axis wide; preserve armour colours, wounded bodies and stopping line.",
+      "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+      "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+      "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+      "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+      "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+      "departments": {
+        "direction": "The dead protect a boundary instead of advancing on the city.",
+        "editorial": "Cut on unified armour clack to the hero’s sword; the hero chooses violence first.",
+        "sound": "Unison armour clack; hand drum accelerates."
+      },
+      "generationBrief": "WS, 35mm, locked-off; salt boundary outside shrine. Both dead ranks pivot outward to form a guarded corridor. Screen direction: city/hero side left, refuge side right. 0–1s two ranks already upright; 1–4s near red and far indigo ranks pivot together toward screen left; 4–10s stop at the salt line. Hold south-of-axis wide; preserve armour colours, wounded bodies and stopping line. Clean silhouettes; one continuous shot and one readable action.",
+      "editMotivation": "Cut on unified armour clack to the hero’s sword; the hero chooses violence first.",
+      "tension": 8,
+      "sequenceId": "seq-2",
+      "order": 7,
+      "lockedLookBlock": "1970s Hong Kong studio wuxia horror on 35mm Eastmancolor: theatrical rock-and-temple sets, painted indigo night skies, hard vermilion lantern keys and cyan rim light, dense black shadows, visible film grain, slightly imperfect optical texture, practical wax prosthetics and thick crimson stage blood. Classical frontal blocking, legible full-body martial action, deliberate close-ups and restrained motivated camera moves. Unsettling, operatic and cruel, never a glossy fantasy game. Real cloth, solid props, coherent anatomy. One continuous take per source, no generated writing, no morphing bodies, no comic beggar army.",
+      "lockedCharacterBlocks": {
+        "Red Squadron": "The dead Red Squadron: adult soldiers in ruined dark-red lamellar armour, black helmets with short red tassels, blood-blackened cloth and pale corpse faces. They were killed by the Indigo Squadron before this story. Old spear wounds remain visible; black control thread knots at their wrists. Never living bandits, never Qing hopping vampires.",
+        "Indigo Squadron": "The dead Indigo Squadron: adult soldiers in broken indigo lamellar armour, black helmets with short blue tassels, blood-blackened cloth and pale corpse faces. They were killed by the Red Squadron before this story. Old sword wounds remain visible; black control thread knots at their wrists. Armour colours never swap."
+      }
+    },
+    {
+      "shotId": "s08",
+      "durationSec": 2,
+      "sourceDurationSec": 10,
+      "kind": "generated",
+      "size": "MS",
+      "movement": "locked-off",
+      "lensMm": 50,
+      "characters": [
+        "Shen",
+        "Red Squadron"
+      ],
+      "location": "west gate at salt line",
+      "action": "Shen severs a corpse guard’s extended forearm with one horizontal cut.",
+      "emotionalBeat": "Heroic rescue imagery becomes brutal intrusion.",
+      "soundMood": "Sharp blade crack; short wet impact; no heroic sting.",
+      "background": "Shen left, one red guard right; both hands, sword, forearm and salt line visible; gate behind guard.",
+      "choreography": "0–1s corpse arm extends from right; 1–3s Shen cuts once left-to-right; 3–5s rubber forearm drops in a brief crimson spray; 5–10s hold blade low, right cuff now red.",
+      "cameraChoreography": "Side-on waist-up master; keep anticipation, contact and recoil in one continuous view.",
+      "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+      "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+      "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+      "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+      "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+      "departments": {
+        "direction": "Heroic rescue imagery becomes brutal intrusion.",
+        "editorial": "Cut on falling severed arm to thread retrieving that same arm, without repeating the impact.",
+        "sound": "Sharp blade crack; short wet impact; no heroic sting."
+      },
+      "generationBrief": "MS, 50mm, locked-off; west gate at salt line. Shen severs a corpse guard’s extended forearm with one horizontal cut. Screen direction: city/hero side left, refuge side right. 0–1s corpse arm extends from right; 1–3s Shen cuts once left-to-right; 3–5s rubber forearm drops in a brief crimson spray; 5–10s hold blade low, right cuff now red. Side-on waist-up master; keep anticipation, contact and recoil in one continuous view. Clean silhouettes; one continuous shot and one readable action.",
+      "editMotivation": "Cut on falling severed arm to thread retrieving that same arm, without repeating the impact.",
+      "tension": 9,
+      "sequenceId": "seq-2",
+      "order": 8,
+      "lockedLookBlock": "1970s Hong Kong studio wuxia horror on 35mm Eastmancolor: theatrical rock-and-temple sets, painted indigo night skies, hard vermilion lantern keys and cyan rim light, dense black shadows, visible film grain, slightly imperfect optical texture, practical wax prosthetics and thick crimson stage blood. Classical frontal blocking, legible full-body martial action, deliberate close-ups and restrained motivated camera moves. Unsettling, operatic and cruel, never a glossy fantasy game. Real cloth, solid props, coherent anatomy. One continuous take per source, no generated writing, no morphing bodies, no comic beggar army.",
+      "lockedCharacterBlocks": {
+        "Shen": "Shen, an adult male celebrated Heavenly Hero aged thirty, long straight black hair under a narrow silver crown, immaculate white silk swordsman robes with a silver cloud clasp, a straight silver jian in his right hand, clean-shaven angular face, imperious upright posture; his white right cuff stays blood-stained after the first sword strike.",
+        "Red Squadron": "The dead Red Squadron: adult soldiers in ruined dark-red lamellar armour, black helmets with short red tassels, blood-blackened cloth and pale corpse faces. They were killed by the Indigo Squadron before this story. Old spear wounds remain visible; black control thread knots at their wrists. Never living bandits, never Qing hopping vampires."
+      }
+    },
+    {
+      "shotId": "s09",
+      "durationSec": 3,
+      "sourceDurationSec": 10,
+      "kind": "generated",
+      "size": "CU",
+      "movement": "locked-off",
+      "lensMm": 85,
+      "characters": [
+        "Red Squadron"
+      ],
+      "location": "salt boundary ground",
+      "action": "A black thread drags the severed red-armoured forearm back behind the salt line.",
+      "emotionalBeat": "Their defensive limit is more precise than the heroes’ restraint.",
+      "soundMood": "Dry drag on stone, thread creak, music drops.",
+      "background": "Same damaged red armour cuff and prosthetic arm as s08; white salt line crosses frame; loose thread is the only other moving object.",
+      "choreography": "0–1s severed prop arm rests left of salt; 1–4s thread draws it right across the line; 4–10s it stops behind salt, still detached.",
+      "cameraChoreography": "Ground-level insert; no flesh regrowth and no living face in gore frame.",
+      "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+      "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+      "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+      "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+      "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+      "departments": {
+        "direction": "Their defensive limit is more precise than the heroes’ restraint.",
+        "editorial": "Arm stops at boundary; cut to Lan stopping at the same boundary.",
+        "sound": "Dry drag on stone, thread creak, music drops."
+      },
+      "generationBrief": "CU, 85mm, locked-off; salt boundary ground. A black thread drags the severed red-armoured forearm back behind the salt line. Screen direction: city/hero side left, refuge side right. 0–1s severed prop arm rests left of salt; 1–4s thread draws it right across the line; 4–10s it stops behind salt, still detached. Ground-level insert; no flesh regrowth and no living face in gore frame. Clean silhouettes; one continuous shot and one readable action.",
+      "editMotivation": "Arm stops at boundary; cut to Lan stopping at the same boundary.",
+      "tension": 8,
+      "sequenceId": "seq-2",
+      "order": 9,
+      "lockedLookBlock": "1970s Hong Kong studio wuxia horror on 35mm Eastmancolor: theatrical rock-and-temple sets, painted indigo night skies, hard vermilion lantern keys and cyan rim light, dense black shadows, visible film grain, slightly imperfect optical texture, practical wax prosthetics and thick crimson stage blood. Classical frontal blocking, legible full-body martial action, deliberate close-ups and restrained motivated camera moves. Unsettling, operatic and cruel, never a glossy fantasy game. Real cloth, solid props, coherent anatomy. One continuous take per source, no generated writing, no morphing bodies, no comic beggar army.",
+      "lockedCharacterBlocks": {
+        "Red Squadron": "The dead Red Squadron: adult soldiers in ruined dark-red lamellar armour, black helmets with short red tassels, blood-blackened cloth and pale corpse faces. They were killed by the Indigo Squadron before this story. Old spear wounds remain visible; black control thread knots at their wrists. Never living bandits, never Qing hopping vampires."
+      }
+    },
+    {
+      "shotId": "s10",
+      "durationSec": 3,
+      "sourceDurationSec": 10,
+      "kind": "generated",
+      "size": "MCU",
+      "movement": "locked-off",
+      "lensMm": 75,
+      "characters": [
+        "Lan"
+      ],
+      "location": "west gate at salt line",
+      "action": "Lan looks from the stopped corpse guard to the refuge beyond.",
+      "emotionalBeat": "Certainty begins to become a question.",
+      "soundMood": "Lan VO: We were sent for the woman.",
+      "background": "Lan foreground with the salt line at lower edge, red guard shoulder soft left, shrine warm at right.",
+      "choreography": "0–1s eyes left on guard; 1–4s eyeline lifts toward frame right into refuge; 4–10s hold a questioning stillness, no sword draw.",
+      "cameraChoreography": "Eye-level near-profile, fixed lens and no crossing the established axis.",
+      "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+      "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+      "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+      "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+      "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+      "departments": {
+        "direction": "Certainty begins to become a question.",
+        "editorial": "Eyeline match to the woman’s unbound hand inside the refuge.",
+        "sound": "Lan VO: We were sent for the woman."
+      },
+      "generationBrief": "MCU, 75mm, locked-off; west gate at salt line. Lan looks from the stopped corpse guard to the refuge beyond. Screen direction: city/hero side left, refuge side right. 0–1s eyes left on guard; 1–4s eyeline lifts toward frame right into refuge; 4–10s hold a questioning stillness, no sword draw. Eye-level near-profile, fixed lens and no crossing the established axis. Clean silhouettes; one continuous shot and one readable action.",
+      "editMotivation": "Eyeline match to the woman’s unbound hand inside the refuge.",
+      "tension": 6,
+      "sequenceId": "seq-2",
+      "order": 10,
+      "lockedLookBlock": "1970s Hong Kong studio wuxia horror on 35mm Eastmancolor: theatrical rock-and-temple sets, painted indigo night skies, hard vermilion lantern keys and cyan rim light, dense black shadows, visible film grain, slightly imperfect optical texture, practical wax prosthetics and thick crimson stage blood. Classical frontal blocking, legible full-body martial action, deliberate close-ups and restrained motivated camera moves. Unsettling, operatic and cruel, never a glossy fantasy game. Real cloth, solid props, coherent anatomy. One continuous take per source, no generated writing, no morphing bodies, no comic beggar army.",
+      "lockedCharacterBlocks": {
+        "Lan": "Lan, an adult female celebrated Heavenly Hero aged thirty, long black hair in a high crown bun with one silver pin, ivory silk fighting robes and a narrow dark blue sash, a sheathed straight sword at her left hip, composed oval face and an exacting level gaze; her movements are economical and grounded."
+      }
+    }
+  ]
+}

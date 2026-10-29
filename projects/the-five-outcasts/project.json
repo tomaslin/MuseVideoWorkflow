@@ -1,0 +1,16 @@
+{
+  "slug": "the-five-outcasts",
+  "title": "The Five Outcasts",
+  "format": "trailer",
+  "durationSec": 60,
+  "mood": "Grotesque studio wuxia horror; class disgust, defensive necromancy, moral reversal",
+  "language": "en",
+  "lookVersion": "v2",
+  "logline": "Two Heavenly Heroes sent to rescue a woman from five shunned necromancers discover that she chose the refuge their dead soldiers defend.",
+  "sourceShotCount": 19,
+  "generationClipSec": 10,
+  "timingMode": "edited",
+  "state": "shot-list",
+  "productionSha256": "2999d1be4ef834c06995be312b7de83fb6ea0760373f595261d3cf9a2f3cdaaf",
+  "active": true
+}

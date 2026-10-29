@@ -1,0 +1,37 @@
+{
+  "project": "the-five-outcasts",
+  "shots": 19,
+  "scores": {
+    "coverage": 10,
+    "locked_blocks": 10,
+    "variety": 10,
+    "action": 10,
+    "sound": 10,
+    "tension": 10,
+    "continuity": 10,
+    "background": 10,
+    "choreography": 10,
+    "camera": 10,
+    "lighting": 10,
+    "lore": 10,
+    "departments": 10
+  },
+  "overall": 10.0,
+  "tension_note": "Tension range 2-10, climax at position 16/19",
+  "findings": [
+    {
+      "severity": "minor",
+      "dimension": "choreography-payoff",
+      "detail": "Choreography with no clear payoff/landing beat in: s05, s07, s09, s15, s17 \u2014 a clip ending mid-action cannot cut cleanly"
+    }
+  ],
+  "blockers": [],
+  "plan_ready": true,
+  "media_verified": false,
+  "shipping_ready": false,
+  "shipping_findings": [
+    "Saved video verification failed: [Errno 2] No such file or directory: 'projects/the-five-outcasts/final/final-manifest.json'",
+    "Project has open critiques"
+  ],
+  "limit_note": "Muse cannot watch generated video back. This report scores the plan, prompts, and metadata. Visual quality still requires a human watch per batch, recorded in critiques/."
+}

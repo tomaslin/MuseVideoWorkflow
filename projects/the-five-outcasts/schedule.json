@@ -1,0 +1,8 @@
+{
+  "timezone": "America/Los_Angeles",
+  "desiredIntervalMinutes": 2,
+  "status": "requires-Muse-task-confirmation",
+  "policy": "One worker, project lease, current hashes, at most six missing/stale/redo shots, retry failures only, idle on completion",
+  "batchesFile": "batches.json",
+  "generationQueue": "generation-queue.json"
+}

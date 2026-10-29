@@ -10,7 +10,7 @@ function defaultEdit(p) { return {width:1280,height:720,fps:24,shots:p.shots.map
 function stats() {
   $('stats').replaceChildren();
   const footage = project.shots.filter(s => s.videoUrl || localMedia.has(s.shotId)).length;
-  for (const [value, label] of [[`${edit.shots.reduce((t,s)=>t+Number(s.durationSec),0).toFixed(1)}s`,'edited runtime'],[`${project.shots.length}`,'shots'],[`${footage}/${project.shots.length}`,'footage available'],[`${project.shots.filter(s=>s.status==='redo').length}`,'redos requested']]) {
+  for (const [value, label] of [[`${edit.shots.reduce((t,s)=>t+Number(s.durationSec),0).toFixed(1)}s`,'edited runtime'],[`${edit.shots.length}`,'cuts'],[`${footage}/${project.shots.length}`,'footage available'],[`${project.shots.filter(s=>s.status==='redo').length}`,'redos requested']]) {
     const block = el('div', undefined, 'stat'); block.append(el('strong',value),el('span',label)); $('stats').append(block);
   }
 }
@@ -39,11 +39,12 @@ function renderCurve() {
 }
 function render() {
   stats(); renderCurve(); $('shots').replaceChildren();
-  for (const shot of project.shots) {
-    let cut = edit.shots.find(s=>s.shotId===shot.shotId);
-    if (!cut) { cut={shotId:shot.shotId,inSec:0,durationSec:3}; edit.shots.push(cut); }
+  for (const [cutIndex,cut] of edit.shots.entries()) {
+    const shot=project.shots.find(s=>s.shotId===cut.shotId);
+    if(!shot)continue;
     const card=el('article',undefined,'shot'), media=el('div',undefined,'media'), content=el('div',undefined,'shot-content');
     const source=localMedia.get(shot.shotId) || shot.videoUrl;
+    const shotLabel=edit.shots.filter(c=>c.shotId===shot.shotId).length>1?`${shot.shotId} cut ${cutIndex+1}`:shot.shotId;
     let video;
     if(source) {
       video=el('video'); video.controls=true; video.playsInline=true; video.preload='metadata'; video.src=source;
@@ -52,12 +53,12 @@ function render() {
     } else {
       media.append(el('span','FOOTAGE NOT SAVED','plan-label'),el('div',`${shot.size} · ${shot.location}`,'plan-frame'));
     }
-    const top=el('div',undefined,'shot-top'); top.append(el('span',shot.shotId,'shot-id'),el('span',`${shot.size} / ${shot.movement} · ${shot.status}`));
+    const top=el('div',undefined,'shot-top'); top.append(el('span',shotLabel,'shot-id'),el('span',`${shot.size} / ${shot.movement} · ${shot.status}`));
     content.append(top,el('h3',shot.action),el('p',shot.emotionalBeat));
     const trims=el('div',undefined,'trims');
     for(const [key,title] of [['inSec','Start (seconds)'],['durationSec','Use (seconds)']]) {
-      const label=el('label',title),input=el('input'); input.type='number'; input.min=key==='inSec'?'0':'0.25'; input.step=String(1/(edit.fps||24)); input.value=cut[key]; input.setAttribute('aria-label',`${shot.shotId} ${title}`);
-      input.onchange=()=>{
+      const label=el('label',title),input=el('input'); input.type='number'; input.min=key==='inSec'?'0':'0.25'; input.step=String(1/(edit.fps||24)); input.value=cut[key]; input.setAttribute('aria-label',`${shotLabel} ${title}`);
+      input.onchange=input.oninput=()=>{
         const value=Number(input.value), previous=cut[key]; cut[key]=value;
         const duration = video && Number.isFinite(video.duration) ? video.duration : (shot.sourceDurationSec || shot.durationSec || 10);
         if(!Number.isFinite(value) || cut.inSec<0 || cut.durationSec<=0 || Number(cut.inSec)+Number(cut.durationSec)>duration+.02) {cut[key]=previous; input.value=previous;notice(`${shot.shotId}: trim must fit within the ${duration.toFixed(2)} second source.`);return;}
@@ -74,7 +75,7 @@ function render() {
     const redoSection=el('div');redoSection.hidden=true;const reason=el('textarea');reason.className='redo-box';reason.placeholder='What went wrong? e.g. knees bend at 3 seconds; keep the wide framing.';reason.setAttribute('aria-label',`${shot.shotId} redo reason`);
     const request=el('button','Copy Muse redo prompt'),exportRequest=el('button','Download redo request');
     const requestData=()=>({project:project.slug,shotId:shot.shotId,reason:reason.value.trim(),requestedAt:new Date().toISOString()});
-    const prompt=()=>`Redo only ${shot.shotId} for projects/${project.slug}. Problem: ${reason.value.trim()}\nUse the latest prompts/${shot.shotId}.txt, locked characters and references. Keep one readable action: ${shot.action}. Deliver the payoff before 4 seconds, hold a clean end pose. Preserve period wuxia staging and rigid straight-kneed jiangshi when present. Keep good takes for all other shots. Save a new version, provide a downloadable MP4 named ${shot.shotId}.mp4 and record the exact prompt SHA256. Mark generated/unreviewed; do not claim it is approved.`;
+    const prompt=()=>`Redo only ${shot.shotId} for projects/${project.slug}. Problem: ${reason.value.trim()}\nUse the latest prompts/${shot.shotId}.txt, locked characters and references. Keep one readable action: ${shot.action}. Deliver the payoff before 4 seconds, hold a clean end pose. Preserve the current story contract, screen direction, character agency and movement rules in the project lore bible. Keep good takes for all other shots. Save a new version, provide a downloadable MP4 named ${shot.shotId}.mp4 and record the exact prompt SHA256. Mark generated/unreviewed; do not claim it is approved.`;
     request.onclick=async()=>{if(!reason.value.trim()){notice('Describe the specific defect first.');reason.focus();return;}try{await navigator.clipboard.writeText(prompt());shot.status='redo';redo.textContent='Redo requested';stats();notice('Redo prompt copied. Paste it into Muse to generate the replacement.');}catch{notice('Clipboard unavailable. The redo prompt is shown below.');const text=el('pre',prompt());redoSection.append(text);}};
     exportRequest.onclick=()=>{if(!reason.value.trim()){notice('Describe the specific defect first.');return;}download(`redo-${shot.shotId}.json`,requestData());};
     redoSection.append(reason,request,exportRequest);content.append(redoSection);redo.onclick=()=>{redoSection.hidden=!redoSection.hidden;if(!redoSection.hidden)reason.focus();};
@@ -87,8 +88,15 @@ $('project-select').onchange=e=>setProject(e.target.value);
 $('artifact-select').onchange=renderArtifact;
 $('export-edit').onclick=()=>{save();download('edit.json',edit);notice(`Move edit.json into projects/${project.slug}/ before assembling.`);};
 $('reset-edit').onclick=()=>{edit=defaultEdit(project);save();render();notice('Short-cut draft: 3 seconds per shot, 4 seconds on the ending. Review the footage and move trims to the strongest action.');};
-fetch('catalog.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`Catalog returned HTTP ${r.status}`);return r.json();}).then(data=>{
+$('copy-production').onclick=async()=>{
+  const brief=$('story-brief').value.trim();
+  if(!brief){notice('Enter a story brief first.');return;}
+  const request=`Develop a complete video production for tomaslin/MuseVideoWorkflow from this brief:\n\n${brief}\n\nRead schemas/production.schema.json and docs/story-production.md from the current main branch. Write a new projects/<unique-slug>/production.json with an actual treatment, timed screenplay, fixed character descriptions, world and look bibles, substantive department packets, and shootable shots. Preserve all story constraints explicitly. Use film grammar: establishing geography, eyelines, screen direction, motivated inserts/reactions, one playable action per source and a reason for each cut. Use short edited shots, independent of ten-second generation handles. The edit must total the requested runtime exactly, including locally typeset title cards. Provide concise generationBrief plus full production fields per shot. No generic placeholders or fake generated files. Materialize with pipeline/develop.py, validate, create stable references, and generate only the next missing/redo batch (max six). Export actual MP4 files and exact prompt hashes; assemble/verify locally with Swift. Keep unreviewed footage labeled unreviewed. Preserve prior projects and takes.`;
+  try{await navigator.clipboard.writeText(request);notice('Production request copied. Paste it into Muse; the generated production.json can then be materialized locally.');}
+  catch{$('story-brief').value=request;notice('Clipboard unavailable. The complete request is in the text box for copying.');}
+};
+fetch('catalog.json' ,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`Catalog returned HTTP ${r.status}`);return r.json();}).then(data=>{
   projects=data.projects;
   $('project-select').replaceChildren(...projects.map(p=>{const o=el('option',p.title);o.value=p.slug;return o;}));
-  setProject(new URLSearchParams(location.search).get('project') || 'desert-beggars-vampires');
+  setProject(new URLSearchParams(location.search).get('project') || projects.find(p=>p.active)?.slug || 'desert-beggars-vampires');
 }).catch(e=>notice(`Could not load project data: ${e.message}. Build with python3 scripts/build-studio.py and serve _site/ over HTTP.`));

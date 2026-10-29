@@ -17,7 +17,7 @@ from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parent
 STATE = ROOT / '.watch-state.json'
-SOURCE_NAMES = {'project.json', 'brief.md', 'treatment.md', 'script.md', 'look-bible.md', 'characters.md', 'lore-bible.md', 'storyboard.json', 'edit.json'}
+SOURCE_NAMES = {'production.json', 'project.json', 'brief.md', 'treatment.md', 'script.md', 'look-bible.md', 'characters.md', 'lore-bible.md', 'storyboard.json', 'edit.json'}
 
 def tracked():
     paths = list((ROOT / 'pipeline').glob('*.py')) + list((ROOT / 'schemas').glob('*.json'))
@@ -48,9 +48,13 @@ def tick(init=False):
         directory = ROOT / 'projects' / name
         if not (directory / 'project.json').exists():
             continue
-        for command in ([sys.executable, str(ROOT / 'pipeline/musevideo.py'), 'validate', str(directory)],
+        commands = []
+        if (directory / 'production.json').exists():
+            commands.append([sys.executable, str(ROOT / 'pipeline/develop.py'), str(directory / 'production.json'), '--refresh'])
+        commands += ([sys.executable, str(ROOT / 'pipeline/musevideo.py'), 'validate', str(directory)],
                         [sys.executable, str(ROOT / 'pipeline/musevideo.py'), 'prompt-pack', str(directory)],
-                        [sys.executable, str(ROOT / 'pipeline/evaluate.py'), str(directory)]):
+                        [sys.executable, str(ROOT / 'pipeline/evaluate.py'), str(directory)])
+        for command in commands:
             result = subprocess.run(command, capture_output=True, text=True, cwd=ROOT)
             lines.append(f'- {name}: {result.stdout.strip()} {result.stderr.strip()}')
             if result.returncode:
@@ -61,7 +65,7 @@ def tick(init=False):
     # Do not acknowledge failed source changes; retry them on the next tick.
     if not failures:
         temp = STATE.with_suffix('.tmp')
-        temp.write_text(json.dumps(current, indent=2, sort_keys=True))
+        temp.write_text(json.dumps(tracked(), indent=2, sort_keys=True))
         os.replace(temp, STATE)
     print(f'watch: {len(changed)} input changes, projects={sorted(projects)}, failures={failures}')
     return 1 if failures else 0

@@ -26,6 +26,24 @@ The pipeline is driven by Muse, not by a loose prompt. You give a video idea,
 Muse works it out, criticizes it, improves it, generates it in batches, and
 lands a finished video in the project's `final/` folder.
 
+## Develop the whole production from a story
+
+Muse authors `production.json` using `schemas/production.schema.json`. Then:
+
+```bash
+python3 pipeline/develop.py projects/the-five-outcasts/production.json
+python3 pipeline/musevideo.py validate projects/the-five-outcasts
+./scripts/local-video.sh cards projects/the-five-outcasts
+```
+
+This produces the treatment, timed script, cast, world/look bibles, department
+packets, full shots, concise prompts, storyboard, reference/audio plans, batches,
+resource budget, schedule, provenance ledger, responsibilities, edit and EDL.
+[The Five Outcasts](projects/the-five-outcasts/brief.md) is the current worked
+production: exactly 60 seconds, two Heavenly Heroes, five shunned outcasts,
+two mutually destroyed squadrons raised as a defensive cordon, and a woman
+who left the city freely. [Workflow details](docs/story-production.md).
+
 ## The trigger keyword
 
 ```

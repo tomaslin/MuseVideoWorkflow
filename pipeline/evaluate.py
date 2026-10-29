@@ -33,7 +33,7 @@ def evaluate(d):
     proj = load_json(os.path.join(d, "project.json")) if os.path.exists(os.path.join(d, "project.json")) else {}
     findings = []
     # Coverage
-    expected = math.ceil(proj.get("durationSec", 0) / 10) if proj.get("durationSec") else len(shots)
+    expected = proj.get("sourceShotCount", math.ceil(proj.get("durationSec", 0) / 10) if proj.get("durationSec") else len(shots))
     coverage = 10 if shots and len(shots) == expected else (5 if shots else 0)
     if len(shots) != expected:
         findings.append({"severity": "major", "dimension": "coverage",

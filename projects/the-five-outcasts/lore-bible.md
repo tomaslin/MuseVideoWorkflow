@@ -1,0 +1,12 @@
+# World rules and story contract
+
+1. Exactly five living outcasts: Rook, Reed, Bell, Ash, Heel. Each has one fixed bodily difference and a distinct prop; no regeneration or visual changing of impairments. There is no tribe, clan hierarchy, mass of beggars or comic army.
+2. Shen and Lan are the two leading Heavenly Heroes, celebrated by the city but human and fallible, not literal flying gods. Their posture, cloth, vocabulary and reflexive aversion show a brutal class worldview.
+3. Wen is an adult who asked Ash to guide her out of the city. The invitation was hers. She remains free to speak, walk, eat, refuse and leave. No hypnosis, hidden possession, captivity, sexual coercion or last-minute kidnapping twist may cancel this choice.
+4. Red and Indigo squadrons slaughtered each other before the outcasts arrived. The introductory mutual impalement and the later opposing colours establish this visually. The outcasts neither started that battle nor murdered the soldiers to make an army.
+5. Iron ring sets command; Reed's thread carries it; Bell marks boundaries; Ash's breath sustains stillness; Heel's drum sets a movement pulse. Not every power needs a demonstration. The trailer explicitly shows ring, thread and drill; never invent arbitrary magic beams to explain the rest.
+6. The dead retain wounds, damaged armour and severed parts. They are visibly dead soldiers, not ordinary living soldiers, free-roaming zombies or talisman/Qing jiangshi. They can be raised and moved by the five; no effortless restoration of flesh.
+7. The cordon protects the shrine and stops at the salt line. No city raid, peasant massacre or terror campaign. A guard may strike a blade away or block an intruder; it does not pursue a retreat. Their horrible necromancy is a frightening defense.
+8. Do not equate bodily difference or poverty with moral corruption. Show grotesque wax, corpse wounds and heroes' disgust, then undermine that gaze with Wen's visible agency. The five may be hostile and use the dead without consent: the reversal does not make them harmless saints.
+9. Shen's right cuff becomes red in s08; the stain stays through s14–s15. Cut forearm stays detached in s09. Wen's wrist cord is loose and unbound in all shots. Red/Indigo never swap colours. All characters and soldiers are adults.
+10. The ending poses a choice; it does not resolve the rescue, turn Wen into a monster, cure the five or punish them for being poor. Title is editorial typography rendered locally, never model-generated writing.

@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Muse story production",
+  "type": "object",
+  "required": [
+    "version",
+    "project",
+    "storyContract",
+    "lookBlock",
+    "characters",
+    "documents",
+    "departments",
+    "sequences",
+    "edit"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "project": {
+      "type": "object",
+      "required": [
+        "slug",
+        "title",
+        "logline",
+        "format",
+        "durationSec"
+      ],
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "title": {
+          "type": "string"
+        },
+        "logline": {
+          "type": "string"
+        },
+        "format": {
+          "type": "string"
+        },
+        "durationSec": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "storyContract": {
+      "type": "object",
+      "description": "Explicit facts and constraints from the user, preserved across every artifact."
+    },
+    "lookBlock": {
+      "type": "string",
+      "minLength": 100
+    },
+    "characters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 60
+      }
+    },
+    "documents": {
+      "type": "object",
+      "required": [
+        "brief",
+        "treatment",
+        "script",
+        "look-bible",
+        "characters",
+        "lore-bible"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 120
+      }
+    },
+    "departments": {
+      "type": "object",
+      "required": [
+        "direction",
+        "camera-lighting",
+        "production-design",
+        "costume-makeup",
+        "choreography",
+        "sound-music",
+        "editorial"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 120
+      }
+    },
+    "sequences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "sequenceId",
+          "title",
+          "intent",
+          "shots"
+        ],
+        "properties": {
+          "sequenceId": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "shots": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "shotId",
+                "size",
+                "movement",
+                "location",
+                "action",
+                "characters",
+                "emotionalBeat",
+                "soundMood",
+                "background",
+                "choreography",
+                "cameraChoreography",
+                "lighting",
+                "lensMm",
+                "focus",
+                "motion",
+                "extras",
+                "loreNotes",
+                "generationBrief",
+                "editMotivation",
+                "tension",
+                "durationSec",
+                "sourceDurationSec"
+              ],
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "generated",
+                    "title"
+                  ]
+                },
+                "sourceDurationSec": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "tension": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 10
+                },
+                "generationBrief": {
+                  "type": "string"
+                },
+                "editMotivation": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "edit": {
+      "type": "object",
+      "required": [
+        "width",
+        "height",
+        "fps",
+        "shots"
+      ],
+      "properties": {
+        "fps": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 120
+        },
+        "shots": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "shotId",
+              "inSec",
+              "durationSec"
+            ],
+            "properties": {
+              "shotId": {
+                "type": "string"
+              },
+              "inSec": {
+                "type": "number",
+                "minimum": 0
+              },
+              "durationSec": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

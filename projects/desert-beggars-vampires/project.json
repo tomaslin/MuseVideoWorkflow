@@ -5,5 +5,8 @@
   "mood": "",
   "language": "en",
   "lookVersion": "v1",
-  "state": "shot-list"
+  "state": "shot-list",
+  "archived": true,
+  "active": false,
+  "supersededBy": "the-five-outcasts"
 }

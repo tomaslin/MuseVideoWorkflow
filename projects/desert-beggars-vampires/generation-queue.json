@@ -2,67 +2,22 @@
   "complete" : false,
   "nextBatch" : [
     {
-      "promptSha256" : "c06703c56b91449c40d7aebda73148fbb189bdeb73343f4964377898cda2cf13",
+      "promptSha256" : "03b08453ee6451e0e1f57f59051d08238cd8d9375332a3426e4d777bea304080",
       "reason" : "missing",
-      "shotId" : "s01"
+      "shotId" : "s07"
     },
     {
-      "promptSha256" : "e8703af2a3accf40b7702ef0444c0e7508bd3db83dad61234f3862eba02798e7",
+      "promptSha256" : "3fc48d794e7e09f2d964f16ee0dab83670ed872eb71aa587e1e8325ff9914d1f",
       "reason" : "missing",
-      "shotId" : "s02"
+      "shotId" : "s08"
     },
     {
-      "promptSha256" : "77cad2aac950f4e3a16451b95b755ef59ee58cf806ba3f9ccfda65ebbdaa708f",
+      "promptSha256" : "49b179c9e53435dd4aee3c1b93d350b8cc17066cf69c790b410d57a766c4727e",
       "reason" : "missing",
-      "shotId" : "s03"
-    },
-    {
-      "promptSha256" : "09d6be64c830abf90d4ac31075f8037c86032e8146c747a69243fdf333223ec7",
-      "reason" : "missing",
-      "shotId" : "s04"
-    },
-    {
-      "promptSha256" : "bb011cc2855ff84aa333e001f9aa6cb1db1ed52ccf02520b4d5faa4258c0f975",
-      "reason" : "missing",
-      "shotId" : "s05"
-    },
-    {
-      "promptSha256" : "8453b5bc08c48a5ea82c194f5fe5d5065ae1a8053e5a2f4a77d160f61277f244",
-      "reason" : "missing",
-      "shotId" : "s06"
+      "shotId" : "s09"
     }
   ],
   "pending" : [
-    {
-      "promptSha256" : "c06703c56b91449c40d7aebda73148fbb189bdeb73343f4964377898cda2cf13",
-      "reason" : "missing",
-      "shotId" : "s01"
-    },
-    {
-      "promptSha256" : "e8703af2a3accf40b7702ef0444c0e7508bd3db83dad61234f3862eba02798e7",
-      "reason" : "missing",
-      "shotId" : "s02"
-    },
-    {
-      "promptSha256" : "77cad2aac950f4e3a16451b95b755ef59ee58cf806ba3f9ccfda65ebbdaa708f",
-      "reason" : "missing",
-      "shotId" : "s03"
-    },
-    {
-      "promptSha256" : "09d6be64c830abf90d4ac31075f8037c86032e8146c747a69243fdf333223ec7",
-      "reason" : "missing",
-      "shotId" : "s04"
-    },
-    {
-      "promptSha256" : "bb011cc2855ff84aa333e001f9aa6cb1db1ed52ccf02520b4d5faa4258c0f975",
-      "reason" : "missing",
-      "shotId" : "s05"
-    },
-    {
-      "promptSha256" : "8453b5bc08c48a5ea82c194f5fe5d5065ae1a8053e5a2f4a77d160f61277f244",
-      "reason" : "missing",
-      "shotId" : "s06"
-    },
     {
       "promptSha256" : "03b08453ee6451e0e1f57f59051d08238cd8d9375332a3426e4d777bea304080",
       "reason" : "missing",

@@ -1,0 +1,107 @@
+{
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "shots": [
+    {
+      "shotId": "s01",
+      "inSec": 1,
+      "durationSec": 4
+    },
+    {
+      "shotId": "s02",
+      "inSec": 1,
+      "durationSec": 2
+    },
+    {
+      "shotId": "s03",
+      "inSec": 1,
+      "durationSec": 3
+    },
+    {
+      "shotId": "s04",
+      "inSec": 1,
+      "durationSec": 2
+    },
+    {
+      "shotId": "s05",
+      "inSec": 1,
+      "durationSec": 4
+    },
+    {
+      "shotId": "s06",
+      "inSec": 1,
+      "durationSec": 3
+    },
+    {
+      "shotId": "s07",
+      "inSec": 1,
+      "durationSec": 3
+    },
+    {
+      "shotId": "s08",
+      "inSec": 1.0,
+      "durationSec": 2
+    },
+    {
+      "shotId": "s09",
+      "inSec": 1,
+      "durationSec": 3
+    },
+    {
+      "shotId": "s10",
+      "inSec": 1,
+      "durationSec": 3
+    },
+    {
+      "shotId": "s11",
+      "inSec": 1,
+      "durationSec": 3
+    },
+    {
+      "shotId": "s12",
+      "inSec": 1,
+      "durationSec": 2
+    },
+    {
+      "shotId": "s13",
+      "inSec": 1,
+      "durationSec": 4
+    },
+    {
+      "shotId": "s14",
+      "inSec": 1,
+      "durationSec": 2
+    },
+    {
+      "shotId": "s15",
+      "inSec": 1,
+      "durationSec": 3
+    },
+    {
+      "shotId": "s16",
+      "inSec": 1,
+      "durationSec": 3
+    },
+    {
+      "shotId": "s17",
+      "inSec": 1,
+      "durationSec": 3
+    },
+    {
+      "shotId": "s18",
+      "inSec": 1,
+      "durationSec": 3
+    },
+    {
+      "shotId": "s18",
+      "inSec": 4,
+      "durationSec": 3
+    },
+    {
+      "shotId": "title",
+      "inSec": 0,
+      "durationSec": 5
+    }
+  ]
+}

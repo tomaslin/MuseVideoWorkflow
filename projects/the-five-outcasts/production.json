@@ -1,0 +1,818 @@
+{
+  "version": 1,
+  "project": {
+    "slug": "the-five-outcasts",
+    "title": "The Five Outcasts",
+    "format": "trailer",
+    "durationSec": 60,
+    "mood": "Grotesque studio wuxia horror; class disgust, defensive necromancy, moral reversal",
+    "language": "en",
+    "lookVersion": "v2",
+    "logline": "Two Heavenly Heroes sent to rescue a woman from five shunned necromancers discover that she chose the refuge their dead soldiers defend."
+  },
+  "storyContract": {
+    "livingOutcasts": 5,
+    "leadingHeroes": 2,
+    "adultWoman": "Wen",
+    "womanLeftVoluntarily": true,
+    "squadronsKilledEachOther": true,
+    "undeadPurpose": "defensive solitude",
+    "oldProject": "desert-beggars-vampires"
+  },
+  "lookBlock": "1970s Hong Kong studio wuxia horror on 35mm Eastmancolor: theatrical rock-and-temple sets, painted indigo night skies, hard vermilion lantern keys and cyan rim light, dense black shadows, visible film grain, slightly imperfect optical texture, practical wax prosthetics and thick crimson stage blood. Classical frontal blocking, legible full-body martial action, deliberate close-ups and restrained motivated camera moves. Unsettling, operatic and cruel, never a glossy fantasy game. Real cloth, solid props, coherent anatomy. One continuous take per source, no generated writing, no morphing bodies, no comic beggar army.",
+  "characters": {
+    "Shen": "Shen, an adult male celebrated Heavenly Hero aged thirty, long straight black hair under a narrow silver crown, immaculate white silk swordsman robes with a silver cloud clasp, a straight silver jian in his right hand, clean-shaven angular face, imperious upright posture; his white right cuff stays blood-stained after the first sword strike.",
+    "Lan": "Lan, an adult female celebrated Heavenly Hero aged thirty, long black hair in a high crown bun with one silver pin, ivory silk fighting robes and a narrow dark blue sash, a sheathed straight sword at her left hip, composed oval face and an exacting level gaze; her movements are economical and grounded.",
+    "Wen": "Wen, an adult city woman aged twenty-eight, black hair in a plain low knot, faded pale-green travel robe with a repaired right sleeve, red city-citizen cord worn loose at her wrist, unbound hands, steady direct gaze; she stands and moves freely and is never chained, gagged or held.",
+    "Rook": "Rook, an adult male outcast aged fifty with a pronounced twisted upper back, one high shoulder, a lined watchful face, worn charcoal hemp layers and three heavy iron rings on a cord at his left wrist; he is physically powerful, moves with practiced balance and uses his right hand to turn one ring.",
+    "Reed": "Reed, an adult female outcast aged forty, healed left-arm amputation above the elbow, a scar across her left cheek, dark russet patched hemp coat, a bone thread spindle held in her right hand; she routes taut black thread through a wooden belt guide and never grows a replacement arm.",
+    "Bell": "Bell, an adult male outcast aged sixty with opaque blind eyes, scarred eyelids, a shaved head, worn smoke-grey hemp robe and a small bronze handbell; he orients his head toward sound, counts footsteps by listening and never tracks an opponent visually.",
+    "Ash": "Ash, an adult male outcast aged thirty-five with a visibly healed fused jaw and asymmetrical lower face, loose black hair, faded brown patched coat and a narrow bone flute; he invited Wen to cross the boundary at her request, his damaged jaw does not open normally and he never mouths dialogue.",
+    "Heel": "Heel, an adult male outcast aged forty with a pronounced right club foot, broad face, frayed ochre wrap coat and a small hide frame drum at his belt; he plants his adapted right foot before shifting weight onto his sound left leg, never sliding or changing his impairment.",
+    "Red Squadron": "The dead Red Squadron: adult soldiers in ruined dark-red lamellar armour, black helmets with short red tassels, blood-blackened cloth and pale corpse faces. They were killed by the Indigo Squadron before this story. Old spear wounds remain visible; black control thread knots at their wrists. Never living bandits, never Qing hopping vampires.",
+    "Indigo Squadron": "The dead Indigo Squadron: adult soldiers in broken indigo lamellar armour, black helmets with short blue tassels, blood-blackened cloth and pale corpse faces. They were killed by the Red Squadron before this story. Old sword wounds remain visible; black control thread knots at their wrists. Armour colours never swap."
+  },
+  "documents": {
+    "brief": "# The Five Outcasts — 60-second trailer\n\nTwo celebrated Heavenly Heroes cross a desert battlefield to retrieve a city woman supposedly abducted by five deformed beggars. The two squadrons lying there killed each other. Five shunned, immensely powerful outcasts have raised both companies to guard the only place society has left them. The woman crossed willingly. The heroes have been sent to enforce the city's version of her life.\n\nThis is adult, gory studio wuxia horror: practical prosthetics, thick crimson blood, cruel silk-robed authority, uncanny corpse drill, and abrupt percussion. Exactly five outcasts, two leading heroes and one adult woman. No beggar tribe, ranks, comic army or ordinary vampire invasion. The outcasts' bodies are specific and persistent, their powers terrifying, their motive defensive. The heroes' poverty disgust is the distorted viewpoint the trailer overturns.\n\nDeliverable: exactly 60 seconds, 18 live-action source clips cut to 2–4-second beats (55 seconds), plus a five-second locally typeset title. Source generations may be ten seconds; the delivery is not 18 ten-second shots. Original fictional characters, dialogue and music. No actor likeness, film footage, licensed score or copied dialogue is required.\n",
+    "treatment": "# Treatment\n\nThe first image is the aftermath of a war nobody won: red and indigo uniforms impaled on each other's weapons, hands still locked together in death. One dead hand tightens. A city voice calls the woman \"stolen\" before we have seen her. Shen and Lan, the Heavenly Heroes, advance in immaculate silk. Shen raises his cuff against the smell. Their elegance is established as a threat as much as a promise.\n\nBeyond the field, a ruined salt shrine holds five people: Rook, Reed, Bell, Ash and Heel. Their bodies have been injured, altered or born outside the city's idea of perfection. They are not interchangeable monsters or a mass of beggars. Iron, thread, breath, bell and hide form a quiet control system. A turned ring pulls one black thread. Two ranks of dead soldiers stand, red facing indigo, then pivot outward to guard the refuge. The battle predates the outcasts; the dead are their wall, not their victims.\n\nShen cuts down an approaching corpse. The forearm flies through a short crimson burst. A thread retrieves the severed limb and the corpse stops at the chalk-and-salt boundary rather than pursuing him. Horror is followed by an exact limit. \"We were sent for the woman,\" Lan says. We see Wen's free hand calmly take a drinking bowl. The heroes see captivity; the picture gives the audience agency.\n\nWen steps between the silks and the five: \"I came here myself.\" Ash lowers his flute to let her speak. A match cut returns to Shen's spotless cuff, now red. \"Come back,\" he orders, never asking. Lan's eyes shift from Wen to the puppet thread wound around Shen's sword: the living heroes are also caught in a story somebody else has written.\n\nThe final rush is three simple exchanges, not a crowd simulation: a taut thread deflects the jian; a corpse blocks the gate; Lan stops her blade a hand's breadth from Wen. Rook closes his ring. Both dead squadrons kneel inward, making a shelter around Wen and the five. The heroes stand outside it. \"Then who needs rescuing?\" Lan asks into the cut. Title: THE FIVE OUTCASTS. A single bell answers from black. No answer to which hero will obey the city.\n",
+    "script": "# Trailer script — locked 60.00 seconds\n\n| Time | Picture / source | Sound / original dialogue |\n|---|---|---|\n| 00–04 | s01: opposing red and indigo dead, mutual kill visible | Dry wind; CITY ENVOY (off): \"They stole a woman from our city.\" |\n| 04–06 | s02: dead fingers close on a broken pennant | Cloth scrape; one knuckle crack |\n| 06–09 | s03: Shen and Lan enter left-to-right in white silk | Two clean footfalls; bronze bell underneath |\n| 09–11 | s04: Shen raises his cuff against the smell | SHEN (off): \"This is where they live?\" |\n| 11–15 | s05: exactly five outcasts at the salt shrine | No score; breathing, cloth, flies |\n| 15–18 | s06: Rook turns one iron ring; black thread tightens | Iron click; drum skin answers |\n| 18–21 | s07: red and indigo dead pivot to face outward | Armour clacks in an impossible shared rhythm |\n| 21–23 | s08: Shen's blade severs one corpse forearm | Dry sword impact; brief stage-blood burst |\n| 23–26 | s09: thread drags the severed arm back to the boundary | Thread creak; no victory flourish |\n| 26–29 | s10: Lan holds at the salt line, eyes on the refuge | LAN (off): \"We were sent for the woman.\" |\n| 29–32 | s11: Wen's free hand accepts a bowl from Reed | Bowl ring; score falls away |\n| 32–34 | s12: Ash lowers the flute as Wen passes freely | Flute stops mid-note; one unforced step |\n| 34–38 | s13: Wen stands on the outcasts' side of the line | WEN (off): \"I came here myself.\" |\n| 38–40 | s14: blood beads on Shen's once-clean cuff | SHEN (off): \"You will come back.\" |\n| 40–43 | s15: taut thread turns Shen's sword point aside | Reed's spindle click; metal scrapes stone |\n| 43–46 | s16: Lan stops her blade short of Wen | One cymbal choke; sharp inhale |\n| 46–49 | s17: corpse guard plants shield across the gate | Shield thud; footfalls cease at salt |\n| 49–55 | s18 first 3 seconds, then second 3-second handle: dead kneel to shelter the five and Wen; heroes outside | ROOK (off): \"Leave us what you threw away.\" LAN (off): \"Then who needs rescuing?\" |\n| 55–60 | title: THE FIVE OUTCASTS, locally typeset on black | One bell; two seconds of silence to end |\n\nAll lines are separate voice stems or subtitle/caption cues, never a promise of generated lip sync. No line is assigned to Ash, whose fused jaw must remain consistent. The city envoy is voice only, not an additional leading character. Exactly 60 seconds includes the title and final silence.\n",
+    "look-bible": "# Locked look\n\n1970s Hong Kong studio wuxia horror on 35mm Eastmancolor: theatrical rock-and-temple sets, painted indigo night skies, hard vermilion lantern keys and cyan rim light, dense black shadows, visible film grain, slightly imperfect optical texture, practical wax prosthetics and thick crimson stage blood. Classical frontal blocking, legible full-body martial action, deliberate close-ups and restrained motivated camera moves. Unsettling, operatic and cruel, never a glossy fantasy game. Real cloth, solid props, coherent anatomy. One continuous take per source, no generated writing, no morphing bodies, no comic beggar army.\n\n## Geography and coverage\nThe city lies screen left. The refuge lies screen right, beyond one chalk-and-salt line and a broken gate. Heroes approach left-to-right. Corpses face outward toward screen left when guarding. Keep camera south of this east-west axis. Reverse angles must be established by an eyeline or neutral insert; never flip actors to save a composition. The red squadron occupies the near rank and indigo the far rank, with distinct armour and wounds.\n\nThe field is dry ochre in late light, the shrine is vermilion practical light against a painted indigo exterior. Use 28/35mm for battlefield and five-person geography, 50mm for playable exchanges, 75/85mm for hands, disgust and moral reaction. A single short push-in marks Wen's statement, not every moment. Use locked cameras for supernatural movement so bodily causality reads. Dialogue is voice-over with reaction coverage. Blood stains persist. Optical texture comes from grading, not smeared moving bodies.\n",
+    "lore-bible": "# World rules and story contract\n\n1. Exactly five living outcasts: Rook, Reed, Bell, Ash, Heel. Each has one fixed bodily difference and a distinct prop; no regeneration or visual changing of impairments. There is no tribe, clan hierarchy, mass of beggars or comic army.\n2. Shen and Lan are the two leading Heavenly Heroes, celebrated by the city but human and fallible, not literal flying gods. Their posture, cloth, vocabulary and reflexive aversion show a brutal class worldview.\n3. Wen is an adult who asked Ash to guide her out of the city. The invitation was hers. She remains free to speak, walk, eat, refuse and leave. No hypnosis, hidden possession, captivity, sexual coercion or last-minute kidnapping twist may cancel this choice.\n4. Red and Indigo squadrons slaughtered each other before the outcasts arrived. The introductory mutual impalement and the later opposing colours establish this visually. The outcasts neither started that battle nor murdered the soldiers to make an army.\n5. Iron ring sets command; Reed's thread carries it; Bell marks boundaries; Ash's breath sustains stillness; Heel's drum sets a movement pulse. Not every power needs a demonstration. The trailer explicitly shows ring, thread and drill; never invent arbitrary magic beams to explain the rest.\n6. The dead retain wounds, damaged armour and severed parts. They are visibly dead soldiers, not ordinary living soldiers, free-roaming zombies or talisman/Qing jiangshi. They can be raised and moved by the five; no effortless restoration of flesh.\n7. The cordon protects the shrine and stops at the salt line. No city raid, peasant massacre or terror campaign. A guard may strike a blade away or block an intruder; it does not pursue a retreat. Their horrible necromancy is a frightening defense.\n8. Do not equate bodily difference or poverty with moral corruption. Show grotesque wax, corpse wounds and heroes' disgust, then undermine that gaze with Wen's visible agency. The five may be hostile and use the dead without consent: the reversal does not make them harmless saints.\n9. Shen's right cuff becomes red in s08; the stain stays through s14–s15. Cut forearm stays detached in s09. Wen's wrist cord is loose and unbound in all shots. Red/Indigo never swap colours. All characters and soldiers are adults.\n10. The ending poses a choice; it does not resolve the rescue, turn Wen into a monster, cure the five or punish them for being poor. Title is editorial typography rendered locally, never model-generated writing.\n",
+    "characters": "# Cast and locked appearances\n\n## Shen\nShen, an adult male celebrated Heavenly Hero aged thirty, long straight black hair under a narrow silver crown, immaculate white silk swordsman robes with a silver cloud clasp, a straight silver jian in his right hand, clean-shaven angular face, imperious upright posture; his white right cuff stays blood-stained after the first sword strike.\n\n## Lan\nLan, an adult female celebrated Heavenly Hero aged thirty, long black hair in a high crown bun with one silver pin, ivory silk fighting robes and a narrow dark blue sash, a sheathed straight sword at her left hip, composed oval face and an exacting level gaze; her movements are economical and grounded.\n\n## Wen\nWen, an adult city woman aged twenty-eight, black hair in a plain low knot, faded pale-green travel robe with a repaired right sleeve, red city-citizen cord worn loose at her wrist, unbound hands, steady direct gaze; she stands and moves freely and is never chained, gagged or held.\n\n## Rook\nRook, an adult male outcast aged fifty with a pronounced twisted upper back, one high shoulder, a lined watchful face, worn charcoal hemp layers and three heavy iron rings on a cord at his left wrist; he is physically powerful, moves with practiced balance and uses his right hand to turn one ring.\n\n## Reed\nReed, an adult female outcast aged forty, healed left-arm amputation above the elbow, a scar across her left cheek, dark russet patched hemp coat, a bone thread spindle held in her right hand; she routes taut black thread through a wooden belt guide and never grows a replacement arm.\n\n## Bell\nBell, an adult male outcast aged sixty with opaque blind eyes, scarred eyelids, a shaved head, worn smoke-grey hemp robe and a small bronze handbell; he orients his head toward sound, counts footsteps by listening and never tracks an opponent visually.\n\n## Ash\nAsh, an adult male outcast aged thirty-five with a visibly healed fused jaw and asymmetrical lower face, loose black hair, faded brown patched coat and a narrow bone flute; he invited Wen to cross the boundary at her request, his damaged jaw does not open normally and he never mouths dialogue.\n\n## Heel\nHeel, an adult male outcast aged forty with a pronounced right club foot, broad face, frayed ochre wrap coat and a small hide frame drum at his belt; he plants his adapted right foot before shifting weight onto his sound left leg, never sliding or changing his impairment.\n\n## Red Squadron\nThe dead Red Squadron: adult soldiers in ruined dark-red lamellar armour, black helmets with short red tassels, blood-blackened cloth and pale corpse faces. They were killed by the Indigo Squadron before this story. Old spear wounds remain visible; black control thread knots at their wrists. Never living bandits, never Qing hopping vampires.\n\n## Indigo Squadron\nThe dead Indigo Squadron: adult soldiers in broken indigo lamellar armour, black helmets with short blue tassels, blood-blackened cloth and pale corpse faces. They were killed by the Red Squadron before this story. Old sword wounds remain visible; black control thread knots at their wrists. Armour colours never swap.\n\n## Performance and agency\nShen treats revulsion as evidence; his weapon arrives before his question. Lan begins with the same certainty but visibly hesitates when Wen contradicts the commission. Wen speaks plainly and stands by choice beside the people the heroes cannot bear to touch. Ash invited her because she asked. Rook wants solitude and will use an appalling power to keep it. Reed's bowl gesture is practical hospitality rather than sainthood. Bell listens, Heel regulates breath through the drum; no one mugs for a monster reveal.\n"
+  },
+  "departments": {
+    "direction": "# Direction and performance\n\nThe story question changes at 34 seconds: not \"can the heroes save her?\" but \"will they accept her answer?\" s04 establishes their prejudiced gaze; s11 and s12 contradict the abduction without dialogue; s13 states her choice. Do not make Wen vacant-eyed or frightened of the five. Shen's cuff gesture is a choice, not involuntary illness. Lan's stop in s16 must be legible: decision precedes stillness. Exactly five outcasts share one establishing composition s05; later isolates must match that arrangement. Speak lines off screen over reaction shots, not simulated perfect lip sync. The last tableau gives refuge-side characters the interior and the heroes the threshold outside.\n",
+    "camera-lighting": "# Camera and lighting\n\nSouth-of-axis camera: city left, shrine right. 28mm battlefield, 35mm geography, 50mm exchanges, 85mm inserts; avoid wide-angle facial distortion being mistaken for character makeup. Shoot s03 and s17 as a compatible entrance/blocking pair. Hold horizon and lens height for s05 so exactly five bodies can be counted. One slow 20cm push during s13 emphasizes testimony. Action plates s08/s15/s16 remain side-on, with blade, hands and target visible. Vermilion lantern key from shrine right and cyan exterior rim behind corpses; expose faces without erasing black negative space. No orbit, unmotivated drone reveal, dutch-angle montage or internal cuts in one generated source.\n",
+    "production-design": "# Production design and props\n\nOne location system: dry battlefield leads east into a broken salt-shrine gate. Near/far ranks have red/indigo pennants, mutual sword/spear kills and equally ruined armour. One broad salt line crosses the path. Shrine contains exactly five seated/standing places, one shared water bowl and no prison equipment. Reuse split lintel, crescent stone and red lantern to establish geography across reverses. Black thread is thick enough to read at normal playback, fastened to practical rings and soldier wrist knots. Bloody arm in s09 keeps the armour cuff seen in s08. Do not generate readable banners; insignia are simple red/indigo colour blocks. Title is created in post.\n",
+    "costume-makeup": "# Costume, makeup and practical gore\n\nHeroes start with immaculate white/ivory silk; a right-cuff blood stain transfers in s08 and persists. Wen's travel robe is worn, repaired and freely belted; wrists never tied. Five outcasts have individually fixed prosthetics: Rook twisted upper back, Reed healed left-arm absence, Bell opaque eyes, Ash fused lower jaw, Heel right club foot. Frame and costume distinguish them without adding horns or demon skin. Use waxen corpse appliances, painted wounds, breakaway rubber forearm and a short thick crimson blood burst. No real footage, medical demonstration or anatomical lingering. Damage belongs principally to the already-dead soldiers; do not substitute violence against the woman for horror. Practical cloth/wax remains material, not melting AI edges.\n",
+    "choreography": "# Fight and supernatural movement\n\nOne exchange per generation. s08: corpse forearm extends from right; Shen's blade cuts left-to-right; arm drops and cuff stains; a clear held end pose. s15: same screen direction, Reed's tension redirects the point downward into stone; no sword teleport or extra hands. s16: Lan advances one step, then deliberately arrests her blade before Wen, feet planted, no contact. s17 guard moves across gate then stops on salt, never charging through it. s07: two dead ranks lift/pivot in one commanded drill, no hopping-vampire rule from the old film. Supernatural strength is communicated through stillness and precise exertion, not clutter. s18 kneeling is one unison movement that forms a barrier, with all five and Wen behind it; nobody transforms or disappears.\n",
+    "sound-music": "# Sound and music\n\nFive motifs: ring click, taut thread creak, bronze bell, one breathy bone-flute note, low hand drum. Introduce separately; do not layer all five continuously. Dry battlefield starts nearly silent. Armour pulse begins at s07, blade impact at s08 has no heroic fanfare. Silence before Wen's line reverses the trailer's authority. Original voice-over: envoy line over battlefield, Shen over cuff inserts, Lan over decision coverage, Wen over her free stance, Rook over final shelter. Build 48kHz stereo stems: voices, percussion, ambience, discrete impacts. Duck music beneath words; peak below -1 dBTP. Caption from the actual recorded lines/timings after voice generation, never invent captions from an unrecorded transcript. Single bell and final silence under the title. Native clip sound is a temp bed until approved mix.\n",
+    "editorial": "# Editorial and post\n\nLocked runtime 60.00 seconds at 24fps. 18 ten-second source handles yield 55 seconds of pictures; one local five-second title closes. Most edited beats are 2–4 seconds. s18 contributes two contiguous three-second handles, deliberately split to preserve short-shot editing controls; it is a six-second final tableau, not two new generations. Hard cuts, motivated by grasp, eyeline, thread tension or impact; no default crossfade and no optical-flow invention of choreography. J-cut envoy voice over s01, carry Lan's question across title entrance. Validate exact trim/frame math, source identity, source prompt hashes and output codecs before saving. Final remains unreviewed until the actual full cut is watched. Redo only named defective sources, preserve previous takes, and never fill missing shots with black placeholders presented as a finished movie.\n"
+  },
+  "sequences": [
+    {
+      "sequenceId": "seq-1",
+      "title": "The city names the monster",
+      "intent": "Establish the dead battlefield and the heroes’ repulsion.",
+      "shots": [
+        {
+          "shotId": "s01",
+          "durationSec": 4,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "EWS",
+          "movement": "locked-off",
+          "lensMm": 28,
+          "characters": [
+            "Red Squadron",
+            "Indigo Squadron"
+          ],
+          "location": "battlefield approach",
+          "action": "Two opposing dead soldiers remain locked on each other’s weapons beneath red and indigo pennants.",
+          "emotionalBeat": "The city’s account speaks over evidence of its own violence.",
+          "soundMood": "Dry wind; envoy VO: They stole a woman from our city.",
+          "background": "Near red-armoured body lies left, indigo body right, their blades mutually embedded; low shrine lintel at deep right.",
+          "choreography": "0–1s hold mutual impalement; 1–5s wind moves the two torn pennants while bodies stay still; 5–10s hold the paired weapons.",
+          "cameraChoreography": "Hold a frontal low-wide tableau; neither crop the reciprocal weapons nor add living attackers.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "The city’s account speaks over evidence of its own violence.",
+            "editorial": "Cut on the pennant scrape to a dead hand; establishes the mutual killing before any outcast appears.",
+            "sound": "Dry wind; envoy VO: They stole a woman from our city."
+          },
+          "generationBrief": "EWS, 28mm, locked-off; battlefield approach. Two opposing dead soldiers remain locked on each other’s weapons beneath red and indigo pennants. Screen direction: city/hero side left, refuge side right. 0–1s hold mutual impalement; 1–5s wind moves the two torn pennants while bodies stay still; 5–10s hold the paired weapons. Hold a frontal low-wide tableau; neither crop the reciprocal weapons nor add living attackers. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Cut on the pennant scrape to a dead hand; establishes the mutual killing before any outcast appears.",
+          "tension": 2
+        },
+        {
+          "shotId": "s02",
+          "durationSec": 2,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "ECU",
+          "movement": "locked-off",
+          "lensMm": 85,
+          "characters": [
+            "Red Squadron"
+          ],
+          "location": "battlefield ground",
+          "action": "A dead red-armoured hand closes around a broken indigo pennant.",
+          "emotionalBeat": "A corpse becomes an instrument before its controller is seen.",
+          "soundMood": "Knuckle crack, cloth scrape; first faint bell.",
+          "background": "Hand and ripped indigo cloth foreground, fixed wrist-thread knot midground, blurred dust beyond.",
+          "choreography": "0–1s lifeless hand; 1–3s fingers close once with material resistance; 3–10s hold the fist and visible black thread.",
+          "cameraChoreography": "Macro insert at ground level, lock camera; one finger curl, no regeneration.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "A corpse becomes an instrument before its controller is seen.",
+            "editorial": "Cut on the fist closure to the heroes’ boots advancing in the same direction.",
+            "sound": "Knuckle crack, cloth scrape; first faint bell."
+          },
+          "generationBrief": "ECU, 85mm, locked-off; battlefield ground. A dead red-armoured hand closes around a broken indigo pennant. Screen direction: city/hero side left, refuge side right. 0–1s lifeless hand; 1–3s fingers close once with material resistance; 3–10s hold the fist and visible black thread. Macro insert at ground level, lock camera; one finger curl, no regeneration. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Cut on the fist closure to the heroes’ boots advancing in the same direction.",
+          "tension": 4
+        },
+        {
+          "shotId": "s03",
+          "durationSec": 3,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "FS",
+          "movement": "tracking",
+          "lensMm": 35,
+          "characters": [
+            "Shen",
+            "Lan"
+          ],
+          "location": "west of salt-shrine gate",
+          "action": "Shen and Lan advance left-to-right toward the field.",
+          "emotionalBeat": "The commissioned heroes arrive with absolute entitlement.",
+          "soundMood": "Two boot strikes; envoy VO: Bring her home.",
+          "background": "Two heroes full length foreground, red/indigo corpses to the right of path, salt shrine beyond.",
+          "choreography": "0–1s planted two-shot; 1–4s one measured advancing step together; 4–10s hold facing right, swords still sheathed.",
+          "cameraChoreography": "Short parallel track from south of axis, keep both sets of feet and their distance readable.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "The commissioned heroes arrive with absolute entitlement.",
+            "editorial": "Match movement out of the fist insert; cut to Shen’s small gesture of disgust.",
+            "sound": "Two boot strikes; envoy VO: Bring her home."
+          },
+          "generationBrief": "FS, 35mm, tracking; west of salt-shrine gate. Shen and Lan advance left-to-right toward the field. Screen direction: city/hero side left, refuge side right. 0–1s planted two-shot; 1–4s one measured advancing step together; 4–10s hold facing right, swords still sheathed. Short parallel track from south of axis, keep both sets of feet and their distance readable. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Match movement out of the fist insert; cut to Shen’s small gesture of disgust.",
+          "tension": 4
+        },
+        {
+          "shotId": "s04",
+          "durationSec": 2,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "CU",
+          "movement": "locked-off",
+          "lensMm": 75,
+          "characters": [
+            "Shen"
+          ],
+          "location": "west side of gate",
+          "action": "Shen raises his spotless right cuff over his nose.",
+          "emotionalBeat": "His first response to poverty is disgust.",
+          "soundMood": "Shen VO: This is where they live?",
+          "background": "White cuff fills lower frame, Shen’s eyes remain sharp, poor shrine soft at right edge.",
+          "choreography": "0–1s eyes to right; 1–3s right cuff rises to nose; 3–10s hold with contempt directed off frame right.",
+          "cameraChoreography": "Eye-level close-up, no beauty orbit; wrist and eyes both legible.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "His first response to poverty is disgust.",
+            "editorial": "Eyeline cut from disgust to the five people he is judging.",
+            "sound": "Shen VO: This is where they live?"
+          },
+          "generationBrief": "CU, 75mm, locked-off; west side of gate. Shen raises his spotless right cuff over his nose. Screen direction: city/hero side left, refuge side right. 0–1s eyes to right; 1–3s right cuff rises to nose; 3–10s hold with contempt directed off frame right. Eye-level close-up, no beauty orbit; wrist and eyes both legible. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Eyeline cut from disgust to the five people he is judging.",
+          "tension": 5
+        },
+        {
+          "shotId": "s05",
+          "durationSec": 4,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "WS",
+          "movement": "locked-off",
+          "lensMm": 35,
+          "characters": [
+            "Rook",
+            "Reed",
+            "Bell",
+            "Ash",
+            "Heel"
+          ],
+          "location": "salt-shrine interior",
+          "action": "Exactly five outcasts hold their places beneath the broken lintel.",
+          "emotionalBeat": "Initial grotesque dread becomes five distinct people, not a horde.",
+          "soundMood": "Breath and flies; percussion withheld.",
+          "background": "Left-to-right positions: Reed seated, Bell standing, Rook centre, Ash at right pillar, Heel seated far right. Empty sixth space for Wen is not occupied yet.",
+          "choreography": "0–1s fixed five-person tableau; 1–5s each remains still except breath and cloth; 5–10s Rook shifts his right hand toward the ring.",
+          "cameraChoreography": "Frontal medium-wide at waist height; count exactly five whole figures, no extra beggar silhouettes.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "Initial grotesque dread becomes five distinct people, not a horde.",
+            "editorial": "Rook’s hand movement motivates the ring insert, rather than a random montage.",
+            "sound": "Breath and flies; percussion withheld."
+          },
+          "generationBrief": "WS, 35mm, locked-off; salt-shrine interior. Exactly five outcasts hold their places beneath the broken lintel. Screen direction: city/hero side left, refuge side right. 0–1s fixed five-person tableau; 1–5s each remains still except breath and cloth; 5–10s Rook shifts his right hand toward the ring. Frontal medium-wide at waist height; count exactly five whole figures, no extra beggar silhouettes. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Rook’s hand movement motivates the ring insert, rather than a random montage.",
+          "tension": 6
+        }
+      ]
+    },
+    {
+      "sequenceId": "seq-2",
+      "title": "The dead are a wall",
+      "intent": "Reveal control, a hard boundary and the cost of heroic intrusion.",
+      "shots": [
+        {
+          "shotId": "s06",
+          "durationSec": 3,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "ECU",
+          "movement": "locked-off",
+          "lensMm": 85,
+          "characters": [
+            "Rook"
+          ],
+          "location": "shrine threshold",
+          "action": "Rook rotates one iron ring and a black thread pulls taut.",
+          "emotionalBeat": "A small exertion commands an appalling force.",
+          "soundMood": "Iron click, taut thread creak; low drum pulse.",
+          "background": "One right hand, left-wrist cord and iron ring foreground; taut thread runs out toward screen left, stone wall soft behind.",
+          "choreography": "0–1s thumb touches ring; 1–4s one quarter-turn tensions one visible thread; 4–10s hold tension and planted hand.",
+          "cameraChoreography": "Tight prop insert; do not add other hands, magic beams or illegible symbols.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "A small exertion commands an appalling force.",
+            "editorial": "Match cut from taut thread to soldiers pivoting; cause precedes effect.",
+            "sound": "Iron click, taut thread creak; low drum pulse."
+          },
+          "generationBrief": "ECU, 85mm, locked-off; shrine threshold. Rook rotates one iron ring and a black thread pulls taut. Screen direction: city/hero side left, refuge side right. 0–1s thumb touches ring; 1–4s one quarter-turn tensions one visible thread; 4–10s hold tension and planted hand. Tight prop insert; do not add other hands, magic beams or illegible symbols. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Match cut from taut thread to soldiers pivoting; cause precedes effect.",
+          "tension": 7
+        },
+        {
+          "shotId": "s07",
+          "durationSec": 3,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "WS",
+          "movement": "locked-off",
+          "lensMm": 35,
+          "characters": [
+            "Red Squadron",
+            "Indigo Squadron"
+          ],
+          "location": "salt boundary outside shrine",
+          "action": "Both dead ranks pivot outward to form a guarded corridor.",
+          "emotionalBeat": "The dead protect a boundary instead of advancing on the city.",
+          "soundMood": "Unison armour clack; hand drum accelerates.",
+          "background": "Three clearly readable red soldiers near rank, three indigo far rank; further pennants imply the two larger squadrons without crowd clutter.",
+          "choreography": "0–1s two ranks already upright; 1–4s near red and far indigo ranks pivot together toward screen left; 4–10s stop at the salt line.",
+          "cameraChoreography": "Hold south-of-axis wide; preserve armour colours, wounded bodies and stopping line.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "The dead protect a boundary instead of advancing on the city.",
+            "editorial": "Cut on unified armour clack to the hero’s sword; the hero chooses violence first.",
+            "sound": "Unison armour clack; hand drum accelerates."
+          },
+          "generationBrief": "WS, 35mm, locked-off; salt boundary outside shrine. Both dead ranks pivot outward to form a guarded corridor. Screen direction: city/hero side left, refuge side right. 0–1s two ranks already upright; 1–4s near red and far indigo ranks pivot together toward screen left; 4–10s stop at the salt line. Hold south-of-axis wide; preserve armour colours, wounded bodies and stopping line. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Cut on unified armour clack to the hero’s sword; the hero chooses violence first.",
+          "tension": 8
+        },
+        {
+          "shotId": "s08",
+          "durationSec": 2,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "MS",
+          "movement": "locked-off",
+          "lensMm": 50,
+          "characters": [
+            "Shen",
+            "Red Squadron"
+          ],
+          "location": "west gate at salt line",
+          "action": "Shen severs a corpse guard’s extended forearm with one horizontal cut.",
+          "emotionalBeat": "Heroic rescue imagery becomes brutal intrusion.",
+          "soundMood": "Sharp blade crack; short wet impact; no heroic sting.",
+          "background": "Shen left, one red guard right; both hands, sword, forearm and salt line visible; gate behind guard.",
+          "choreography": "0–1s corpse arm extends from right; 1–3s Shen cuts once left-to-right; 3–5s rubber forearm drops in a brief crimson spray; 5–10s hold blade low, right cuff now red.",
+          "cameraChoreography": "Side-on waist-up master; keep anticipation, contact and recoil in one continuous view.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "Heroic rescue imagery becomes brutal intrusion.",
+            "editorial": "Cut on falling severed arm to thread retrieving that same arm, without repeating the impact.",
+            "sound": "Sharp blade crack; short wet impact; no heroic sting."
+          },
+          "generationBrief": "MS, 50mm, locked-off; west gate at salt line. Shen severs a corpse guard’s extended forearm with one horizontal cut. Screen direction: city/hero side left, refuge side right. 0–1s corpse arm extends from right; 1–3s Shen cuts once left-to-right; 3–5s rubber forearm drops in a brief crimson spray; 5–10s hold blade low, right cuff now red. Side-on waist-up master; keep anticipation, contact and recoil in one continuous view. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Cut on falling severed arm to thread retrieving that same arm, without repeating the impact.",
+          "tension": 9
+        },
+        {
+          "shotId": "s09",
+          "durationSec": 3,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "CU",
+          "movement": "locked-off",
+          "lensMm": 85,
+          "characters": [
+            "Red Squadron"
+          ],
+          "location": "salt boundary ground",
+          "action": "A black thread drags the severed red-armoured forearm back behind the salt line.",
+          "emotionalBeat": "Their defensive limit is more precise than the heroes’ restraint.",
+          "soundMood": "Dry drag on stone, thread creak, music drops.",
+          "background": "Same damaged red armour cuff and prosthetic arm as s08; white salt line crosses frame; loose thread is the only other moving object.",
+          "choreography": "0–1s severed prop arm rests left of salt; 1–4s thread draws it right across the line; 4–10s it stops behind salt, still detached.",
+          "cameraChoreography": "Ground-level insert; no flesh regrowth and no living face in gore frame.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "Their defensive limit is more precise than the heroes’ restraint.",
+            "editorial": "Arm stops at boundary; cut to Lan stopping at the same boundary.",
+            "sound": "Dry drag on stone, thread creak, music drops."
+          },
+          "generationBrief": "CU, 85mm, locked-off; salt boundary ground. A black thread drags the severed red-armoured forearm back behind the salt line. Screen direction: city/hero side left, refuge side right. 0–1s severed prop arm rests left of salt; 1–4s thread draws it right across the line; 4–10s it stops behind salt, still detached. Ground-level insert; no flesh regrowth and no living face in gore frame. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Arm stops at boundary; cut to Lan stopping at the same boundary.",
+          "tension": 8
+        },
+        {
+          "shotId": "s10",
+          "durationSec": 3,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "MCU",
+          "movement": "locked-off",
+          "lensMm": 75,
+          "characters": [
+            "Lan"
+          ],
+          "location": "west gate at salt line",
+          "action": "Lan looks from the stopped corpse guard to the refuge beyond.",
+          "emotionalBeat": "Certainty begins to become a question.",
+          "soundMood": "Lan VO: We were sent for the woman.",
+          "background": "Lan foreground with the salt line at lower edge, red guard shoulder soft left, shrine warm at right.",
+          "choreography": "0–1s eyes left on guard; 1–4s eyeline lifts toward frame right into refuge; 4–10s hold a questioning stillness, no sword draw.",
+          "cameraChoreography": "Eye-level near-profile, fixed lens and no crossing the established axis.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "Certainty begins to become a question.",
+            "editorial": "Eyeline match to the woman’s unbound hand inside the refuge.",
+            "sound": "Lan VO: We were sent for the woman."
+          },
+          "generationBrief": "MCU, 75mm, locked-off; west gate at salt line. Lan looks from the stopped corpse guard to the refuge beyond. Screen direction: city/hero side left, refuge side right. 0–1s eyes left on guard; 1–4s eyeline lifts toward frame right into refuge; 4–10s hold a questioning stillness, no sword draw. Eye-level near-profile, fixed lens and no crossing the established axis. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Eyeline match to the woman’s unbound hand inside the refuge.",
+          "tension": 6
+        }
+      ]
+    },
+    {
+      "sequenceId": "seq-3",
+      "title": "The rescued woman refuses",
+      "intent": "Show choice before explaining it; force the rescue premise to fail.",
+      "shots": [
+        {
+          "shotId": "s11",
+          "durationSec": 3,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "CU",
+          "movement": "locked-off",
+          "lensMm": 85,
+          "characters": [
+            "Wen",
+            "Reed"
+          ],
+          "location": "shrine interior at water bowl",
+          "action": "Wen freely accepts a water bowl from Reed’s only hand.",
+          "emotionalBeat": "Hospitality contradicts the abduction before dialogue explains it.",
+          "soundMood": "Bowl ring; all percussion falls away.",
+          "background": "Bowl and three hands only: Wen two, Reed one. Reed’s left sleeve ends above elbow, Wen’s repaired green sleeve and loose cord visible.",
+          "choreography": "0–1s Reed’s right hand offers bowl; 1–4s Wen’s unbound hands take it without resistance; 4–10s hold her loose red wrist cord and steady grip.",
+          "cameraChoreography": "Plain hand insert, match rightward eyeline; no fetishized body close-up or hidden restraints.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "Hospitality contradicts the abduction before dialogue explains it.",
+            "editorial": "Cut from voluntary acceptance to Wen passing Ash without being stopped.",
+            "sound": "Bowl ring; all percussion falls away."
+          },
+          "generationBrief": "CU, 85mm, locked-off; shrine interior at water bowl. Wen freely accepts a water bowl from Reed’s only hand. Screen direction: city/hero side left, refuge side right. 0–1s Reed’s right hand offers bowl; 1–4s Wen’s unbound hands take it without resistance; 4–10s hold her loose red wrist cord and steady grip. Plain hand insert, match rightward eyeline; no fetishized body close-up or hidden restraints. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Cut from voluntary acceptance to Wen passing Ash without being stopped.",
+          "tension": 5
+        },
+        {
+          "shotId": "s12",
+          "durationSec": 2,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "MS",
+          "movement": "locked-off",
+          "lensMm": 50,
+          "characters": [
+            "Ash",
+            "Wen"
+          ],
+          "location": "inside broken shrine gate",
+          "action": "Ash lowers his flute to let Wen pass him toward the heroes.",
+          "emotionalBeat": "The alleged captor gives way to her choice.",
+          "soundMood": "Bone-flute note cuts off; Wen’s single step.",
+          "background": "Ash on right pillar, Wen passes in midground to left, open gate ahead; empty hands remain visible.",
+          "choreography": "0–1s Ash holds flute at fused jaw; 1–3s he lowers it while Wen takes one free step past to screen left; 3–10s he stays back, never grips her.",
+          "cameraChoreography": "Keep both torsos and unbound wrists in a clean lateral two-shot.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "The alleged captor gives way to her choice.",
+            "editorial": "Flute stopping motivates silence before Wen’s statement.",
+            "sound": "Bone-flute note cuts off; Wen’s single step."
+          },
+          "generationBrief": "MS, 50mm, locked-off; inside broken shrine gate. Ash lowers his flute to let Wen pass him toward the heroes. Screen direction: city/hero side left, refuge side right. 0–1s Ash holds flute at fused jaw; 1–3s he lowers it while Wen takes one free step past to screen left; 3–10s he stays back, never grips her. Keep both torsos and unbound wrists in a clean lateral two-shot. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Flute stopping motivates silence before Wen’s statement.",
+          "tension": 5
+        },
+        {
+          "shotId": "s13",
+          "durationSec": 4,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "MCU",
+          "movement": "push-in",
+          "lensMm": 75,
+          "characters": [
+            "Wen"
+          ],
+          "location": "inside salt line facing heroes",
+          "action": "Wen plants her feet beside the outcasts and meets the heroes’ eyes.",
+          "emotionalBeat": "The person being rescued refuses the premise of the rescue.",
+          "soundMood": "Wen separate VO: I came here myself.",
+          "background": "Wen alone sharp, Ash and Rook soft behind her on refuge side; no hand on her shoulder or cord pulling her.",
+          "choreography": "0–1s Wen settles stance facing frame left; 1–5s steady level gaze, shoulders square and relaxed; 5–10s hold with her unbound wrist at frame edge.",
+          "cameraChoreography": "Slow straight 20cm push, one motivated move; do not force mouth animation to prerecorded dialogue.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "The person being rescued refuses the premise of the rescue.",
+            "editorial": "Hold through the whole declaration, then cut to the blood-stained cuff instead of a reaction montage.",
+            "sound": "Wen separate VO: I came here myself."
+          },
+          "generationBrief": "MCU, 75mm, push-in; inside salt line facing heroes. Wen plants her feet beside the outcasts and meets the heroes’ eyes. Screen direction: city/hero side left, refuge side right. 0–1s Wen settles stance facing frame left; 1–5s steady level gaze, shoulders square and relaxed; 5–10s hold with her unbound wrist at frame edge. Slow straight 20cm push, one motivated move; do not force mouth animation to prerecorded dialogue. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Hold through the whole declaration, then cut to the blood-stained cuff instead of a reaction montage.",
+          "tension": 7
+        },
+        {
+          "shotId": "s14",
+          "durationSec": 2,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "ECU",
+          "movement": "locked-off",
+          "lensMm": 85,
+          "characters": [
+            "Shen"
+          ],
+          "location": "west gate",
+          "action": "A bead of stage blood rolls down Shen’s white cuff onto his sword grip.",
+          "emotionalBeat": "The clean rescuer carries the violence he attributes to the poor.",
+          "soundMood": "Shen VO: You will come back.",
+          "background": "Same right cuff stain from s08; sword hilt solid in one hand, salt shrine soft beyond.",
+          "choreography": "0–1s stained right cuff held rigid; 1–3s one blood bead reaches silver hilt; 3–10s hold clenched grip.",
+          "cameraChoreography": "Locked insert; no fresh injury on Shen and no magically changing hand.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "The clean rescuer carries the violence he attributes to the poor.",
+            "editorial": "Blood bead falls on the syllable back; cut to his sword being deflected.",
+            "sound": "Shen VO: You will come back."
+          },
+          "generationBrief": "ECU, 85mm, locked-off; west gate. A bead of stage blood rolls down Shen’s white cuff onto his sword grip. Screen direction: city/hero side left, refuge side right. 0–1s stained right cuff held rigid; 1–3s one blood bead reaches silver hilt; 3–10s hold clenched grip. Locked insert; no fresh injury on Shen and no magically changing hand. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Blood bead falls on the syllable back; cut to his sword being deflected.",
+          "tension": 8
+        }
+      ]
+    },
+    {
+      "sequenceId": "seq-4",
+      "title": "Who needs rescuing?",
+      "intent": "Escalate to a held blade and a defensive shelter, then leave a moral hook.",
+      "shots": [
+        {
+          "shotId": "s15",
+          "durationSec": 3,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "MS",
+          "movement": "locked-off",
+          "lensMm": 50,
+          "characters": [
+            "Shen",
+            "Reed"
+          ],
+          "location": "salt line and right gatepost",
+          "action": "Reed’s taut thread turns Shen’s thrust down into stone.",
+          "emotionalBeat": "The outcasts repel intrusion without chasing the intruder.",
+          "soundMood": "Spindle click; metallic scrape; two fast drum beats.",
+          "background": "Hero left, Reed right behind salt, one black thread, both relevant hands and jian visible; fixed right gatepost anchors geography.",
+          "choreography": "0–1s Shen left sets one thrust toward right; 1–3s thread from Reed right catches blade near guard; 3–5s point turns down, strikes stone, stops; 5–10s planted end pose.",
+          "cameraChoreography": "Side-on exchange at waist height, no orbit; point and deflection must stay in frame.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "The outcasts repel intrusion without chasing the intruder.",
+            "editorial": "Cut on metal-to-stone to Lan’s blade stopping, contrasting force with decision.",
+            "sound": "Spindle click; metallic scrape; two fast drum beats."
+          },
+          "generationBrief": "MS, 50mm, locked-off; salt line and right gatepost. Reed’s taut thread turns Shen’s thrust down into stone. Screen direction: city/hero side left, refuge side right. 0–1s Shen left sets one thrust toward right; 1–3s thread from Reed right catches blade near guard; 3–5s point turns down, strikes stone, stops; 5–10s planted end pose. Side-on exchange at waist height, no orbit; point and deflection must stay in frame. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Cut on metal-to-stone to Lan’s blade stopping, contrasting force with decision.",
+          "tension": 9
+        },
+        {
+          "shotId": "s16",
+          "durationSec": 3,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "MS",
+          "movement": "locked-off",
+          "lensMm": 50,
+          "characters": [
+            "Lan",
+            "Wen"
+          ],
+          "location": "broken shrine gate",
+          "action": "Lan arrests her sword a hand’s breadth short of Wen.",
+          "emotionalBeat": "Her first truly heroic action is choosing not to strike.",
+          "soundMood": "Cymbal choke, controlled breath, then silence.",
+          "background": "Lan left, Wen right, blade gap sharp, empty space between them; shrine red lantern beyond Wen.",
+          "choreography": "0–1s Lan left advances a single step; 1–3s blade stops with a visible air gap before Wen right; 3–10s hold, Wen neither flinches nor gets cut.",
+          "cameraChoreography": "Clean lateral two-shot, eyelines level, keep feet planted and blade gap readable.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "Her first truly heroic action is choosing not to strike.",
+            "editorial": "Cut on deliberate silence to guard sealing the gate; do not fake contact.",
+            "sound": "Cymbal choke, controlled breath, then silence."
+          },
+          "generationBrief": "MS, 50mm, locked-off; broken shrine gate. Lan arrests her sword a hand’s breadth short of Wen. Screen direction: city/hero side left, refuge side right. 0–1s Lan left advances a single step; 1–3s blade stops with a visible air gap before Wen right; 3–10s hold, Wen neither flinches nor gets cut. Clean lateral two-shot, eyelines level, keep feet planted and blade gap readable. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Cut on deliberate silence to guard sealing the gate; do not fake contact.",
+          "tension": 10
+        },
+        {
+          "shotId": "s17",
+          "durationSec": 3,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "FS",
+          "movement": "locked-off",
+          "lensMm": 35,
+          "characters": [
+            "Indigo Squadron"
+          ],
+          "location": "salt-shrine gate",
+          "action": "One dead indigo guard plants its shield across the threshold and stops.",
+          "emotionalBeat": "The dead draw a boundary the living must choose to respect.",
+          "soundMood": "Single shield thud; footsteps cease.",
+          "background": "Indigo corpse full-length and intact shield foreground, salt before feet, five living places inside shrine beyond but no extra people.",
+          "choreography": "0–1s guard right steps laterally; 1–4s shield spans the gate inside salt; 4–10s feet stop, no pursuit or extra attack.",
+          "cameraChoreography": "Frontal full shot from heroes’ side, matches gate dimensions established in s03.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "The dead draw a boundary the living must choose to respect.",
+            "editorial": "Shield thud cues final wide shelter tableau.",
+            "sound": "Single shield thud; footsteps cease."
+          },
+          "generationBrief": "FS, 35mm, locked-off; salt-shrine gate. One dead indigo guard plants its shield across the threshold and stops. Screen direction: city/hero side left, refuge side right. 0–1s guard right steps laterally; 1–4s shield spans the gate inside salt; 4–10s feet stop, no pursuit or extra attack. Frontal full shot from heroes’ side, matches gate dimensions established in s03. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "Shield thud cues final wide shelter tableau.",
+          "tension": 9
+        },
+        {
+          "shotId": "s18",
+          "durationSec": 3,
+          "sourceDurationSec": 10,
+          "kind": "generated",
+          "size": "EWS",
+          "movement": "pull-back",
+          "lensMm": 28,
+          "characters": [
+            "Shen",
+            "Lan",
+            "Wen",
+            "Rook",
+            "Reed",
+            "Bell",
+            "Ash",
+            "Heel",
+            "Red Squadron",
+            "Indigo Squadron"
+          ],
+          "location": "salt-shrine threshold",
+          "action": "Both dead ranks kneel inward to shelter Wen and the five while the two heroes remain outside.",
+          "emotionalBeat": "The image reverses who is protected and who is the threat.",
+          "soundMood": "Rook VO: Leave us what you threw away. Lan VO: Then who needs rescuing?",
+          "background": "Heroes left foreground, salt line centre, six living refuge occupants under the broken lintel right, six representative dead guards forming two clear ranks.",
+          "choreography": "0–1s reveal clear groups: two heroes outside left, exactly five outcasts plus Wen inside right; 1–4s red and indigo front ranks kneel inward once; 4–10s hold shelter, with no new arrival or attack.",
+          "cameraChoreography": "Slow restrained pull-back from the south side of axis; establish all positions before the kneel and hold after.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "The image reverses who is protected and who is the threat.",
+            "editorial": "First cut at 3s then continue the same source at 4–7s only if clean; a final sustained tableau earns the title.",
+            "sound": "Rook VO: Leave us what you threw away. Lan VO: Then who needs rescuing?"
+          },
+          "generationBrief": "EWS, 28mm, pull-back; salt-shrine threshold. Both dead ranks kneel inward to shelter Wen and the five while the two heroes remain outside. Screen direction: city/hero side left, refuge side right. 0–1s reveal clear groups: two heroes outside left, exactly five outcasts plus Wen inside right; 1–4s red and indigo front ranks kneel inward once; 4–10s hold shelter, with no new arrival or attack. Slow restrained pull-back from the south side of axis; establish all positions before the kneel and hold after. Clean silhouettes; one continuous shot and one readable action.",
+          "editMotivation": "First cut at 3s then continue the same source at 4–7s only if clean; a final sustained tableau earns the title.",
+          "tension": 9
+        },
+        {
+          "shotId": "title",
+          "durationSec": 5,
+          "sourceDurationSec": 5,
+          "kind": "title",
+          "size": "WS",
+          "movement": "locked-off",
+          "lensMm": 50,
+          "characters": [],
+          "location": "editorial black field",
+          "action": "The title holds in vermilion serif letters on black.",
+          "emotionalBeat": "Leave the question hanging after the moral reversal.",
+          "soundMood": "One bronze bell, decay, then two seconds silence.",
+          "background": "Pure black background, vermilion title centred within safe margins; no generated imagery.",
+          "choreography": "0–5s static locally typeset title and no animation; final two seconds are silent.",
+          "cameraChoreography": "Locked flat editorial frame with no camera simulation, zoom, parallax or lens effects.",
+          "lighting": "Vermilion shrine lantern key from frame right, cold cyan exterior rim; dry ochre late-light field for s01–s03, painted indigo darkness at the gate thereafter.",
+          "focus": "Keep the acting hands and target on one readable focus plane; background soft only where it does not hide a story action.",
+          "motion": "One defined subject action with weighted start and held end pose; background limited to cloth and dry dust. Camera never chases the impact.",
+          "extras": "Only the named cast in this setup. Squadron wides show three red and three indigo representatives; pennants imply the remaining dead without additional live characters.",
+          "loreNotes": "Two enemy squadrons killed each other; five living outcasts control the dead only at their defensive boundary. Wen is an adult present freely. Fixed impairments and props never change.",
+          "departments": {
+            "direction": "The image reverses who is protected and who is the threat.",
+            "editorial": "First cut at 3s then continue the same source at 4–7s only if clean; a final sustained tableau earns the title.",
+            "sound": "Rook VO: Leave us what you threw away. Lan VO: Then who needs rescuing?"
+          },
+          "generationBrief": "Local typography only; do not spend a Muse generation on the title.",
+          "editMotivation": "Hard cut to title on the last question, then leave a single bell and silence.",
+          "tension": 8,
+          "titleText": "THE FIVE OUTCASTS"
+        }
+      ]
+    }
+  ],
+  "edit": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "shots": [
+      {
+        "shotId": "s01",
+        "inSec": 1,
+        "durationSec": 4
+      },
+      {
+        "shotId": "s02",
+        "inSec": 1,
+        "durationSec": 2
+      },
+      {
+        "shotId": "s03",
+        "inSec": 1,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s04",
+        "inSec": 1,
+        "durationSec": 2
+      },
+      {
+        "shotId": "s05",
+        "inSec": 1,
+        "durationSec": 4
+      },
+      {
+        "shotId": "s06",
+        "inSec": 1,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s07",
+        "inSec": 1,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s08",
+        "inSec": 1.0,
+        "durationSec": 2
+      },
+      {
+        "shotId": "s09",
+        "inSec": 1,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s10",
+        "inSec": 1,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s11",
+        "inSec": 1,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s12",
+        "inSec": 1,
+        "durationSec": 2
+      },
+      {
+        "shotId": "s13",
+        "inSec": 1,
+        "durationSec": 4
+      },
+      {
+        "shotId": "s14",
+        "inSec": 1,
+        "durationSec": 2
+      },
+      {
+        "shotId": "s15",
+        "inSec": 1,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s16",
+        "inSec": 1,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s17",
+        "inSec": 1,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s18",
+        "inSec": 1,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s18",
+        "inSec": 4,
+        "durationSec": 3
+      },
+      {
+        "shotId": "title",
+        "inSec": 0,
+        "durationSec": 5
+      }
+    ]
+  },
+  "critique": "# Development critique — before generation\n\nThe old concept had group spectacle without an ethical engine. This version has a false rescue premise, visible evidence contradicting it, and a decision left unresolved. The risk is overcrowding: ten named looks plus two armies can become an unreadable montage. Only the two heroes and Wen carry spoken conflict. The five are introduced once as a countable tableau; ring, bowl and flute isolates carry agency and power without biographies.\n\nThe twist must be visible, not just spoken. Reject s11 if Wen has bindings or an extra controlling hand; reject s12 if Ash restrains her; reject s13 if she looks entranced. s01 must show mutually killed red/indigo soldiers before necromancy. Reject the ending if corpses attack the city or the five become saintly smiles. Their handling of dead bodies stays horrific even when their defensive motive becomes clear.\n\nThe word Heavenly is social status, not a license for frictionless flights. Action is three readable choices: cut, deflect, stop. Corpse gore is brief, stylized stagecraft. The huge s18 tableau is the likeliest generation failure; if identities collapse, split its coverage into two explicit sources rather than accepting merged bodies. Source handles and trims are provisional until footage review. No video is shipping-ready from this document alone.\n"
+}

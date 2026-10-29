@@ -103,10 +103,20 @@ def cmd_validate(args):
     proj_path = os.path.join(d, "project.json")
     if os.path.exists(proj_path):
         proj = load(proj_path)
-        expected = math.ceil(proj.get("durationSec", 0) / 10)
+        expected = proj.get("sourceShotCount", math.ceil(proj.get("durationSec", 0) / 10))
         if shots and len(shots) != expected:
             errors.append(f"shot count {len(shots)} != duration beats {expected} "
-                          f"({proj['durationSec']}s / 10s)")
+                          f"(declared source count / delivery duration {proj['durationSec']}s)")
+        edit_path = os.path.join(d, "edit.json")
+        if proj.get("timingMode") == "edited":
+            if not os.path.exists(edit_path):
+                errors.append("edited project requires edit.json")
+            else:
+                cuts = load(edit_path).get("shots", [])
+                if abs(sum(c.get("durationSec", 0) for c in cuts) - proj["durationSec"]) > .001:
+                    errors.append("edit duration does not match project deliverable")
+                if set(c.get("shotId") for c in cuts) != set(s.get("shotId") for s in shots):
+                    errors.append("edit coverage does not match source shots")
     if errors:
         print("VALIDATION FAILED")
         for e in errors:
@@ -120,7 +130,8 @@ def cmd_beats(args):
     d = args.project
     proj = load(os.path.join(d, "project.json"))
     dur = proj["durationSec"]
-    beats = math.ceil(dur / 10)
+    actual = [s for s in all_shots(d) if s.get("kind", "generated") == "generated"]
+    beats = len(actual) if actual else math.ceil(dur / 10)
     batches = math.ceil(beats / 6)
     print(f"{proj['title']}: {dur}s -> {beats} x 10s shots -> "
           f"{batches} batches of <=6 clips")
@@ -135,6 +146,15 @@ def cmd_prompt_pack(args):
     out = os.path.join(d, "prompts")
     os.makedirs(out, exist_ok=True)
     for sh in all_shots(d):
+        if sh.get("generationBrief"):
+            if sh.get("kind") == "title":
+                prompt = "LOCAL TITLE CARD\n" + sh["titleText"] + "\n"
+            else:
+                blocks = [sh["lockedLookBlock"], *sh.get("lockedCharacterBlocks", {}).values()]
+                prompt = "\n\n".join(blocks + [sh["generationBrief"], "One continuous take. No internal edits, montage, titles or captions. Keep the usable action within the specified source handle; hold the end pose."]) + "\n"
+            with open(os.path.join(out, f"{sh['shotId']}.txt"), "w") as f:
+                f.write(prompt)
+            continue
         parts = [sh["lockedLookBlock"]]
         for ch in sh.get("characters", []):
             parts.append(sh.get("lockedCharacterBlocks", {}).get(ch, ""))

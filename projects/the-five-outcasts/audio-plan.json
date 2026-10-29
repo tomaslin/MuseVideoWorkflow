@@ -1,0 +1,135 @@
+{
+  "status": "not-recorded",
+  "sampleRate": 48000,
+  "channels": 2,
+  "voicePolicy": "Record dialogue separately; no lip-sync claim",
+  "cues": [
+    {
+      "shotId": "s01",
+      "startSec": 0,
+      "endSec": 4,
+      "intent": "Dry wind; envoy VO: They stole a woman from our city."
+    },
+    {
+      "shotId": "s02",
+      "startSec": 4,
+      "endSec": 6,
+      "intent": "Knuckle crack, cloth scrape; first faint bell."
+    },
+    {
+      "shotId": "s03",
+      "startSec": 6,
+      "endSec": 9,
+      "intent": "Two boot strikes; envoy VO: Bring her home."
+    },
+    {
+      "shotId": "s04",
+      "startSec": 9,
+      "endSec": 11,
+      "intent": "Shen VO: This is where they live?"
+    },
+    {
+      "shotId": "s05",
+      "startSec": 11,
+      "endSec": 15,
+      "intent": "Breath and flies; percussion withheld."
+    },
+    {
+      "shotId": "s06",
+      "startSec": 15,
+      "endSec": 18,
+      "intent": "Iron click, taut thread creak; low drum pulse."
+    },
+    {
+      "shotId": "s07",
+      "startSec": 18,
+      "endSec": 21,
+      "intent": "Unison armour clack; hand drum accelerates."
+    },
+    {
+      "shotId": "s08",
+      "startSec": 21,
+      "endSec": 23,
+      "intent": "Sharp blade crack; short wet impact; no heroic sting."
+    },
+    {
+      "shotId": "s09",
+      "startSec": 23,
+      "endSec": 26,
+      "intent": "Dry drag on stone, thread creak, music drops."
+    },
+    {
+      "shotId": "s10",
+      "startSec": 26,
+      "endSec": 29,
+      "intent": "Lan VO: We were sent for the woman."
+    },
+    {
+      "shotId": "s11",
+      "startSec": 29,
+      "endSec": 32,
+      "intent": "Bowl ring; all percussion falls away."
+    },
+    {
+      "shotId": "s12",
+      "startSec": 32,
+      "endSec": 34,
+      "intent": "Bone-flute note cuts off; Wen’s single step."
+    },
+    {
+      "shotId": "s13",
+      "startSec": 34,
+      "endSec": 38,
+      "intent": "Wen separate VO: I came here myself."
+    },
+    {
+      "shotId": "s14",
+      "startSec": 38,
+      "endSec": 40,
+      "intent": "Shen VO: You will come back."
+    },
+    {
+      "shotId": "s15",
+      "startSec": 40,
+      "endSec": 43,
+      "intent": "Spindle click; metallic scrape; two fast drum beats."
+    },
+    {
+      "shotId": "s16",
+      "startSec": 43,
+      "endSec": 46,
+      "intent": "Cymbal choke, controlled breath, then silence."
+    },
+    {
+      "shotId": "s17",
+      "startSec": 46,
+      "endSec": 49,
+      "intent": "Single shield thud; footsteps cease."
+    },
+    {
+      "shotId": "s18",
+      "startSec": 49,
+      "endSec": 52,
+      "intent": "Rook VO: Leave us what you threw away. Lan VO: Then who needs rescuing?"
+    },
+    {
+      "shotId": "s18",
+      "startSec": 52,
+      "endSec": 55,
+      "intent": "Rook VO: Leave us what you threw away. Lan VO: Then who needs rescuing?"
+    },
+    {
+      "shotId": "title",
+      "startSec": 55,
+      "endSec": 60,
+      "intent": "One bronze bell, decay, then two seconds silence."
+    }
+  ],
+  "stems": [
+    "dialogue",
+    "music",
+    "ambience",
+    "impacts"
+  ],
+  "delivery": "Approved 48kHz stereo mix, -1 dBTP ceiling, timed captions from actual recordings"
+}

@@ -1,5 +1,6 @@
 import Foundation
 import CryptoKit
+import AppKit
 import Darwin
 
 // Swift owns intake, provenance, edit decisions, cache and verification.
@@ -125,8 +126,33 @@ func ingest(_ project: Project, _ input: String, _ shot: String?, _ expectedProm
     }
     manifest["clips"] = clips; try write(manifest, project.path("manifest.json"))
 }
+func cards(_ project: Project) throws {
+    for shot in project.shots where shot["kind"] as? String == "title" {
+        guard let id = shot["shotId"] as? String, let title = shot["titleText"] as? String else { throw Failure("Invalid title card") }
+        let width = 1280, height = 720
+        guard let bitmap = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: width, pixelsHigh: height, bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .deviceRGB, bytesPerRow: 0, bitsPerPixel: 0), let context = NSGraphicsContext(bitmapImageRep: bitmap) else { throw Failure("Cannot create title canvas") }
+        NSGraphicsContext.saveGraphicsState(); NSGraphicsContext.current = context
+        NSColor.black.setFill(); NSRect(x: 0, y: 0, width: width, height: height).fill()
+        let paragraph = NSMutableParagraphStyle(); paragraph.alignment = .center
+        var fontSize: CGFloat = 80
+        let safeWidth = CGFloat(width - 160)
+        while fontSize > 20 && (title as NSString).size(withAttributes: [.font: NSFont(name: "TimesNewRomanPS-BoldMT", size: fontSize) ?? NSFont.boldSystemFont(ofSize: fontSize)]).width > safeWidth { fontSize -= 2 }
+        let attributes: [NSAttributedString.Key: Any] = [.font: NSFont(name: "TimesNewRomanPS-BoldMT", size: fontSize) ?? NSFont.boldSystemFont(ofSize: fontSize), .foregroundColor: NSColor(calibratedRed: 0.78, green: 0.10, blue: 0.08, alpha: 1), .paragraphStyle: paragraph]
+        (title as NSString).draw(in: NSRect(x: 80, y: CGFloat(height)/2 - fontSize/2, width: safeWidth, height: fontSize*1.5), withAttributes: attributes)
+        NSGraphicsContext.restoreGraphicsState()
+        guard let png = bitmap.representation(using: .png, properties: [:]) else { throw Failure("Cannot encode title") }
+        let work = try project.path("work/cards"); try fm.createDirectory(at: work, withIntermediateDirectories: true)
+        let still = work.appendingPathComponent(id + ".png"), video = work.appendingPathComponent(id + ".mp4")
+        try png.write(to: still)
+        let duration = shot["sourceDurationSec"] as? Double ?? 5
+        try run("ffmpeg", ["-v", "error", "-nostdin", "-y", "-loop", "1", "-framerate", "24", "-i", still.path, "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-t", String(duration), "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p", "-c:a", "aac", "-movflags", "+faststart", video.path])
+        try ingest(project, video.path, id, project.prompt(id))
+    }
+    try status(project)
+}
+
 func status(_ project: Project) throws {
-    let manifest = try project.manifest(); var queue: [[String: Any]] = []
+    let manifest = try project.manifest(); var queue: [[String: Any]] = []; var localPending: [String] = []
     for shot in project.shots {
         let id = shot["shotId"] as! String
         var state = "missing"
@@ -137,9 +163,12 @@ func status(_ project: Project) throws {
             else { state = "missing-or-corrupt" }
         }
         print("\(id): \(state)")
-        if ["missing", "redo", "stale-prompt", "missing-or-corrupt"].contains(state) { queue.append(["shotId": id, "reason": state, "promptSha256": try project.prompt(id)]) }
+        if ["missing", "redo", "stale-prompt", "missing-or-corrupt"].contains(state) {
+            if shot["kind"] as? String == "title" { localPending.append(id) }
+            else { queue.append(["shotId": id, "reason": state, "promptSha256": try project.prompt(id)]) }
+        }
     }
-    try write(["pending": queue, "nextBatch": Array(queue.prefix(6)), "complete": queue.isEmpty], project.path("generation-queue.json"))
+    try write(["pending": queue, "nextBatch": Array(queue.prefix(6)), "localPending": localPending, "complete": queue.isEmpty && localPending.isEmpty], project.path("generation-queue.json"))
 }
 func redo(_ project: Project, _ id: String, _ reason: String) throws {
     try require(project.shots.contains { $0["shotId"] as? String == id }, "Unknown shot: \(id)")
@@ -241,6 +270,7 @@ func main() throws {
     Usage: scripts/local-video.sh <command> <project-directory> [options]
       import PROJECT INPUT [--shot sNN] [--prompt-sha256 HASH]
       status PROJECT                         report missing/stale/redo queue (max 6)
+      cards PROJECT                          render local title cards (no AI credits)
       assemble PROJECT                       use edit.json; cache normalized takes
       verify PROJECT                         validate saved media/EDL/checksum
       redo PROJECT --shot sNN --reason TEXT   preserve take and queue replacement
@@ -254,6 +284,13 @@ func main() throws {
     switch args[0] {
     case "import": try require(args.count >= 3, "Missing input file/directory"); try ingest(project, args[2], option("--shot"), option("--prompt-sha256")); try status(project)
     case "status": try status(project)
+    case "cards": try cards(project)
+    case "redo-file":
+        try require(args.count >= 3, "Missing redo request JSON")
+        let request = try read(URL(fileURLWithPath: args[2]))
+        try require(request["project"] as? String == project.definition["slug"] as? String, "Redo request belongs to a different project")
+        guard let id = request["shotId"] as? String, let reason = request["reason"] as? String else { throw Failure("Invalid redo request") }
+        try redo(project, id, reason)
     case "assemble": try assemble(project)
     case "verify": try verify(project)
     case "redo": guard let id = option("--shot"), let reason = option("--reason") else { throw Failure("redo needs --shot and --reason") }; try redo(project, id, reason)

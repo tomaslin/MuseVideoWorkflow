@@ -1,0 +1,19 @@
+{
+  "slug": "the-five-outcasts",
+  "state": "shot-list",
+  "history": [
+    {
+      "at": "2026-10-29T18:48:38.232513+00:00",
+      "event": "production-materialized",
+      "productionSha256": "2999d1be4ef834c06995be312b7de83fb6ea0760373f595261d3cf9a2f3cdaaf"
+    },
+    {
+      "at": "2026-10-29T18:51:10.968621+00:00",
+      "event": "production-materialized",
+      "productionSha256": "2999d1be4ef834c06995be312b7de83fb6ea0760373f595261d3cf9a2f3cdaaf"
+    }
+  ],
+  "openCritiques": [
+    "Generated footage, reference adherence, sound mix and final visual review pending"
+  ]
+}

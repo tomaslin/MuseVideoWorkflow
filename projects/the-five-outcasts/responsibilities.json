@@ -1,0 +1,71 @@
+{
+  "policy": "Responsibilities are artifact owners, not fictitious professional approvals",
+  "assignments": [
+    {
+      "role": "producer",
+      "owns": "brief.md; budget.json; schedule.json; rights-ledger.json",
+      "assignee": "Muse for authored planning; local tools for materialization; user or named reviewer for footage approval",
+      "signoff": "pending actual artifact/footage checks"
+    },
+    {
+      "role": "director",
+      "owns": "treatment.md; script.md; storyboard.json; departments/direction.md",
+      "assignee": "Muse for authored planning; local tools for materialization; user or named reviewer for footage approval",
+      "signoff": "pending actual artifact/footage checks"
+    },
+    {
+      "role": "cinematographer",
+      "owns": "look-bible.md; departments/camera-lighting.md; shot camera fields",
+      "assignee": "Muse for authored planning; local tools for materialization; user or named reviewer for footage approval",
+      "signoff": "pending actual artifact/footage checks"
+    },
+    {
+      "role": "script-supervisor",
+      "owns": "lore-bible.md; characters.md; fixed blocks and per-shot editMotivation",
+      "assignee": "Muse for authored planning; local tools for materialization; user or named reviewer for footage approval",
+      "signoff": "pending actual artifact/footage checks"
+    },
+    {
+      "role": "production-designer",
+      "owns": "departments/production-design.md; shot background fields",
+      "assignee": "Muse for authored planning; local tools for materialization; user or named reviewer for footage approval",
+      "signoff": "pending actual artifact/footage checks"
+    },
+    {
+      "role": "costume-and-makeup",
+      "owns": "departments/costume-makeup.md; locked character appearances",
+      "assignee": "Muse for authored planning; local tools for materialization; user or named reviewer for footage approval",
+      "signoff": "pending actual artifact/footage checks"
+    },
+    {
+      "role": "fight-coordinator",
+      "owns": "departments/choreography.md; timed anticipation/contact/recoil",
+      "assignee": "Muse for authored planning; local tools for materialization; user or named reviewer for footage approval",
+      "signoff": "pending actual artifact/footage checks"
+    },
+    {
+      "role": "sound-and-composer",
+      "owns": "departments/sound-music.md; audio-plan.json",
+      "assignee": "Muse for authored planning; local tools for materialization; user or named reviewer for footage approval",
+      "signoff": "pending actual artifact/footage checks"
+    },
+    {
+      "role": "editor",
+      "owns": "edit.json; final/edl.json; departments/editorial.md",
+      "assignee": "Muse for authored planning; local tools for materialization; user or named reviewer for footage approval",
+      "signoff": "pending actual artifact/footage checks"
+    },
+    {
+      "role": "generation-operator",
+      "owns": "prompts/; reference-plan.json; batches.json; manifest.json",
+      "assignee": "Muse for authored planning; local tools for materialization; user or named reviewer for footage approval",
+      "signoff": "pending actual artifact/footage checks"
+    },
+    {
+      "role": "delivery-QC",
+      "owns": "evaluation.json; local Swift verify; named reviewer of final footage",
+      "assignee": "Muse for authored planning; local tools for materialization; user or named reviewer for footage approval",
+      "signoff": "pending actual artifact/footage checks"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Camera and lighting
+
+South-of-axis camera: city left, shrine right. 28mm battlefield, 35mm geography, 50mm exchanges, 85mm inserts; avoid wide-angle facial distortion being mistaken for character makeup. Shoot s03 and s17 as a compatible entrance/blocking pair. Hold horizon and lens height for s05 so exactly five bodies can be counted. One slow 20cm push during s13 emphasizes testimony. Action plates s08/s15/s16 remain side-on, with blade, hands and target visible. Vermilion lantern key from shrine right and cyan exterior rim behind corpses; expose faces without erasing black negative space. No orbit, unmotivated drone reveal, dutch-angle montage or internal cuts in one generated source.

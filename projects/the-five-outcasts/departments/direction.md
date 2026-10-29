@@ -1,0 +1,3 @@
+# Direction and performance
+
+The story question changes at 34 seconds: not "can the heroes save her?" but "will they accept her answer?" s04 establishes their prejudiced gaze; s11 and s12 contradict the abduction without dialogue; s13 states her choice. Do not make Wen vacant-eyed or frightened of the five. Shen's cuff gesture is a choice, not involuntary illness. Lan's stop in s16 must be legible: decision precedes stillness. Exactly five outcasts share one establishing composition s05; later isolates must match that arrangement. Speak lines off screen over reaction shots, not simulated perfect lip sync. The last tableau gives refuge-side characters the interior and the heroes the threshold outside.

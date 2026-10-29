@@ -1,0 +1,22 @@
+{
+  "clips" : [
+    {
+      "durationSec" : 5,
+      "file" : "clips/raw/title-cc835100227c415694f380ab838553f8d87e4345ede7de205131ebf0f2429363.mp4",
+      "height" : 720,
+      "importedAt" : "2026-10-29T18:50:16Z",
+      "promptProvenance" : "generation-hash-verified",
+      "promptSha256" : "327184ffe642bb17230f93a83541c4f117cc887fafd9453e6af5282bd50dfa08",
+      "selected" : true,
+      "sha256" : "cc835100227c415694f380ab838553f8d87e4345ede7de205131ebf0f2429363",
+      "shotId" : "title",
+      "sourceName" : "title.mp4",
+      "status" : "generated",
+      "width" : 1280
+    }
+  ],
+  "redoRequests" : [
+
+  ],
+  "version" : 1
+}

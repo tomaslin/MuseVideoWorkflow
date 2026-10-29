@@ -1,0 +1,8 @@
+# Locked look
+
+1970s Hong Kong studio wuxia horror on 35mm Eastmancolor: theatrical rock-and-temple sets, painted indigo night skies, hard vermilion lantern keys and cyan rim light, dense black shadows, visible film grain, slightly imperfect optical texture, practical wax prosthetics and thick crimson stage blood. Classical frontal blocking, legible full-body martial action, deliberate close-ups and restrained motivated camera moves. Unsettling, operatic and cruel, never a glossy fantasy game. Real cloth, solid props, coherent anatomy. One continuous take per source, no generated writing, no morphing bodies, no comic beggar army.
+
+## Geography and coverage
+The city lies screen left. The refuge lies screen right, beyond one chalk-and-salt line and a broken gate. Heroes approach left-to-right. Corpses face outward toward screen left when guarding. Keep camera south of this east-west axis. Reverse angles must be established by an eyeline or neutral insert; never flip actors to save a composition. The red squadron occupies the near rank and indigo the far rank, with distinct armour and wounds.
+
+The field is dry ochre in late light, the shrine is vermilion practical light against a painted indigo exterior. Use 28/35mm for battlefield and five-person geography, 50mm for playable exchanges, 75/85mm for hands, disgust and moral reaction. A single short push-in marks Wen's statement, not every moment. Use locked cameras for supernatural movement so bodily causality reads. Dialogue is voice-over with reaction coverage. Blood stains persist. Optical texture comes from grading, not smeared moving bodies.
