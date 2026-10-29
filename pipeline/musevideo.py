@@ -190,19 +190,27 @@ def cmd_prompt_pack(args):
 
 
 def cmd_edl(args):
-    d = args.project
+    from pathlib import Path
+    d = Path(args.project)
     shots = all_shots(d)
-    edl, t = [], 0
-    for sh in shots:
-        dur = sh.get("durationSec", 10)
-        edl.append({"shotId": sh["shotId"], "sequenceId": sh["sequenceId"],
-                    "startSec": t, "endSec": t + dur,
-                    "transitionIn": sh.get("transitionIn", "cut")})
-        t += dur
-    with open(os.path.join(d, "final", "edl.json"), "w") as f:
-        json.dump({"shotOrder": [e["shotId"] for e in edl],
-                   "entries": edl, "totalSec": t}, f, indent=2)
-    print(f"Wrote EDL: {len(edl)} shots, {t}s total")
+    by_id = {s["shotId"]: s for s in shots}
+    edit = load(d / "edit.json") if (d / "edit.json").exists() else {}
+    cuts = edit.get("shots") or [{"shotId": s["shotId"], "inSec": 0, "durationSec": s.get("durationSec", 10)} for s in shots]
+    entries, cursor = [], 0
+    for cut in cuts:
+        sh = by_id[cut["shotId"]]
+        duration = cut["durationSec"]
+        if duration <= 0 or cut.get("inSec", 0) < 0:
+            raise ValueError("Invalid edit trim")
+        entries.append({"shotId": sh["shotId"], "sequenceId": sh["sequenceId"],
+                        "sourceInSec": cut.get("inSec", 0), "sourceOutSec": cut.get("inSec", 0) + duration,
+                        "startSec": cursor, "endSec": cursor + duration,
+                        "transitionIn": cut.get("transitionIn", "cut")})
+        cursor += duration
+    (d / "final").mkdir(exist_ok=True)
+    with (d / "final" / "edl.json").open("w") as stream:
+        json.dump({"shotOrder": [e["shotId"] for e in entries], "entries": entries, "totalSec": cursor, "status": "planned-not-rendered"}, stream, indent=2)
+    print(f"Wrote planned EDL: {len(entries)} cuts, {cursor}s total")
 
 
 def cmd_assemble(args):

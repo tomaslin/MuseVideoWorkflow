@@ -14,4 +14,6 @@ jobs:
       - name: Build static project catalog
         run: python3 scripts/build-studio.py --out _site
       - name: Check browser scripts
-        run: node --check apps/studio/app.js
+        run: |
+          node --check apps/studio/app.js
+          node --check apps/studio/workspace.js

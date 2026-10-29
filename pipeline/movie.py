@@ -61,7 +61,7 @@ def cmd_storyboard(args):
     panels = [{"panelId": s["shotId"], "shotId": s["shotId"],
                "size": s.get("size"), "movement": s.get("movement"),
                "action": s.get("action"), "soundCue": s.get("soundMood"),
-               "tension": None,
+               "tension": s.get("tension"),
                "note": "Set tension 0-10 per panel in the storyboard view; "
                        "the curve must rise to a climax and resolve."}
               for s in shots]

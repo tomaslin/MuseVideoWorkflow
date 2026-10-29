@@ -26,6 +26,22 @@ The pipeline is driven by Muse, not by a loose prompt. You give a video idea,
 Muse works it out, criticizes it, improves it, generates it in batches, and
 lands a finished video in the project's `final/` folder.
 
+## Multiple productions
+
+Open the [production slate](https://tomaslin.github.io/MuseVideoWorkflow/workspace.html)
+to switch between projects. Every story has independent cast, footage, edit,
+manifest and history. The shared planner rotates between active projects and
+reserves at most six clips total per Muse message:
+
+```bash
+python3 pipeline/workspace.py list
+python3 pipeline/workspace.py queue --claim
+```
+
+Archived projects and worked examples stay available for inspection and are
+excluded from generation. A long project does not have to finish before a new
+one can progress.
+
 ## Develop the whole production from a story
 
 Muse authors `production.json` using `schemas/production.schema.json`. Then:

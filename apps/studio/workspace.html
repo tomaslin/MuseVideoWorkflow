@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Muse / Productions</title><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="wordmark" href="workspace.html">MUSE <span>/ PRODUCTIONS</span></a><span class="status-label">MANY STORIES. ONE WORKSPACE.</span></header><main>
+<section class="intro"><p class="eyebrow">YOUR PRODUCTION SLATE</p><h1>Every story.<br>Its own world.</h1><p>Independent casts, footage, edits and histories. A shared queue keeps each production moving.</p></section>
+<div class="toolbar"><h2>Projects</h2><label><input type="checkbox" id="show-archived" checked> Show archived projects and examples</label><a href="#new-production">+ Develop a new story</a></div>
+<p id="notice" role="status" aria-live="polite">Loading production slate…</p><section id="projects" class="project-grid" aria-label="Projects"></section>
+<section class="handoff"><div><p class="eyebrow">A SHARED GENERATION QUEUE</p><h2>Progress across projects.</h2><p>Rotate between active stories. Claim at most six source clips per Muse message. Leases prevent duplicate jobs; title cards stay local.</p></div><pre>python3 pipeline/workspace.py list
+python3 pipeline/workspace.py queue --claim
+# Send that batch to Muse, then import actual MP4s into each project.
+python3 pipeline/workspace.py complete &lt;lease-id&gt;
+# Failed sources can be released with --failed project:shot</pre></section>
+<section id="new-production" class="new-production"><h2>Develop a new production</h2><label for="story-brief">Story, characters, reveal, tone and runtime</label><textarea id="story-brief" rows="6" placeholder="Tell the story. Each new production gets a separate project folder, cast, sources, cut and history."></textarea><button id="copy-production" class="primary">Copy development request for Muse</button><p>Paste the request into Muse. Its production.json is materialized into a new project without changing existing stories.</p></section>
+</main><footer>Project work is isolated on disk and in browser storage. Raw media and render caches stay on your Mac. Published catalogs reflect committed source and deliverables.</footer><script src="workspace.js"></script></body></html>

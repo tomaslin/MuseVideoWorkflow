@@ -13,3 +13,5 @@ projects/*/.local-video.lock
 .watch.lock
 watch-log.md
 _site/
+.workspace-state.json
+.workspace.lock

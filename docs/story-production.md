@@ -52,3 +52,30 @@ The studio can copy a development request for a new story. It is a static
 working surface; paste that request into Muse. It does not secretly invoke a
 model, store API keys in Pages, or claim that exported browser edits have
 already changed files on your Mac.
+
+## Multiple projects and a shared production slate
+
+Open `workspace.html` for the production dashboard. Every project has its own
+folder, cast, source manifest, reference images, prompt versions, trims, render
+cache and history. Browser edits are keyed by project slug. Archived projects
+and reference examples are excluded from the active slate and generation queue.
+New development requests create a new slug and preserve all existing work.
+
+```bash
+python3 pipeline/workspace.py list
+python3 pipeline/workspace.py queue --claim
+# Send the returned batch to Muse. It contains at most six clips TOTAL.
+# Import the actual downloads into the named project folders, then:
+python3 pipeline/workspace.py complete <lease-id>
+# Or identify specific failures (they receive a two-minute backoff):
+python3 pipeline/workspace.py complete <lease-id> --failed project-slug:s04
+```
+
+The planner rotates between active projects, prioritizes redos within a project,
+checks prompt and media hashes, excludes local titles, and reserves claimed jobs
+with an expiring lease. Another claim cannot select a reserved shot. A completed
+lease requires the exact claimed prompt and a locally imported verified file,
+not merely a provider's textual success message. The planner does not invoke
+Muse itself. A single Muse scheduler can consume these batches across projects;
+do not leave old per-project workers generating the same sources. Local renders
+may run for separate projects concurrently; each has its own file lock.

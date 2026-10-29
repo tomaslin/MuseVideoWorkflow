@@ -1,4 +1,5 @@
 'use strict';
+if(!new URLSearchParams(location.search).has('project')&&!location.pathname.endsWith('storyboard.html'))location.replace('workspace.html');
 const $ = id => document.getElementById(id);
 let projects = [], project, edit, localMedia = new Map(), mediaUrls = [];
 const storageKey = slug => `muse-cut-v2:${slug}`;
@@ -22,7 +23,7 @@ function setProject(slug) {
   if (!edit || !Array.isArray(edit.shots) || edit.shots.some(c => !project.shots.some(s=>s.shotId===c.shotId))) edit = structuredClone(project.edit?.shots ? project.edit : defaultEdit(project));
   const params = new URLSearchParams(location.search); params.set('project',project.slug); history.replaceState(null,'',`?${params}`);
   $('storyboard-link').href = `${location.pathname.endsWith('storyboard.html')?'index.html':'storyboard.html'}?project=${encodeURIComponent(project.slug)}`;
-  $('project-header').replaceChildren(el('h2',project.title),el('p',`${project.shots.length} source shots · ${project.durationSec}s generation plan · ${project.videoUrl?'saved final available':'final video not saved yet'}`));
+  $('project-header').replaceChildren(el('h2',project.title),el('p',`${project.shots.filter(s=>s.kind!=="title").length} video sources · ${project.durationSec}s delivery · ${project.videoUrl?'saved final available':'final video not saved yet'}`));
   $('final-player').hidden = !project.videoUrl;
   const final = $('final-video'); final.pause(); final.removeAttribute('src'); final.removeAttribute('poster');
   if(project.videoUrl) { final.src=project.videoUrl; if(project.posterUrl) final.poster=project.posterUrl; $('download-final').href=project.videoUrl; }
