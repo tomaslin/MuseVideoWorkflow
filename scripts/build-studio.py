@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import importlib.util
 import json
+import re
 from pathlib import Path
 import shutil
 import subprocess
@@ -43,6 +44,8 @@ def build(out):
         data_dir = out / 'data' / slug
         data_dir.mkdir(parents=True, exist_ok=True)
         for shot in shots:
+            if not re.fullmatch(r'[A-Za-z0-9_-]+', shot.get('shotId', '')):
+                raise ValueError('Invalid shot ID in project catalog')
             shot['tension'] = tensions.get(shot['shotId'])
             prompt = project_dir / 'prompts' / (shot['shotId'] + '.txt')
             shot['prompt'] = prompt.read_text() if prompt.exists() else ''
@@ -94,6 +97,8 @@ def build(out):
                 raise ValueError(f'Workprint checksum mismatch: {video}')
             if json.loads(manifest.read_text()).get('scope') != 'draft-excerpt':
                 raise ValueError('Workprint must be labeled as an excerpt')
+            if not re.fullmatch(r'[A-Za-z0-9_-]+', draft.get('id', '')):
+                raise ValueError('Invalid workprint ID')
             target = data_dir / 'workprints' / draft['id']
             target.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(video,target/'video.mp4')
