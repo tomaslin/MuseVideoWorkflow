@@ -16,21 +16,21 @@
         "Little Sparrow",
         "Jiangshi"
       ],
-      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedLookBlock": "Older wuxia movie style, 1970s Shaw Brothers era, painterly studio look with theatrical frontal staging, practical wire-fu, longer takes, film grain, vivid period palette of ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, fluid weighted motion with anticipation and follow-through, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects, no modern objects, no modern CGI smoothness, no saturated neon.",
       "lockedCharacterBlocks": {
-        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, and a knotted wooden staff, moving with slow, deliberate authority",
-        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, and a rope whip at her belt, moving fast and light across the sand",
-        "Jiangshi": "hopping vampires in rotting dark Qing robes with faded gold trim, paper talismans on their foreheads, arms held stiffly forward, green-grey skin, moving in stiff, hopping formation"
+        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, nine small cloth bags tied across his back marking him sect chief, and a knotted wooden staff, moving with slow, deliberate, fluid authority, weight shifting with each step",
+        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, five small cloth bags at her belt marking her scout rank, and a rope whip at her belt, moving fast and light across the sand, with fluid weight and a crouch-and-settle landing",
+        "Jiangshi": "hopping vampires in rotting dark Qing robes with faded gold trim, paper talismans on their foreheads, arms held stiffly forward with fingers together, legs perfectly straight with knees locked and never bending, torso rigid and upright, green-grey skin, hopping as a single rigid body from the ankles with no crouch, no knee lift, no walking and no running, moving in stiff, hopping formation"
       },
       "background": "Foreground: sand spray from footwork. Midground: band and vampires meeting in the dunes. Deep background: dunes at night, moon behind the vampires so they read as silhouettes.",
-      "choreography": "Beat 1 (0-3s): Band and vampires meet. Spatial layout: beggars left and centre, vampires right, moon behind vampires. Beat 2 (3-7s): Three simultaneous exchanges, each readable and not crossing another's space: Hong staff centre, Sparrow rope left, two extras with bowls and short staffs right. Beat 3, payoff (7-10s): A vampire is knocked back into the sand, dust bursting, band holds formation, cut on the dust burst.",
+      "choreography": "Beat 1 (0-3s): Band and vampires meet. Spatial layout: beggars left and centre, vampires right, moon behind vampires. Beat 2 (3-7s): Three simultaneous exchanges, each readable and not crossing another's space: Hong staff centre, Sparrow rope left, two extras with bowls and short staffs right. Beat 3, payoff (7-10s): A vampire is knocked back into the sand, dust bursting, band holds formation, cut on the dust burst. Jiangshi throughout: legs straight, knees locked, never bending, hopping as rigid bodies.",
       "cameraChoreography": "Crane: starts at 2 metres, rises to 5 metres during beat 2 to show all three exchanges, then holds on the dust burst.",
       "lighting": "Cold moonlight with warm lantern glow from the caravanserai behind the camera, vampires backlit as silhouettes, beggars front-lit.",
       "lensMm": 35,
       "focus": "Deep focus: all three exchanges readable, no exchange blurred out.",
-      "motion": "Subject motion: three exchanges at once, each with its own rhythm. Background motion: dust and sand spray. Camera rises, then holds \u2014 it does not chase individual fighters.",
-      "extras": "Five to seven beggar extras and five vampires, all in the layout above, no one crossing another's space.",
-      "loreNotes": "Jiangshi rules 1, 5, 7: hop only, arms stiff, knocked back not destroyed. Beggar rule: no swords, only staffs, bowls, ropes, anything to hand.",
+      "motion": "Subject motion: three exchanges at once, each with its own rhythm. Background motion: dust and sand spray. Camera rises, then holds — it does not chase individual fighters. Fluid, weighted motion with anticipation and follow-through for all living characters; clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects. Jiangshi rigidity is dead-body rigidity, not broken motion: legs straight, knees locked and never bending, no crouch before a hop, torso rigid, hop as a whole rigid body from the ankles. Everything else in frame moves fluidly; clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges.",
+      "extras": "Battle formation in bag-rank order: Chief Hong (9 bags) centre, elder deputy (8 bags) at his right, hall masters (7 bags) on the flanks, Sparrow (5 bags, scout) left, rank-and-file (3 and 1 bags) holding the line. Bag counts must read on camera; no beggar wears a clean garment.",
+      "loreNotes": "Beggar hierarchy (bag ranks) holds in battle: Hong 9, elder deputy 8, hall masters 7, Sparrow 5 as scout reporting to Hong, rank-and-file 3 and 1. Jiangshi rule 1: legs straight, knees locked, never bending, hopping as rigid bodies. Jiangshi are stopped, not killed, by staff blows.",
       "departments": {
         "choreography": "Spatial layout is the deliverable: beggars left/centre, vampires right, moon behind vampires",
         "costume": "Hong left shoulder tear opens in this shot and must persist in s09",
@@ -51,20 +51,20 @@
         "Little Sparrow",
         "Jiangshi"
       ],
-      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedLookBlock": "Older wuxia movie style, 1970s Shaw Brothers era, painterly studio look with theatrical frontal staging, practical wire-fu, longer takes, film grain, vivid period palette of ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, fluid weighted motion with anticipation and follow-through, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects, no modern objects, no modern CGI smoothness, no saturated neon.",
       "lockedCharacterBlocks": {
-        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, and a rope whip at her belt, moving fast and light across the sand",
-        "Jiangshi": "hopping vampires in rotting dark Qing robes with faded gold trim, paper talismans on their foreheads, arms held stiffly forward, green-grey skin, moving in stiff, hopping formation"
+        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, five small cloth bags at her belt marking her scout rank, and a rope whip at her belt, moving fast and light across the sand, with fluid weight and a crouch-and-settle landing",
+        "Jiangshi": "hopping vampires in rotting dark Qing robes with faded gold trim, paper talismans on their foreheads, arms held stiffly forward with fingers together, legs perfectly straight with knees locked and never bending, torso rigid and upright, green-grey skin, hopping as a single rigid body from the ankles with no crouch, no knee lift, no walking and no running, moving in stiff, hopping formation"
       },
       "background": "Foreground: three vampires in a line, arms up, hopping in place. Midground: Sparrow in mid-leap above them. Deep background: moon, large and low, with dune silhouettes.",
-      "choreography": "Beat 1 (0-3s): Sparrow runs toward the three vampires, gathering speed, rope whip trailing. Beat 2 (3-7s): She leaps, wire-assisted, in a high arc over all three vampires; the vampires hop in place beneath her, arms up, missing. Beat 3, payoff, landing (7-10s): Landing in a crouch in the sand, sand spraying forward, Sparrow already turning to face them, hold on the landing crouch.",
+      "choreography": "Beat 1 (0-3s): Sparrow runs toward the three vampires, gathering speed, rope whip trailing. Beat 2 (3-7s): She leaps, wire-assisted, in a high arc over all three vampires; the vampires hop in place beneath her, arms up, missing. Beat 3, payoff, landing (7-10s): Landing in a crouch in the sand, sand spraying forward, Sparrow already turning to face them, hold on the landing crouch. Jiangshi throughout: legs straight, knees locked, never bending, hopping as rigid bodies.",
       "cameraChoreography": "Tracking: camera tracks at Sparrow's leap height, not below, following her arc from run to landing, ending on the crouch.",
       "lighting": "Moonlight from behind the vampires, Sparrow lit from the front by moonlight reflected off sand, landing dust catching the light.",
       "lensMm": 50,
       "focus": "Focus follows Sparrow through the arc; vampires slightly soft beneath her, sharp again at landing.",
-      "motion": "Subject motion: run, leap arc, landing crouch. Background motion: vampires hopping in place, sand spray on landing. Camera tracks at height \u2014 a camera below the leap would lose the arc.",
+      "motion": "Subject motion: run, leap arc, landing crouch. Background motion: vampires hopping in place, sand spray on landing. Camera tracks at height — a camera below the leap would lose the arc. Fluid, weighted motion with anticipation and follow-through for all living characters; clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects. Jiangshi rigidity is dead-body rigidity, not broken motion: legs straight, knees locked and never bending, no crouch before a hop, torso rigid, hop as a whole rigid body from the ankles. Everything else in frame moves fluidly; clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges.",
       "extras": "The three vampires are the only other figures; no beggar extras in this shot, so the leap reads cleanly.",
-      "loreNotes": "Jiangshi rules 1 and 5: hop in place, arms up, missing \u2014 they do not catch, grab, or run. Sparrow rule: fastest fighter, so she is the one who leaps.",
+      "loreNotes": "Jiangshi rules 1 and 5: hop in place, arms up, missing — they do not catch, grab, or run. Sparrow rule: fastest fighter, so she is the one who leaps.",
       "departments": {
         "choreography": "Wire-fu deliverable: arc, apex, and landing specified; a leap without a landing is not a move",
         "makeup-sfx": "Sand spray on landing, dust catching moonlight",
@@ -85,20 +85,20 @@
         "Chief Hong",
         "Little Sparrow"
       ],
-      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedLookBlock": "Older wuxia movie style, 1970s Shaw Brothers era, painterly studio look with theatrical frontal staging, practical wire-fu, longer takes, film grain, vivid period palette of ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, fluid weighted motion with anticipation and follow-through, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects, no modern objects, no modern CGI smoothness, no saturated neon.",
       "lockedCharacterBlocks": {
-        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, and a knotted wooden staff, moving with slow, deliberate authority",
-        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, and a rope whip at her belt, moving fast and light across the sand"
+        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, nine small cloth bags tied across his back marking him sect chief, and a knotted wooden staff, moving with slow, deliberate, fluid authority, weight shifting with each step",
+        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, five small cloth bags at her belt marking her scout rank, and a rope whip at her belt, moving fast and light across the sand, with fluid weight and a crouch-and-settle landing"
       },
       "background": "Foreground: band silhouettes standing still. Midground: dunes at dawn, dust settling. Deep background: second tomb door, far away, closed at the start of the shot and grinding open by the end, with the same lintel motif as s04.",
       "choreography": "Beat 1 (0-3s): Band stands still at dawn, no celebration, no walking. Beat 2 (3-7s): Dust settles around them, light rises. Beat 3, payoff, final hold (7-10s): The second tomb door grinds open by a few centimetres in the far distance, dust falling from its lintel, band still unaware, hold on the stillness with the door moving.",
       "cameraChoreography": "Crane: slow rise from 2 metres to 4 metres, ending in an extreme wide shot with the band left, dunes centre, and the second tomb door right and small but visible.",
       "lighting": "Dawn light, warm gold rising behind the band, silhouettes against the sun, second tomb door in cooler shadow so its movement reads by dust, not by light.",
       "lensMm": 35,
-      "focus": "Deep focus: band, dunes, and second tomb door all sharp \u2014 the hook must be visible, not blurred out.",
-      "motion": "Subject motion: none for the band \u2014 stillness is the beat. Background motion: dust settling, and the second tomb door grinding open. Camera rises slowly, the only large movement.",
+      "focus": "Deep focus: band, dunes, and second tomb door all sharp — the hook must be visible, not blurred out.",
+      "motion": "Subject motion: none for the band — stillness is the beat. Background motion: dust settling, and the second tomb door grinding open. Camera rises slowly, the only large movement. Fluid, weighted motion with anticipation and follow-through for all living characters; clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects.",
       "extras": "The full band, five to seven beggars, standing still, torn robes, dust-caked, no one fresh at dawn.",
-      "loreNotes": "Geography rule: second tomb door is the same tomb-city as s04, connected by the lintel motif. Trailer rule: ends at tension 8 on a hook, not a resolution \u2014 the door beginning to open is the hook, not a door open.",
+      "loreNotes": "Geography rule: second tomb door is the same tomb-city as s04, connected by the lintel motif. Trailer rule: ends at tension 8 on a hook, not a resolution — the door beginning to open is the hook, not a door open.",
       "departments": {
         "production-design": "Second tomb door must be visible but unremarked; do not centre it, do not add a title over it",
         "costume": "Hong left shoulder tear from s07 persists here",

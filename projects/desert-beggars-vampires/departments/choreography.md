@@ -54,3 +54,24 @@ than three beats, and the last beat is always the payoff.
 - s09: Band stands still. Stillness after battle is the beat.
   No one walks, no one celebrates. The only movement is the
   second tomb door, far away.
+
+## Jiangshi hop mechanics (tightened after batch 1, 2026-10-29)
+
+- Legs straight, knees locked, never bending — in every shot,
+  s04 through s08. No crouch before a hop, no knee lift, no
+  landing bend. The hop is a rigid whole-body bounce from the
+  ankles; the torso stays upright and does not lean, twist, or
+  fold. Arms stay stiffly forward, fingers together.
+- This rigidity is dead-body rigidity, not broken motion. It
+  is the one stiff thing allowed in frame. Everything else —
+  beggars, cloth, dust, sand — moves fluidly around it.
+
+## Beggar motion — fluid, weighted, anti-artifact
+
+- Beggars move with weight, anticipation, and follow-through:
+  a walk has a weight shift, a swing has a wind-up and a
+  recovery, a landing has a crouch and a settle. No robot-stiff
+  movement, no frozen mid-poses held for no reason.
+- Clean silhouettes at all times: no warping limbs, no extra
+  limbs, no morphing faces or hands, no mushy edges around
+  moving subjects. A warped limb fails the shot.

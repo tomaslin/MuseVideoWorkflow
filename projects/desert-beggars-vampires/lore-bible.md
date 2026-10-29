@@ -12,11 +12,20 @@ failed shot, however pretty.
   reputations. The beggar sect is the lowest-ranked sect, and
   the only one that does not guard a road — it survives on
   what others discard.
-- Beggar sect hierarchy: Chief Hong leads by seniority and by
-  the staff, not by birth. The staff is passed, not inherited.
-  Sparrow is second not by rank but by speed — she is the
-  sect's scout and messenger, which is why she is on the roof
-  in s03.
+- Beggar sect hierarchy, by bag rank (number of small cloth
+  bags tied to the robe — the rank marker that must read on
+  camera): 9 bags — Sect Chief, Chief Hong only, staff bearer.
+  8 bags — Elder deputy, unnamed, stands at Hong's right and
+  commands when Hong is engaged. 7 bags — Hall masters, two,
+  lead the flanks in battle. 5 bags — Little Sparrow, scout
+  and messenger; mid-rank by bags, but she reports directly to
+  Hong, which is why she is on the roof in s03 and why she is
+  trusted with the leap in s08. 3 bags — rank-and-file
+  fighters. 1 bag — newcomers. Command runs Hong > elder >
+  hall masters; Sparrow's scout reports bypass the chain to
+  Hong. The staff is passed, not inherited. No rank wears a
+  sword or a clean garment, and no extra may outrank Hong on
+  screen.
 - Beggar fighting style: practical, ragged, and improvised.
   Staffs, bowls, ropes, and anything to hand. No swords, no
   ornate weapons — a beggar with a sword has stolen it, and
@@ -41,9 +50,16 @@ failed shot, however pretty.
 
 ## Jiangshi — the rules, without exception
 
-1. Jiangshi hop. They never walk, never run, never crawl.
-   Rigor mortis stiffens them; hopping is the only locomotion
-   their bodies allow.
+1. Jiangshi hop, rigidly. They never walk, never run, never
+   crawl, and never bend their knees. Legs are perfectly
+   straight, knees locked, torso rigid and upright at all
+   times. A hop is a whole rigid body bouncing from the
+   ankles — no crouch before the hop, no knee lift, no
+   bending to land, no leaning. Rigor mortis stiffens them;
+   hopping is the only locomotion their bodies allow, and it
+   must never read as a person bending, crouching, or running.
+   This rule was tightened after batch 1 (2026-10-29), in
+   which generated vampires bent their knees.
 2. Jiangshi are blind. They track breath and movement, not
    sight. They turn toward sound and toward the living, not
    toward a face.
@@ -69,7 +85,7 @@ failed shot, however pretty.
 
 ## Violations — a checklist for reviewers
 
-- A jiangshi running, speaking, or holding a weapon: violation.
+- A jiangshi running, speaking, holding a weapon, bending its knees, crouching, or lifting a knee to hop: violation.
 - A talisman falling from any vampire other than the lead in
   s06: violation.
 - A beggar with a sword or ornate weapon: violation, unless

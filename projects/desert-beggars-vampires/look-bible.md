@@ -1,8 +1,30 @@
 # Look bible: Desert Beggars vs the Jiangshi
 
 ## Style in one sentence
-Wuxia desert epic, painterly and operatic, with dynamic wire-fu
-camera — sweeping crane and tracking moves, dust always in the air.
+Older wuxia movie style — 1970s Shaw Brothers era: painterly
+studio look, theatrical frontal staging, practical wire-fu,
+longer takes, film grain, vivid period palette, dust always in
+the air, and motion that is fluid and weighted, never stiff,
+warped, or mushy around the subjects.
+
+## Motion and artifact rules (added after batch 1 review, 2026-10-29)
+
+Batch 1 came back with AI stiffness and mush/artifacts around
+the subjects. The fix, in prompt language, is explicit and in
+every shot now:
+- Beggars move fluidly, with weight, anticipation, and
+  follow-through — a walk has a weight shift, a swing has a
+  wind-up and a recovery, a landing has a crouch and a settle.
+  No robot-stiff movement, no frozen mid-poses held for no reason.
+- Jiangshi stiffness is a different thing, and must not be
+  confused with AI stiffness: jiangshi are rigid because they
+  are dead and stiff, not because the motion is broken. Their
+  rigidity is specified exactly (legs straight, knees locked,
+  torso rigid — see lore bible rule 1), while everything else
+  in the frame moves fluidly around them.
+- Clean silhouettes, no warping limbs, no extra limbs, no
+  morphing faces or hands, no mushy edges around moving subjects.
+  If a limb warps, the shot fails, however pretty the frame.
 
 ## Palette
 - ochre sand
@@ -35,5 +57,5 @@ buried tomb doors, sandstorm haze.
 Fine film grain, high contrast, dust and sand particles visible in
 light beams.
 
-## Locked look block (copied verbatim into every prompt)
-Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.
+## Locked look block (copied verbatim into every prompt, revised 2026-10-29 after batch 1)
+Older wuxia movie style, 1970s Shaw Brothers era, painterly studio look with theatrical frontal staging, practical wire-fu, longer takes, film grain, vivid period palette of ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, fluid weighted motion with anticipation and follow-through, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects, no modern objects, no modern CGI smoothness, no saturated neon.

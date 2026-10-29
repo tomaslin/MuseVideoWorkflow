@@ -36,3 +36,15 @@
   Hands are held stiffly forward, fingers together, never relaxed.
 - **What never happens:** a jiangshi never wears clean robes,
   never removes its own talisman, never changes trim between shots.
+
+## Bag ranks — the hierarchy, on camera (added 2026-10-29)
+
+- Bag count is rank, and it must be legible: 9 bags Chief Hong
+  (across the back), 8 bags elder deputy, 7 bags hall masters,
+  5 bags Sparrow (at the belt), 3 bags rank-and-file, 1 bag
+  newcomers. Bags are small, patched cloth pouches, tied with
+  rope, never clean, never matching.
+- In s01 the band walks in rank order (Hong, elder, hall
+  masters, rank-and-file); in s07 the same order holds in
+  battle formation. A shot where Hong's 9 bags are not visible,
+  or where an extra appears to outrank him, is a failed shot.

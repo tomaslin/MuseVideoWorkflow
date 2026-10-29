@@ -15,10 +15,10 @@
         "Chief Hong",
         "Little Sparrow"
       ],
-      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedLookBlock": "Older wuxia movie style, 1970s Shaw Brothers era, painterly studio look with theatrical frontal staging, practical wire-fu, longer takes, film grain, vivid period palette of ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, fluid weighted motion with anticipation and follow-through, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects, no modern objects, no modern CGI smoothness, no saturated neon.",
       "lockedCharacterBlocks": {
-        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, and a knotted wooden staff, moving with slow, deliberate authority",
-        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, and a rope whip at her belt, moving fast and light across the sand"
+        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, nine small cloth bags tied across his back marking him sect chief, and a knotted wooden staff, moving with slow, deliberate, fluid authority, weight shifting with each step",
+        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, five small cloth bags at her belt marking her scout rank, and a rope whip at her belt, moving fast and light across the sand, with fluid weight and a crouch-and-settle landing"
       },
       "background": "Foreground: loose sand and fresh footprints. Midground: the beggar band in a loose line. Deep background: rolling ochre dunes to the horizon, a single dead tree on a far ridge, morning haze.",
       "choreography": "Beat 1 (0-4s): band enters frame left, walking uphill in a loose line. Beat 2 (4-7s): Sparrow weaves between the others, laughing, Hong leads. Beat 3, payoff (7-10s): band crests the dune and pauses, looking down at the caravanserai valley below, hold on the pause.",
@@ -26,9 +26,9 @@
       "lighting": "Low dawn sun from frame right, warm gold on sand crests, long shadows to the left, no fill light yet.",
       "lensMm": 35,
       "focus": "Deep focus: band and distant dead tree both sharp.",
-      "motion": "Subject motion: steady uphill walk, sand slipping back underfoot. Background motion: wind rippling dune crests. Camera leads the band, rising with them.",
-      "extras": "Five to seven beggar extras in distinct patched robes, each with a distinct prop: bowl, rope, short staff, sack, flute.",
-      "loreNotes": "Beggar sect rule: lowest sect, survives on what others discard; no swords, only staffs, bowls, ropes. Geography rule: open dunes only, no fourth location.",
+      "motion": "Subject motion: steady uphill walk, sand slipping back underfoot. Background motion: wind rippling dune crests. Camera leads the band, rising with them. Fluid, weighted motion with anticipation and follow-through for all living characters; clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects.",
+      "extras": "Beggar band in visible bag-rank order: Chief Hong (9 bags) leads, an unnamed elder deputy (8 bags, short staff and bowl) at his right, two hall masters (7 bags each) on the flanks, rank-and-file beggars (3 bags, and 1 bag for newcomers) behind, each with a distinct patched robe and prop: bowl, rope, short staff, sack, flute. Bag count is the rank marker and must read on camera.",
+      "loreNotes": "Beggar hierarchy (bag ranks): 9 bags Chief Hong, 8 bags elder deputy, 7 bags hall masters, 5 bags Sparrow as scout, 3 bags rank-and-file, 1 bag newcomers. Lowest sect, survives on what others discard; no swords, only staffs, bowls, ropes. Geography rule: open dunes only, no fourth location.",
       "departments": {
         "production-design": "Dead tree on far ridge must appear in s01 and s09",
         "costume": "No clean garments; Hong ankle-length robe, Sparrow knee-length robe",
@@ -48,9 +48,9 @@
       "characters": [
         "Chief Hong"
       ],
-      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedLookBlock": "Older wuxia movie style, 1970s Shaw Brothers era, painterly studio look with theatrical frontal staging, practical wire-fu, longer takes, film grain, vivid period palette of ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, fluid weighted motion with anticipation and follow-through, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects, no modern objects, no modern CGI smoothness, no saturated neon.",
       "lockedCharacterBlocks": {
-        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, and a knotted wooden staff, moving with slow, deliberate authority"
+        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, nine small cloth bags tied across his back marking him sect chief, and a knotted wooden staff, moving with slow, deliberate, fluid authority, weight shifting with each step"
       },
       "background": "Foreground: caravanserai gate threshold and broken cart wheel. Midground: courtyard with wellhead and stacked water jars. Deep background: broken arch gate with five lanterns, three lit at night, torn awning cloth moving in wind.",
       "choreography": "Beat 1 (0-3s): Hong walks to the gate threshold. Beat 2 (3-7s): Hong plants his staff in the sand with both hands. Beat 3, payoff (7-10s): Hong stands still, staff grounded, looking toward the horizon, hold on the claim staked.",
@@ -58,7 +58,7 @@
       "lighting": "Dusk light, blood-red low sun behind the arch, warm lantern light beginning on the courtyard, long shadows.",
       "lensMm": 40,
       "focus": "Focus on Hong and staff, arch slightly soft behind him.",
-      "motion": "Subject motion: single deliberate walk and plant, then stillness. Background motion: awning cloth and lantern sway in wind. Camera follows, then stops with him.",
+      "motion": "Subject motion: single deliberate walk and plant, then stillness. Background motion: awning cloth and lantern sway in wind. Camera follows, then stops with him. Fluid, weighted motion with anticipation and follow-through for all living characters; clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects.",
       "extras": "Two beggar extras unloading a sack by the wellhead, not looking at Hong.",
       "loreNotes": "Staff rule: the staff is passed, not inherited, and is the chief's symbol of authority. Planting it stakes a claim on the caravanserai.",
       "departments": {
@@ -80,9 +80,9 @@
       "characters": [
         "Little Sparrow"
       ],
-      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedLookBlock": "Older wuxia movie style, 1970s Shaw Brothers era, painterly studio look with theatrical frontal staging, practical wire-fu, longer takes, film grain, vivid period palette of ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, fluid weighted motion with anticipation and follow-through, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects, no modern objects, no modern CGI smoothness, no saturated neon.",
       "lockedCharacterBlocks": {
-        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, and a rope whip at her belt, moving fast and light across the sand"
+        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, five small cloth bags at her belt marking her scout rank, and a rope whip at her belt, moving fast and light across the sand, with fluid weight and a crouch-and-settle landing"
       },
       "background": "Foreground: caravanserai roof tiles and a loose tile edge. Midground: Sparrow standing on the roofline. Deep background: a sandstorm wall on the horizon, darkening the sky from the east.",
       "choreography": "Beat 1 (0-3s): Sparrow steps to the roof edge, hand shading her eyes. Beat 2 (3-7s): She watches the storm wall approach, smile fading. Beat 3, payoff (7-10s): She turns back toward the courtyard and calls out, hold on her turned face.",
@@ -90,7 +90,7 @@
       "lighting": "Dusk light failing, storm wall darkening the sky, last warm light on Sparrow's face from the west.",
       "lensMm": 50,
       "focus": "Rack focus from Sparrow to the storm wall in beat 2, back to Sparrow in beat 3.",
-      "motion": "Subject motion: step, watch, turn \u2014 three clear moves. Background motion: storm wall advancing slowly, dust rising. Camera pushes in steadily.",
+      "motion": "Subject motion: step, watch, turn — three clear moves. Background motion: storm wall advancing slowly, dust rising. Camera pushes in steadily. Fluid, weighted motion with anticipation and follow-through for all living characters; clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands, no mushy edges around moving subjects.",
       "extras": "No extras on the roof; one beggar extra in the courtyard below, looking up.",
       "loreNotes": "Sparrow rule: she is scout and messenger, which is why she is on the roof. Storm rule: the storm uncovers the tombs; it is cause, not atmosphere.",
       "departments": {
