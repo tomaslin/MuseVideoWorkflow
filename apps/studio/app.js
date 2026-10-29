@@ -7,7 +7,24 @@ const notice = text => { $('notice').textContent = text; };
 function el(tag, text, className) { const node = document.createElement(tag); if (text !== undefined) node.textContent = text; if (className) node.className = className; return node; }
 function save() { try { localStorage.setItem(storageKey(project.slug), JSON.stringify(edit)); } catch { notice('Browser storage unavailable. Download edit.json to keep your changes.'); } }
 function download(name, data) { const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], {type:'application/json'})); const a = el('a'); a.href = url; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); }
-function defaultEdit(p) { return {width:1280,height:720,fps:24,shots:p.shots.map((s,i) => ({shotId:s.shotId,inSec:0,durationSec:i===p.shots.length-1?4:3}))}; }
+function defaultEdit(p) {
+  const fps=24;
+  const shots=p.shots.map(s=>({shotId:s.shotId,inSec:0,durationSec:s.kind==='title'?(s.sourceDurationSec||5):3}));
+  if(p.timingMode==='edited'){
+    let difference=Math.round((p.durationSec-shots.reduce((n,s)=>n+s.durationSec,0))*fps);
+    const videoCuts=shots.filter(c=>p.shots.find(s=>s.shotId===c.shotId)?.kind!=='title').reverse();
+    while(difference!==0){
+      let changed=false;
+      for(const cut of videoCuts){
+        const sign=Math.sign(difference),next=cut.durationSec+sign/fps;
+        if(next>=2&&next<=4){cut.durationSec=Math.round(next*fps)/fps;difference-=sign;changed=true;}
+        if(!difference)break;
+      }
+      if(!changed)break;
+    }
+  }
+  return {width:1280,height:720,fps,shots};
+}
 function stats() {
   $('stats').replaceChildren();
   const footage = project.shots.filter(s => s.videoUrl || localMedia.has(s.shotId)).length;
@@ -25,6 +42,19 @@ function setProject(slug) {
   $('storyboard-link').href = `${location.pathname.endsWith('storyboard.html')?'index.html':'storyboard.html'}?project=${encodeURIComponent(project.slug)}`;
   $('project-header').replaceChildren(el('h2',project.title),el('p',`${project.shots.filter(s=>s.kind!=="title").length} video sources · ${project.durationSec}s delivery · ${project.videoUrl?'saved final available':'final video not saved yet'}`));
   $('final-player').hidden = !project.videoUrl;
+  $('workprints').hidden = !project.workprints?.length;
+  $('workprint-list').replaceChildren();
+  for(const draft of project.workprints||[]){
+    const item=el('article',undefined,'workprint'),title=el('h3',draft.title),player=el('video'),description=el('p',draft.description),link=el('a','Download workprint');
+    player.src=draft.videoUrl;player.poster=draft.posterUrl;player.controls=true;player.playsInline=true;player.preload='metadata';
+    link.href=draft.videoUrl;link.download='workprint.mp4';item.append(title,player,description,link);$('workprint-list').append(item);
+  }
+  $('references').hidden = !project.references?.length;
+  $('reference-gallery').replaceChildren();
+  for(const ref of project.references||[]){
+    const card=el('article',undefined,'reference-card'), picture=el('img');picture.src=ref.url;picture.loading='lazy';picture.alt=`Reference for ${ref.characters.join(', ')}`;
+    card.append(picture,el('strong',ref.characters.join(' · ')),el('span',ref.status==='working'?'Working reference':'Needs correction'),el('p',ref.note));$('reference-gallery').append(card);
+  }
   const final = $('final-video'); final.pause(); final.removeAttribute('src'); final.removeAttribute('poster');
   if(project.videoUrl) { final.src=project.videoUrl; if(project.posterUrl) final.poster=project.posterUrl; $('download-final').href=project.videoUrl; }
   $('commands').textContent = `./scripts/local-video.sh import projects/${project.slug} /path/to/downloaded-clips\n./scripts/local-video.sh assemble projects/${project.slug}\n./scripts/local-video.sh verify projects/${project.slug}`;
@@ -51,6 +81,9 @@ function render() {
       video=el('video'); video.controls=true; video.playsInline=true; video.preload='metadata'; video.src=source;
       video.addEventListener('timeupdate',()=>{ if(video.currentTime>=Number(cut.inSec)+Number(cut.durationSec))video.pause(); });
       media.append(video);
+    } else if(shot.referenceUrl) {
+      const img=el('img');img.src=shot.referenceUrl;img.loading='lazy';img.alt=`Working reference: ${shot.referenceLabel}`;
+      media.append(img,el('span',`REFERENCE: ${shot.referenceLabel.toUpperCase()} · FOOTAGE MISSING`,'plan-label'));
     } else {
       media.append(el('span','FOOTAGE NOT SAVED','plan-label'),el('div',`${shot.size} · ${shot.location}`,'plan-frame'));
     }
@@ -88,7 +121,7 @@ function render() {
 $('project-select').onchange=e=>setProject(e.target.value);
 $('artifact-select').onchange=renderArtifact;
 $('export-edit').onclick=()=>{save();download('edit.json',edit);notice(`Move edit.json into projects/${project.slug}/ before assembling.`);};
-$('reset-edit').onclick=()=>{edit=defaultEdit(project);save();render();notice('Short-cut draft: 3 seconds per shot, 4 seconds on the ending. Review the footage and move trims to the strongest action.');};
+$('reset-edit').onclick=()=>{edit=defaultEdit(project);save();render();notice('Short-cut draft saved. Video beats use 2–4 seconds; local titles retain their length. Review the footage and select the strongest action.');};
 $('copy-production').onclick=async()=>{
   const brief=$('story-brief').value.trim();
   if(!brief){notice('Enter a story brief first.');return;}

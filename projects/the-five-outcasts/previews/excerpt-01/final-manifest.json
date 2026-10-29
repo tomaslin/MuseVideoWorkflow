@@ -1,0 +1,23 @@
+{
+  "audioStems" : [
+
+  ],
+  "createdAt" : "2026-10-29T23:03:45Z",
+  "durationSec" : 16.021332999999998,
+  "file" : "video.mp4",
+  "fps" : 24,
+  "renderer" : "Swift + FFmpeg; H.264/AAC; hard cuts",
+  "resolution" : "1280x720",
+  "reviewState" : "unreviewed",
+  "scope" : "draft-excerpt",
+  "sha256" : "814607f45f5eb30c2ba8fc9de0eef6e558fc393ebbcbc6466746bf68ba9c18b7",
+  "shotOrder" : [
+    "s01",
+    "s05",
+    "s06",
+    "title"
+  ],
+  "slug" : "the-five-outcasts",
+  "timelineDurationSec" : 16,
+  "title" : "The Five Outcasts"
+}

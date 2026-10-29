@@ -1,0 +1,55 @@
+{
+  "entries" : [
+    {
+      "endSec" : 4,
+      "promptSha256" : "4062980f36052d2722fb395956e973d25bc2680335f01ba8e2cafaf84b804517",
+      "shotId" : "s01",
+      "sourceFile" : "clips/raw/s01-e24016164b935cd8ad9afab40cc5ec7f02c12ade5e2cae3409f328b9075457c9.mp4",
+      "sourceInSec" : 1,
+      "sourceOutSec" : 5,
+      "sourceSha256" : "e24016164b935cd8ad9afab40cc5ec7f02c12ade5e2cae3409f328b9075457c9",
+      "startSec" : 0,
+      "transitionIn" : "cut"
+    },
+    {
+      "endSec" : 8,
+      "promptSha256" : "3724423ec7c17752b64af9dba3663a9fba13a52a0e8f9b1c89b90fb99452eef1",
+      "shotId" : "s05",
+      "sourceFile" : "clips/raw/s05-7c61a7b0f809f43971ac2af11e4a0c6fce0b6526dda12cf6bf0f882d7f3bf0c3.mp4",
+      "sourceInSec" : 1,
+      "sourceOutSec" : 5,
+      "sourceSha256" : "7c61a7b0f809f43971ac2af11e4a0c6fce0b6526dda12cf6bf0f882d7f3bf0c3",
+      "startSec" : 4,
+      "transitionIn" : "cut"
+    },
+    {
+      "endSec" : 11,
+      "promptSha256" : "e332d11ed08eddd1a47460604fe4cc50c590cd26edf08e71642d22085509e7e4",
+      "shotId" : "s06",
+      "sourceFile" : "clips/raw/s06-6e8634c9b069d2a6ff27c4b380addc6688ae070370d59b3390b0b4811f5ff0da.mp4",
+      "sourceInSec" : 1,
+      "sourceOutSec" : 4,
+      "sourceSha256" : "6e8634c9b069d2a6ff27c4b380addc6688ae070370d59b3390b0b4811f5ff0da",
+      "startSec" : 8,
+      "transitionIn" : "cut"
+    },
+    {
+      "endSec" : 16,
+      "promptSha256" : "327184ffe642bb17230f93a83541c4f117cc887fafd9453e6af5282bd50dfa08",
+      "shotId" : "title",
+      "sourceFile" : "clips/raw/title-cc835100227c415694f380ab838553f8d87e4345ede7de205131ebf0f2429363.mp4",
+      "sourceInSec" : 0,
+      "sourceOutSec" : 5,
+      "sourceSha256" : "cc835100227c415694f380ab838553f8d87e4345ede7de205131ebf0f2429363",
+      "startSec" : 11,
+      "transitionIn" : "cut"
+    }
+  ],
+  "shotOrder" : [
+    "s01",
+    "s05",
+    "s06",
+    "title"
+  ],
+  "totalSec" : 16
+}

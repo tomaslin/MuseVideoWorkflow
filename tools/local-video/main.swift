@@ -76,6 +76,14 @@ struct Project {
         return result
     }
     func prompt(_ id: String) throws -> String { try sha(path("prompts/\(id).txt")) }
+    func clip(_ take: [String: Any]) throws -> (URL, String)? {
+        for key in ["file", "publishedPreviewFile"] {
+            guard let rel = take[key] as? String else { continue }
+            let url = try path(rel)
+            if fm.fileExists(atPath: url.path), try sha(url) == take["sha256"] as? String { return (url, rel) }
+        }
+        return nil
+    }
     func manifest() throws -> [String: Any] {
         let url = try path("manifest.json")
         return fm.fileExists(atPath: url.path) ? try read(url) : ["version": 1, "clips": [], "redoRequests": []]
@@ -106,6 +114,9 @@ func ingest(_ project: Project, _ input: String, _ shot: String?, _ expectedProm
     for (file, id) in mappings {
         try require(project.shots.contains { $0["shotId"] as? String == id }, "Unknown shot: \(id)")
         let hash = try sha(file); let promptHash = try project.prompt(id)
+        if let old = project.selected(["clips": clips], id), old["status"] as? String == "redo", old["sha256"] as? String == hash {
+            throw Failure("\(id) was rejected; re-importing the identical file cannot resolve the redo")
+        }
         if let expectedPrompt { try require(expectedPrompt == promptHash, "Generation prompt differs from current prompt for \(id)") }
         let media = try Media(file)
         let rel = "clips/raw/\(id)-\(hash).mp4"; let dest = try project.path(rel)
@@ -113,7 +124,7 @@ func ingest(_ project: Project, _ input: String, _ shot: String?, _ expectedProm
         if !fm.fileExists(atPath: dest.path) { try fm.copyItem(at: file, to: dest) }
         try require(try sha(dest) == hash, "Copy checksum failed for \(id)")
         pending.append(["shotId": id, "file": rel, "sha256": hash, "promptSha256": promptHash,
-                        "promptProvenance": expectedPrompt == nil ? "operator-mapped-to-current-packet" : "generation-hash-verified",
+                        "promptProvenance": (project.shots.first { $0["shotId"] as? String == id }?["kind"] as? String == "title") ? "local-render" : (expectedPrompt == nil ? "operator-mapped-to-current-packet" : "reported-packet-hash-matched"),
                         "durationSec": media.duration, "width": media.width, "height": media.height,
                         "sourceName": file.lastPathComponent, "status": "generated", "selected": true,
                         "importedAt": ISO8601DateFormatter().string(from: Date())])
@@ -153,22 +164,41 @@ func cards(_ project: Project) throws {
 
 func status(_ project: Project) throws {
     let manifest = try project.manifest(); var queue: [[String: Any]] = []; var localPending: [String] = []
+    let failureURL = try project.path("provider-failures.json")
+    let failures = fm.fileExists(atPath: failureURL.path) ? ((try read(failureURL))["shots"] as? [String: [String: Any]] ?? [:]) : [:]
     for shot in project.shots {
         let id = shot["shotId"] as! String
         var state = "missing"
         if let take = project.selected(manifest, id) {
             if take["status"] as? String == "redo" { state = "redo" }
             else if take["promptSha256"] as? String != (try project.prompt(id)) { state = "stale-prompt" }
-            else if let file = take["file"] as? String, fm.fileExists(atPath: try project.path(file).path), try sha(project.path(file)) == take["sha256"] as? String { state = take["status"] as? String ?? "generated" }
+            else if try project.clip(take) != nil { state = take["status"] as? String ?? "generated" }
             else { state = "missing-or-corrupt" }
         }
         print("\(id): \(state)")
         if ["missing", "redo", "stale-prompt", "missing-or-corrupt"].contains(state) {
             if shot["kind"] as? String == "title" { localPending.append(id) }
-            else { queue.append(["shotId": id, "reason": state, "promptSha256": try project.prompt(id)]) }
+            else {
+                var job: [String: Any] = ["shotId": id, "reason": state, "promptSha256": try project.prompt(id)]
+                if let failure = failures[id] { job["providerFailure"] = failure }
+                if state == "redo", let requests = manifest["redoRequests"] as? [[String: Any]], let last = requests.last(where: { $0["shotId"] as? String == id }), let detail = last["reason"] as? String { job["redoReason"] = detail }
+                queue.append(job)
+            }
         }
     }
-    try write(["pending": queue, "nextBatch": Array(queue.prefix(6)), "localPending": localPending, "complete": queue.isEmpty && localPending.isEmpty], project.path("generation-queue.json"))
+    try write(["pending": queue, "nextBatch": Array(queue.filter { $0["providerFailure"] == nil }.prefix(6)), "localPending": localPending, "complete": queue.isEmpty && localPending.isEmpty], project.path("generation-queue.json"))
+}
+func publishPreview(_ project: Project, _ id: String) throws {
+    var manifest = try project.manifest(); var clips = manifest["clips"] as? [[String: Any]] ?? []
+    guard let i = clips.lastIndex(where: { $0["shotId"] as? String == id && $0["selected"] as? Bool == true }),
+          let hash = clips[i]["sha256"] as? String, let (source, _) = try project.clip(clips[i]) else { throw Failure("Missing verified selected clip: \(id)") }
+    let rel = "previews/\(id)-\(hash).mp4"; let dest = try project.path(rel)
+    try fm.createDirectory(at: dest.deletingLastPathComponent(), withIntermediateDirectories: true)
+    if !fm.fileExists(atPath: dest.path) { try fm.copyItem(at: source, to: dest) }
+    try require(try sha(dest) == hash, "Published preview checksum mismatch")
+    clips[i]["publishedPreviewFile"] = rel; manifest["clips"] = clips
+    try write(manifest, project.path("manifest.json"))
+    print("Prepared \(rel) for publication; review status is \(clips[i]["status"] ?? "unreviewed")")
 }
 func redo(_ project: Project, _ id: String, _ reason: String) throws {
     try require(project.shots.contains { $0["shotId"] as? String == id }, "Unknown shot: \(id)")
@@ -180,9 +210,10 @@ func redo(_ project: Project, _ id: String, _ reason: String) throws {
     manifest["clips"] = clips; manifest["redoRequests"] = requests
     try write(manifest, project.path("manifest.json")); try status(project)
 }
-func assemble(_ project: Project) throws {
+func assemble(_ project: Project, editRelative: String = "edit.json", outputRelative: String = "final") throws {
+    try require(outputRelative == "final" || outputRelative.hasPrefix("work/"), "Draft output must be under work/")
     let manifest = try project.manifest()
-    let editURL = try project.path("edit.json")
+    let editURL = try project.path(editRelative)
     let edit = fm.fileExists(atPath: editURL.path) ? try read(editURL) : [:]
     let cuts = edit["shots"] as? [[String: Any]] ?? project.shots.map { ["shotId": $0["shotId"]!, "inSec": 0.0, "durationSec": $0["durationSec"] ?? 10.0] }
     let width = edit["width"] as? Int ?? 1280; let height = edit["height"] as? Int ?? 720; let fps = edit["fps"] as? Int ?? 24
@@ -192,10 +223,10 @@ func assemble(_ project: Project) throws {
     let cache = try project.path("work/cache"); try fm.createDirectory(at: cache, withIntermediateDirectories: true)
     var normalized: [URL] = []; var entries: [[String: Any]] = []; var cursor = 0.0
     for cut in cuts {
-        guard let id = cut["shotId"] as? String, let take = project.selected(manifest, id), let rel = take["file"] as? String else { throw Failure("Missing selected clip: \(cut["shotId"] ?? "?")") }
+        guard let id = cut["shotId"] as? String, let take = project.selected(manifest, id) else { throw Failure("Missing selected clip: \(cut["shotId"] ?? "?")") }
         try require(take["status"] as? String != "redo", "\(id) needs a redo")
         try require(take["promptSha256"] as? String == (try project.prompt(id)), "\(id) has a stale prompt")
-        let source = try project.path(rel); let hash = try sha(source)
+        guard let (source, rel) = try project.clip(take) else { throw Failure("Missing or corrupt selected clip: \(id)") }; let hash = try sha(source)
         try require(hash == take["sha256"] as? String, "Checksum changed: \(id)")
         let media = try Media(source)
         let start = cut["inSec"] as? Double ?? 0; let duration = cut["durationSec"] as? Double ?? 3
@@ -220,6 +251,10 @@ func assemble(_ project: Project) throws {
         entries.append(["shotId": id, "sourceFile": rel, "sourceSha256": hash, "promptSha256": take["promptSha256"]!, "sourceInSec": start, "sourceOutSec": start + duration, "startSec": cursor, "endSec": cursor + duration, "transitionIn": "cut"])
         cursor += duration
     }
+    if outputRelative == "final", project.definition["timingMode"] as? String == "edited", let intended = project.definition["durationSec"] as? Double {
+        try require(abs(cursor - intended) < 0.001, "Final edit does not match project duration")
+        try require(editRelative == "edit.json", "Alternative edits must be rendered as a draft under work/")
+    }
     let concat = work.appendingPathComponent("concat.txt")
     // Cache filenames are hex; escape the directory too for project paths containing apostrophes.
     let list = normalized.map { "file '\($0.path.replacingOccurrences(of: "'", with: "'\\''"))'" }.joined(separator: "\n")
@@ -231,9 +266,9 @@ func assemble(_ project: Project) throws {
     let result = try Media(video)
     try require(abs(result.duration - cursor) <= 0.12 && result.videoCodec == "h264" && result.audioCodec == "aac", "Final media does not match edit")
     try run("ffmpeg", ["-v", "error", "-nostdin", "-y", "-ss", String(min(cursor / 2, 2)), "-i", video.path, "-frames:v", "1", work.appendingPathComponent("poster.jpg").path])
-    let final = try project.path("final"); try fm.createDirectory(at: final, withIntermediateDirectories: true)
+    let final = try project.path(outputRelative); try fm.createDirectory(at: final, withIntermediateDirectories: true)
     let order = entries.map { $0["shotId"]! }
-    let outManifest: [String: Any] = ["slug": project.definition["slug"]!, "title": project.definition["title"]!, "file": "video.mp4", "sha256": try sha(video), "durationSec": result.duration, "timelineDurationSec": cursor, "resolution": "\(width)x\(height)", "fps": fps, "shotOrder": order, "reviewState": "unreviewed", "audioStems": [], "renderer": "Swift + FFmpeg; H.264/AAC; hard cuts", "createdAt": ISO8601DateFormatter().string(from: Date())]
+    let outManifest: [String: Any] = ["slug": project.definition["slug"]!, "title": project.definition["title"]!, "file": "video.mp4", "sha256": try sha(video), "durationSec": result.duration, "timelineDurationSec": cursor, "resolution": "\(width)x\(height)", "fps": fps, "shotOrder": order, "reviewState": "unreviewed", "scope": outputRelative == "final" ? "full-edit" : "draft-excerpt", "audioStems": [], "renderer": "Swift + FFmpeg; H.264/AAC; hard cuts", "createdAt": ISO8601DateFormatter().string(from: Date())]
     try write(["shotOrder": order, "entries": entries, "totalSec": cursor], work.appendingPathComponent("edl.json"))
     try write(outManifest, work.appendingPathComponent("final-manifest.json"))
     // Keep the previous deliverable recoverable before replacing it.
@@ -243,11 +278,11 @@ func assemble(_ project: Project) throws {
     }
     for name in ["video.mp4", "poster.jpg", "edl.json", "final-manifest.json"] { try Data(contentsOf: work.appendingPathComponent(name)).write(to: final.appendingPathComponent(name), options: .atomic) }
     print("Saved \(final.appendingPathComponent("video.mp4").path): \(result.duration)s; visual review pending")
-    try verify(project)
+    try verify(project, outputRelative: outputRelative)
 }
-func verify(_ project: Project) throws {
-    let manifest = try read(project.path("final/final-manifest.json")); let edl = try read(project.path("final/edl.json"))
-    let video = try project.path("final/video.mp4"); let media = try Media(video)
+func verify(_ project: Project, outputRelative: String = "final") throws {
+    let manifest = try read(project.path("\(outputRelative)/final-manifest.json")); let edl = try read(project.path("\(outputRelative)/edl.json"))
+    let video = try project.path("\(outputRelative)/video.mp4"); let media = try Media(video)
     try require(try sha(video) == manifest["sha256"] as? String, "Final SHA256 mismatch")
     guard let expected = edl["totalSec"] as? Double, let entries = edl["entries"] as? [[String: Any]], let order = edl["shotOrder"] as? [String] else { throw Failure("Invalid EDL") }
     try require(!entries.isEmpty && order == entries.compactMap { $0["shotId"] as? String } && order == manifest["shotOrder"] as? [String], "EDL shot order mismatch")
@@ -271,8 +306,10 @@ func main() throws {
       import PROJECT INPUT [--shot sNN] [--prompt-sha256 HASH]
       status PROJECT                         report missing/stale/redo queue (max 6)
       cards PROJECT                          render local title cards (no AI credits)
+      publish-preview PROJECT --shot sNN     copy verified take for repository publishing
       assemble PROJECT                       use edit.json; cache normalized takes
-      verify PROJECT                         validate saved media/EDL/checksum
+      assemble PROJECT --edit work/edit.json --output work/draft  render a labeled excerpt
+      verify PROJECT [--output work/draft]  validate saved media/EDL/checksum
       redo PROJECT --shot sNN --reason TEXT   preserve take and queue replacement
     """); return }
     let project = try Project(args[1]); let lock = try project.path(".local-video.lock")
@@ -285,14 +322,15 @@ func main() throws {
     case "import": try require(args.count >= 3, "Missing input file/directory"); try ingest(project, args[2], option("--shot"), option("--prompt-sha256")); try status(project)
     case "status": try status(project)
     case "cards": try cards(project)
+    case "publish-preview": guard let id = option("--shot") else { throw Failure("publish-preview needs --shot") }; try publishPreview(project, id)
     case "redo-file":
         try require(args.count >= 3, "Missing redo request JSON")
         let request = try read(URL(fileURLWithPath: args[2]))
         try require(request["project"] as? String == project.definition["slug"] as? String, "Redo request belongs to a different project")
         guard let id = request["shotId"] as? String, let reason = request["reason"] as? String else { throw Failure("Invalid redo request") }
         try redo(project, id, reason)
-    case "assemble": try assemble(project)
-    case "verify": try verify(project)
+    case "assemble": try assemble(project, editRelative: option("--edit") ?? "edit.json", outputRelative: option("--output") ?? "final")
+    case "verify": try verify(project, outputRelative: option("--output") ?? "final")
     case "redo": guard let id = option("--shot"), let reason = option("--reason") else { throw Failure("redo needs --shot and --reason") }; try redo(project, id, reason)
     default: throw Failure("Unknown command: \(args[0])")
     }

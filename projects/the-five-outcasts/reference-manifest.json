@@ -1,0 +1,44 @@
+{
+  "references": [
+    {
+      "file": "references/shen-canonical.png",
+      "characters": [
+        "Shen"
+      ],
+      "status": "working",
+      "note": "Working appearance reference; final performance continuity remains unreviewed.",
+      "sha256": "93d5e5259104cfb3790649eb2f38ca05f101ce1a1374ed513857407058467dc3"
+    },
+    {
+      "file": "references/lan-canonical.png",
+      "characters": [
+        "Lan"
+      ],
+      "status": "working",
+      "note": "Working appearance reference; final performance continuity remains unreviewed.",
+      "sha256": "125dc7374146ac3b7d40d7e5df3dccd4b615fca91213e6bd361cf996868eb143"
+    },
+    {
+      "file": "references/wen-canonical.png",
+      "characters": [
+        "Wen"
+      ],
+      "status": "working",
+      "note": "Pale repaired robe, unbound hands and loose wrist cord; motion continuity remains unreviewed.",
+      "sha256": "60edbab6f6665005ce9de9f6f57a93eecb144200b19b2eb1bd03c28a908d96c7"
+    },
+    {
+      "file": "references/five-outcasts-group-canonical-v2.png",
+      "characters": [
+        "Rook",
+        "Reed",
+        "Bell",
+        "Ash",
+        "Heel"
+      ],
+      "status": "needs-correction",
+      "note": "Five figures, but Reed appears to have a left hand; do not use as an approved continuity reference.",
+      "sha256": "eac5701a0b12bf22e3e6060f8aafbb52e36ac633686d7884e49bdeab1d8a3c1b"
+    }
+  ]
+}

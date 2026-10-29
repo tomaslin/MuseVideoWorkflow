@@ -1,0 +1,13 @@
+{
+  "drafts": [
+    {
+      "id": "excerpt-01",
+      "title": "First footage workprint \u2014 incomplete",
+      "description": "16-second excerpt assembled from s01, s05, s06 and the local title. s01 and s06 are flagged for redo; this is not the finished 60-second trailer.",
+      "video": "previews/excerpt-01/video.mp4",
+      "poster": "previews/excerpt-01/poster.jpg",
+      "manifest": "previews/excerpt-01/final-manifest.json",
+      "sha256": "814607f45f5eb30c2ba8fc9de0eef6e558fc393ebbcbc6466746bf68ba9c18b7"
+    }
+  ]
+}

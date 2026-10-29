@@ -35,10 +35,10 @@ is required for local processing.
 never a shell. Intake probes every file, preserves its SHA256 and source name,
 and copies it into `clips/raw/<shot>-<sha>.mp4`. Earlier takes remain available
 in `manifest.json`; one take per shot is selected. Re-importing the same source
-is a no-op unless its prompt or redo state changed. If Muse supplies the exact
-prompt hash, pass `--prompt-sha256 HASH`; otherwise the manifest explicitly
-records that an operator mapped the file to the current packet. This does not
-prove which prompt the generator used.
+is a no-op unless its prompt or redo state changed. If Muse reports a packet hash, pass `--prompt-sha256 HASH`; the tool compares it
+to the current packet and records that the reported hash matched. Otherwise it
+records that an operator mapped the file to the current packet. Neither proves
+what the provider consumed, or captures extra instructions outside the packet.
 
 The renderer applies source in/out points in edit order, letterboxes mismatched
 aspect ratios, normalizes frame rates and stereo 48 kHz audio, inserts silence
@@ -102,3 +102,30 @@ Video files under 100 MiB use ordinary Git, not unresolved LFS pointers. Larger
 masters belong in external media storage, with a smaller web delivery encoded
 for the repository. The studio explicitly distinguishes missing footage from
 actual video; attaching a preview file in the browser does not import it on disk.
+
+## Review excerpts and shareable source previews
+
+Create a draft edit under `work/`, then render it without pretending missing
+shots exist:
+
+```bash
+./scripts/local-video.sh assemble projects/the-five-outcasts \
+  --edit work/excerpt-edit.json --output work/excerpt-01
+./scripts/local-video.sh verify projects/the-five-outcasts --output work/excerpt-01
+```
+
+An excerpt is labeled `draft-excerpt` and cannot pass final-delivery
+verification. A production with a fixed edit duration must cover its planned
+sources and match the current edit before the final can verify.
+
+To show a selected source in the public studio, prepare a checksum-verified
+versioned copy, then commit and push that preview and the updated manifest:
+
+```bash
+./scripts/local-video.sh publish-preview projects/the-five-outcasts --shot s05
+```
+
+Previews are available in other checkouts even though raw work clips are
+ignored. They are shown with their actual `generated` or `redo` status and do
+not constitute an approved final. Re-importing a rejected file with the same
+checksum cannot clear a redo.

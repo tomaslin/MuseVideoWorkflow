@@ -1,0 +1,44 @@
+{
+  "shots": {
+    "s02": {
+      "promptSha256": "582f78da58c7f0d6003b924751bffd5dc6ab96432864b3d3b5b4a0570e6daf97",
+      "error": "integrity_check_failed",
+      "recordedAt": 1793315247.818162
+    },
+    "s03": {
+      "promptSha256": "2ae2e57edc05347f36e30fb4cb5898d1515b83525c89b85e13c6ed3cb045ff35",
+      "error": "integrity_check_failed",
+      "recordedAt": 1793315247.867924
+    },
+    "s04": {
+      "promptSha256": "534cef4470c4ae3978aa3e1ae8336b1d65fef6a2232560ab378d030f349cf9a5",
+      "error": "integrity_check_failed",
+      "recordedAt": 1793315247.927783
+    },
+    "s10": {
+      "promptSha256": "ed37bf4f0ab53f76539090a5e04e5ee41193fb711bfc820b25f5df1569b17eda",
+      "error": "integrity_check_failed",
+      "recordedAt": 1793315342.774803
+    },
+    "s11": {
+      "promptSha256": "d86bb34eb9057e2711a5030080e24d205674a3db9c365463c61018fcfdf68ce7",
+      "error": "integrity_check_failed",
+      "recordedAt": 1793315342.823482
+    },
+    "s12": {
+      "promptSha256": "829e8638c26110398237707e8ea9977084e9d9cab86edbabd6b972d93035ad16",
+      "error": "integrity_check_failed",
+      "recordedAt": 1793315342.872063
+    },
+    "s14": {
+      "promptSha256": "15d35f6809c190604a5fa7116e08ae4964401a98706f9dc3b01cd24f3756e398",
+      "error": "integrity_check_failed",
+      "recordedAt": 1793315342.9206982
+    },
+    "s15": {
+      "promptSha256": "936aa8206400fcaed07ea847db0cb8034481daf81a5464851079fb07fc919c3a",
+      "error": "integrity_check_failed",
+      "recordedAt": 1793315342.971086
+    }
+  }
+}

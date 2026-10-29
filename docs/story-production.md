@@ -79,3 +79,16 @@ not merely a provider's textual success message. The planner does not invoke
 Muse itself. A single Muse scheduler can consume these batches across projects;
 do not leave old per-project workers generating the same sources. Local renders
 may run for separate projects concurrently; each has its own file lock.
+
+A repeated opaque provider error is recorded for the affected project/shot:
+
+```bash
+python3 pipeline/workspace.py record-failure <slug> <shot> --error <provider-error>
+# After the provider issue is understood and a retry is appropriate:
+python3 pipeline/workspace.py clear-failure <slug> <shot>
+```
+
+The failure is also written to `provider-failures.json` in that project so it
+can be shared through Git. The queue excludes that shot until explicitly cleared;
+changing prompt text alone does not silently restart it. This is operational
+bookkeeping, not a diagnosis of the provider's error.

@@ -1,22 +1,115 @@
 {
-  "clips" : [
+  "clips": [
     {
-      "durationSec" : 5,
-      "file" : "clips/raw/title-cc835100227c415694f380ab838553f8d87e4345ede7de205131ebf0f2429363.mp4",
-      "height" : 720,
-      "importedAt" : "2026-10-29T18:50:16Z",
-      "promptProvenance" : "generation-hash-verified",
-      "promptSha256" : "327184ffe642bb17230f93a83541c4f117cc887fafd9453e6af5282bd50dfa08",
-      "selected" : true,
-      "sha256" : "cc835100227c415694f380ab838553f8d87e4345ede7de205131ebf0f2429363",
-      "shotId" : "title",
-      "sourceName" : "title.mp4",
-      "status" : "generated",
-      "width" : 1280
+      "durationSec": 5,
+      "file": "clips/raw/title-cc835100227c415694f380ab838553f8d87e4345ede7de205131ebf0f2429363.mp4",
+      "height": 720,
+      "importedAt": "2026-10-29T18:50:16Z",
+      "promptProvenance": "local-render",
+      "promptSha256": "327184ffe642bb17230f93a83541c4f117cc887fafd9453e6af5282bd50dfa08",
+      "publishedPreviewFile": "previews/title-cc835100227c415694f380ab838553f8d87e4345ede7de205131ebf0f2429363.mp4",
+      "selected": true,
+      "sha256": "cc835100227c415694f380ab838553f8d87e4345ede7de205131ebf0f2429363",
+      "shotId": "title",
+      "sourceName": "title.mp4",
+      "status": "generated",
+      "width": 1280
+    },
+    {
+      "durationSec": 10,
+      "file": "clips/raw/s01-e24016164b935cd8ad9afab40cc5ec7f02c12ade5e2cae3409f328b9075457c9.mp4",
+      "height": 720,
+      "importedAt": "2026-10-29T19:02:34Z",
+      "promptProvenance": "reported-packet-hash-matched",
+      "promptSha256": "4062980f36052d2722fb395956e973d25bc2680335f01ba8e2cafaf84b804517",
+      "publishedPreviewFile": "previews/s01-e24016164b935cd8ad9afab40cc5ec7f02c12ade5e2cae3409f328b9075457c9.mp4",
+      "selected": true,
+      "sha256": "e24016164b935cd8ad9afab40cc5ec7f02c12ade5e2cae3409f328b9075457c9",
+      "shotId": "s01",
+      "sourceName": "s01.mp4",
+      "status": "redo",
+      "width": 1280
+    },
+    {
+      "durationSec": 10,
+      "file": "clips/raw/s05-7c61a7b0f809f43971ac2af11e4a0c6fce0b6526dda12cf6bf0f882d7f3bf0c3.mp4",
+      "height": 768,
+      "importedAt": "2026-10-29T19:02:34Z",
+      "promptProvenance": "reported-packet-hash-matched",
+      "promptSha256": "3724423ec7c17752b64af9dba3663a9fba13a52a0e8f9b1c89b90fb99452eef1",
+      "publishedPreviewFile": "previews/s05-7c61a7b0f809f43971ac2af11e4a0c6fce0b6526dda12cf6bf0f882d7f3bf0c3.mp4",
+      "selected": true,
+      "sha256": "7c61a7b0f809f43971ac2af11e4a0c6fce0b6526dda12cf6bf0f882d7f3bf0c3",
+      "shotId": "s05",
+      "sourceName": "s05.mp4",
+      "status": "generated",
+      "width": 1152
+    },
+    {
+      "durationSec": 10,
+      "file": "clips/raw/s06-6e8634c9b069d2a6ff27c4b380addc6688ae070370d59b3390b0b4811f5ff0da.mp4",
+      "height": 768,
+      "importedAt": "2026-10-29T19:02:35Z",
+      "promptProvenance": "reported-packet-hash-matched",
+      "promptSha256": "e332d11ed08eddd1a47460604fe4cc50c590cd26edf08e71642d22085509e7e4",
+      "publishedPreviewFile": "previews/s06-6e8634c9b069d2a6ff27c4b380addc6688ae070370d59b3390b0b4811f5ff0da.mp4",
+      "selected": true,
+      "sha256": "6e8634c9b069d2a6ff27c4b380addc6688ae070370d59b3390b0b4811f5ff0da",
+      "shotId": "s06",
+      "sourceName": "s06.mp4",
+      "status": "redo",
+      "width": 1152
+    },
+    {
+      "durationSec": 10,
+      "file": "clips/raw/s07-734901f898c2944022130d0892c48c0545e840dc1be800dd8febc3fc0b5c0c98.mp4",
+      "height": 720,
+      "importedAt": "2026-10-29T23:04:17Z",
+      "promptProvenance": "reported-packet-hash-matched",
+      "promptSha256": "89dbc761d94c0d5ba23acd3f36aaecfd2b790a166b337971159b51bd005416a2",
+      "publishedPreviewFile": "previews/s07-734901f898c2944022130d0892c48c0545e840dc1be800dd8febc3fc0b5c0c98.mp4",
+      "selected": true,
+      "sha256": "734901f898c2944022130d0892c48c0545e840dc1be800dd8febc3fc0b5c0c98",
+      "shotId": "s07",
+      "sourceName": "s07.mp4",
+      "status": "generated",
+      "width": 1280
+    },
+    {
+      "durationSec": 10,
+      "file": "clips/raw/s13-181fbd5861369c439b7a0634496f1e78096a4bfc100204fb6cc32e38f6f5eec5.mp4",
+      "height": 1344,
+      "importedAt": "2026-10-29T23:09:02Z",
+      "promptProvenance": "reported-packet-hash-matched",
+      "promptSha256": "0a419d764e52ba10c60c5b87a7cc8efbae11a4b1d015d8e2094145fdb9b57103",
+      "publishedPreviewFile": "previews/s13-181fbd5861369c439b7a0634496f1e78096a4bfc100204fb6cc32e38f6f5eec5.mp4",
+      "selected": true,
+      "sha256": "181fbd5861369c439b7a0634496f1e78096a4bfc100204fb6cc32e38f6f5eec5",
+      "shotId": "s13",
+      "sourceName": "s13.mp4",
+      "status": "redo",
+      "width": 672
     }
   ],
-  "redoRequests" : [
-
+  "redoRequests": [
+    {
+      "at": "2026-10-29T23:05:30Z",
+      "promptSha256": "4062980f36052d2722fb395956e973d25bc2680335f01ba8e2cafaf84b804517",
+      "reason": "The source shows upright soldiers in a shrine-like setting, not an unmistakable battlefield with both opposing soldiers lying dead after mutually killing each other. Use a low, wide, locked tableau with red and indigo dead on the ground, reciprocal weapons and no rising or walking.",
+      "shotId": "s01"
+    },
+    {
+      "at": "2026-10-29T23:05:30Z",
+      "promptSha256": "e332d11ed08eddd1a47460604fe4cc50c590cd26edf08e71642d22085509e7e4",
+      "reason": "The source is a medium group shot and the command does not read. Use an extreme-close insert: one hand turns one of three left-wrist iron rings, visibly pulls a single black thread taut, then holds. Exclude the group from frame.",
+      "shotId": "s06"
+    },
+    {
+      "at": "2026-10-29T23:09:17Z",
+      "promptSha256": "0a419d764e52ba10c60c5b87a7cc8efbae11a4b1d015d8e2094145fdb9b57103",
+      "reason": "The source is portrait 672x1344, while this trailer and shot plan use a landscape 16:9 composition. Generate a medium close-up of Wen in 16:9, facing screen-left with an unbound wrist and space for her eyeline; preserve her calm free choice.",
+      "shotId": "s13"
+    }
   ],
-  "version" : 1
+  "version": 1
 }

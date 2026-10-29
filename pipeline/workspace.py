@@ -44,6 +44,7 @@ def projects(root):
 def pending(directory):
     manifest=load(directory/'manifest.json',{})
     selected={c['shotId']:c for c in manifest.get('clips',[]) if c.get('selected')}
+    failures=load(directory/'provider-failures.json',{}).get('shots',{})
     shots=[]
     for sequence in sorted((directory/'sequences').glob('*.json')):
         shots.extend(load(sequence).get('shots',[]))
@@ -60,11 +61,21 @@ def pending(directory):
             if take.get('status')=='redo':reason='redo'
             elif take.get('promptSha256')!=prompt_hash:reason='stale-prompt'
             else:
-                clip=(directory/take.get('file','')).resolve()
-                if directory.resolve() not in clip.parents:raise ValueError(f'Clip escapes project: {sid}')
-                if clip.is_file() and hashlib.sha256(clip.read_bytes()).hexdigest()==take.get('sha256'):continue
+                valid=False
+                for path in (take.get('file'),take.get('publishedPreviewFile')):
+                    if not path:continue
+                    clip=(directory/path).resolve()
+                    if directory.resolve() not in clip.parents:raise ValueError(f'Clip escapes project: {sid}')
+                    if clip.is_file() and hashlib.sha256(clip.read_bytes()).hexdigest()==take.get('sha256'):
+                        valid=True;break
+                if valid:continue
                 reason='missing-or-corrupt'
-        queue.append({'project':directory.name,'shotId':sid,'reason':reason,'promptFile':str(packet),'promptSha256':prompt_hash,'characters':shot.get('characters',[])})
+        job={'project':directory.name,'shotId':sid,'reason':reason,'promptFile':str(packet.relative_to(directory.parent.parent)),'promptSha256':prompt_hash,'characters':shot.get('characters',[])}
+        if sid in failures:job['providerFailure']=failures[sid]
+        if reason == 'redo':
+            request=next((r for r in reversed(manifest.get('redoRequests',[])) if r.get('shotId')==sid),None)
+            if request:job['redoReason']=request.get('reason','')
+        queue.append(job)
     # Explicit user feedback gets first place within each project.
     queue.sort(key=lambda q:0 if q['reason']=='redo' else 1)
     return queue
@@ -72,8 +83,9 @@ def pending(directory):
 
 def plan(root, state=None, limit=6, now=None):
     state=state or {};now=time.time() if now is None else now
+    blocked=state.get('providerFailures',{})
     leased={(j['project'],j['shotId']) for lease in state.get('leases',[]) if lease['status']=='running' and lease['expiresAt']>now for j in lease['jobs']}
-    queues={d.name:[j for j in pending(d) if (j['project'],j['shotId']) not in leased and state.get('retryAfter',{}).get(j['project']+':'+j['shotId'],0)<=now] for d,p in projects(root)}
+    queues={d.name:[j for j in pending(d) if (j['project'],j['shotId']) not in leased and state.get('retryAfter',{}).get(j['project']+':'+j['shotId'],0)<=now and j['shotId'] not in load(root/'projects'/j['project']/'provider-failures.json',{}).get('shots',{}) and j['project']+':'+j['shotId'] not in blocked] for d,p in projects(root)}
     names=sorted(queues)
     last=state.get('lastProject')
     if last in names:
@@ -127,6 +139,31 @@ def complete(root, lease_id, failures=None):
         return lease
 
 
+def record_failure(root, project_slug, shot_id, error):
+    directory = root/'projects'/project_slug
+    if directory.resolve().parent != (root/'projects').resolve(): raise ValueError('Unsafe project slug')
+    packet=directory/'prompts'/f'{shot_id}.txt'
+    if packet.resolve().parent != (directory/'prompts').resolve(): raise ValueError('Unsafe shot ID')
+    prompt_hash=hashlib.sha256(packet.read_bytes()).hexdigest()
+    with locked(root):
+        file=root/'.workspace-state.json';state=load(file,{'leases':[]})
+        state.setdefault('providerFailures',{})[project_slug+':'+shot_id]={'promptSha256':prompt_hash,'error':error,'recordedAt':time.time()}
+        save(file,state)
+        project_file=directory/'provider-failures.json'; project_state=load(project_file,{'shots':{}})
+        project_state['shots'][shot_id]=state['providerFailures'][project_slug+':'+shot_id];save(project_file,project_state)
+    return {'project':project_slug,'shotId':shot_id,'promptSha256':prompt_hash,'error':error,'automaticRetries':'paused-until-explicit-clear'}
+
+def clear_failure(root, project_slug, shot_id):
+    directory=root/'projects'/project_slug
+    if directory.resolve().parent != (root/'projects').resolve(): raise ValueError('Unsafe project slug')
+    if not (directory/'prompts'/f'{shot_id}.txt').is_file() or (directory/'prompts'/f'{shot_id}.txt').resolve().parent != (directory/'prompts').resolve(): raise ValueError('Unknown or unsafe shot')
+    with locked(root):
+        file=root/'.workspace-state.json';state=load(file,{'leases':[]})
+        state.get('providerFailures',{}).pop(project_slug+':'+shot_id,None);save(file,state)
+        project_file=root/'projects'/project_slug/'provider-failures.json'
+        project_state=load(project_file,{'shots':{}});project_state['shots'].pop(shot_id,None);save(project_file,project_state)
+    return {'project':project_slug,'shotId':shot_id,'failureCleared':True}
+
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--root',type=Path,default=ROOT)
@@ -134,11 +171,15 @@ def main():
     sub.add_parser('list')
     queue=sub.add_parser('queue');queue.add_argument('--claim',action='store_true');queue.add_argument('--limit',type=int,default=6);queue.add_argument('--ttl-sec',type=int,default=1800)
     done=sub.add_parser('complete');done.add_argument('lease_id');done.add_argument('--failed',action='append',default=[])
+    failed=sub.add_parser('record-failure');failed.add_argument('project');failed.add_argument('shot');failed.add_argument('--error',required=True)
+    clear=sub.add_parser('clear-failure');clear.add_argument('project');clear.add_argument('shot')
     args=parser.parse_args()
     try:
         if args.command=='list':result=[{'slug':p['slug'],'title':p['title'],'pending':len(pending(d))} for d,p in projects(args.root)]
         elif args.command=='queue':result=batch(args.root,args.claim,args.limit,args.ttl_sec)
-        else:result=complete(args.root,args.lease_id,args.failed)
+        elif args.command=='complete':result=complete(args.root,args.lease_id,args.failed)
+        elif args.command=='record-failure':result=record_failure(args.root,args.project,args.shot,args.error)
+        else:result=clear_failure(args.root,args.project,args.shot)
         print(json.dumps(result,indent=2))
     except (ValueError,OSError,KeyError) as exc:parser.exit(1,f'Workspace operation failed: {exc}\n')
 

@@ -229,6 +229,8 @@ def verify_final(d):
     edl = load(final / "edl.json")
     if man.get("file") != "video.mp4":
         raise ValueError("final-manifest file must be video.mp4")
+    if man.get("scope") == "draft-excerpt":
+        raise ValueError("an excerpt cannot be delivered as the complete project")
     h = hashlib.sha256()
     with video.open("rb") as stream:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
@@ -240,6 +242,20 @@ def verify_final(d):
     if not entries or order != edl.get("shotOrder") or order != man.get("shotOrder"):
         raise ValueError("EDL/manifest shot order mismatch")
     known = {s["shotId"] for s in all_shots(d)}
+    project = load(Path(d) / "project.json")
+    if project.get("timingMode") == "edited":
+        if abs(edl.get("totalSec", 0) - project["durationSec"]) > .001:
+            raise ValueError("final edit does not match requested project duration")
+        if set(order) != known:
+            raise ValueError("final edit does not cover all planned sources")
+        edit = load(Path(d) / "edit.json").get("shots", [])
+        if len(edit) != len(entries) or any(
+            cut.get("shotId") != entry.get("shotId") or
+            abs(cut.get("inSec", 0) - entry.get("sourceInSec", -1)) > .001 or
+            abs(cut.get("durationSec", 0) - (entry["endSec"] - entry["startSec"])) > .001
+            for cut, entry in zip(edit, entries)
+        ):
+            raise ValueError("final EDL does not match the current edit")
     cursor = 0
     for entry in entries:
         if entry["shotId"] not in known:

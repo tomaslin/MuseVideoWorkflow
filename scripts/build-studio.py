@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Package the studio plus real project artifacts/media for local preview or Pages."""
 import argparse
+import hashlib
 import importlib.util
 import json
 from pathlib import Path
@@ -35,6 +36,8 @@ def build(out):
         manifest_path = project_dir / 'manifest.json'
         manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
         selected = {c['shotId']: c for c in manifest.get('clips', []) if c.get('selected')}
+        failures_path = project_dir / 'provider-failures.json'
+        failures = json.loads(failures_path.read_text()).get('shots', {}) if failures_path.exists() else {}
         data_dir = out / 'data' / slug
         data_dir.mkdir(parents=True, exist_ok=True)
         for shot in shots:
@@ -43,19 +46,56 @@ def build(out):
             shot['prompt'] = prompt.read_text() if prompt.exists() else ''
             clip = selected.get(shot['shotId'])
             shot['status'] = clip.get('status', 'generated') if clip else 'missing'
+            if shot['shotId'] in failures: shot['status'] = 'provider error: ' + failures[shot['shotId']].get('error', 'unknown')
             if clip:
-                source = (project_dir / clip['file']).resolve()
-                if project_dir.resolve() not in source.parents:
-                    raise ValueError(f'Clip escapes project: {source}')
-                if source.exists():
-                    target = data_dir / (shot['shotId'] + '.mp4')
-                    shutil.copyfile(source, target)
-                    shot['videoUrl'] = target.relative_to(out).as_posix()
-                    shot['sourceDurationSec'] = clip.get('durationSec')
-        project.update(shots=shots, artifacts={}, evaluation=evaluation.evaluate(str(project_dir)))
+                for rel in [clip.get('file'),clip.get('publishedPreviewFile')]:
+                    if not rel: continue
+                    source = (project_dir / rel).resolve()
+                    if project_dir.resolve() not in source.parents:
+                        raise ValueError(f'Clip escapes project: {source}')
+                    if source.is_file() and hashlib.sha256(source.read_bytes()).hexdigest()==clip.get('sha256'):
+                        target = data_dir / (shot['shotId'] + '.mp4')
+                        shutil.copyfile(source, target)
+                        shot['videoUrl'] = target.relative_to(out).as_posix()
+                        shot['sourceDurationSec'] = clip.get('durationSec')
+                        break
+        references = []
+        ref_file = project_dir / 'reference-manifest.json'
+        for ref in (json.loads(ref_file.read_text()).get('references', []) if ref_file.exists() else []):
+            source = (project_dir / ref['file']).resolve()
+            if project_dir.resolve() not in source.parents:
+                raise ValueError(f'Reference escapes project: {source}')
+            if source.is_file() and hashlib.sha256(source.read_bytes()).hexdigest() == ref.get('sha256'):
+                target = data_dir / 'references' / source.name
+                target.parent.mkdir(exist_ok=True)
+                shutil.copyfile(source, target)
+                references.append({**ref, 'url': target.relative_to(out).as_posix()})
+        for shot in shots:
+            available = next((r for r in references if r['status']=='working' and any(name in r['characters'] for name in shot.get('characters', []))), None)
+            if available:
+                shot['referenceUrl'] = available['url']
+                shot['referenceLabel'] = ', '.join(available['characters'])
+        project.update(shots=shots, artifacts={}, references=references, evaluation=evaluation.evaluate(str(project_dir)))
         for file in sorted(project_dir.glob('*.md')):
             project['artifacts'][file.stem] = file.read_text()
         project['edit'] = json.loads((project_dir / 'edit.json').read_text()) if (project_dir / 'edit.json').exists() else {}
+        project['workprints'] = []
+        draft_file = project_dir / 'draft-previews.json'
+        for draft in (json.loads(draft_file.read_text()).get('drafts', []) if draft_file.exists() else []):
+            video = (project_dir / draft['video']).resolve()
+            manifest = (project_dir / draft['manifest']).resolve()
+            poster = (project_dir / draft['poster']).resolve()
+            if any(project_dir.resolve() not in item.parents for item in (video,manifest,poster)):
+                raise ValueError('Workprint path escapes project')
+            if not video.is_file() or hashlib.sha256(video.read_bytes()).hexdigest()!=draft['sha256']:
+                raise ValueError(f'Workprint checksum mismatch: {video}')
+            if json.loads(manifest.read_text()).get('scope') != 'draft-excerpt':
+                raise ValueError('Workprint must be labeled as an excerpt')
+            target = data_dir / 'workprints' / draft['id']
+            target.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(video,target/'video.mp4')
+            shutil.copyfile(poster,target/'poster.jpg')
+            project['workprints'].append({'title':draft['title'],'description':draft['description'],'videoUrl':(target/'video.mp4').relative_to(out).as_posix(),'posterUrl':(target/'poster.jpg').relative_to(out).as_posix()})
         final = project_dir / 'final'
         if (final / 'final-manifest.json').exists() and (final / 'video.mp4').exists():
             # Never publish an LFS pointer as a video.

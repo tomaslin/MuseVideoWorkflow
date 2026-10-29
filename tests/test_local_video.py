@@ -36,11 +36,25 @@ class LocalVideoTests(unittest.TestCase):
             first = json.loads((p / 'manifest.json').read_text())
             self.run_cli('import', p, p / 'incoming')
             self.assertEqual(len(json.loads((p / 'manifest.json').read_text())['clips']), 2)
+            # A fresh checkout lacks ignored raw clips; published, checksum-verified
+            # previews must remain usable for status and local assembly.
+            self.run_cli('publish-preview', p, '--shot', 's02')
+            original_s02 = next(c for c in first['clips'] if c['shotId']=='s02')
+            (p / original_s02['file']).unlink()
+            self.assertIn('s02: generated', self.run_cli('status', p))
             self.run_cli('assemble', p)
             man = json.loads((p / 'final/final-manifest.json').read_text())
             self.assertEqual(man['shotOrder'], ['s02', 's01'])
             self.assertEqual(man['reviewState'], 'unreviewed')
             self.assertAlmostEqual(man['durationSec'], 3, delta=.12)
+            # A short excerpt cannot be mistaken for the requested full delivery.
+            definition = json.loads((p / 'project.json').read_text())
+            definition['timingMode'] = 'edited'
+            (p / 'project.json').write_text(json.dumps(definition))
+            verify = subprocess.run(['python3', str(ROOT / 'pipeline/musevideo.py'), 'verify-final', str(p)], capture_output=True, text=True)
+            self.assertNotEqual(verify.returncode, 0, verify.stdout)
+            del definition['timingMode']
+            (p / 'project.json').write_text(json.dumps(definition))
             # Decode frames on both sides of the cut to prove actual picture order.
             for sec, channel in [(.5, 2), (2.0, 0)]:
                 rgb = subprocess.check_output(['ffmpeg', '-v', 'error', '-ss', str(sec), '-i', str(p / 'final/video.mp4'), '-vf', 'crop=10:10:150:85,scale=1:1', '-frames:v', '1', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'])
@@ -54,9 +68,11 @@ class LocalVideoTests(unittest.TestCase):
             self.run_cli('verify', p, ok=False)
             self.run_cli('import', p, p / 'incoming/media-generation-s02-0-test.mp4', '--shot', 's02')
             self.run_cli('redo', p, '--shot', 's01', '--reason', 'Bent vampire knees at 1.2 seconds')
+            self.assertIn('identical file', self.run_cli('import', p, p / 'incoming/media-generation-s01-0-test.mp4', '--shot', 's01', ok=False))
             self.assertIn('redo', self.run_cli('assemble', p, ok=False))
             queue = json.loads((p / 'generation-queue.json').read_text())
             self.assertEqual(queue['nextBatch'][0]['shotId'], 's01')
+            self.assertEqual(queue['nextBatch'][0]['redoReason'], 'Bent vampire knees at 1.2 seconds')
             self.assertTrue((p / first['clips'][0]['file']).exists())
             # Duplicate downloads must not silently select an arbitrary take.
             (p / 'incoming/duplicate-s01.mp4').write_bytes((p / 'incoming/media-generation-s01-0-test.mp4').read_bytes())
