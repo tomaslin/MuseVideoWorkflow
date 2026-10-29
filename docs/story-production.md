@@ -23,7 +23,10 @@ python3 pipeline/musevideo.py validate projects/the-five-outcasts
 For an existing production use `--refresh`. Changed generated artifacts are
 versioned under `variants/production-<hash>/`; previous clip provenance is
 preserved. Unchanged productions are a no-op. Changed prompt hashes mark
-selected takes stale when the local tool checks them. A fresh story should
+selected takes stale, and the queue is rebuilt from retained takes, provider
+failures and blockers. Archived and generation-enabled settings are preserved.
+With an unchanged story, missing derived text files are restored without
+overwriting existing edits; missing mutable records require backup recovery. A fresh story should
 use a new slug so old characters and footage cannot silently leak into it.
 
 The output includes brief, treatment, timed script, cast, world and look bibles,

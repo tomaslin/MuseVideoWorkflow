@@ -61,6 +61,7 @@ is not approved. S13 was saved but is flagged for a landscape redo.
 
 - **s16 — redo.** Lan and Wen face each other in a legible two-shot, but in
   sampled frames the blade appears to overlap Wen's throat; the intended clear
-  air gap is not readable. Preserve the take, and request a side-on medium
+  air gap is not readable. The source is also portrait (672×1344), unlike
+  the 16:9 delivery. Preserve the take, and request a landscape side-on medium
   shot with the sword stopped clearly short, a visible gap, no contact, and
   Wen unharmed. Review motion and framing before accepting the replacement.

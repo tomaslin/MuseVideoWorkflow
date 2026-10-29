@@ -13,7 +13,9 @@ function render(){
     card.append(head,el('h2',p.title),el('p',p.logline||p.mood||'Open this project to inspect its story, shots, footage and edit.'));
     const videoSources=p.shots.filter(s=>s.kind!=='title');
     const available=videoSources.filter(s=>s.videoUrl).length;
-    const row=el('div',`${p.durationSec}s delivery · ${videoSources.length} video sources · ${available} available here`,'project-summary');card.append(row);
+    const paused=videoSources.filter(s=>s.status.startsWith('provider error:')||s.status.startsWith('blocked:')).length;
+    const redos=videoSources.filter(s=>s.status==='redo').length;
+    const row=el('div',`${p.durationSec}s delivery · ${videoSources.length} sources · ${available} available · ${redos} redo · ${paused} paused`,'project-summary');card.append(row);
     const links=el('div',undefined,'shot-actions');
     for(const [label,file] of [['Open cutting room','index.html'],['Storyboard','storyboard.html']]){const a=el('a',label);a.href=`${file}?project=${encodeURIComponent(p.slug)}`;links.append(a);}
     card.append(links);$('projects').append(card);

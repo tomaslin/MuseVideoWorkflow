@@ -48,6 +48,9 @@ def tick(init=False):
         directory = ROOT / 'projects' / name
         if not (directory / 'project.json').exists():
             continue
+        if json.loads((directory / 'project.json').read_text()).get('archived'):
+            lines.append(f'- {name}: archived project skipped')
+            continue
         commands = []
         if (directory / 'production.json').exists():
             commands.append([sys.executable, str(ROOT / 'pipeline/develop.py'), str(directory / 'production.json'), '--refresh'])

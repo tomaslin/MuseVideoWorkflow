@@ -29,12 +29,30 @@ class DevelopmentTests(unittest.TestCase):
             before=(project/'script.md').stat().st_mtime_ns
             materialize(source,project,True)
             self.assertEqual((project/'script.md').stat().st_mtime_ns,before)
+            # Missing derived text can be restored without overwriting edits.
+            (project/'script.md').write_text('Editor-kept draft')
+            (project/'prompts/s01.txt').unlink()
+            materialize(source,project,True)
+            self.assertTrue((project/'prompts/s01.txt').exists())
+            self.assertEqual((project/'script.md').read_text(),'Editor-kept draft')
+            # A missing mutable manifest is never silently replaced by an empty one.
+            (project/'manifest.json').unlink()
+            with self.assertRaises(ValueError): materialize(source,project,True)
             # A story refresh must retain imported take history and version documents.
-            (project/'manifest.json').write_text('{"clips":[{"shotId":"s01","sha256":"keep-me"}]}')
+            definition=json.loads((project/'project.json').read_text())
+            definition.update(archived=True,active=False,generationEnabled=False)
+            (project/'project.json').write_text(json.dumps(definition))
+            (project/'manifest.json').write_text('{"clips":[{"shotId":"s01","sha256":"keep-me","selected":true}]}')
             self.data['sequences'][0]['shots'][0]['generationBrief'] += ' Hold the pennant still.'
             source.write_text(json.dumps(self.data))
             materialize(source,project,True)
             self.assertEqual(json.loads((project/'manifest.json').read_text())['clips'][0]['sha256'],'keep-me')
+            retained=json.loads((project/'project.json').read_text())
+            self.assertTrue(retained['archived'])
+            self.assertFalse(retained['active'])
+            self.assertFalse(retained['generationEnabled'])
+            queued=json.loads((project/'generation-queue.json').read_text())['pending']
+            self.assertEqual(next(job for job in queued if job['shotId']=='s01')['reason'],'stale-prompt')
             self.assertTrue(list((project/'variants').glob('*/script.md')))
 
     def test_reject_invalid_timing_character_and_path(self):

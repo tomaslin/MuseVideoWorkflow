@@ -86,8 +86,16 @@ def materialize(source, output=None, refresh=False):
         raise ValueError('Project already exists. Use --refresh to version and regenerate its authored artifacts.')
     canonical = json.dumps(data, sort_keys=True, ensure_ascii=False).encode()
     fingerprint = hashlib.sha256(canonical).hexdigest()
+    if (dest/'project.json').exists() and not (dest/'artifact-index.json').exists():
+        raise ValueError('Artifact index is missing; restore it before refreshing an existing production')
     old_index = json.loads((dest / 'artifact-index.json').read_text()) if (dest / 'artifact-index.json').exists() else {}
-    if old_index.get('productionSha256') == fingerprint:
+    same = old_index.get('productionSha256') == fingerprint
+    missing = [name for name in old_index.get('files', []) if not (dest / name).is_file()]
+    mutable = {'manifest.json', 'state.json', 'edit.json', 'final/edl.json', 'generation-queue.json'}
+    if same and any(name in mutable for name in missing):
+        raise ValueError('A mutable production record is missing; restore it from a backup: ' + ', '.join(name for name in missing if name in mutable))
+    repair = same and bool(missing)
+    if same and not missing:
         print(f'Production unchanged: {slug}; artifacts retained')
         return dest
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -96,7 +104,10 @@ def materialize(source, output=None, refresh=False):
         def write(path, value):
             p = stage / path; p.parent.mkdir(parents=True, exist_ok=True)
             p.write_text(value if isinstance(value, str) else json.dumps(value, indent=2, ensure_ascii=False) + '\n')
-        project.update(sourceShotCount=len(shots), generationClipSec=10, timingMode='edited', state='shot-list', productionSha256=fingerprint, active=True)
+        previous = json.loads((dest/'project.json').read_text()) if (dest/'project.json').exists() else {}
+        project.update(sourceShotCount=len(shots), generationClipSec=10, timingMode='edited', state='shot-list', productionSha256=fingerprint, active=previous.get('active', True))
+        for key in ('archived', 'generationEnabled'):
+            if key in previous: project[key] = previous[key]
         write('production.json', data); write('project.json', project)
         for name, text in data['documents'].items(): write(name + '.md', text.rstrip() + '\n')
         for name, text in data['departments'].items(): write('departments/' + name + '.md', text.rstrip() + '\n')
@@ -143,7 +154,7 @@ def materialize(source, output=None, refresh=False):
         write('critique.md', data.get('critique', 'Footage review pending.'))
         index = sorted(str(p.relative_to(stage)) for p in stage.rglob('*') if p.is_file())
         write('artifact-index.json', {'productionSha256':fingerprint,'files':index})
-        if (dest/'project.json').exists():
+        if (dest/'project.json').exists() and not repair:
             archive = dest / 'variants' / ('production-' + old_index.get('productionSha256', 'legacy')[:16])
             for name in old_index.get('files', []):
                 p = dest/name
@@ -156,11 +167,32 @@ def materialize(source, output=None, refresh=False):
             # Never erase take/review provenance on a story refresh.
             if str(rel) == 'manifest.json' and (dest/rel).exists(): continue
             target=dest/rel; target.parent.mkdir(parents=True, exist_ok=True)
+            if repair and target.exists(): continue
             os.replace(path,target)
-        for name in set(old_index.get('files', [])) - set(index):
+        for name in (set(old_index.get('files', [])) - set(index) if not repair else set()):
             if name.startswith(('sequences/', 'prompts/')):
                 (dest/name).unlink(missing_ok=True)
-    print(f'Materialized {slug}: {len(shots)} editorial sources, {len(generation)} generations in {math.ceil(len(generation)/6)} batches, {cursor:g}s exact edit')
+    if not repair:
+        # Regeneration planning is based on the retained take manifest and the
+        # just-written prompt hashes, not on the assumption that every shot is new.
+        from workspace import pending as pending_sources
+        queue = pending_sources(dest)
+        allowed = [job for job in queue if 'providerFailure' not in job and 'blocker' not in job]
+        manifest = json.loads((dest/'manifest.json').read_text())
+        selected = {clip['shotId']: clip for clip in manifest.get('clips', []) if clip.get('selected')}
+        local_pending = []
+        for shot in shots:
+            if shot.get('kind') != 'title': continue
+            take = selected.get(shot['shotId'])
+            packet_hash = hashlib.sha256((dest/'prompts'/f"{shot['shotId']}.txt").read_bytes()).hexdigest()
+            candidates = [(dest / take.get(key, '')).resolve() for key in ('file', 'publishedPreviewFile') if take and take.get(key)]
+            valid = take and take.get('status') != 'redo' and take.get('promptSha256') == packet_hash and any(dest.resolve() in file.parents and file.is_file() and hashlib.sha256(file.read_bytes()).hexdigest() == take.get('sha256') for file in candidates)
+            if not valid: local_pending.append(shot['shotId'])
+        (dest/'generation-queue.json').write_text(json.dumps({'productionSha256':fingerprint,'pending':queue,'nextBatch':allowed[:6],'localPending':local_pending,'complete':not queue and not local_pending},indent=2)+'\n')
+    if repair:
+        print(f'Restored {len(missing)} missing authored artifacts for {slug}; existing edits retained')
+    else:
+        print(f'Materialized {slug}: {len(shots)} editorial sources, {len(generation)} generations in {math.ceil(len(generation)/6)} batches, {cursor:g}s exact edit')
     return dest
 
 if __name__ == '__main__':

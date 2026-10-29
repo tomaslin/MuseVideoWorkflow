@@ -130,6 +130,12 @@
       "promptSha256" : "cd46cf43518b3802816c25d5c9b16ac09c50c7523a1d926faca5c5160975198e",
       "reason" : "The sword appears to overlap Wen’s throat in the sampled frames, so the intended gap cannot be read. Keep a clear hand-width air gap in a side-on 16:9 medium shot; Wen stays unharmed and freely standing.",
       "shotId" : "s16"
+    },
+    {
+      "at" : "2026-10-29T23:14:10Z",
+      "promptSha256" : "cd46cf43518b3802816c25d5c9b16ac09c50c7523a1d926faca5c5160975198e",
+      "reason" : "The 672x1344 portrait source does not match the 16:9 trailer, and the sword appears to overlap Wen’s throat in sampled frames. Use a side-on 16:9 medium two-shot with a clear hand-width air gap, no contact, and Wen freely standing.",
+      "shotId" : "s16"
     }
   ],
   "version" : 1
