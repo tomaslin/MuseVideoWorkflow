@@ -39,6 +39,28 @@
       "status": "needs-correction",
       "note": "Five figures, but Reed appears to have a left hand; do not use as an approved continuity reference.",
       "sha256": "eac5701a0b12bf22e3e6060f8aafbb52e36ac633686d7884e49bdeab1d8a3c1b"
+    },
+    {
+      "file": "references/reed-isolated-canonical.png",
+      "characters": [
+        "Reed"
+      ],
+      "status": "working",
+      "note": "Isolated reference shows the healed left-arm absence and one right hand holding the spindle; group continuity still needs verification.",
+      "sha256": "5f597357b5822a760316baa52fc1881d2ca02588986fafa0adad1a76eeaa5701"
+    },
+    {
+      "file": "references/five-outcasts-group-v3-separated.png",
+      "characters": [
+        "Rook",
+        "Reed",
+        "Bell",
+        "Ash",
+        "Heel"
+      ],
+      "status": "needs-correction",
+      "note": "Exactly five figures, but Reed’s left side is hidden; the above-elbow absence is not visible enough to approve group continuity.",
+      "sha256": "df1ee72db8dcb48623dc2b5f5b10c138c4dbb09ce3b340ff9576c05af0fa7536"
     }
   ]
 }
