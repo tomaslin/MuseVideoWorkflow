@@ -1,0 +1,25 @@
+{
+  "project": "_example-long-way-home",
+  "shots": 24,
+  "scores": {
+    "coverage": 10,
+    "locked_blocks": 10,
+    "variety": 10,
+    "action": 6,
+    "sound": 10,
+    "tension": 10,
+    "continuity": 10
+  },
+  "overall": 9.4,
+  "tension_note": "Tension range 2-9, climax at position 15/24",
+  "findings": [
+    {
+      "severity": "minor",
+      "dimension": "action",
+      "detail": "Shots that may contain two actions: s16 \u2014 split them or the clip will drift mid-shot"
+    }
+  ],
+  "blockers": [],
+  "shipping_ready": true,
+  "limit_note": "Muse cannot watch generated video back. This report scores the plan, prompts, and metadata. Visual quality still requires a human watch per batch, recorded in critiques/."
+}

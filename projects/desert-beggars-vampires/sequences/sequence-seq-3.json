@@ -1,0 +1,65 @@
+{
+  "sequenceId": "seq-3",
+  "title": "Battle and hook",
+  "shots": [
+    {
+      "shotId": "s07",
+      "sequenceId": "seq-3",
+      "size": "WS",
+      "movement": "crane",
+      "location": "desert dunes at night",
+      "action": "fight across the dunes with staffs and ropes",
+      "emotionalBeat": "joyful, ragged battle",
+      "soundMood": "battle cries, staff cracks, wind",
+      "characters": [
+        "Chief Hong",
+        "Little Sparrow",
+        "Jiangshi"
+      ],
+      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedCharacterBlocks": {
+        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, and a knotted wooden staff, moving with slow, deliberate authority",
+        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, and a rope whip at her belt, moving fast and light across the sand",
+        "Jiangshi": "hopping vampires in rotting dark Qing robes with faded gold trim, paper talismans on their foreheads, arms held stiffly forward, green-grey skin, moving in stiff, hopping formation"
+      }
+    },
+    {
+      "shotId": "s08",
+      "sequenceId": "seq-3",
+      "size": "MS",
+      "movement": "tracking",
+      "location": "desert dunes at night",
+      "action": "leaps over three vampires at once",
+      "emotionalBeat": "wire-fu peak, impossible agility",
+      "soundMood": "whoosh, sand spray",
+      "characters": [
+        "Little Sparrow",
+        "Jiangshi"
+      ],
+      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedCharacterBlocks": {
+        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, and a rope whip at her belt, moving fast and light across the sand",
+        "Jiangshi": "hopping vampires in rotting dark Qing robes with faded gold trim, paper talismans on their foreheads, arms held stiffly forward, green-grey skin, moving in stiff, hopping formation"
+      }
+    },
+    {
+      "shotId": "s09",
+      "sequenceId": "seq-3",
+      "size": "EWS",
+      "movement": "crane",
+      "location": "desert at dawn",
+      "action": "stand silhouetted against the rising sun as a second tomb door grinds open far away",
+      "emotionalBeat": "victory undercut by a hook",
+      "soundMood": "dawn wind, distant stone grinding",
+      "characters": [
+        "Chief Hong",
+        "Little Sparrow"
+      ],
+      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedCharacterBlocks": {
+        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, and a knotted wooden staff, moving with slow, deliberate authority",
+        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, and a rope whip at her belt, moving fast and light across the sand"
+      }
+    }
+  ]
+}

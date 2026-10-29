@@ -1,0 +1,94 @@
+{
+  "panels": [
+    {
+      "panelId": "s01",
+      "shotId": "s01",
+      "size": "EWS",
+      "movement": "crane",
+      "action": "crosses the dunes at dawn, laughing",
+      "soundCue": "wind over sand, distant laughter",
+      "tension": 3,
+      "note": "Trailer tension: ends at 8 on a hook, not a resolution \u2014 by design for a trailer, unlike a feature arc."
+    },
+    {
+      "panelId": "s02",
+      "shotId": "s02",
+      "size": "WS",
+      "movement": "tracking",
+      "action": "plants his staff in the sand at the caravanserai gate",
+      "soundCue": "staff thud in sand, cloth in wind",
+      "tension": 5,
+      "note": "Trailer tension: ends at 8 on a hook, not a resolution \u2014 by design for a trailer, unlike a feature arc."
+    },
+    {
+      "panelId": "s03",
+      "shotId": "s03",
+      "size": "MS",
+      "movement": "push-in",
+      "action": "watches the sandstorm on the horizon, smile fading",
+      "soundCue": "wind rising, sand hissing",
+      "tension": 6,
+      "note": "Trailer tension: ends at 8 on a hook, not a resolution \u2014 by design for a trailer, unlike a feature arc."
+    },
+    {
+      "panelId": "s04",
+      "shotId": "s04",
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "hop out of the sand tombs in formation",
+      "soundCue": "rhythmic hopping thuds, dry cloth rustle",
+      "tension": 7,
+      "note": "Trailer tension: ends at 8 on a hook, not a resolution \u2014 by design for a trailer, unlike a feature arc."
+    },
+    {
+      "panelId": "s05",
+      "shotId": "s05",
+      "size": "MS",
+      "movement": "tracking",
+      "action": "strikes the first vampire with his staff",
+      "soundCue": "staff crack, hopping thud",
+      "tension": 8,
+      "note": "Trailer tension: ends at 8 on a hook, not a resolution \u2014 by design for a trailer, unlike a feature arc."
+    },
+    {
+      "panelId": "s06",
+      "shotId": "s06",
+      "size": "CU",
+      "movement": "locked-off",
+      "action": "flutters loose from a vampire's forehead",
+      "soundCue": "paper flutter, sudden silence",
+      "tension": 9,
+      "note": "Trailer tension: ends at 8 on a hook, not a resolution \u2014 by design for a trailer, unlike a feature arc."
+    },
+    {
+      "panelId": "s07",
+      "shotId": "s07",
+      "size": "WS",
+      "movement": "crane",
+      "action": "fight across the dunes with staffs and ropes",
+      "soundCue": "battle cries, staff cracks, wind",
+      "tension": 10,
+      "note": "Trailer tension: ends at 8 on a hook, not a resolution \u2014 by design for a trailer, unlike a feature arc."
+    },
+    {
+      "panelId": "s08",
+      "shotId": "s08",
+      "size": "MS",
+      "movement": "tracking",
+      "action": "leaps over three vampires at once",
+      "soundCue": "whoosh, sand spray",
+      "tension": 9,
+      "note": "Trailer tension: ends at 8 on a hook, not a resolution \u2014 by design for a trailer, unlike a feature arc."
+    },
+    {
+      "panelId": "s09",
+      "shotId": "s09",
+      "size": "EWS",
+      "movement": "crane",
+      "action": "stand silhouetted against the rising sun as a second tomb door grinds open far away",
+      "soundCue": "dawn wind, distant stone grinding",
+      "tension": 8,
+      "note": "Trailer tension: ends at 8 on a hook, not a resolution \u2014 by design for a trailer, unlike a feature arc."
+    }
+  ]
+}

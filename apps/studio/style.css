@@ -1,0 +1,18 @@
+body{font-family:system-ui,sans-serif;margin:0;color:#111;background:#fafafa}
+header,footer{padding:1rem 1.5rem;background:#111;color:#eee}
+header h1{margin:0}
+code{background:#eee;padding:.1rem .3rem;border-radius:4px}
+#prompt-bar{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;padding:1rem 1.5rem;background:#fff;border-bottom:1px solid #ddd}
+#prompt-bar input[type=text],#prompt-bar input:not([type=checkbox]){flex:1;min-width:280px;padding:.5rem}
+main{display:grid;grid-template-columns:200px 1fr 320px;gap:1rem;padding:1rem 1.5rem}
+#stages button{display:block;width:100%;text-align:left;margin:.25rem 0;padding:.5rem;border:1px solid #ccc;background:#fff;cursor:pointer}
+#stages button.active{background:#111;color:#fff}
+#stages button.done{border-left:6px solid #2a7}
+textarea{width:100%;box-sizing:border-box;font-family:ui-monospace,monospace}
+.actions{display:flex;gap:.5rem;flex-wrap:wrap;margin:.6rem 0}
+button{padding:.5rem .8rem;cursor:pointer}
+#side{background:#fff;border:1px solid #ddd;padding:1rem}
+#side h2{font-size:1rem;margin-top:1.2rem}
+.hint{color:#555;font-size:.9rem}
+.auto{font-size:.9rem}
+@media(max-width:900px){main{grid-template-columns:1fr}}

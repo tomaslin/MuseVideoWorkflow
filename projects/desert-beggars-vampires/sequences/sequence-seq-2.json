@@ -1,0 +1,59 @@
+{
+  "sequenceId": "seq-2",
+  "title": "The threat",
+  "shots": [
+    {
+      "shotId": "s04",
+      "sequenceId": "seq-2",
+      "size": "WS",
+      "movement": "locked-off",
+      "location": "sand tombs at night",
+      "action": "hop out of the sand tombs in formation",
+      "emotionalBeat": "the scare, in full view",
+      "soundMood": "rhythmic hopping thuds, dry cloth rustle",
+      "characters": [
+        "Jiangshi"
+      ],
+      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedCharacterBlocks": {
+        "Jiangshi": "hopping vampires in rotting dark Qing robes with faded gold trim, paper talismans on their foreheads, arms held stiffly forward, green-grey skin, moving in stiff, hopping formation"
+      }
+    },
+    {
+      "shotId": "s05",
+      "sequenceId": "seq-2",
+      "size": "MS",
+      "movement": "tracking",
+      "location": "caravanserai courtyard at night",
+      "action": "strikes the first vampire with his staff",
+      "emotionalBeat": "defiance, first blow landed",
+      "soundMood": "staff crack, hopping thud",
+      "characters": [
+        "Chief Hong",
+        "Jiangshi"
+      ],
+      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedCharacterBlocks": {
+        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, and a knotted wooden staff, moving with slow, deliberate authority",
+        "Jiangshi": "hopping vampires in rotting dark Qing robes with faded gold trim, paper talismans on their foreheads, arms held stiffly forward, green-grey skin, moving in stiff, hopping formation"
+      }
+    },
+    {
+      "shotId": "s06",
+      "sequenceId": "seq-2",
+      "size": "CU",
+      "movement": "locked-off",
+      "location": "caravanserai courtyard at night",
+      "action": "flutters loose from a vampire's forehead",
+      "emotionalBeat": "the scare deepens, the seal is broken",
+      "soundMood": "paper flutter, sudden silence",
+      "characters": [
+        "Jiangshi"
+      ],
+      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedCharacterBlocks": {
+        "Jiangshi": "hopping vampires in rotting dark Qing robes with faded gold trim, paper talismans on their foreheads, arms held stiffly forward, green-grey skin, moving in stiff, hopping formation"
+      }
+    }
+  ]
+}

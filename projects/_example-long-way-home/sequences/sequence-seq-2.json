@@ -1,0 +1,170 @@
+{
+  "sequenceId": "seq-2",
+  "title": "Reckoning",
+  "intent": "He faces what he left unfinished.",
+  "emotionalTurn": "Repair becomes the decision, not a speech about it.",
+  "openingImage": "enters the workshop and surveys tools left in place",
+  "closingImage": "glues and clamps the chair joint, and waits",
+  "shots": [
+    {
+      "shotId": "s09",
+      "sequenceId": "seq-2",
+      "order": 9,
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "enters the workshop and surveys tools left in place",
+      "location": "a workshop beside the house",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "returning to work left undone",
+      "durationSec": 10,
+      "soundMood": "door creak, dust in light",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s10",
+      "sequenceId": "seq-2",
+      "order": 10,
+      "size": "CU",
+      "movement": "push-in",
+      "action": "runs a hand along the unfinished chair rail",
+      "location": "a half-finished wooden chair",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "recognition",
+      "durationSec": 10,
+      "soundMood": "wood grain, his breath",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s11",
+      "sequenceId": "seq-2",
+      "order": 11,
+      "size": "ECU",
+      "movement": "locked-off",
+      "action": "planes a board slowly, shavings curling",
+      "location": "hands holding a wood plane",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "patience as action",
+      "durationSec": 10,
+      "soundMood": "plane on wood, rhythmic",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s12",
+      "sequenceId": "seq-2",
+      "order": 12,
+      "size": "MS",
+      "movement": "locked-off",
+      "action": "reads an unsent letter, folds it carefully, does not tear it",
+      "location": "a workshop bench",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "choosing not to destroy the past",
+      "durationSec": 10,
+      "soundMood": "paper, silence",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s13",
+      "sequenceId": "seq-2",
+      "order": 13,
+      "size": "CU",
+      "movement": "locked-off",
+      "action": "looks at the silent telephone and turns back to the work",
+      "location": "a telephone on a wall, silent",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "no call will fix this",
+      "durationSec": 10,
+      "soundMood": "silence, held",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s14",
+      "sequenceId": "seq-2",
+      "order": 14,
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "watches rain on the workshop window, tools waiting behind him",
+      "location": "a workshop window in rain",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "weather as feeling, not metaphor forced",
+      "durationSec": 10,
+      "soundMood": "rain on glass",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s15",
+      "sequenceId": "seq-2",
+      "order": 15,
+      "size": "MCU",
+      "movement": "push-in",
+      "action": "looks at himself in the mirror, honestly, without flinching",
+      "location": "a mirror in the hallway",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "self-reckoning",
+      "durationSec": 10,
+      "soundMood": "silence, held",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s16",
+      "sequenceId": "seq-2",
+      "order": 16,
+      "size": "MS",
+      "movement": "locked-off",
+      "action": "glues and clamps the chair joint, and waits",
+      "location": "a workshop bench with glue and clamps",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "the first repair",
+      "durationSec": 10,
+      "soundMood": "clamp click, room tone",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    }
+  ]
+}

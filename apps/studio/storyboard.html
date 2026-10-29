@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storyboard — MuseVideo Studio</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.panels{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;padding:1rem 1.5rem}
+.panel{border:1px solid #ccc;background:#fff;padding:.8rem}
+.panel .frame{height:120px;background:linear-gradient(135deg,#333,#777);color:#fff;display:flex;align-items:center;justify-content:center;font-size:2rem}
+.panel .tension{font-weight:bold}
+svg{width:100%;height:160px;background:#fff;border:1px solid #ddd}
+</style>
+</head>
+<body>
+<header><h1>Storyboard &amp; Tension Curve</h1><p>One panel per shot. Tension is drawn from the panels — if the curve is flat, the story is flat, no matter how pretty the panels are.</p></header>
+<section style="padding:1rem 1.5rem">
+  <label>Project JSON <input type="file" id="file" accept=".json"></label>
+  <button id="example">Load example (Long Way Home)</button>
+  <p><a href="index.html">Back to studio</a></p>
+  <svg id="curve" viewBox="0 0 600 160" preserveAspectRatio="none"></svg>
+</section>
+<section class="panels" id="panels"></section>
+<script>
+const example = [
+  {id:"s01",size:"EWS",move:"locked-off",action:"Walks up the long dirt drive toward an empty house",sound:"wind in dry grass",tension:2},
+  {id:"s02",size:"WS",move:"push-in",action:"Opens the garden gate and steps through",sound:"gate latch click",tension:3},
+  {id:"s03",size:"MS",move:"tracking",action:"Crosses the porch and pauses at the front door",sound:"wood creak",tension:4},
+  {id:"s04",size:"WS",move:"locked-off",action:"Enters the hallway and stands still, listening",sound:"room tone, clock ticking",tension:4},
+  {id:"s05",size:"MS",move:"push-in",action:"Stands in the kitchen, hand on a worn countertop",sound:"faint birds outside",tension:5},
+  {id:"s06",size:"CU",move:"locked-off",action:"Looks at a faded photograph, then looks away",sound:"silence, held",tension:6},
+  {id:"s07",size:"WS",move:"locked-off",action:"Watches sunlight move across an empty room",sound:"soft wind",tension:5},
+  {id:"s08",size:"MS",move:"locked-off",action:"Sits down by the window and rests his hands",sound:"room tone",tension:5},
+  {id:"s09",size:"WS",move:"locked-off",action:"Enters the workshop and surveys tools left in place",sound:"door creak",tension:6},
+  {id:"s10",size:"CU",move:"push-in",action:"Runs a hand along the unfinished chair rail",sound:"wood grain, breath",tension:7},
+  {id:"s11",size:"ECU",move:"locked-off",action:"Planes a board slowly, shavings curling",sound:"plane on wood",tension:7},
+  {id:"s12",size:"MS",move:"locked-off",action:"Reads an unsent letter, folds it carefully",sound:"paper, silence",tension:8},
+  {id:"s13",size:"CU",move:"locked-off",action:"Looks at the silent telephone, turns back to work",sound:"silence, held",tension:8},
+  {id:"s14",size:"WS",move:"locked-off",action:"Watches rain on the workshop window",sound:"rain on glass",tension:7},
+  {id:"s15",size:"MCU",move:"push-in",action:"Looks at himself in the mirror, honestly",sound:"silence, held",tension:9},
+  {id:"s16",size:"MS",move:"locked-off",action:"Glues and clamps the chair joint, and waits",sound:"clamp click",tension:8},
+  {id:"s17",size:"WS",move:"locked-off",action:"Sands the chair in morning light",sound:"sandpaper, birds",tension:6},
+  {id:"s18",size:"CU",move:"locked-off",action:"Runs a hand over the finished chair, nods once",sound:"soft exhale",tension:5},
+  {id:"s19",size:"WS",move:"push-in",action:"Opens the garden gate to morning light",sound:"gate latch, birdsong",tension:4},
+  {id:"s20",size:"MS",move:"tracking",action:"Walks the garden path, returns a neighbour's wave",sound:"footsteps, distant voice",tension:4},
+  {id:"s21",size:"MS",move:"locked-off",action:"Sweeps the porch slowly, methodically",sound:"broom on wood",tension:3},
+  {id:"s22",size:"CU",move:"locked-off",action:"Switches on the porch light at dusk",sound:"switch click",tension:3},
+  {id:"s23",size:"WS",move:"locked-off",action:"Places the finished chair in the window, lit",sound:"evening birds",tension:2},
+  {id:"s24",size:"EWS",move:"pull-back",action:"Walks back down the drive at dusk, house lit behind",sound:"wind, silence under it",tension:2}
+];
+function render(shots){
+  const panels=document.getElementById("panels"); panels.innerHTML="";
+  shots.forEach(s=>{
+    const d=document.createElement("div"); d.className="panel";
+    d.innerHTML="<div class='frame'>"+s.id+"</div><p><b>"+s.size+" · "+s.move+"</b></p><p>"+s.action+"</p><p>Sound: "+s.sound+"</p><p class='tension'>Tension: "+s.tension+"/10</p>";
+    panels.appendChild(d);
+  });
+  const svg=document.getElementById("curve");
+  const pts=shots.map((s,i)=>{const x=i/(shots.length-1)*600; const y=150-(s.tension/10)*130; return x+","+y}).join(" ");
+  svg.innerHTML="<polyline points='"+pts+"' fill='none' stroke='#111' stroke-width='3'/><text x='10' y='20'>Tension curve (0-10)</text>";
+}
+document.getElementById("example").onclick=()=>render(example);
+document.getElementById("file").onchange=(e)=>{
+  const f=e.target.files[0]; if(!f) return;
+  const r=new FileReader(); r.onload=()=>{ const p=JSON.parse(r.result); const shots=p.shots||[]; render(shots.map(s=>({id:s.shotId,size:s.size,move:s.movement,action:s.action,sound:s.soundMood,tension:5}))); }; r.readAsText(f);
+};
+render(example);
+</script>
+</body>
+</html>

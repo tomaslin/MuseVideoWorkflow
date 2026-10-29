@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sound cue",
+  "type": "object",
+  "properties": {
+    "shotId": {
+      "type": "string"
+    },
+    "dialogue": {
+      "type": "string"
+    },
+    "sfx": {
+      "type": "array"
+    },
+    "music": {
+      "type": "string"
+    },
+    "silence": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "shotId"
+  ]
+}

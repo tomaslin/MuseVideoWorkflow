@@ -1,0 +1,170 @@
+{
+  "sequenceId": "seq-1",
+  "title": "Arrival",
+  "intent": "He arrives and enters, slowly, without rushing the house.",
+  "emotionalTurn": "He sits with the house instead of avoiding it.",
+  "openingImage": "walks up the long dirt drive toward an empty house",
+  "closingImage": "sits down by the window and rests his hands on his knees",
+  "shots": [
+    {
+      "shotId": "s01",
+      "sequenceId": "seq-1",
+      "order": 1,
+      "size": "EWS",
+      "movement": "locked-off",
+      "action": "walks up the long dirt drive toward an empty house",
+      "location": "a dirt drive at golden hour",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "arrival, quiet resolve",
+      "durationSec": 10,
+      "soundMood": "wind in dry grass, distant birds",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s02",
+      "sequenceId": "seq-1",
+      "order": 2,
+      "size": "WS",
+      "movement": "push-in",
+      "action": "opens the gate and steps through, closing it behind him",
+      "location": "a weathered garden gate",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "crossing a threshold",
+      "durationSec": 10,
+      "soundMood": "gate latch click, gravel under boots",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s03",
+      "sequenceId": "seq-1",
+      "order": 3,
+      "size": "MS",
+      "movement": "tracking",
+      "action": "crosses the porch and pauses at the front door",
+      "location": "a wooden porch",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "hesitation before entering",
+      "durationSec": 10,
+      "soundMood": "wood creak, wind",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s04",
+      "sequenceId": "seq-1",
+      "order": 4,
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "enters the hallway and stands still, listening to the house",
+      "location": "a hallway in an empty house",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "the house is present, not ruined",
+      "durationSec": 10,
+      "soundMood": "room tone, a clock ticking far off",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s05",
+      "sequenceId": "seq-1",
+      "order": 5,
+      "size": "MS",
+      "movement": "push-in",
+      "action": "stands in the kitchen, hand on a worn countertop",
+      "location": "a kitchen with late light",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "memory surfacing",
+      "durationSec": 10,
+      "soundMood": "kettle silence, faint birds outside",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s06",
+      "sequenceId": "seq-1",
+      "order": 6,
+      "size": "CU",
+      "movement": "locked-off",
+      "action": "looks at a faded photograph, then looks away, not smiling",
+      "location": "a photograph on a hallway wall",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "grief without performance",
+      "durationSec": 10,
+      "soundMood": "silence, held",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s07",
+      "sequenceId": "seq-1",
+      "order": 7,
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "watches sunlight move across an empty room",
+      "location": "an empty room in late light",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "time passing, visibly",
+      "durationSec": 10,
+      "soundMood": "soft wind through a cracked window",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s08",
+      "sequenceId": "seq-1",
+      "order": 8,
+      "size": "MS",
+      "movement": "locked-off",
+      "action": "sits down by the window and rests his hands on his knees",
+      "location": "a kitchen chair by a window",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "accepting the stillness",
+      "durationSec": 10,
+      "soundMood": "room tone, breathing space",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# Work files are not deliverables. Only projects/<slug>/final/ ships.
+projects/*/work/
+projects/*/clips/
+projects/*/clips/raw/
+*.tmp
+*.log
+.DS_Store
+__pycache__/

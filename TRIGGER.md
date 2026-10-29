@@ -1,0 +1,84 @@
+# The video-idea trigger
+
+## The keyword
+
+```
+video idea: <idea>
+```
+
+That is the whole interface. When you send a message starting with
+`video idea:`, Muse runs this pipeline end to end, in order, and does not
+skip stages to get to generation faster.
+
+## What Muse does, in order
+
+1. **Brief.** Restates your idea as a one-paragraph brief: subject, mood,
+   duration, audience, language, and what the video must make the viewer
+   feel. Asks you only if duration or mood is genuinely ambiguous.
+2. **Treatment.** A short treatment: premise, emotional arc, opening image,
+   turning point, closing image. No dialogue yet.
+3. **Script.** A full script broken into sequences, then into ~10-second
+   beats. One action per beat. Dialogue and narration are kept in a
+   separate audio script — they are not baked into video prompts.
+4. **Critique 1 (script).** Muse criticizes the script against
+   `docs/critique-rubric.md`: is the arc earned, is every beat visual, is
+   anything a teaser instead of a scene, does dialogue carry meaning or
+   just explain? Revises, and saves the critique.
+5. **Look bible + characters.** Locks one visual style, palette, lighting,
+   lens, and wardrobe, and one verbatim description per character.
+   Generates one reference image per character and per key location.
+6. **Shot list.** Sequences, then shots. Each shot: sequence, intent,
+   camera (size, lens, movement), action, sound mood, and the locked blocks
+   copied verbatim.
+7. **Critique 2 (shot plan).** Checks coverage (does the shot count match
+   the duration?), continuity (does every shot carry its locked blocks?),
+   and variety (are shot sizes and movements actually varied, or is every
+   shot a medium shot?). Revises.
+8. **Generation, in batches of at most 6 clips.** Each clip is ~10 seconds.
+   A 4-minute video is 24 clips in 4 batches. Muse reports each batch with
+   its shot numbers, and does not start the next batch until the previous
+   one is recorded in the manifest.
+9. **Critique 3 (clips).** Automated checks run immediately. For visual
+   quality, you watch the batch and name any outlier numbers; Muse redoes
+   only those, from the same reference image and locked description.
+   A batch is not locked until its critiques are resolved or waived.
+10. **Audio.** Dialogue and narration are generated as separate voice
+    tracks, one stem per speaker where possible. Music is mood-described
+    (never a specific copyrighted recording), and sound design is listed
+    per shot. Video clips themselves carry synthesized mood sound only;
+    there is no guaranteed lip-sync, and the pipeline never claims there is.
+11. **Assembly.** `pipeline/musevideo.py assemble` concatenates the locked
+    clips in shot order, lays the voice and music stems over them, adds
+    captions from the audio script, and writes
+    `projects/<slug>/final/video.mp4` plus `edl.json` and
+    `final-manifest.json`.
+12. **Check-in.** The final video, manifest, EDL, and poster are checked
+    into `projects/<slug>/final/` in this repo (see
+    `docs/assembly-and-checkin.md` for the binary check-in route).
+    The project state moves to `shipped` only after
+    `verify-final` passes: duration matches the shot list, every shot is
+    present in order, and the checksum is recorded.
+
+## What you will be asked, and what you won't
+
+You will be asked: duration (if not stated), and to name outlier clips
+after each batch. You will not be asked to re-approve the look bible,
+the script, or the shot list at every step — Muse drives, and shows you
+the saved definitions in the repo so you can correct them in one place.
+
+## Example run
+
+```
+video idea: a 4-minute music video in the mood of Johnny Cash's Hurt
+```
+
+Muse would: write an original script about a weathered man returning to
+an empty house and reckoning with what he built and lost (mood only — no
+Hurt lyrics, no Hurt recording), define a desaturated, late-light,
+locked-off-camera look, generate a character reference, build 24 shots in
+3 sequences, generate them in 4 batches, critique and redo outliers, lay
+an original voice/music mood track, assemble, and check the merged video
+into `projects/hurt-mood-long-way-home/final/`.
+
+A worked definition in exactly that shape is already in this repo:
+`projects/_example-long-way-home/`.

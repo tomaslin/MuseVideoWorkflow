@@ -1,0 +1,4 @@
+# Final videos are large binaries. Use LFS when the repo has it enabled;
+# if you push direct to GitHub, keep final videos under 100 MB (see
+# docs/assembly-and-checkin.md) and remove this LFS line for that path.
+projects/*/final/*.mp4 filter=lfs diff=lfs merge=lfs -text

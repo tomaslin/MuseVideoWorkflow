@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","properties":{"age":{"type":"string"},"lockedDescription":{"type":"string"},"name":{"type":"string"},"referenceImage":{"type":"string"},"role":{"type":"string"},"wardrobeBySequence":{"type":"object"}},"required":["name","lockedDescription","referenceImage"],"title":"Character","type":"object"}

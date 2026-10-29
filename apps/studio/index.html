@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MuseVideo Studio — prompt-first video pipeline</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>MuseVideo Studio</h1>
+  <p>Prompt first. Idea to video, with every artifact visible, editable, and versioned.</p>
+  <p class="trigger">Trigger in chat: <code>video idea: &lt;your idea&gt;</code> — this UI is the same pipeline, driven from here.</p>
+</header>
+
+<section id="prompt-bar">
+  <label for="idea">Video idea</label>
+  <input id="idea" placeholder="video idea: a 4-minute music video in the mood of Johnny Cash's Hurt">
+  <label for="duration">Duration (sec)</label>
+  <input id="duration" type="number" value="240" min="10" step="10">
+  <button id="run">Run pipeline</button>
+  <label class="auto"><input type="checkbox" id="auto" checked> Auto-advance, no approval gates (history still recorded)</label>
+</section>
+
+<main>
+  <nav id="stages" aria-label="Pipeline stages"></nav>
+
+  <section id="work">
+    <div id="project-meta"></div>
+    <label for="artifact-select">Artifact</label>
+    <select id="artifact-select"></select>
+    <textarea id="artifact-editor" rows="18" spellcheck="false"></textarea>
+    <div class="actions">
+      <button id="save-variant">Save edit as new variant (alternate reality)</button>
+      <button id="save-inplace">Save in place</button>
+      <button id="branch">Branch variant from this artifact</button>
+    </div>
+    <label for="change-prompt">Change via prompt (for a variant)</label>
+    <input id="change-prompt" placeholder="e.g. make it rainier, change the ending so he stays, warmer palette">
+    <p class="hint">Editing never overwrites history. A variant keeps the original, records its parent, the change prompt, and a new seed — an alternate reality of the same video, not a replacement.</p>
+  </section>
+
+  <aside id="side">
+    <h2>State machine</h2>
+    <div id="state"></div>
+    <h2>Variants (alternate realities)</h2>
+    <ul id="variants"></ul>
+    <h2>History (append-only)</h2>
+    <ol id="history"></ol>
+    <div class="actions">
+      <button id="export">Export project JSON</button>
+      <button id="import-btn">Import project JSON</button>
+      <input type="file" id="import-file" accept=".json" hidden>
+    </div>
+    <h2>Gap fixes (built in)</h2>
+    <ul>
+      <li><b>10-second clip limit:</b> chain shots with ffmpeg concat + xfade, then <code>minterpolate</code> for smoother motion. See <code>docs/gaps-and-fixes.md</code> and <code>scripts/chain-clips.sh</code>.</li>
+      <li><b>Sound:</b> video clips carry mood sound only. Dialogue, music, and SFX are separate stems, mixed with <code>amix</code>, stretched with <code>atempo</code>, looped SFX with <code>-stream_loop</code>. See <code>scripts/mix-audio.sh</code>.</li>
+      <li><b>No lip-sync promise:</b> voice is a separate stem, captioned from the audio script. Never claim sync the tool cannot guarantee.</li>
+    </ul>
+  </aside>
+</main>
+
+<footer>
+  <p>Determinism: seed = hash(idea + look + character). Same seed, same plan. Prompt hash per shot is recorded in the manifest. Model, model version, and clip file are recorded per clip when generation runs — a plan without those fields is not a shipped video.</p>
+  <p>Final video lands in <code>projects/&lt;slug&gt;/final/</code>. See the repo README for the GitHub binary check-in route.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

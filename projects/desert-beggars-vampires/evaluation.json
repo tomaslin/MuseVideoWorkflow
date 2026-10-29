@@ -1,0 +1,25 @@
+{
+  "project": "desert-beggars-vampires",
+  "shots": 9,
+  "scores": {
+    "coverage": 10,
+    "locked_blocks": 10,
+    "variety": 10,
+    "action": 10,
+    "sound": 10,
+    "tension": 6,
+    "continuity": 10
+  },
+  "overall": 9.4,
+  "tension_note": "Tension range 3-10, climax at position 7/9",
+  "findings": [
+    {
+      "severity": "minor",
+      "dimension": "tension",
+      "detail": "Final tension above 4 \u2014 the film does not resolve, it stops"
+    }
+  ],
+  "blockers": [],
+  "shipping_ready": true,
+  "limit_note": "Muse cannot watch generated video back. This report scores the plan, prompts, and metadata. Visual quality still requires a human watch per batch, recorded in critiques/."
+}

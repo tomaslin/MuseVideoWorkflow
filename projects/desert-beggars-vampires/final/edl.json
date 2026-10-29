@@ -1,0 +1,79 @@
+{
+  "shotOrder": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s09"
+  ],
+  "entries": [
+    {
+      "shotId": "s01",
+      "sequenceId": "seq-1",
+      "startSec": 0,
+      "endSec": 10,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s02",
+      "sequenceId": "seq-1",
+      "startSec": 10,
+      "endSec": 20,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s03",
+      "sequenceId": "seq-1",
+      "startSec": 20,
+      "endSec": 30,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s04",
+      "sequenceId": "seq-2",
+      "startSec": 30,
+      "endSec": 40,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s05",
+      "sequenceId": "seq-2",
+      "startSec": 40,
+      "endSec": 50,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s06",
+      "sequenceId": "seq-2",
+      "startSec": 50,
+      "endSec": 60,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s07",
+      "sequenceId": "seq-3",
+      "startSec": 60,
+      "endSec": 70,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s08",
+      "sequenceId": "seq-3",
+      "startSec": 70,
+      "endSec": 80,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s09",
+      "sequenceId": "seq-3",
+      "startSec": 80,
+      "endSec": 90,
+      "transitionIn": "cut"
+    }
+  ],
+  "totalSec": 90
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QC report",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "type": "string"
+    },
+    "technical": {
+      "type": "array"
+    },
+    "creative": {
+      "type": "array"
+    },
+    "legal": {
+      "type": "array"
+    },
+    "accessibility": {
+      "type": "array"
+    },
+    "blockersOpen": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "slug",
+    "blockersOpen"
+  ]
+}

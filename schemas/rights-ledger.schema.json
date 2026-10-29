@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Rights ledger entry",
+  "type": "object",
+  "properties": {
+    "assetId": {
+      "type": "string"
+    },
+    "asset": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "uncleared",
+        "pending",
+        "cleared",
+        "not-applicable"
+      ]
+    }
+  },
+  "required": [
+    "assetId",
+    "asset",
+    "status"
+  ]
+}

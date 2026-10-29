@@ -1,0 +1,59 @@
+{
+  "sequenceId": "seq-1",
+  "title": "Desert awakening",
+  "shots": [
+    {
+      "shotId": "s01",
+      "sequenceId": "seq-1",
+      "size": "EWS",
+      "movement": "crane",
+      "location": "desert dunes at dawn",
+      "action": "crosses the dunes at dawn, laughing",
+      "emotionalBeat": "ragged camaraderie, the band as family",
+      "soundMood": "wind over sand, distant laughter",
+      "characters": [
+        "Chief Hong",
+        "Little Sparrow"
+      ],
+      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedCharacterBlocks": {
+        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, and a knotted wooden staff, moving with slow, deliberate authority",
+        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, and a rope whip at her belt, moving fast and light across the sand"
+      }
+    },
+    {
+      "shotId": "s02",
+      "sequenceId": "seq-1",
+      "size": "WS",
+      "movement": "tracking",
+      "location": "ruined caravanserai",
+      "action": "plants his staff in the sand at the caravanserai gate",
+      "emotionalBeat": "authority, a claim staked",
+      "soundMood": "staff thud in sand, cloth in wind",
+      "characters": [
+        "Chief Hong"
+      ],
+      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedCharacterBlocks": {
+        "Chief Hong": "a weathered one-eyed beggar chief in his 60s with a grey beard, patched grey-brown robes, a rope belt, and a knotted wooden staff, moving with slow, deliberate authority"
+      }
+    },
+    {
+      "shotId": "s03",
+      "sequenceId": "seq-1",
+      "size": "MS",
+      "movement": "push-in",
+      "location": "caravanserai roof at dusk",
+      "action": "watches the sandstorm on the horizon, smile fading",
+      "emotionalBeat": "dread arriving",
+      "soundMood": "wind rising, sand hissing",
+      "characters": [
+        "Little Sparrow"
+      ],
+      "lockedLookBlock": "Wuxia desert epic in painterly live-action style, ochre sand and blood-red dusk against cold moonlit blue night, tattered grey-brown beggar robes against ornate dark Qing robes, dust and sand in the air, dynamic wuxia wire-fu camera with sweeping crane and tracking moves, high contrast, no modern objects, no saturated neon.",
+      "lockedCharacterBlocks": {
+        "Little Sparrow": "a lean young beggar woman in her 20s with short black hair tied back, patched grey-brown robes, straw sandals, and a rope whip at her belt, moving fast and light across the sand"
+      }
+    }
+  ]
+}

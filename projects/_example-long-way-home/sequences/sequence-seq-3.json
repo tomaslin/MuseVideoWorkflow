@@ -1,0 +1,170 @@
+{
+  "sequenceId": "seq-3",
+  "title": "Release",
+  "intent": "He finishes, lights the house, and leaves it kept.",
+  "emotionalTurn": "Leaving lit, not locked in darkness.",
+  "openingImage": "sands the chair in morning light, dust in the sunbeam",
+  "closingImage": "walks back down the drive at dusk, slower and lighter, house lit behind him",
+  "shots": [
+    {
+      "shotId": "s17",
+      "sequenceId": "seq-3",
+      "order": 17,
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "sands the chair in morning light, dust in the sunbeam",
+      "location": "a workshop in morning light",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "work finishing",
+      "durationSec": 10,
+      "soundMood": "sandpaper, birds",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s18",
+      "sequenceId": "seq-3",
+      "order": 18,
+      "size": "CU",
+      "movement": "locked-off",
+      "action": "runs a hand over the finished chair and nods once",
+      "location": "the finished chair",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "quiet satisfaction",
+      "durationSec": 10,
+      "soundMood": "silence, then a soft exhale",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s19",
+      "sequenceId": "seq-3",
+      "order": 19,
+      "size": "WS",
+      "movement": "push-in",
+      "action": "opens the garden gate to morning light",
+      "location": "a garden gate",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "opening, not closing",
+      "durationSec": 10,
+      "soundMood": "gate latch, birdsong",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s20",
+      "sequenceId": "seq-3",
+      "order": 20,
+      "size": "MS",
+      "movement": "tracking",
+      "action": "walks the garden path and returns a neighbour's wave",
+      "location": "a garden path",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "rejoining the world, briefly",
+      "durationSec": 10,
+      "soundMood": "footsteps on gravel, a distant voice",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s21",
+      "sequenceId": "seq-3",
+      "order": 21,
+      "size": "MS",
+      "movement": "locked-off",
+      "action": "sweeps the porch slowly, methodically",
+      "location": "a porch with a broom",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "care as a closing act",
+      "durationSec": 10,
+      "soundMood": "broom on wood",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s22",
+      "sequenceId": "seq-3",
+      "order": 22,
+      "size": "CU",
+      "movement": "locked-off",
+      "action": "switches on the porch light at dusk",
+      "location": "a porch light switch",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "the house left lit",
+      "durationSec": 10,
+      "soundMood": "switch click, warm lamp hum",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s23",
+      "sequenceId": "seq-3",
+      "order": 23,
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "places the finished chair in the window, lit from inside",
+      "location": "a window with the finished chair inside",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "the work kept, visible",
+      "durationSec": 10,
+      "soundMood": "evening birds, lamp warmth",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s24",
+      "sequenceId": "seq-3",
+      "order": 24,
+      "size": "EWS",
+      "movement": "pull-back",
+      "action": "walks back down the drive at dusk, slower and lighter, house lit behind him",
+      "location": "a dirt drive at dusk, house lit behind",
+      "characters": [
+        "The Man"
+      ],
+      "emotionalBeat": "release",
+      "durationSec": 10,
+      "soundMood": "wind, distant birds, silence under it",
+      "lockedLookBlock": "Desaturated late-light realism, warm practical lamps against cold blue-grey daylight, muted earth palette of rust, faded denim, worn wood and grey sky, locked-off camera with slow push-ins only, 35mm normal lens feel, soft natural grain, no drone shots, no saturated color.",
+      "lockedCharacterBlocks": {
+        "The Man": "a weathered man in his late 60s with short grey hair, a lined face, a worn brown work jacket over a faded denim shirt, dark trousers and scuffed boots, moving slowly and deliberately"
+      },
+      "transitionIn": "cut"
+    }
+  ]
+}

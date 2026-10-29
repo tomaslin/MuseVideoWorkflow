@@ -1,0 +1,244 @@
+{
+  "panels": [
+    {
+      "panelId": "s01",
+      "shotId": "s01",
+      "size": "EWS",
+      "movement": "locked-off",
+      "action": "walks up the long dirt drive toward an empty house",
+      "soundCue": "wind in dry grass, distant birds",
+      "tension": 2,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s02",
+      "shotId": "s02",
+      "size": "WS",
+      "movement": "push-in",
+      "action": "opens the gate and steps through, closing it behind him",
+      "soundCue": "gate latch click, gravel under boots",
+      "tension": 3,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s03",
+      "shotId": "s03",
+      "size": "MS",
+      "movement": "tracking",
+      "action": "crosses the porch and pauses at the front door",
+      "soundCue": "wood creak, wind",
+      "tension": 4,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s04",
+      "shotId": "s04",
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "enters the hallway and stands still, listening to the house",
+      "soundCue": "room tone, a clock ticking far off",
+      "tension": 4,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s05",
+      "shotId": "s05",
+      "size": "MS",
+      "movement": "push-in",
+      "action": "stands in the kitchen, hand on a worn countertop",
+      "soundCue": "kettle silence, faint birds outside",
+      "tension": 5,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s06",
+      "shotId": "s06",
+      "size": "CU",
+      "movement": "locked-off",
+      "action": "looks at a faded photograph, then looks away, not smiling",
+      "soundCue": "silence, held",
+      "tension": 6,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s07",
+      "shotId": "s07",
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "watches sunlight move across an empty room",
+      "soundCue": "soft wind through a cracked window",
+      "tension": 5,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s08",
+      "shotId": "s08",
+      "size": "MS",
+      "movement": "locked-off",
+      "action": "sits down by the window and rests his hands on his knees",
+      "soundCue": "room tone, breathing space",
+      "tension": 5,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s09",
+      "shotId": "s09",
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "enters the workshop and surveys tools left in place",
+      "soundCue": "door creak, dust in light",
+      "tension": 6,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s10",
+      "shotId": "s10",
+      "size": "CU",
+      "movement": "push-in",
+      "action": "runs a hand along the unfinished chair rail",
+      "soundCue": "wood grain, his breath",
+      "tension": 7,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s11",
+      "shotId": "s11",
+      "size": "ECU",
+      "movement": "locked-off",
+      "action": "planes a board slowly, shavings curling",
+      "soundCue": "plane on wood, rhythmic",
+      "tension": 7,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s12",
+      "shotId": "s12",
+      "size": "MS",
+      "movement": "locked-off",
+      "action": "reads an unsent letter, folds it carefully, does not tear it",
+      "soundCue": "paper, silence",
+      "tension": 8,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s13",
+      "shotId": "s13",
+      "size": "CU",
+      "movement": "locked-off",
+      "action": "looks at the silent telephone and turns back to the work",
+      "soundCue": "silence, held",
+      "tension": 8,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s14",
+      "shotId": "s14",
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "watches rain on the workshop window, tools waiting behind him",
+      "soundCue": "rain on glass",
+      "tension": 7,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s15",
+      "shotId": "s15",
+      "size": "MCU",
+      "movement": "push-in",
+      "action": "looks at himself in the mirror, honestly, without flinching",
+      "soundCue": "silence, held",
+      "tension": 9,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s16",
+      "shotId": "s16",
+      "size": "MS",
+      "movement": "locked-off",
+      "action": "glues and clamps the chair joint, and waits",
+      "soundCue": "clamp click, room tone",
+      "tension": 8,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s17",
+      "shotId": "s17",
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "sands the chair in morning light, dust in the sunbeam",
+      "soundCue": "sandpaper, birds",
+      "tension": 6,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s18",
+      "shotId": "s18",
+      "size": "CU",
+      "movement": "locked-off",
+      "action": "runs a hand over the finished chair and nods once",
+      "soundCue": "silence, then a soft exhale",
+      "tension": 5,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s19",
+      "shotId": "s19",
+      "size": "WS",
+      "movement": "push-in",
+      "action": "opens the garden gate to morning light",
+      "soundCue": "gate latch, birdsong",
+      "tension": 4,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s20",
+      "shotId": "s20",
+      "size": "MS",
+      "movement": "tracking",
+      "action": "walks the garden path and returns a neighbour's wave",
+      "soundCue": "footsteps on gravel, a distant voice",
+      "tension": 4,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s21",
+      "shotId": "s21",
+      "size": "MS",
+      "movement": "locked-off",
+      "action": "sweeps the porch slowly, methodically",
+      "soundCue": "broom on wood",
+      "tension": 3,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s22",
+      "shotId": "s22",
+      "size": "CU",
+      "movement": "locked-off",
+      "action": "switches on the porch light at dusk",
+      "soundCue": "switch click, warm lamp hum",
+      "tension": 3,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s23",
+      "shotId": "s23",
+      "size": "WS",
+      "movement": "locked-off",
+      "action": "places the finished chair in the window, lit from inside",
+      "soundCue": "evening birds, lamp warmth",
+      "tension": 2,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    },
+    {
+      "panelId": "s24",
+      "shotId": "s24",
+      "size": "EWS",
+      "movement": "pull-back",
+      "action": "walks back down the drive at dusk, slower and lighter, house lit behind him",
+      "soundCue": "wind, distant birds, silence under it",
+      "tension": 2,
+      "note": "Tension set 2026-10-29 from the chapter-03 arc (setup 2-3, rising 5-7, midpoint 7-8, climax 9, resolution 2-3)."
+    }
+  ]
+}

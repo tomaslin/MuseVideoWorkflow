@@ -1,0 +1,199 @@
+{
+  "shotOrder": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s09",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18",
+    "s19",
+    "s20",
+    "s21",
+    "s22",
+    "s23",
+    "s24"
+  ],
+  "entries": [
+    {
+      "shotId": "s01",
+      "sequenceId": "seq-1",
+      "startSec": 0,
+      "endSec": 10,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s02",
+      "sequenceId": "seq-1",
+      "startSec": 10,
+      "endSec": 20,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s03",
+      "sequenceId": "seq-1",
+      "startSec": 20,
+      "endSec": 30,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s04",
+      "sequenceId": "seq-1",
+      "startSec": 30,
+      "endSec": 40,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s05",
+      "sequenceId": "seq-1",
+      "startSec": 40,
+      "endSec": 50,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s06",
+      "sequenceId": "seq-1",
+      "startSec": 50,
+      "endSec": 60,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s07",
+      "sequenceId": "seq-1",
+      "startSec": 60,
+      "endSec": 70,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s08",
+      "sequenceId": "seq-1",
+      "startSec": 70,
+      "endSec": 80,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s09",
+      "sequenceId": "seq-2",
+      "startSec": 80,
+      "endSec": 90,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s10",
+      "sequenceId": "seq-2",
+      "startSec": 90,
+      "endSec": 100,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s11",
+      "sequenceId": "seq-2",
+      "startSec": 100,
+      "endSec": 110,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s12",
+      "sequenceId": "seq-2",
+      "startSec": 110,
+      "endSec": 120,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s13",
+      "sequenceId": "seq-2",
+      "startSec": 120,
+      "endSec": 130,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s14",
+      "sequenceId": "seq-2",
+      "startSec": 130,
+      "endSec": 140,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s15",
+      "sequenceId": "seq-2",
+      "startSec": 140,
+      "endSec": 150,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s16",
+      "sequenceId": "seq-2",
+      "startSec": 150,
+      "endSec": 160,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s17",
+      "sequenceId": "seq-3",
+      "startSec": 160,
+      "endSec": 170,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s18",
+      "sequenceId": "seq-3",
+      "startSec": 170,
+      "endSec": 180,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s19",
+      "sequenceId": "seq-3",
+      "startSec": 180,
+      "endSec": 190,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s20",
+      "sequenceId": "seq-3",
+      "startSec": 190,
+      "endSec": 200,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s21",
+      "sequenceId": "seq-3",
+      "startSec": 200,
+      "endSec": 210,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s22",
+      "sequenceId": "seq-3",
+      "startSec": 210,
+      "endSec": 220,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s23",
+      "sequenceId": "seq-3",
+      "startSec": 220,
+      "endSec": 230,
+      "transitionIn": "cut"
+    },
+    {
+      "shotId": "s24",
+      "sequenceId": "seq-3",
+      "startSec": 230,
+      "endSec": 240,
+      "transitionIn": "cut"
+    }
+  ],
+  "totalSec": 240
+}

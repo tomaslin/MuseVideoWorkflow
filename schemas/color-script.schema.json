@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Color script entry",
+  "type": "object",
+  "properties": {
+    "sequenceId": {
+      "type": "string"
+    },
+    "palette": {
+      "type": "array"
+    },
+    "rule": {
+      "type": "string"
+    },
+    "tension": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "sequenceId",
+    "palette",
+    "rule"
+  ]
+}
