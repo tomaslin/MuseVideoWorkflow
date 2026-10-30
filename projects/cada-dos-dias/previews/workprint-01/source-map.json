@@ -1,0 +1,60 @@
+{
+  "description": "Source IDs in this workprint EDL are independent of the 18-shot canonical production plan. Sources were operator-mapped; no packet-hash match is claimed.",
+  "sources": [
+    {
+      "workprintShotId": "s01",
+      "sha256": "031d495da6ed118d26dc7d6e7016c0d6f41cb71fb6a9225b18fc8aa2bfeb8407",
+      "filename": "s01.mp4",
+      "provenance": "Muse-generated source; original provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "s02",
+      "sha256": "a678f71ccb675b8185d59439d4e8841eedc2729a08fd51fc346e0e6492405400",
+      "filename": "s02.mp4",
+      "provenance": "Muse-generated source; original provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "s03",
+      "sha256": "ca258cd0c67eec477a9a4947c1df23b8bd00ff88b7f0df952366d726eeb7cf40",
+      "filename": "s03.mp4",
+      "provenance": "Muse-generated source; original provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "s04",
+      "sha256": "e471460049d2333e024ff70728e707acce17872d913e80a16f3cd138ea923460",
+      "filename": "s04.mp4",
+      "provenance": "Muse-generated source; original provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "s05",
+      "sha256": "34b03e2a266099b526cc5cc3235582f7a2f8b50aa00877704fcf3805e72183e1",
+      "filename": "s05.mp4",
+      "provenance": "Muse-generated source; original provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "s19",
+      "sha256": "c102117dfb1727b697bb1ce53adbe9a137435db30fd6dc7910c3c77285adfbcc",
+      "filename": "s19.mp4",
+      "provenance": "local closing graphic"
+    },
+    {
+      "workprintShotId": "s06",
+      "sha256": "6f7471245b0914250d1264c6576f6ff69d6d4a7997addffacc8b92c9e5744785",
+      "filename": "s06.mp4",
+      "provenance": "Muse-generated source; original provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "s07",
+      "sha256": "48172ddb748d2dbe08c74e2f4efc994c203e8552d7c2fd7980360f73f1e1792f",
+      "filename": "s07.mp4",
+      "provenance": "Muse-generated source; original provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "s08",
+      "sha256": "7c5ad7f0ce3f189c03cd8ffc881e809f1bdaeeb62806615681eee6ca7a6f1038",
+      "filename": "s08.mp4",
+      "provenance": "Muse-generated source; original provider prompt not independently verified"
+    }
+  ],
+  "songSha256": "857ec3073a6f2fc34c907911923f9e476da938c95e953a48602f3098e152d76f"
+}
