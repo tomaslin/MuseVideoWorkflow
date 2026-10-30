@@ -1,0 +1,55 @@
+# A01 — seq-arrival — EDIT 0s–2.5s, source clip 10s, this beat ONLY. Do not add other beats.
+
+## 1. LOOK — verbatim, do not paraphrase
+Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.
+
+## 2. SCENE — image input 1, verbatim
+Scene sheet: bamboo-forest — A cybernetic bamboo forest with glowing bamboo stalks and silk banners.
+
+## 3. CHARACTERS — image inputs in cast order, verbatim
+- mad-man: A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal — NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal.
+- robot-guard: A robot guard blending wuxia with cyber: sleek metal and porcelain robot body in flowing pale silk robes and silk armour, glowing cyber eyes and silk-thread circuits, holding a wuxia spear.
+- human-guard: A simple human guard blending wuxia with cyber setting but himself plain: an ordinary Chinese man in a pale silk uniform with silk-thread insignia, no robot parts, no cyber enhancements, holding a wuxia spear.
+
+## 4. SHIP — image input 2 when listed in the manifest, verbatim
+A derelict ship halfway Asian wagon and halfway broken spaceship, with MUCH more metal, more earth and dirt, and more space derelict wreckage: heavy rusted metal hull plates, torn spaceship panels, exposed wiring, broken thrusters, earth and soil piled against the hull, makeshift joinery, smashed in the middle of the lotus garden.
+
+## 5. SHOT — Wide, Slow push-in, Silk colony gate, cybernetic bamboo forest
+Action, this beat only: The almost-dead ship creaks through the bamboo gate into the silk colony. The Mad Man rides on top, small against the hull, dust on his robes.
+Emotional beat: Unease, curiosity — Sound mood: Low creaking wood, distant silk banners fluttering
+
+## 6. CHOREOGRAPHY — positioning, anticipation, contact, recoil, in order
+Ship moves screen-left to screen-right at walking pace, bamboo stalks passing in foreground. Mad Man grips a rope with one hand, other hand loose. No fight yet.
+
+## 7. CAMERA — cinematic, motivated movement only
+Low anamorphic wide at gate height: foreground bamboo stalks out of focus on the left, ship entering in midground, lotus garden deep in background. Slow motivated push-in only as the ship crosses frame, holding layered depth throughout.
+
+## 8. LIGHTING / LENS / FOCUS
+Lighting: Backlit bamboo, rim light on the ship's metal hull, warm afternoon light with deep shadow contrast, neon silk thread glow in the background.
+Lens: 35mm — Focus: Faces and contact points in focus; background soft
+
+## 9. MOTION / PERFORMANCE RULES
+Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit — never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands
+
+## 10. BACKGROUND PERFORMERS
+Silk guards at the gate, vendors pausing
+
+## 11. WORLD RULES
+A discarded ship is still a ship: it moves, it groans, it carries him. He is not yet a threat in their eyes. Physical sense: every water action has support — fighters stand on large sturdy lotus leaves or stone stepping stones, not on open water; the mahjong platform is wood, wide and stable, with chairs and a table on it; dropped weapons sink and spread rings; splashed water falls back under gravity; the ship moves on wheels and hull, not floating unsupported; shop interiors have floors, counters, and beams that hold weight.
+
+## GEOGRAPHY — fixed map, do not move it
+Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.
+
+## TRAJECTORIES — particular path for EACH figure, never the same move for everyone
+- mad-man: Start: on top of the ship, screen-right, foreground. Trajectory: rides with the ship screen-right to screen-left? No — ship moves screen-left to screen-right at walking pace; Mad Man stays low on the hull, gripping a rope, body swaying with the ship, never walking. End: mid-ride, still on the hull, rope in hand, mid-sway, NOT settled.
+- robot-guard: Start: at the gate, screen-left, midground. Trajectory: steps forward one straight mechanical step, spear held vertical, then holds ready, mid-step, NOT settled.
+- human-guard: Start: at the gate, screen-left, midground. Trajectory: ordinary hesitant walk forward two steps, then stops mid-step, weight forward.
+
+## HANDOFF — end mid-action, do not resolve
+Handoff: this clip ends MID-ACTION — weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn — NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state.
+
+## NEGATIVE
+Never: warp limbs, add extra limbs, morph faces or hands, change a character's face, armour, or weapons from their sheet image, add people beyond the cast and background performers listed below, use exaggerated open-mouth faces or cartoon grins, stage a Star Wars lightsaber duel, or add modern objects outside the silkpunk design.
+
+## EDIT
+Source clip is 10 seconds. Cut this beat to 0s–2.5s in the final reel. One playable action, clean end pose, readable contact and recoil.

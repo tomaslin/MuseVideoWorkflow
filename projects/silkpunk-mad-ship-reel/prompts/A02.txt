@@ -1,0 +1,55 @@
+# A02 — seq-arrival — EDIT 2.5s–5s, source clip 10s, this beat ONLY. Do not add other beats.
+
+## 1. LOOK — verbatim, do not paraphrase
+Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.
+
+## 2. SCENE — image input 1, verbatim
+Scene sheet: silk-colony — A beautiful Chinese lotus garden market with cyber details and wuxia vibes, populated by kids, robots, ladies, lively gambling and drinking: kids playing, robots in silk robes, ladies in silk dresses, gambling tables, tea and wine stalls, lotus ponds, silk banners, cyber lanterns, glowing cyber lotus.
+
+## 3. CHARACTERS — image inputs in cast order, verbatim
+- mad-man: A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal — NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal.
+- robot-guard: A robot guard blending wuxia with cyber: sleek metal and porcelain robot body in flowing pale silk robes and silk armour, glowing cyber eyes and silk-thread circuits, holding a wuxia spear.
+- human-guard: A simple human guard blending wuxia with cyber setting but himself plain: an ordinary Chinese man in a pale silk uniform with silk-thread insignia, no robot parts, no cyber enhancements, holding a wuxia spear.
+
+## 4. SHIP — image input 2 when listed in the manifest, verbatim
+A derelict ship halfway Asian wagon and halfway broken spaceship, with MUCH more metal, more earth and dirt, and more space derelict wreckage: heavy rusted metal hull plates, torn spaceship panels, exposed wiring, broken thrusters, earth and soil piled against the hull, makeshift joinery, smashed in the middle of the lotus garden.
+
+## 5. SHOT — Medium, Static, then tilt down, Silk colony gate
+Action, this beat only: Silk guards step forward, alert and active, weapons ready, confronting the Mad Man at the market gate. No laughing, no mockery. The Mad Man rises, still-faced and possessed-calm, facing them, tension building like actors in a confrontation, not a joke.
+Emotional beat: Tense confrontation, active challenge — Sound mood: Laughter, ship groaning to a stop
+
+## 6. CHOREOGRAPHY — positioning, anticipation, contact, recoil, in order
+Guards centre-frame, moving forward in step, spears lowering to ready positions, eyes locked on the Mad Man, expressions serious and wary, natural and acted. Mad Man foreground-right, rising from his seat on the ship, slow and deliberate, calm unsettling eyes meeting theirs, body weight shifting forward. Distance closes from 3 metres to 2 metres. No one laughs. The interaction is a confrontation, not mockery.
+
+## 7. CAMERA — cinematic, motivated movement only
+Cinematic moving camera, not a still shot: anamorphic medium, slow tracking push-in through foreground market lanterns, circling slightly around the confrontation, guards in midground, Mad Man foreground-right, market crowd deep behind, camera moving with the tension.
+
+## 8. LIGHTING / LENS / FOCUS
+Lighting: Warm market lantern light, rim light on faces, shadow contrast, faces lit softly, background falling into warm bokeh.
+Lens: 35mm — Focus: Faces and contact points in focus; background soft
+
+## 9. MOTION / PERFORMANCE RULES
+Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit — never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands
+
+## 10. BACKGROUND PERFORMERS
+Two extra guards in background, not laughing, watching Market crowd in background: kids, robots in silk robes, ladies in silk dresses, gamblers and drinkers at stalls, wuxia atmosphere. Women playing mahjong at a floating mahjong table on a stable wooden platform on the lotus pond: four women seated on chairs around a solid table, mahjong tiles on the table, not in the water, platform steady on the pond, water lapping at its edges, not flooding it.
+
+## 11. WORLD RULES
+The colony laughs first. That laughter is what the explosion answers.
+
+## GEOGRAPHY — fixed map, do not move it
+Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.
+
+## TRAJECTORIES — particular path for EACH figure, never the same move for everyone
+- mad-man: Start: seated low on the ship, foreground-right. Trajectory: rises slowly, deliberately, weight shifting forward, from seated to half-standing, end mid-rise, NOT fully standing and settled.
+- robot-guard: Start: centre-frame, midground. Trajectory: straight mechanical advance, spear lowering to ready in a straight line, end spear mid-lower.
+- human-guard: Start: centre-frame, midground. Trajectory: ordinary walk forward, hesitant, spear lowering, end mid-step, weight forward.
+
+## HANDOFF — end mid-action, do not resolve
+Handoff: this clip ends MID-ACTION — weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn — NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state.
+
+## NEGATIVE
+Never: warp limbs, add extra limbs, morph faces or hands, change a character's face, armour, or weapons from their sheet image, add people beyond the cast and background performers listed below, use exaggerated open-mouth faces or cartoon grins, stage a Star Wars lightsaber duel, or add modern objects outside the silkpunk design.
+
+## EDIT
+Source clip is 10 seconds. Cut this beat to 2.5s–5s in the final reel. One playable action, clean end pose, readable contact and recoil.

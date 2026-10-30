@@ -1,0 +1,46 @@
+{
+  "shotId": "F02",
+  "cast": [
+    "youngest-dame",
+    "mad-man"
+  ],
+  "sceneSheetId": "bamboo-forest",
+  "shipSheetIncluded": false,
+  "input_images_in_order": [
+    "sheets/scenes/media-generation-silkpunk-sheet-bamboo-forest-0-dc5c2450-f2ab-447c-a18f-6d549f60701c.webp",
+    "sheets/characters/media-generation-silkpunk-sheet-youngest-dame-v-0-6eb73a5f-1dbf-4e32-81cd-9c6cc8bf69c0.webp",
+    "sheets/characters/media-generation-silkpunk-sheet-mad-man-v2-0-38e1f9b1-0f3f-4b03-b95f-a4fba743ec2f.webp"
+  ],
+  "prompt_file": "F02.txt",
+  "prompt_sections": [
+    "look",
+    "scene",
+    "characters",
+    "shot",
+    "choreography",
+    "camera",
+    "lighting",
+    "geography",
+    "trajectories",
+    "handoff",
+    "motion",
+    "extras",
+    "world-rules",
+    "negative",
+    "edit"
+  ],
+  "reuse": {
+    "look_verbatim": true,
+    "characters_verbatim": [
+      "youngest-dame",
+      "mad-man"
+    ],
+    "scene_description_verbatim": true,
+    "ship_description_verbatim": false,
+    "choreography_verbatim": true,
+    "camera_verbatim": true
+  },
+  "editStartSec": 52.5,
+  "editEndSec": 55,
+  "rule": "Supply input_images_in_order as image inputs, in order, before the text prompt. Do not generate from text alone. Do not paraphrase or drop a labelled section."
+}

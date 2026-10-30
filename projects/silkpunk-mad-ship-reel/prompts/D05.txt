@@ -1,0 +1,54 @@
+# D05 — seq-combat — EDIT 30s–32.5s, source clip 10s, this beat ONLY. Do not add other beats.
+
+## 1. LOOK — verbatim, do not paraphrase
+Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.
+
+## 2. SCENE — image input 1, verbatim
+Scene sheet: silk-colony — A beautiful Chinese lotus garden market with cyber details and wuxia vibes, populated by kids, robots, ladies, lively gambling and drinking: kids playing, robots in silk robes, ladies in silk dresses, gambling tables, tea and wine stalls, lotus ponds, silk banners, cyber lanterns, glowing cyber lotus.
+
+## 3. CHARACTERS — image inputs in cast order, verbatim
+- eldest-dame: A very pretty elite guardswoman in crimson silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, long black hair, a spear, commanding and fierce.
+- middle-dame: A very pretty elite guardswoman in jade silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, hair in twin loops, twin short blades, fast and sharp.
+- youngest-dame: A very pretty young elite guardswoman in pale ivory-pink silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, a single ribbon sword, brave and focused, natural nervous tension, eyes open but not wide-eyed caricature.
+- mad-man: A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal — NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal.
+
+## 4. SHOT — Wide, Overhead to eye level, All over: over water, through a shop front, back to the garden
+Action, this beat only: All three attack at once, all over the fight space, Jin Yong style, not a clean duel: Eldest's heavenly absolute relic sword from front-left over the pond, Middle's absolute relic double nunchuks forged from end-of-universe relic metal from front-right through the shop doorway, Youngest's needles and ribbon from behind across the water. The Mad Man spins on the spot, tendrils deflecting all three in one rotation, water and silk flying.
+Emotional beat: Frenzy, impossible defence — Sound mood: Three impacts in one beat, spin, pushback
+
+## 5. CHOREOGRAPHY — positioning, anticipation, contact, recoil, in order
+Anticipation, all three plant feet together in three different places — pond, shop doorway, garden path — expressions focused and acted: Eldest fierce and concentrated, Middle sharp and fast, Youngest brave with natural nervous tension, Mad Man still and possessed-calm. Contact, one spin — tendril meets absolute relic sword, tendril meets relic nunchuks, tendril meets ribbon, left to right, with water spray and silk shreds, each defender reacting with real weight and recoil. Recoil, all three pushed back one step, formation broken outward, a shop awning collapsing behind them. This is the only beat where all three attack together, and it earns that by being the fifth combat beat, not the first.
+
+## 6. CAMERA — cinematic, motivated movement only
+Cinematic moving camera, not a still shot: overhead wide dropping fast to eye level, then orbiting the spin as all three attack, water spray and silk shreds crossing frame, camera moving with the rotation across pond, shop doorway, and garden path in one continuous move.
+
+## 7. LIGHTING / LENS / FOCUS
+Lighting: Hard light, spinning shadows — warm daylight with neon silk-thread glow, faces lit, shadows falling clearly on stone.
+Lens: 35mm — Focus: Faces and contact points in focus; background soft
+
+## 8. MOTION / PERFORMANCE RULES
+Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit — never a locked static shot unless the beat is a held aftermath. Really busy kinetic Jin Yong wuxia choreography with GO BIGGER relic weapons: absolute, end-of-universe relic weapons — a massive ancient heavenly sword, relic-metal double nunchuks, star-forged relic needles — overwhelming brutality in impacts and wreckage, small beautiful intricacies in needle flicks, sword-tip circles, and nunchuk spins. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands. Laser/relic energy is on wuxia weapons, not Star Wars lightsaber duels.
+
+## 9. BACKGROUND PERFORMERS
+None in focus Market crowd in background: kids, robots in silk robes, ladies in silk dresses, gamblers and drinkers at stalls, wuxia atmosphere. Women playing mahjong at a floating mahjong table on a stable wooden platform on the lotus pond: four women seated on chairs around a solid table, mahjong tiles on the table, not in the water, platform steady on the pond, water lapping at its edges, not flooding it.
+
+## 10. WORLD RULES
+This is the only beat where all three attack together, and it earns that by being the fifth combat beat, not the first. Physical sense: every water action has support — fighters stand on large sturdy lotus leaves or stone stepping stones, not on open water; the mahjong platform is wood, wide and stable, with chairs and a table on it; dropped weapons sink and spread rings; splashed water falls back under gravity; the ship moves on wheels and hull, not floating unsupported; shop interiors have floors, counters, and beams that hold weight.
+
+## GEOGRAPHY — fixed map, do not move it
+Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.
+
+## TRAJECTORIES — particular path for EACH figure, never the same move for everyone
+- eldest-dame: Start: pond front-left. Trajectory: straight thrust line forward, relic sword extended, end sword mid-thrust, pushed back one step, still moving backward, NOT settled.
+- middle-dame: Start: shop doorway front-right. Trajectory: bouncing arc inward, nunchuks spinning, end mid-spin, body mid-turn, NOT landed.
+- youngest-dame: Start: garden path back-centre. Trajectory: wide ribbon curve inward, needles fanning, end ribbon mid-curve, body mid-step, NOT recovered.
+- mad-man: Start: centre, low. Trajectory: spins on the spot, tendrils deflecting left to right in one rotation, end mid-spin, tendrils still extended, NOT stopped.
+
+## HANDOFF — end mid-action, do not resolve
+Handoff: this clip ends MID-ACTION — weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn — NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state.
+
+## NEGATIVE
+Never: warp limbs, add extra limbs, morph faces or hands, change a character's face, armour, or weapons from their sheet image, add people beyond the cast and background performers listed below, use exaggerated open-mouth faces or cartoon grins, stage a Star Wars lightsaber duel, or add modern objects outside the silkpunk design.
+
+## EDIT
+Source clip is 10 seconds. Cut this beat to 30s–32.5s in the final reel. One playable action, clean end pose, readable contact and recoil.

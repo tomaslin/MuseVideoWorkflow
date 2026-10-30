@@ -13,7 +13,7 @@ Commands:
 Definitions are the contract. This script never invents a clip, a voice,
 or a review approval; it only checks, packs, and assembles what is recorded.
 """
-import argparse, hashlib, json, math, os, subprocess, sys
+import argparse, hashlib, json, math, os, re, subprocess, sys
 
 PLACEHOLDERS = ("[insert", "[tbd]", "[todo]", "[...]")
 STATES = ["brief", "treatment", "script", "script-critiqued",
@@ -169,65 +169,116 @@ def cmd_beats(args):
 
 
 def cmd_prompt_pack(args):
+    # Structured, articulated prompt packets: every storyboard element is
+    # reused VERBATIM, in labelled sections, in a fixed order, so a
+    # generator cannot silently drop the look, a character, the scene,
+    # the ship, the choreography, or the performance rules by paraphrasing
+    # one long paragraph. Each packet is auditable against its shot JSON
+    # and its generation manifest lists exactly which locked elements it
+    # reuses. No field is summarised; a missing field is listed as MISSING
+    # rather than invented.
     d = args.project
     out = os.path.join(d, "prompts")
     os.makedirs(out, exist_ok=True)
+    sheets_path = os.path.join(d, "sheets", "sheets.json")
+    sheets = load(sheets_path) if os.path.exists(sheets_path) else {}
+    char_sheets = {e["id"]: e for e in sheets.get("characters", [])}
+    scene_sheets = {e["id"]: e for e in sheets.get("scenes", [])}
+    NEGATIVE = ("Never: warp limbs, add extra limbs, morph faces or hands, "
+                "change a character's face, armour, or weapons from their sheet "
+                "image, add people beyond the cast and background performers "
+                "listed below, use exaggerated open-mouth faces or cartoon "
+                "grins, stage a Star Wars lightsaber duel, or add modern "
+                "objects outside the silkpunk design.")
     for sh in all_shots(d):
-        parts = [sh["lockedLookBlock"]]
+        scene = scene_sheets.get(sh.get("sceneSheetId"), {})
+        ship = scene_sheets.get("mad-ship", {})
+        bg = sh.get("background", "")
+        ship_used = "halfway Asian wagon" in bg or "ship deck" in sh.get("location", "").lower() or sh["shotId"] in ("A01", "A02", "A03", "B01", "B02", "B03")
+        sections = []
+        sections.append(f"# {sh['shotId']} — {sh.get('sequenceId', '')} — "
+                        f"EDIT {sh.get('editStartSec', '')}s–{sh.get('editEndSec', '')}s, "
+                        f"source clip 10s, this beat ONLY. Do not add other beats.")
+        sections.append("## 1. LOOK — verbatim, do not paraphrase\n" + sh.get("lockedLookBlock", "MISSING"))
+        sections.append("## 2. SCENE — image input 1, verbatim\n"
+                        f"Scene sheet: {sh.get('sceneSheetId', 'MISSING')} — "
+                        f"{scene.get('description', 'MISSING')}")
+        char_lines = []
         for ch in sh.get("characters", []):
-            parts.append(sh.get("lockedCharacterBlocks", {}).get(ch, ""))
-        parts.append(f"Shot: {sh['size']}, {sh['movement']}, {sh['location']}. "
-                     f"Action: {sh['action']} Emotional beat: {sh['emotionalBeat']} "
-                     f"Sound mood: {sh['soundMood']}.")
-        # Robust fields: a prompt must reflect the whole production, not
-        # just look + characters. Each field is rendered verbatim when
-        # present, in a fixed order, so prompts are auditable against shots.
-        if sh.get("background"):
-            parts.append(f"Background: {sh['background']}")
-        if sh.get("cameraChoreography"):
-            parts.append(f"Camera choreography: {sh['cameraChoreography']}")
-        if sh.get("choreography"):
-            parts.append(f"Choreography: {sh['choreography']}")
-        if sh.get("lighting"):
-            parts.append(f"Lighting: {sh['lighting']}")
-        if sh.get("lensMm"):
-            parts.append(f"Lens: {sh['lensMm']}mm, focus: {sh.get('focus', '')}.")
-        if sh.get("motion"):
-            parts.append(f"Motion: {sh['motion']}")
-        if sh.get("extras"):
-            parts.append(f"Background performers: {sh['extras']}")
-        if sh.get("loreNotes"):
-            parts.append(f"World rules: {sh['loreNotes']}")
+            block = sh.get("lockedCharacterBlocks", {}).get(ch) or char_sheets.get(ch, {}).get("description", "MISSING")
+            char_lines.append(f"- {ch}: {block}")
+        sections.append("## 3. CHARACTERS — image inputs in cast order, verbatim\n" + "\n".join(char_lines or ["- MISSING"]))
+        if ship_used and ship.get("description"):
+            sections.append("## 4. SHIP — image input 2 when listed in the manifest, verbatim\n" + ship["description"])
+        sections.append(f"## 5. SHOT — {sh.get('size', '')}, {sh.get('movement', '')}, {sh.get('location', '')}\n"
+                        f"Action, this beat only: {sh.get('action', 'MISSING')}\n"
+                        f"Emotional beat: {sh.get('emotionalBeat', '')} — Sound mood: {sh.get('soundMood', '')}")
+        sections.append("## 6. CHOREOGRAPHY — positioning, anticipation, contact, recoil, in order\n" + sh.get("choreography", "MISSING"))
+        sections.append("## 7. CAMERA — cinematic, motivated movement only\n" + sh.get("cameraChoreography", "MISSING"))
+        sections.append(f"## 8. LIGHTING / LENS / FOCUS\nLighting: {sh.get('lighting', 'MISSING')}\n"
+                        f"Lens: {sh.get('lensMm', '')}mm — Focus: {sh.get('focus', '')}")
+        sections.append("## 9. MOTION / PERFORMANCE RULES\n" + sh.get("motion", "MISSING"))
+        sections.append("## 10. BACKGROUND PERFORMERS\n" + sh.get("extras", "None"))
+        sections.append("## 11. WORLD RULES\n" + sh.get("loreNotes", "None"))
         if sh.get("departments"):
             dept = "; ".join(f"{k}: {v}" for k, v in sh["departments"].items())
-            parts.append(f"Department notes: {dept}")
-        prompt = " ".join(p for p in parts if p)
+            sections.append(f"## 12. DEPARTMENT NOTES\n{dept}")
+        if sh.get("geography"):
+            sections.append("## GEOGRAPHY — fixed map, do not move it\n" + sh["geography"])
+        if sh.get("trajectories"):
+            traj_lines = "\n".join(f"- {c}: {t}" for c, t in sh["trajectories"].items())
+            sections.append("## TRAJECTORIES — particular path for EACH figure, never the same move for everyone\n" + traj_lines)
+        if sh.get("handoff"):
+            sections.append("## HANDOFF — end mid-action, do not resolve\n" + sh["handoff"])
+        sections.append("## NEGATIVE\n" + NEGATIVE)
+        sections.append(f"## EDIT\nSource clip is 10 seconds. Cut this beat to "
+                        f"{sh.get('editStartSec', '')}s–{sh.get('editEndSec', '')}s in the final reel. "
+                        f"One playable action, clean end pose, readable contact and recoil.")
+        # Renumber labelled sections sequentially (ship section is
+        # omitted when a beat does not use the ship, so numbering must
+        # not jump 3 -> 5).
+        numbered, n = [], 0
+        for sec in sections:
+            if sec.startswith("## "):
+                n += 1
+                sec = re.sub(r"^## \d+\.", f"## {n}.", sec, count=1)
+            numbered.append(sec)
+        prompt = "\n\n".join(numbered) + "\n"
         with open(os.path.join(out, f"{sh['shotId']}.txt"), "w") as f:
-            f.write(prompt + "\n")
-        # Generation manifest: the generation step MUST supply these images
-        # as inputs, in this order, before the text prompt. Scene sheet
-        # first, then character sheets in cast order. Text-only generation
-        # is a bypass of the sheet gate, not a pipeline run.
-        sheets_path = os.path.join(d, "sheets", "sheets.json")
+            f.write(prompt)
+        # Generation manifest: scene sheet first, ship second when the
+        # beat uses the ship, then character sheets in cast order.
+        # Text-only generation is a bypass of the sheet gate, not a run.
         input_images = []
-        if os.path.exists(sheets_path):
-            sheets = load(sheets_path)
-            char_sheets = {e["id"]: e for e in sheets.get("characters", [])}
-            scene_sheets = {e["id"]: e for e in sheets.get("scenes", [])}
-            if sh.get("sceneSheetId") in scene_sheets:
-                input_images.append(scene_sheets[sh["sceneSheetId"]]["image_path"])
-            for ch in sh.get("characters", []):
-                if ch in char_sheets and char_sheets[ch].get("image_path"):
-                    input_images.append(char_sheets[ch]["image_path"])
+        if scene.get("image_path"):
+            input_images.append(scene["image_path"])
+        if ship_used and ship.get("image_path") and ship["image_path"] not in input_images:
+            input_images.append(ship["image_path"])
+        for ch in sh.get("characters", []):
+            if ch in char_sheets and char_sheets[ch].get("image_path"):
+                input_images.append(char_sheets[ch]["image_path"])
         with open(os.path.join(out, f"{sh['shotId']}.generation.json"), "w") as f:
             json.dump({"shotId": sh["shotId"], "cast": sh.get("characters", []),
                        "sceneSheetId": sh.get("sceneSheetId"),
+                       "shipSheetIncluded": bool(ship_used and ship.get("image_path")),
                        "input_images_in_order": input_images,
                        "prompt_file": f"{sh['shotId']}.txt",
+                       "prompt_sections": (["look", "scene", "characters"] + (["ship"] if ship_used else []) +
+                                           ["shot", "choreography", "camera", "lighting", "geography", "trajectories", "handoff",
+                                            "motion", "extras", "world-rules", "negative", "edit"]),
+                       "reuse": {"look_verbatim": bool(sh.get("lockedLookBlock")),
+                                 "characters_verbatim": list(sh.get("characters", [])),
+                                 "scene_description_verbatim": bool(scene.get("description")),
+                                 "ship_description_verbatim": bool(ship_used and ship.get("description")),
+                                 "choreography_verbatim": bool(sh.get("choreography")),
+                                 "camera_verbatim": bool(sh.get("cameraChoreography"))},
+                       "editStartSec": sh.get("editStartSec"),
+                       "editEndSec": sh.get("editEndSec"),
                        "rule": "Supply input_images_in_order as image inputs, in order, "
-                               "before the text prompt. Do not generate from text alone."},
+                               "before the text prompt. Do not generate from text alone. "
+                               "Do not paraphrase or drop a labelled section."},
                       f, indent=2)
-    print(f"Wrote prompt packets to {out}")
+    print(f"Wrote structured prompt packets to {out}")
 
 
 def cmd_edl(args):

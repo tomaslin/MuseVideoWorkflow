@@ -1,0 +1,122 @@
+{
+  "sequenceId": "seq-arrival",
+  "shots": [
+    {
+      "shotId": "A01",
+      "sequenceId": "seq-arrival",
+      "size": "Wide",
+      "movement": "Slow push-in",
+      "action": "The almost-dead ship creaks through the bamboo gate into the silk colony. The Mad Man rides on top, small against the hull, dust on his robes.",
+      "location": "Silk colony gate, cybernetic bamboo forest",
+      "sceneSheetId": "bamboo-forest",
+      "characters": [
+        "mad-man",
+        "robot-guard",
+        "human-guard"
+      ],
+      "lockedLookBlock": "Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.",
+      "lockedCharacterBlocks": {
+        "mad-man": "A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal \u2014 NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal.",
+        "robot-guard": "A robot guard blending wuxia with cyber: sleek metal and porcelain robot body in flowing pale silk robes and silk armour, glowing cyber eyes and silk-thread circuits, holding a wuxia spear.",
+        "human-guard": "A simple human guard blending wuxia with cyber setting but himself plain: an ordinary Chinese man in a pale silk uniform with silk-thread insignia, no robot parts, no cyber enhancements, holding a wuxia spear."
+      },
+      "background": "Cybernetic bamboo stalks with glowing veins, silk banners overhead, colony roofs behind A derelict ship halfway Asian wagon and halfway broken spaceship, makeshift rope lashings and patched wood and dented metal, broken wheels and hull panels, smashed in the middle of the lotus garden. More metal, more earth, more space derelict: heavy rusted metal hull plates, torn spaceship panels, exposed wiring, broken thrusters, earth and soil piled against the hull.",
+      "choreography": "Ship moves screen-left to screen-right at walking pace, bamboo stalks passing in foreground. Mad Man grips a rope with one hand, other hand loose. No fight yet.",
+      "cameraChoreography": "Low anamorphic wide at gate height: foreground bamboo stalks out of focus on the left, ship entering in midground, lotus garden deep in background. Slow motivated push-in only as the ship crosses frame, holding layered depth throughout.",
+      "lighting": "Backlit bamboo, rim light on the ship's metal hull, warm afternoon light with deep shadow contrast, neon silk thread glow in the background.",
+      "lensMm": 35,
+      "focus": "Faces and contact points in focus; background soft",
+      "motion": "Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit \u2014 never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands",
+      "extras": "Silk guards at the gate, vendors pausing",
+      "loreNotes": "A discarded ship is still a ship: it moves, it groans, it carries him. He is not yet a threat in their eyes. Physical sense: every water action has support \u2014 fighters stand on large sturdy lotus leaves or stone stepping stones, not on open water; the mahjong platform is wood, wide and stable, with chairs and a table on it; dropped weapons sink and spread rings; splashed water falls back under gravity; the ship moves on wheels and hull, not floating unsupported; shop interiors have floors, counters, and beams that hold weight.",
+      "emotionalBeat": "Unease, curiosity",
+      "soundMood": "Low creaking wood, distant silk banners fluttering",
+      "durationSec": 10,
+      "editStartSec": 0,
+      "editEndSec": 2.5,
+      "geography": "Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.",
+      "trajectories": {
+        "mad-man": "Start: on top of the ship, screen-right, foreground. Trajectory: rides with the ship screen-right to screen-left? No \u2014 ship moves screen-left to screen-right at walking pace; Mad Man stays low on the hull, gripping a rope, body swaying with the ship, never walking. End: mid-ride, still on the hull, rope in hand, mid-sway, NOT settled.",
+        "robot-guard": "Start: at the gate, screen-left, midground. Trajectory: steps forward one straight mechanical step, spear held vertical, then holds ready, mid-step, NOT settled.",
+        "human-guard": "Start: at the gate, screen-left, midground. Trajectory: ordinary hesitant walk forward two steps, then stops mid-step, weight forward."
+      },
+      "handoff": "Handoff: this clip ends MID-ACTION \u2014 weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn \u2014 NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state."
+    },
+    {
+      "shotId": "A02",
+      "sequenceId": "seq-arrival",
+      "size": "Medium",
+      "movement": "Static, then tilt down",
+      "action": "Silk guards step forward, alert and active, weapons ready, confronting the Mad Man at the market gate. No laughing, no mockery. The Mad Man rises, still-faced and possessed-calm, facing them, tension building like actors in a confrontation, not a joke.",
+      "location": "Silk colony gate",
+      "sceneSheetId": "silk-colony",
+      "characters": [
+        "mad-man",
+        "robot-guard",
+        "human-guard"
+      ],
+      "lockedLookBlock": "Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.",
+      "lockedCharacterBlocks": {
+        "mad-man": "A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal \u2014 NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal.",
+        "robot-guard": "A robot guard blending wuxia with cyber: sleek metal and porcelain robot body in flowing pale silk robes and silk armour, glowing cyber eyes and silk-thread circuits, holding a wuxia spear.",
+        "human-guard": "A simple human guard blending wuxia with cyber setting but himself plain: an ordinary Chinese man in a pale silk uniform with silk-thread insignia, no robot parts, no cyber enhancements, holding a wuxia spear."
+      },
+      "background": "Colony gate, silk banners, dust in the air In the beautiful Chinese lotus market, with lotus ponds, baskets and stalls around the square. A derelict ship halfway Asian wagon and halfway broken spaceship, makeshift rope lashings and patched wood and dented metal, broken wheels and hull panels, smashed in the middle of the lotus garden. The garden is more cyber now: glowing cyber lotus, neon circuits in stems and paths, cyber lanterns. More metal, more earth, more space derelict: heavy rusted metal hull plates, torn spaceship panels, exposed wiring, broken thrusters, earth and soil piled against the hull. The market is populated and lively: kids playing, robots in silk robes, ladies in silk dresses, lively gambling tables, people drinking tea and wine, wuxia vibes throughout.",
+      "choreography": "Guards centre-frame, moving forward in step, spears lowering to ready positions, eyes locked on the Mad Man, expressions serious and wary, natural and acted. Mad Man foreground-right, rising from his seat on the ship, slow and deliberate, calm unsettling eyes meeting theirs, body weight shifting forward. Distance closes from 3 metres to 2 metres. No one laughs. The interaction is a confrontation, not mockery.",
+      "cameraChoreography": "Cinematic moving camera, not a still shot: anamorphic medium, slow tracking push-in through foreground market lanterns, circling slightly around the confrontation, guards in midground, Mad Man foreground-right, market crowd deep behind, camera moving with the tension.",
+      "lighting": "Warm market lantern light, rim light on faces, shadow contrast, faces lit softly, background falling into warm bokeh.",
+      "lensMm": 35,
+      "focus": "Faces and contact points in focus; background soft",
+      "motion": "Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit \u2014 never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands",
+      "extras": "Two extra guards in background, not laughing, watching Market crowd in background: kids, robots in silk robes, ladies in silk dresses, gamblers and drinkers at stalls, wuxia atmosphere. Women playing mahjong at a floating mahjong table on a stable wooden platform on the lotus pond: four women seated on chairs around a solid table, mahjong tiles on the table, not in the water, platform steady on the pond, water lapping at its edges, not flooding it.",
+      "loreNotes": "The colony laughs first. That laughter is what the explosion answers.",
+      "emotionalBeat": "Tense confrontation, active challenge",
+      "soundMood": "Laughter, ship groaning to a stop",
+      "durationSec": 10,
+      "editStartSec": 2.5,
+      "editEndSec": 5,
+      "geography": "Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.",
+      "trajectories": {
+        "mad-man": "Start: seated low on the ship, foreground-right. Trajectory: rises slowly, deliberately, weight shifting forward, from seated to half-standing, end mid-rise, NOT fully standing and settled.",
+        "robot-guard": "Start: centre-frame, midground. Trajectory: straight mechanical advance, spear lowering to ready in a straight line, end spear mid-lower.",
+        "human-guard": "Start: centre-frame, midground. Trajectory: ordinary walk forward, hesitant, spear lowering, end mid-step, weight forward."
+      },
+      "handoff": "Handoff: this clip ends MID-ACTION \u2014 weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn \u2014 NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state."
+    },
+    {
+      "shotId": "A03",
+      "sequenceId": "seq-arrival",
+      "size": "Close-up",
+      "movement": "Slow push-in",
+      "action": "Close-up: the Mad Man's hands on the ship's rail, then his face. His grin fades. His eyes go still. Something under the deck shudders.",
+      "location": "On the ship deck",
+      "sceneSheetId": "bamboo-forest",
+      "characters": [
+        "mad-man"
+      ],
+      "lockedLookBlock": "Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.",
+      "lockedCharacterBlocks": {
+        "mad-man": "A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal \u2014 NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal."
+      },
+      "background": "Ship deck planks, silk rope, dust \u2014 silk banners, bamboo stalks and colony stonework all visible in depth, with dust and silk thread in the air. A derelict ship halfway Asian wagon and halfway broken spaceship, makeshift rope lashings and patched wood and dented metal, broken wheels and hull panels, smashed in the middle of the lotus garden. More metal, more earth, more space derelict: heavy rusted metal hull plates, torn spaceship panels, exposed wiring, broken thrusters, earth and soil piled against the hull.",
+      "choreography": "Hands tighten on the rail (anticipation). Head turns slowly screen-left. A tremor runs through the deck planks under his feet. He does not speak.",
+      "cameraChoreography": "Close-up on hands, push-in to face, hold on eyes. Background falls out of focus.",
+      "lighting": "Light narrows to his face, shadows deepen",
+      "lensMm": 35,
+      "focus": "Faces and contact points in focus; background soft",
+      "motion": "Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit \u2014 never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands",
+      "extras": "None \u2014 no one else in frame",
+      "loreNotes": "The alien in him wakes before the guards see it. Physical sense: every water action has support \u2014 fighters stand on large sturdy lotus leaves or stone stepping stones, not on open water; the mahjong platform is wood, wide and stable, with chairs and a table on it; dropped weapons sink and spread rings; splashed water falls back under gravity; the ship moves on wheels and hull, not floating unsupported; shop interiors have floors, counters, and beams that hold weight.",
+      "emotionalBeat": "Dread, the turn",
+      "soundMood": "Silence under the ship's groan, then a low alien hum",
+      "durationSec": 10,
+      "editStartSec": 5,
+      "editEndSec": 7.5,
+      "geography": "Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.",
+      "trajectories": {
+        "mad-man": "Low limping lunge, centre, tendrils bursting then recoiling, end mid-action, NOT settled."
+      },
+      "handoff": "Handoff: this clip ends MID-ACTION \u2014 weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn \u2014 NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state."
+    }
+  ]
+}

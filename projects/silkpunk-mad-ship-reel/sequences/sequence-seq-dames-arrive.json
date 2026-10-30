@@ -1,0 +1,93 @@
+{
+  "sequenceId": "seq-dames-arrive",
+  "shots": [
+    {
+      "shotId": "C01",
+      "sequenceId": "seq-dames-arrive",
+      "size": "Wide",
+      "movement": "Crane down",
+      "action": "The Three Heavenly Dames arrive over the rooftops, landing in a line before the Mad Man: Eldest left, Middle right, Youngest centre-back. Silence after the panic.",
+      "location": "Silk colony square, rooftops",
+      "sceneSheetId": "silk-colony",
+      "characters": [
+        "eldest-dame",
+        "middle-dame",
+        "youngest-dame",
+        "mad-man"
+      ],
+      "lockedLookBlock": "Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.",
+      "lockedCharacterBlocks": {
+        "eldest-dame": "A very pretty elite guardswoman in crimson silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, long black hair, a spear, commanding and fierce.",
+        "middle-dame": "A very pretty elite guardswoman in jade silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, hair in twin loops, twin short blades, fast and sharp.",
+        "youngest-dame": "A very pretty young elite guardswoman in pale ivory-pink silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, a single ribbon sword, brave and focused, natural nervous tension, eyes open but not wide-eyed caricature.",
+        "mad-man": "A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal \u2014 NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal."
+      },
+      "background": "Rooftops, silk banners, empty square \u2014 silk banners, bamboo stalks and colony stonework all visible in depth, with dust and silk thread in the air. In the beautiful Chinese lotus market, with lotus ponds, baskets and stalls around the square. The garden is more cyber now: glowing cyber lotus, neon circuits in stems and paths, cyber lanterns. The market is populated and lively: kids playing, robots in silk robes, ladies in silk dresses, lively gambling tables, people drinking tea and wine, wuxia vibes throughout.",
+      "choreography": "Dames drop from rooftops screen-top to ground in one beat each, left to right. They land in a shallow arc, 4 metres from the Mad Man, weapons lowered but ready. Mad Man centre, facing them.",
+      "cameraChoreography": "Crane down from rooftops to eye level, ending wide on the standoff line.",
+      "lighting": "Clear light, banners still \u2014 warm daylight with neon silk-thread glow, faces lit, shadows falling clearly on stone.",
+      "lensMm": 35,
+      "focus": "Faces and contact points in focus; background soft",
+      "motion": "Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit \u2014 never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands",
+      "extras": "No crowd \u2014 the square is empty now Market crowd in background: kids, robots in silk robes, ladies in silk dresses, gamblers and drinkers at stalls, wuxia atmosphere. Women playing mahjong at a floating mahjong table on a stable wooden platform on the lotus pond: four women seated on chairs around a solid table, mahjong tiles on the table, not in the water, platform steady on the pond, water lapping at its edges, not flooding it.",
+      "loreNotes": "The Dames do not rush. Their arrival is a formation, not a scramble.",
+      "emotionalBeat": "Dread, order returns",
+      "soundMood": "Rooftop tiles, landing thuds, then silence",
+      "durationSec": 10,
+      "editStartSec": 15,
+      "editEndSec": 17.5,
+      "geography": "Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.",
+      "trajectories": {
+        "eldest-dame": "Long straight stride, weapon extended in a straight line, end mid-thrust, NOT withdrawn.",
+        "middle-dame": "Fast low bouncing arc, nunchuks spinning, end mid-leap, NOT landed.",
+        "youngest-dame": "Light quick steps, ribbon in a wide curve, end mid-curve, NOT recovered.",
+        "mad-man": "Low limping lunge, centre, tendrils bursting then recoiling, end mid-action, NOT settled."
+      },
+      "handoff": "Handoff: this clip ends MID-ACTION \u2014 weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn \u2014 NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state."
+    },
+    {
+      "shotId": "C02",
+      "sequenceId": "seq-dames-arrive",
+      "size": "Medium",
+      "movement": "Slow push-in",
+      "action": "Standoff, face by face: Eldest's hard stare, Middle's ready blades, Youngest's wide brave eyes, Mad Man's possessed mad grin, possessed energy, not a villain returning. No one moves first.",
+      "location": "Silk colony square",
+      "sceneSheetId": "silk-colony",
+      "characters": [
+        "eldest-dame",
+        "middle-dame",
+        "youngest-dame",
+        "mad-man"
+      ],
+      "lockedLookBlock": "Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.",
+      "lockedCharacterBlocks": {
+        "eldest-dame": "A very pretty elite guardswoman in crimson silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, long black hair, a spear, commanding and fierce.",
+        "middle-dame": "A very pretty elite guardswoman in jade silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, hair in twin loops, twin short blades, fast and sharp.",
+        "youngest-dame": "A very pretty young elite guardswoman in pale ivory-pink silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, a single ribbon sword, brave and focused, natural nervous tension, eyes open but not wide-eyed caricature.",
+        "mad-man": "A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal \u2014 NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal."
+      },
+      "background": "Empty square, banners \u2014 silk banners, bamboo stalks and colony stonework all visible in depth, with dust and silk thread in the air. In the beautiful Chinese lotus market, with lotus ponds, baskets and stalls around the square. The garden is more cyber now: glowing cyber lotus, neon circuits in stems and paths, cyber lanterns. The market is populated and lively: kids playing, robots in silk robes, ladies in silk dresses, lively gambling tables, people drinking tea and wine, wuxia vibes throughout.",
+      "choreography": "Camera moves left to right across the four faces in one slow push. Each face holds for a beat. Mad Man's grin widens last. Weapons stay down.",
+      "cameraChoreography": "Slow push-in across the line, medium, faces in turn.",
+      "lighting": "Light on faces, shadows behind \u2014 warm daylight with neon silk-thread glow, faces lit, shadows falling clearly on stone.",
+      "lensMm": 35,
+      "focus": "Faces and contact points in focus; background soft",
+      "motion": "Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit \u2014 never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands",
+      "extras": "None in focus Market crowd in background: kids, robots in silk robes, ladies in silk dresses, gamblers and drinkers at stalls, wuxia atmosphere. Women playing mahjong at a floating mahjong table on a stable wooden platform on the lotus pond: four women seated on chairs around a solid table, mahjong tiles on the table, not in the water, platform steady on the pond, water lapping at its edges, not flooding it.",
+      "loreNotes": "Positioning is the story here: who stands where, who looks at whom, and who breaks first.",
+      "emotionalBeat": "Tension, challenge",
+      "soundMood": "Silence, silk fluttering",
+      "durationSec": 10,
+      "editStartSec": 17.5,
+      "editEndSec": 20,
+      "geography": "Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.",
+      "trajectories": {
+        "eldest-dame": "Long straight stride, weapon extended in a straight line, end mid-thrust, NOT withdrawn.",
+        "middle-dame": "Fast low bouncing arc, nunchuks spinning, end mid-leap, NOT landed.",
+        "youngest-dame": "Light quick steps, ribbon in a wide curve, end mid-curve, NOT recovered.",
+        "mad-man": "Low limping lunge, centre, tendrils bursting then recoiling, end mid-action, NOT settled."
+      },
+      "handoff": "Handoff: this clip ends MID-ACTION \u2014 weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn \u2014 NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state."
+    }
+  ]
+}

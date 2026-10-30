@@ -1,0 +1,48 @@
+# F01 — seq-quiet — EDIT 50s–52.5s, source clip 10s, this beat ONLY. Do not add other beats.
+
+## 1. LOOK — verbatim, do not paraphrase
+Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.
+
+## 2. SCENE — image input 1, verbatim
+Scene sheet: bamboo-forest — A cybernetic bamboo forest with glowing bamboo stalks and silk banners.
+
+## 3. CHARACTERS — image inputs in cast order, verbatim
+- mad-man: A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal — NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal.
+
+## 4. SHOT — Wide, Static, Bamboo forest clearing, stream
+Action, this beat only: Wash-up: the Mad Man kneels by a stream in a bamboo clearing, washing dust from his face and hands. The water runs cloudy, then clear. He is alone in frame.
+Emotional beat: Quiet, cleaning — Sound mood: Water, bamboo wind
+
+## 5. CHOREOGRAPHY — positioning, anticipation, contact, recoil, in order
+Kneeling, hands in water, face lowered, then raised, water dripping. Dust washes off in streaks. He sits back on his heels, still, looking at the water.
+
+## 6. CAMERA — cinematic, motivated movement only
+Static wide, stream foreground, bamboo background, hold on the washing.
+
+## 7. LIGHTING / LENS / FOCUS
+Lighting: Soft green light, water reflections — warm daylight with neon silk-thread glow, faces lit, shadows falling clearly on stone.
+Lens: 35mm — Focus: Faces and contact points in focus; background soft
+
+## 8. MOTION / PERFORMANCE RULES
+Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit — never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands
+
+## 9. BACKGROUND PERFORMERS
+None
+
+## 10. WORLD RULES
+Washing is the opposite of the fight: slow, repeated, no one else in frame.
+
+## GEOGRAPHY — fixed map, do not move it
+Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.
+
+## TRAJECTORIES — particular path for EACH figure, never the same move for everyone
+- mad-man: Low limping lunge, centre, tendrils bursting then recoiling, end mid-action, NOT settled.
+
+## HANDOFF — end mid-action, do not resolve
+Handoff: this clip ends MID-ACTION — weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn — NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state.
+
+## NEGATIVE
+Never: warp limbs, add extra limbs, morph faces or hands, change a character's face, armour, or weapons from their sheet image, add people beyond the cast and background performers listed below, use exaggerated open-mouth faces or cartoon grins, stage a Star Wars lightsaber duel, or add modern objects outside the silkpunk design.
+
+## EDIT
+Source clip is 10 seconds. Cut this beat to 50s–52.5s in the final reel. One playable action, clean end pose, readable contact and recoil.

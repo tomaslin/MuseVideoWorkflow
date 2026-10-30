@@ -1,0 +1,81 @@
+{
+  "sequenceId": "seq-wagon",
+  "shots": [
+    {
+      "shotId": "E01",
+      "sequenceId": "seq-wagon",
+      "size": "Wide",
+      "movement": "Tracking alongside",
+      "action": "Wagon escape, street level: the stolen wagon races down the colony street, Mad Man driving, Youngest beside him, silk banners whipping past overhead.",
+      "location": "Silk colony street",
+      "sceneSheetId": "silk-colony",
+      "characters": [
+        "youngest-dame",
+        "mad-man"
+      ],
+      "lockedLookBlock": "Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.",
+      "lockedCharacterBlocks": {
+        "youngest-dame": "A very pretty young elite guardswoman in pale ivory-pink silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, a single ribbon sword, brave and focused, natural nervous tension, eyes open but not wide-eyed caricature.",
+        "mad-man": "A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal \u2014 NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal."
+      },
+      "background": "Colony street, stalls, banners \u2014 silk banners, bamboo stalks and colony stonework all visible in depth, with dust and silk thread in the air. In the beautiful Chinese lotus market, with lotus ponds, baskets and stalls around the square. The garden is more cyber now: glowing cyber lotus, neon circuits in stems and paths, cyber lanterns. The market is populated and lively: kids playing, robots in silk robes, ladies in silk dresses, lively gambling tables, people drinking tea and wine, wuxia vibes throughout.",
+      "choreography": "Wagon moves screen-left to screen-right at speed, Mad Man driving with reins in one hand, Youngest holding the wagon rail with both hands. Banners pass overhead in streaks.",
+      "cameraChoreography": "Tracking alongside the wagon, wide, keeping both faces in frame.",
+      "lighting": "Fast light and shadow from banners \u2014 warm daylight with neon silk-thread glow, faces lit, shadows falling clearly on stone.",
+      "lensMm": 35,
+      "focus": "Faces and contact points in focus; background soft",
+      "motion": "Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit \u2014 never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands",
+      "extras": "Guards chasing behind, out of focus, falling back Market crowd in background: kids, robots in silk robes, ladies in silk dresses, gamblers and drinkers at stalls, wuxia atmosphere. Women playing mahjong at a floating mahjong table on a stable wooden platform on the lotus pond: four women seated on chairs around a solid table, mahjong tiles on the table, not in the water, platform steady on the pond, water lapping at its edges, not flooding it.",
+      "loreNotes": "Speed is in the banners passing, not in camera shake.",
+      "emotionalBeat": "Escape, speed",
+      "soundMood": "Wagon wheels, wind, banners",
+      "durationSec": 10,
+      "editStartSec": 45,
+      "editEndSec": 47.5,
+      "geography": "Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.",
+      "trajectories": {
+        "youngest-dame": "Light quick steps, ribbon in a wide curve, end mid-curve, NOT recovered.",
+        "mad-man": "Low limping lunge, centre, tendrils bursting then recoiling, end mid-action, NOT settled."
+      },
+      "handoff": "Handoff: this clip ends MID-ACTION \u2014 weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn \u2014 NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state."
+    },
+    {
+      "shotId": "E02",
+      "sequenceId": "seq-wagon",
+      "size": "Medium",
+      "movement": "Rear tracking",
+      "action": "The wagon leaves the colony into the bamboo forest. The guards fall behind at the gate. Youngest looks back at the colony shrinking behind them.",
+      "location": "Silk colony street, leaving the colony",
+      "sceneSheetId": "bamboo-forest",
+      "characters": [
+        "youngest-dame",
+        "mad-man"
+      ],
+      "lockedLookBlock": "Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.",
+      "lockedCharacterBlocks": {
+        "youngest-dame": "A very pretty young elite guardswoman in pale ivory-pink silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, a single ribbon sword, brave and focused, natural nervous tension, eyes open but not wide-eyed caricature.",
+        "mad-man": "A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal \u2014 NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal."
+      },
+      "background": "Bamboo forest road, colony gate behind \u2014 silk banners, bamboo stalks and colony stonework all visible in depth, with dust and silk thread in the air.",
+      "choreography": "Wagon moves away from camera into bamboo, guards stopping at the gate behind. Youngest turns in her seat, looks back once, then faces forward. Mad Man drives on, not looking back.",
+      "cameraChoreography": "Rear tracking, medium, colony shrinking in background, bamboo closing in foreground.",
+      "lighting": "Light shifting from colony warm to bamboo green",
+      "lensMm": 35,
+      "focus": "Faces and contact points in focus; background soft",
+      "motion": "Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit \u2014 never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands",
+      "extras": "Guards at gate, small in frame",
+      "loreNotes": "The gate is the boundary: behind it, the colony; ahead, the forest.",
+      "emotionalBeat": "Leaving, relief and loss",
+      "soundMood": "Wagon fading, bamboo wind",
+      "durationSec": 10,
+      "editStartSec": 47.5,
+      "editEndSec": 50,
+      "geography": "Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.",
+      "trajectories": {
+        "youngest-dame": "Light quick steps, ribbon in a wide curve, end mid-curve, NOT recovered.",
+        "mad-man": "Low limping lunge, centre, tendrils bursting then recoiling, end mid-action, NOT settled."
+      },
+      "handoff": "Handoff: this clip ends MID-ACTION \u2014 weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn \u2014 NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state."
+    }
+  ]
+}

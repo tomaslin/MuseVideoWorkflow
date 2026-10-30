@@ -1,0 +1,50 @@
+# D08 — seq-combat — EDIT 37.5s–40s, source clip 10s, this beat ONLY. Do not add other beats.
+
+## 1. LOOK — verbatim, do not paraphrase
+Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.
+
+## 2. SCENE — image input 1, verbatim
+Scene sheet: silk-colony — A beautiful Chinese lotus garden market with cyber details and wuxia vibes, populated by kids, robots, ladies, lively gambling and drinking: kids playing, robots in silk robes, ladies in silk dresses, gambling tables, tea and wine stalls, lotus ponds, silk banners, cyber lanterns, glowing cyber lotus.
+
+## 3. CHARACTERS — image inputs in cast order, verbatim
+- youngest-dame: A very pretty young elite guardswoman in pale ivory-pink silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, a single ribbon sword, brave and focused, natural nervous tension, eyes open but not wide-eyed caricature.
+- mad-man: A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal — NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal.
+
+## 4. SHOT — Close-up, Slow push-in, Inside the tea shop, across the counter
+Action, this beat only: Youngest disarmed inside the tea shop: the Mad Man wraps her ribbon sword around a tendril, pulls it taut, and the sword slides from her grip into his hand; her last absolute relic needles, star-forged end-of-universe relics scatter across the counter like rain. He lets the sword fall. She does not run.
+Emotional beat: Third disarm, the turn — Sound mood: Ribbon wrap, sword fall on stone
+
+## 5. CHOREOGRAPHY — positioning, anticipation, contact, recoil, in order
+Anticipation: Youngest raises ribbon sword, hesitating, needles between her fingers. Contact: ribbon wraps the tendril, sword slides out of her hand, needles scatter tinkling across the counter. Recoil: sword falls to the shop floor between them. She stands, breathing hard, looking at him, not at the sword. Third disarm.
+
+## 6. CAMERA — cinematic, motivated movement only
+Slow push-in on their hands, the falling sword, and the scattered needles, ending on her face.
+
+## 7. LIGHTING / LENS / FOCUS
+Lighting: Soft light on her face, shadow on his — warm daylight with neon silk-thread glow, faces lit, shadows falling clearly on stone.
+Lens: 35mm — Focus: Faces and contact points in focus; background soft
+
+## 8. MOTION / PERFORMANCE RULES
+Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit — never a locked static shot unless the beat is a held aftermath. Really busy kinetic Jin Yong wuxia choreography with GO BIGGER relic weapons: absolute, end-of-universe relic weapons — a massive ancient heavenly sword, relic-metal double nunchuks, star-forged relic needles — overwhelming brutality in impacts and wreckage, small beautiful intricacies in needle flicks, sword-tip circles, and nunchuk spins. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands. Laser/relic energy is on wuxia weapons, not Star Wars lightsaber duels.
+
+## 9. BACKGROUND PERFORMERS
+Eldest and Middle empty-handed at the edges, not advancing Market crowd in background: kids, robots in silk robes, ladies in silk dresses, gamblers and drinkers at stalls, wuxia atmosphere. Women playing mahjong at a floating mahjong table on a stable wooden platform on the lotus pond: four women seated on chairs around a solid table, mahjong tiles on the table, not in the water, platform steady on the pond, water lapping at its edges, not flooding it.
+
+## 10. WORLD RULES
+All three disarmed, in order, each with a different method: hook, twist, wrap. That order is the choreography.
+
+## GEOGRAPHY — fixed map, do not move it
+Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.
+
+## TRAJECTORIES — particular path for EACH figure, never the same move for everyone
+- youngest-dame: Start: tea shop counter, midground. Trajectory: light steps back, ribbon wrapping, needles scattering, end mid-step-back, hand still open, NOT recovered.
+- mad-man: Start: tea shop centre. Trajectory: tendril wraps ribbon and pulls taut in a short lunge, end tendril mid-pull, sword mid-fall, NOT settled.
+
+## HANDOFF — end mid-action, do not resolve
+Handoff: this clip ends MID-ACTION — weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn — NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state.
+
+## NEGATIVE
+Never: warp limbs, add extra limbs, morph faces or hands, change a character's face, armour, or weapons from their sheet image, add people beyond the cast and background performers listed below, use exaggerated open-mouth faces or cartoon grins, stage a Star Wars lightsaber duel, or add modern objects outside the silkpunk design.
+
+## EDIT
+Source clip is 10 seconds. Cut this beat to 37.5s–40s in the final reel. One playable action, clean end pose, readable contact and recoil.

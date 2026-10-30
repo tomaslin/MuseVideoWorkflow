@@ -1,0 +1,46 @@
+{
+  "shotId": "D10",
+  "cast": [
+    "youngest-dame",
+    "mad-man"
+  ],
+  "sceneSheetId": "silk-colony",
+  "shipSheetIncluded": false,
+  "input_images_in_order": [
+    "sheets/scenes/media-generation-silkpunk-sheet-lotus-market-po-0-b77cec40-7ced-4231-ac22-12e8b83fd775.webp",
+    "sheets/characters/media-generation-silkpunk-sheet-youngest-dame-v-0-6eb73a5f-1dbf-4e32-81cd-9c6cc8bf69c0.webp",
+    "sheets/characters/media-generation-silkpunk-sheet-mad-man-v2-0-38e1f9b1-0f3f-4b03-b95f-a4fba743ec2f.webp"
+  ],
+  "prompt_file": "D10.txt",
+  "prompt_sections": [
+    "look",
+    "scene",
+    "characters",
+    "shot",
+    "choreography",
+    "camera",
+    "lighting",
+    "geography",
+    "trajectories",
+    "handoff",
+    "motion",
+    "extras",
+    "world-rules",
+    "negative",
+    "edit"
+  ],
+  "reuse": {
+    "look_verbatim": true,
+    "characters_verbatim": [
+      "youngest-dame",
+      "mad-man"
+    ],
+    "scene_description_verbatim": true,
+    "ship_description_verbatim": false,
+    "choreography_verbatim": true,
+    "camera_verbatim": true
+  },
+  "editStartSec": 42.5,
+  "editEndSec": 45,
+  "rule": "Supply input_images_in_order as image inputs, in order, before the text prompt. Do not generate from text alone. Do not paraphrase or drop a labelled section."
+}

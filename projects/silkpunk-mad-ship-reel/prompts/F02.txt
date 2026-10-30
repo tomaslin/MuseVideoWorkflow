@@ -1,0 +1,50 @@
+# F02 — seq-quiet — EDIT 52.5s–55s, source clip 10s, this beat ONLY. Do not add other beats.
+
+## 1. LOOK — verbatim, do not paraphrase
+Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.
+
+## 2. SCENE — image input 1, verbatim
+Scene sheet: bamboo-forest — A cybernetic bamboo forest with glowing bamboo stalks and silk banners.
+
+## 3. CHARACTERS — image inputs in cast order, verbatim
+- youngest-dame: A very pretty young elite guardswoman in pale ivory-pink silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, a single ribbon sword, brave and focused, natural nervous tension, eyes open but not wide-eyed caricature.
+- mad-man: A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal — NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal.
+
+## 4. SHOT — Medium, Slow push-in, Bamboo forest clearing
+Action, this beat only: He sits staring at her. She sits opposite him, wrapped in a blanket, watching him back. Neither speaks. The space between them is the beat.
+Emotional beat: Quiet, watching — Sound mood: Bamboo wind, water behind
+
+## 5. CHOREOGRAPHY — positioning, anticipation, contact, recoil, in order
+Two figures facing each other, 2 metres apart, seated. He stares, she stares back, neither looks away. No movement except breathing and bamboo swaying behind them.
+
+## 6. CAMERA — cinematic, motivated movement only
+Slow push-in, medium, both faces in frame, ending closer on his face.
+
+## 7. LIGHTING / LENS / FOCUS
+Lighting: Soft light on both faces — warm daylight with neon silk-thread glow, faces lit, shadows falling clearly on stone.
+Lens: 35mm — Focus: Faces and contact points in focus; background soft
+
+## 8. MOTION / PERFORMANCE RULES
+Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit — never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands
+
+## 9. BACKGROUND PERFORMERS
+None
+
+## 10. WORLD RULES
+The stare is the scene. No dialogue, no action, just two people looking.
+
+## GEOGRAPHY — fixed map, do not move it
+Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.
+
+## TRAJECTORIES — particular path for EACH figure, never the same move for everyone
+- youngest-dame: Light quick steps, ribbon in a wide curve, end mid-curve, NOT recovered.
+- mad-man: Low limping lunge, centre, tendrils bursting then recoiling, end mid-action, NOT settled.
+
+## HANDOFF — end mid-action, do not resolve
+Handoff: this clip ends MID-ACTION — weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn — NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state.
+
+## NEGATIVE
+Never: warp limbs, add extra limbs, morph faces or hands, change a character's face, armour, or weapons from their sheet image, add people beyond the cast and background performers listed below, use exaggerated open-mouth faces or cartoon grins, stage a Star Wars lightsaber duel, or add modern objects outside the silkpunk design.
+
+## EDIT
+Source clip is 10 seconds. Cut this beat to 52.5s–55s in the final reel. One playable action, clean end pose, readable contact and recoil.

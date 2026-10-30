@@ -1,0 +1,52 @@
+{
+  "shotId": "D05",
+  "cast": [
+    "eldest-dame",
+    "middle-dame",
+    "youngest-dame",
+    "mad-man"
+  ],
+  "sceneSheetId": "silk-colony",
+  "shipSheetIncluded": false,
+  "input_images_in_order": [
+    "sheets/scenes/media-generation-silkpunk-sheet-lotus-market-po-0-b77cec40-7ced-4231-ac22-12e8b83fd775.webp",
+    "sheets/characters/media-generation-silkpunk-sheet-eldest-dame-v2-0-c8ba8761-5361-4579-8df5-c7c6f1d5fa70.webp",
+    "sheets/characters/media-generation-silkpunk-sheet-middle-dame-v2-0-8481edb0-1f9b-4d28-aea4-0eeee968b362.webp",
+    "sheets/characters/media-generation-silkpunk-sheet-youngest-dame-v-0-6eb73a5f-1dbf-4e32-81cd-9c6cc8bf69c0.webp",
+    "sheets/characters/media-generation-silkpunk-sheet-mad-man-v2-0-38e1f9b1-0f3f-4b03-b95f-a4fba743ec2f.webp"
+  ],
+  "prompt_file": "D05.txt",
+  "prompt_sections": [
+    "look",
+    "scene",
+    "characters",
+    "shot",
+    "choreography",
+    "camera",
+    "lighting",
+    "geography",
+    "trajectories",
+    "handoff",
+    "motion",
+    "extras",
+    "world-rules",
+    "negative",
+    "edit"
+  ],
+  "reuse": {
+    "look_verbatim": true,
+    "characters_verbatim": [
+      "eldest-dame",
+      "middle-dame",
+      "youngest-dame",
+      "mad-man"
+    ],
+    "scene_description_verbatim": true,
+    "ship_description_verbatim": false,
+    "choreography_verbatim": true,
+    "camera_verbatim": true
+  },
+  "editStartSec": 30,
+  "editEndSec": 32.5,
+  "rule": "Supply input_images_in_order as image inputs, in order, before the text prompt. Do not generate from text alone. Do not paraphrase or drop a labelled section."
+}

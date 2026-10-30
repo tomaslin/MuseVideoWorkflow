@@ -1,0 +1,51 @@
+{
+  "shotId": "A01",
+  "cast": [
+    "mad-man",
+    "robot-guard",
+    "human-guard"
+  ],
+  "sceneSheetId": "bamboo-forest",
+  "shipSheetIncluded": true,
+  "input_images_in_order": [
+    "sheets/scenes/media-generation-silkpunk-sheet-bamboo-forest-0-dc5c2450-f2ab-447c-a18f-6d549f60701c.webp",
+    "sheets/scenes/media-generation-silkpunk-sheet-mad-ship-v2-0-bd416789-0596-4f27-870b-b02f76eee37b.webp",
+    "sheets/characters/media-generation-silkpunk-sheet-mad-man-v2-0-38e1f9b1-0f3f-4b03-b95f-a4fba743ec2f.webp",
+    "sheets/characters/media-generation-silkpunk-sheet-robot-guard-0-01d1bcd3-9511-45d9-a530-d2c7bd470ca6.webp",
+    "sheets/characters/media-generation-silkpunk-sheet-human-guard-0-2e4a9b36-1fec-4f41-8ccd-350edeb720cb.webp"
+  ],
+  "prompt_file": "A01.txt",
+  "prompt_sections": [
+    "look",
+    "scene",
+    "characters",
+    "ship",
+    "shot",
+    "choreography",
+    "camera",
+    "lighting",
+    "geography",
+    "trajectories",
+    "handoff",
+    "motion",
+    "extras",
+    "world-rules",
+    "negative",
+    "edit"
+  ],
+  "reuse": {
+    "look_verbatim": true,
+    "characters_verbatim": [
+      "mad-man",
+      "robot-guard",
+      "human-guard"
+    ],
+    "scene_description_verbatim": true,
+    "ship_description_verbatim": true,
+    "choreography_verbatim": true,
+    "camera_verbatim": true
+  },
+  "editStartSec": 0,
+  "editEndSec": 2.5,
+  "rule": "Supply input_images_in_order as image inputs, in order, before the text prompt. Do not generate from text alone. Do not paraphrase or drop a labelled section."
+}

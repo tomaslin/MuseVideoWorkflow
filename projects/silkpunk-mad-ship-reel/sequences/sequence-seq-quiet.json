@@ -1,0 +1,113 @@
+{
+  "sequenceId": "seq-quiet",
+  "shots": [
+    {
+      "shotId": "F01",
+      "sequenceId": "seq-quiet",
+      "size": "Wide",
+      "movement": "Static",
+      "action": "Wash-up: the Mad Man kneels by a stream in a bamboo clearing, washing dust from his face and hands. The water runs cloudy, then clear. He is alone in frame.",
+      "location": "Bamboo forest clearing, stream",
+      "sceneSheetId": "bamboo-forest",
+      "characters": [
+        "mad-man"
+      ],
+      "lockedLookBlock": "Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.",
+      "lockedCharacterBlocks": {
+        "mad-man": "A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal \u2014 NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal."
+      },
+      "background": "Stream, bamboo clearing \u2014 silk banners, bamboo stalks and colony stonework all visible in depth, with dust and silk thread in the air.",
+      "choreography": "Kneeling, hands in water, face lowered, then raised, water dripping. Dust washes off in streaks. He sits back on his heels, still, looking at the water.",
+      "cameraChoreography": "Static wide, stream foreground, bamboo background, hold on the washing.",
+      "lighting": "Soft green light, water reflections \u2014 warm daylight with neon silk-thread glow, faces lit, shadows falling clearly on stone.",
+      "lensMm": 35,
+      "focus": "Faces and contact points in focus; background soft",
+      "motion": "Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit \u2014 never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands",
+      "extras": "None",
+      "loreNotes": "Washing is the opposite of the fight: slow, repeated, no one else in frame.",
+      "emotionalBeat": "Quiet, cleaning",
+      "soundMood": "Water, bamboo wind",
+      "durationSec": 10,
+      "editStartSec": 50,
+      "editEndSec": 52.5,
+      "geography": "Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.",
+      "trajectories": {
+        "mad-man": "Low limping lunge, centre, tendrils bursting then recoiling, end mid-action, NOT settled."
+      },
+      "handoff": "Handoff: this clip ends MID-ACTION \u2014 weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn \u2014 NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state."
+    },
+    {
+      "shotId": "F02",
+      "sequenceId": "seq-quiet",
+      "size": "Medium",
+      "movement": "Slow push-in",
+      "action": "He sits staring at her. She sits opposite him, wrapped in a blanket, watching him back. Neither speaks. The space between them is the beat.",
+      "location": "Bamboo forest clearing",
+      "sceneSheetId": "bamboo-forest",
+      "characters": [
+        "youngest-dame",
+        "mad-man"
+      ],
+      "lockedLookBlock": "Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.",
+      "lockedCharacterBlocks": {
+        "youngest-dame": "A very pretty young elite guardswoman in pale ivory-pink silk armour with cyber enhancements, glowing cyber silk circuits and sleek cyber details, a single ribbon sword, brave and focused, natural nervous tension, eyes open but not wide-eyed caricature.",
+        "mad-man": "A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal \u2014 NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal."
+      },
+      "background": "Clearing, bamboo, stream behind \u2014 silk banners, bamboo stalks and colony stonework all visible in depth, with dust and silk thread in the air.",
+      "choreography": "Two figures facing each other, 2 metres apart, seated. He stares, she stares back, neither looks away. No movement except breathing and bamboo swaying behind them.",
+      "cameraChoreography": "Slow push-in, medium, both faces in frame, ending closer on his face.",
+      "lighting": "Soft light on both faces \u2014 warm daylight with neon silk-thread glow, faces lit, shadows falling clearly on stone.",
+      "lensMm": 35,
+      "focus": "Faces and contact points in focus; background soft",
+      "motion": "Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit \u2014 never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands",
+      "extras": "None",
+      "loreNotes": "The stare is the scene. No dialogue, no action, just two people looking.",
+      "emotionalBeat": "Quiet, watching",
+      "soundMood": "Bamboo wind, water behind",
+      "durationSec": 10,
+      "editStartSec": 52.5,
+      "editEndSec": 55,
+      "geography": "Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.",
+      "trajectories": {
+        "youngest-dame": "Light quick steps, ribbon in a wide curve, end mid-curve, NOT recovered.",
+        "mad-man": "Low limping lunge, centre, tendrils bursting then recoiling, end mid-action, NOT settled."
+      },
+      "handoff": "Handoff: this clip ends MID-ACTION \u2014 weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn \u2014 NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state."
+    },
+    {
+      "shotId": "F03",
+      "sequenceId": "seq-quiet",
+      "size": "Close-up",
+      "movement": "Very slow push-in",
+      "action": "The alien in his mind: faint glowing alien tendrils of light curl around his head, like fingers stroking his thoughts. His eyes flicker, then settle. He keeps staring at her, quiet.",
+      "location": "Bamboo forest clearing, his face",
+      "sceneSheetId": "bamboo-forest",
+      "characters": [
+        "mad-man"
+      ],
+      "lockedLookBlock": "Cinematic anamorphic wuxia cinematography, like Crouching Tiger Hidden Dragon shot for cinema: layered depth with foreground, midground and background in every shot, motivated camera movement only, shallow depth of field, rim light and shadow contrast, restrained naturalistic performances, subtle faces, no exaggerated expressions, no open-mouth screaming, no cartoon grin, no wide-eyed caricature. Clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands.",
+      "lockedCharacterBlocks": {
+        "mad-man": "A young, very dirty, heavily muscular wuxia beggar man in his 20s, possessed mad energy, restrained and internal \u2014 NOT a calculating villain, NOT a Batman-type villain, NOT a screaming caricature: still face, calm unsettling eyes, closed mouth, subtle micro-expression only, unkempt matted hair, tattered dust-covered beggar robes, crazy organic alien mutations, muted dusty-rose fleshy tendrils from his back and shoulders, the alien possessing and driving him quietly, not mechanical, not metal."
+      },
+      "background": "His face, bamboo out of focus behind \u2014 silk banners, bamboo stalks and colony stonework all visible in depth, with dust and silk thread in the air.",
+      "choreography": "Tendrils of light appear at the edges of frame, curling toward his head, stroking the air around his temples. His eyes flicker once, then still. No movement from his body.",
+      "cameraChoreography": "Very slow push-in to close-up on his face, tendrils visible at frame edges.",
+      "lighting": "Soft light, alien glow at edges \u2014 warm daylight with neon silk-thread glow, faces lit, shadows falling clearly on stone.",
+      "lensMm": 35,
+      "focus": "Faces and contact points in focus; background soft",
+      "motion": "Natural acted interactions, motivated reactions, real weight and eye contact, performances played like actors in a scene, not posed stills. Camera is always moving with purpose: tracking, push-in, crane, or orbit \u2014 never a locked static shot unless the beat is a held aftermath. Fluid weighted motion, clean silhouettes, no warping limbs, no extra limbs, no morphing faces or hands",
+      "extras": "Youngest out of focus in foreground, watching",
+      "loreNotes": "The crazed alien stroking his mind is shown, not explained: light, tendrils, a flicker in his eyes, and then stillness.",
+      "emotionalBeat": "Haunting, alien, quiet",
+      "soundMood": "Low alien hum under bamboo wind",
+      "durationSec": 10,
+      "editStartSec": 55,
+      "editEndSec": 60,
+      "geography": "Market geography (fixed, do not move): bamboo gate south, lotus pond north-centre with mahjong platform north side and stepping stones south-north, silk shop east, tea shop west, stolen wagon east edge, market square centre, stalls/gambling/drinking on south and west edges.",
+      "trajectories": {
+        "mad-man": "Low limping lunge, centre, tendrils bursting then recoiling, end mid-action, NOT settled."
+      },
+      "handoff": "Handoff: this clip ends MID-ACTION \u2014 weapon mid-swing, foot mid-step, tendril mid-reach, body mid-turn \u2014 NOT resolved, NOT returned to neutral, NOT settled, NOT smiling at camera. The edit cut is taken from the middle of this source, and the next beat starts from this momentum, same screen direction and weapon state."
+    }
+  ]
+}
