@@ -271,6 +271,12 @@ def register(args):
         "references": [],
         "edit_start_sec": args.edit_start,
         "edit_end_sec": args.edit_end,
+        "sheets": {"characters": getattr(args, "character_sheet", []) or [],
+                   "scenes": getattr(args, "scene_sheet", []) or []},
+        # REVIEW GATE: every asset starts unreviewed. Only a recorded review
+        # pass (after inspecting the contact sheet) may mark a clip locked.
+        # "verify" checks hashes; it does NOT pass a visual review.
+        "review": {"status": "unreviewed", "notes": None, "reviewed_at_utc": None},
         "prompt": None,
         "notes": args.notes,
     }
@@ -383,7 +389,8 @@ def cmd_scan(args):
                                  project_dir=args.project_dir, asset_id=asset_id,
                                  shot=None, kind=None, prompt_file=None, prompt=None,
                                  reference=[], transcript_file=None,
-                                 edit_start=None, edit_end=None, notes="registered by scan")
+                                 edit_start=None, edit_end=None, notes="registered by scan",
+                                 character_sheet=[], scene_sheet=[])
         register(sub)
         done.append(name)
     print(json.dumps({"registered": done, "already_registered": skipped}, indent=2))
@@ -432,6 +439,33 @@ def cmd_verify(args):
     return 1 if problems else 0
 
 
+def cmd_review(args):
+    p = os.path.join(args.project_dir, "assets", args.asset_id, "asset.json")
+    with open(p) as f:
+        a = json.load(f)
+    if args.status not in ("pass", "fail"):
+        raise SystemExit("--status must be pass or fail")
+    a["review"] = {"status": args.status, "notes": args.notes,
+                   "reviewed_at_utc": datetime.datetime.now(datetime.timezone.utc).isoformat()}
+    with open(p, "w") as f:
+        json.dump(a, f, indent=2)
+    print(json.dumps({"asset_id": args.asset_id, "review": a["review"]}, indent=2))
+
+
+def cmd_drift_report(args):
+    """Assets that may not be locked: unreviewed or failed reviews."""
+    assets = rebuild_index(args.project_dir)
+    blocked = [a for a in assets if (a.get("review") or {}).get("status") != "pass"]
+    print(json.dumps({"total_assets": len(assets),
+                      "locked_pass": len(assets) - len(blocked),
+                      "not_locked": [{"asset_id": a["asset_id"],
+                                      "review_status": (a.get("review") or {}).get("status"),
+                                      "notes": (a.get("review") or {}).get("notes"),
+                                      "contact_sheet": a.get("contact_sheet")}
+                                     for a in blocked]}, indent=2))
+    return 1 if blocked else 0
+
+
 def main():
     ap = argparse.ArgumentParser(description="MuseVideoWorkflow asset registry")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -448,6 +482,8 @@ def main():
     r.add_argument("--edit-start", type=float)
     r.add_argument("--edit-end", type=float)
     r.add_argument("--notes")
+    r.add_argument("--character-sheet", action="append", default=[])
+    r.add_argument("--scene-sheet", action="append", default=[])
     s = sub.add_parser("scan")
     s.add_argument("dir")
     s.add_argument("--project-dir", required=True)
@@ -458,6 +494,13 @@ def main():
     d.add_argument("--asset-id", required=True)
     v = sub.add_parser("verify")
     v.add_argument("--project-dir", required=True)
+    rv = sub.add_parser("review")
+    rv.add_argument("--project-dir", required=True)
+    rv.add_argument("--asset-id", required=True)
+    rv.add_argument("--status", choices=["pass", "fail"], required=True)
+    rv.add_argument("--notes")
+    dr = sub.add_parser("drift-report")
+    dr.add_argument("--project-dir", required=True)
     args = ap.parse_args()
     if args.cmd == "register":
         register(args)
@@ -470,6 +513,10 @@ def main():
         cmd_describe(args)
     elif args.cmd == "verify":
         sys.exit(cmd_verify(args))
+    elif args.cmd == "review":
+        cmd_review(args)
+    elif args.cmd == "drift-report":
+        sys.exit(cmd_drift_report(args))
 
 
 if __name__ == "__main__":

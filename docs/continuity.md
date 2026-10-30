@@ -40,3 +40,18 @@ feature to assume.
 `pipeline/musevideo.py validate` checks that every prompt packet contains
 its sequence's locked look block and every featured character's locked
 description, character-for-character. A packet that fails is not generated.
+
+## Enforcement (automatic, since the sheet-gate change)
+
+The three locks above used to be a writing discipline. They are now
+enforced by code — see `docs/character-and-scene-sheets.md`:
+
+- `pipeline/sheets.py validate` and `pipeline/musevideo.py validate`
+  fail if any sheet is missing, unapproved, or hash-mismatched, or if
+  any shot features a character with no sheet. Generation is blocked
+  until they pass.
+- `prompt-pack` writes a `<shotId>.generation.json` per shot listing
+  the sheet images to supply as inputs, in order. Text-only generation
+  when sheets exist is a bypass, not a pipeline run.
+- `asset_registry.py review` / `drift-report` gate locking: no review
+  pass, no locked clip. Hash verification alone is not a visual review.

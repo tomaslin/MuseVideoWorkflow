@@ -55,6 +55,12 @@ def cmd_init(args):
     os.makedirs(os.path.join(d, "final"), exist_ok=True)
     os.makedirs(os.path.join(d, "assets"), exist_ok=True)
     os.makedirs(os.path.join(d, "references"), exist_ok=True)
+    os.makedirs(os.path.join(d, "sheets", "characters"), exist_ok=True)
+    os.makedirs(os.path.join(d, "sheets", "scenes"), exist_ok=True)
+    sheets_path = os.path.join(d, "sheets", "sheets.json")
+    if not os.path.exists(sheets_path):
+        with open(sheets_path, "w") as f:
+            json.dump({"characters": [], "scenes": []}, f, indent=2)
     proj = {"slug": args.slug, "title": args.title,
             "durationSec": args.duration_sec, "mood": "",
             "language": "en", "lookVersion": "v1", "state": "brief"}
@@ -109,6 +115,36 @@ def cmd_validate(args):
         if shots and len(shots) != expected:
             errors.append(f"shot count {len(shots)} != duration beats {expected} "
                           f"({proj['durationSec']}s / 10s)")
+    # SHEET GATE (docs/character-and-scene-sheets.md): text locks alone do
+    # not prevent drift. A shot may not be generated unless every character
+    # it features has an approved character sheet with a present, hash-
+    # matching image, and its scene sheet (if it names one) is approved too.
+    # A missing sheets manifest is a failure, not a warning.
+    sheets_path = os.path.join(d, "sheets", "sheets.json")
+    if not os.path.exists(sheets_path):
+        errors.append("no sheets manifest (sheets/sheets.json) — generation is blocked; "
+                      "run pipeline/sheets.py init, add sheets, and approve them")
+    else:
+        sheets = load(sheets_path)
+        char_sheets = {e["id"]: e for e in sheets.get("characters", [])}
+        scene_sheets = {e["id"]: e for e in sheets.get("scenes", [])}
+        for kind, table in (("character", char_sheets), ("scene", scene_sheets)):
+            for e in table.values():
+                if e.get("status") != "approved":
+                    errors.append(f"sheet {kind} {e['id']}: status is "
+                                  f"'{e.get('status')}', not 'approved'")
+                if not e.get("image_path") or not os.path.exists(os.path.join(d, e["image_path"])):
+                    errors.append(f"sheet {kind} {e['id']}: image file missing")
+                elif e.get("sha256") and hashlib.sha256(
+                        open(os.path.join(d, e["image_path"]), "rb").read()).hexdigest() != e["sha256"]:
+                    errors.append(f"sheet {kind} {e['id']}: image hash mismatch")
+        for sh in shots:
+            for ch in sh.get("characters", []):
+                if ch not in char_sheets:
+                    errors.append(f"{sh['shotId']}: no character sheet for '{ch}' — "
+                                  "generation is blocked until the sheet exists and is approved")
+            if sh.get("sceneSheetId") and sh["sceneSheetId"] not in scene_sheets:
+                errors.append(f"{sh['shotId']}: no scene sheet for '{sh['sceneSheetId']}'")
     if errors:
         print("VALIDATION FAILED")
         for e in errors:
@@ -168,6 +204,29 @@ def cmd_prompt_pack(args):
         prompt = " ".join(p for p in parts if p)
         with open(os.path.join(out, f"{sh['shotId']}.txt"), "w") as f:
             f.write(prompt + "\n")
+        # Generation manifest: the generation step MUST supply these images
+        # as inputs, in this order, before the text prompt. Scene sheet
+        # first, then character sheets in cast order. Text-only generation
+        # is a bypass of the sheet gate, not a pipeline run.
+        sheets_path = os.path.join(d, "sheets", "sheets.json")
+        input_images = []
+        if os.path.exists(sheets_path):
+            sheets = load(sheets_path)
+            char_sheets = {e["id"]: e for e in sheets.get("characters", [])}
+            scene_sheets = {e["id"]: e for e in sheets.get("scenes", [])}
+            if sh.get("sceneSheetId") in scene_sheets:
+                input_images.append(scene_sheets[sh["sceneSheetId"]]["image_path"])
+            for ch in sh.get("characters", []):
+                if ch in char_sheets and char_sheets[ch].get("image_path"):
+                    input_images.append(char_sheets[ch]["image_path"])
+        with open(os.path.join(out, f"{sh['shotId']}.generation.json"), "w") as f:
+            json.dump({"shotId": sh["shotId"], "cast": sh.get("characters", []),
+                       "sceneSheetId": sh.get("sceneSheetId"),
+                       "input_images_in_order": input_images,
+                       "prompt_file": f"{sh['shotId']}.txt",
+                       "rule": "Supply input_images_in_order as image inputs, in order, "
+                               "before the text prompt. Do not generate from text alone."},
+                      f, indent=2)
     print(f"Wrote prompt packets to {out}")
 
 

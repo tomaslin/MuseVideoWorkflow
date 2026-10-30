@@ -201,3 +201,7 @@ examples/    see projects/_example-long-way-home (a worked 4-minute definition)
 ## Asset registry
 
 Every generated clip is registered with `pipeline/asset_registry.py`: its prompt, its reference images (copied in), its timestamps, five still frames, a contact sheet, a waveform, a spectrogram, and per-second loudness. See `docs/asset-registry.md`. If a clip is not in the registry, it is not a finished asset.
+
+## Character and scene sheets (drift gate)
+
+Generation is sheet-based: every character and key scene has one approved reference image in `sheets/sheets.json`, every shot's generation manifest lists those images in order (scene first, then cast), and validation fails until all sheets are approved and hash-matching. No sheet, no generation; no review pass, no locked clip. See `docs/character-and-scene-sheets.md`.
