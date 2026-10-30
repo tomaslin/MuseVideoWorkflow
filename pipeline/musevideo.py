@@ -230,8 +230,8 @@ def verify_final(d):
     edl = load(final / "edl.json")
     if man.get("file") != "video.mp4":
         raise ValueError("final-manifest file must be video.mp4")
-    if man.get("scope") == "draft-excerpt":
-        raise ValueError("an excerpt cannot be delivered as the complete project")
+    if man.get("scope") in ("draft-excerpt", "draft-workprint"):
+        raise ValueError("a draft cannot be delivered as the complete project")
     h = hashlib.sha256()
     with video.open("rb") as stream:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
@@ -281,6 +281,8 @@ def verify_final(d):
         raise ValueError("final must contain H.264 video and AAC audio")
     if abs(duration - cursor) > .12 or abs(duration - man["durationSec"]) > .12:
         raise ValueError("media duration does not match EDL/manifest")
+    if abs(float(v.get("duration", 0)) - cursor) > .12 or abs(float(audio.get("duration", 0)) - cursor) > .12:
+        raise ValueError("video or audio stream duration does not match EDL")
     if man.get("resolution") != f"{v['width']}x{v['height']}":
         raise ValueError("media resolution does not match manifest")
     return man

@@ -95,8 +95,8 @@ def build(out):
                 raise ValueError('Workprint path escapes project')
             if not video.is_file() or hashlib.sha256(video.read_bytes()).hexdigest()!=draft['sha256']:
                 raise ValueError(f'Workprint checksum mismatch: {video}')
-            if json.loads(manifest.read_text()).get('scope') != 'draft-excerpt':
-                raise ValueError('Workprint must be labeled as an excerpt')
+            if json.loads(manifest.read_text()).get('scope') not in ('draft-excerpt', 'draft-workprint'):
+                raise ValueError('Workprint must be labeled as a draft')
             if not re.fullmatch(r'[A-Za-z0-9_-]+', draft.get('id', '')):
                 raise ValueError('Invalid workprint ID')
             target = data_dir / 'workprints' / draft['id']

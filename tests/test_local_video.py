@@ -57,6 +57,18 @@ class LocalVideoTests(unittest.TestCase):
             difference = lambda a,b: sum(abs(x-y) for x,y in zip(a,b))
             self.assertLess(difference(first,second), difference(before,first) / 5)
             self.assertEqual(json.loads((p / 'final/edl.json').read_text())['entries'][0]['freezeLastSec'], 1)
+            # Container duration can follow audio even when picture ends early.
+            original = p / 'final/video.mp4'
+            broken = p / 'broken.mp4'
+            subprocess.run(['ffmpeg','-v','error','-y','-t','2','-i',str(original),'-f','lavfi','-i','sine=frequency=440:duration=3','-map','0:v:0','-map','1:a:0','-t','3','-c:v','copy','-c:a','aac',str(broken)],check=True)
+            broken.replace(original)
+            manifest_path = p / 'final/final-manifest.json'
+            manifest = json.loads(manifest_path.read_text())
+            manifest['sha256'] = hashlib.sha256(original.read_bytes()).hexdigest()
+            probe = json.loads(subprocess.check_output(['ffprobe','-v','error','-show_format','-of','json',str(original)]))
+            manifest['durationSec'] = float(probe['format']['duration'])
+            manifest_path.write_text(json.dumps(manifest))
+            self.assertIn('stream duration mismatch', self.run_cli('verify',p,ok=False))
 
     def test_media_roundtrip_and_failure_gates(self):
         with tempfile.TemporaryDirectory(prefix="muse's footage ") as tmp:

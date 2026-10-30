@@ -39,7 +39,7 @@ func tool(_ name: String) throws -> URL {
     return data
 }
 struct Media {
-    let duration: Double; let width: Int; let height: Int; let audio: Bool; let videoCodec: String; let audioCodec: String
+    let duration: Double; let videoDuration: Double; let audioDuration: Double; let width: Int; let height: Int; let audio: Bool; let videoCodec: String; let audioCodec: String
     init(_ url: URL) throws {
         let bytes = try run("ffprobe", ["-v", "error", "-show_format", "-show_streams", "-of", "json", url.path])
         let data = try JSONSerialization.jsonObject(with: bytes) as? [String: Any] ?? [:]
@@ -47,6 +47,9 @@ struct Media {
         guard let video = streams.first(where: { $0["codec_type"] as? String == "video" }) else { throw Failure("No video stream: \(url.path)") }
         let format = data["format"] as? [String: Any] ?? [:]
         duration = Double(format["duration"] as? String ?? "0") ?? 0
+        videoDuration = Double(video["duration"] as? String ?? "0") ?? 0
+        let audioStream = streams.first { $0["codec_type"] as? String == "audio" }
+        audioDuration = Double(audioStream?["duration"] as? String ?? "0") ?? 0
         width = video["width"] as? Int ?? 0; height = video["height"] as? Int ?? 0
         audio = streams.contains { $0["codec_type"] as? String == "audio" }
         videoCodec = video["codec_name"] as? String ?? ""
@@ -311,7 +314,7 @@ func assemble(_ project: Project, editRelative: String = "edit.json", outputRela
         let media = try Media(source)
         let start = cut["inSec"] as? Double ?? 0; let duration = cut["durationSec"] as? Double ?? 3
         let freeze = cut["freezeLastSec"] as? Double ?? 0
-        try require(start.isFinite && duration.isFinite && start >= 0 && duration > 0 && start + duration <= media.duration + 0.02, "Trim outside source duration: \(id)")
+        try require(start.isFinite && duration.isFinite && start >= 0 && duration > 0 && start + duration <= media.videoDuration + 0.02, "Trim outside source video duration: \(id)")
         try require(freeze.isFinite && freeze >= 0 && freeze < duration && abs(freeze * Double(fps) - (freeze * Double(fps)).rounded()) < 0.001, "Invalid freeze duration: \(id)")
         try require(abs(duration * Double(fps) - (duration * Double(fps)).rounded()) < 0.001, "Trim duration must align to a frame at \(fps) fps: \(id)")
         try require((cut["transitionIn"] as? String ?? "cut") == "cut", "Only hard cuts are supported; unsupported transition in \(id)")
@@ -348,7 +351,7 @@ func assemble(_ project: Project, editRelative: String = "edit.json", outputRela
     try run("ffmpeg", ["-v", "error", "-nostdin", "-y", "-f", "concat", "-safe", "0", "-i", concat.path, "-t", String(cursor), "-c:v", "copy", "-c:a", "aac", "-af", "aresample=async=1:first_pts=0", "-b:a", "160k", "-movflags", "+faststart", joined.path])
     let video = outputRelative == "final" ? try typography(project, work, joined, cursor, width, height) : joined
     let result = try Media(video)
-    try require(abs(result.duration - cursor) <= 0.12 && result.videoCodec == "h264" && result.audioCodec == "aac", "Final media does not match edit")
+    try require(abs(result.duration - cursor) <= 0.12 && abs(result.videoDuration - cursor) <= 0.12 && abs(result.audioDuration - cursor) <= 0.12 && result.videoCodec == "h264" && result.audioCodec == "aac", "Final media streams do not match edit")
     try run("ffmpeg", ["-v", "error", "-nostdin", "-y", "-ss", String(min(cursor / 2, 2)), "-i", video.path, "-frames:v", "1", work.appendingPathComponent("poster.jpg").path])
     let final = try project.path(outputRelative); try fm.createDirectory(at: final, withIntermediateDirectories: true)
     let order = entries.map { $0["shotId"]! }
@@ -391,6 +394,7 @@ func verify(_ project: Project, outputRelative: String = "final") throws {
         cursor = end
     }
     try require(abs(cursor - expected) < 0.001 && abs(media.duration - expected) < 0.12 && abs(media.duration - (manifest["durationSec"] as? Double ?? -1)) < 0.01, "Final duration mismatch")
+    try require(abs(media.videoDuration - expected) < 0.12 && abs(media.audioDuration - expected) < 0.12, "Final stream duration mismatch")
     try require(media.videoCodec == "h264" && media.audioCodec == "aac" && "\(media.width)x\(media.height)" == manifest["resolution"] as? String, "Final codecs/resolution mismatch")
     print("VERIFIED: checksum, EDL, duration, H.264/AAC, resolution. Review: \(manifest["reviewState"] ?? "unreviewed")")
 }

@@ -1,0 +1,19 @@
+{
+  "scope": "draft-workprint",
+  "reviewState": "unreviewed",
+  "file": "video.mp4",
+  "sha256": "886f3f8895fd47cf7694638967710631612c16ec7fc71ee4f7c8003c055075ba",
+  "durationSec": 60,
+  "videoDurationSec": 59.958333,
+  "audioDurationSec": 60,
+  "resolution": "720x1280",
+  "audio": "User-provided Cada dos días track, first 60 seconds, 1.5-second fade",
+  "timing": "Provisional guide timings, not beat-verified",
+  "limitations": [
+    "Source scenes remain AI-generated and require full motion and sound review",
+    "Consultation and continuity improved with targeted takes but not approved",
+    "Optional dialogue is not recorded",
+    "This is not a final deliverable"
+  ],
+  "edl": "edl.json"
+}
