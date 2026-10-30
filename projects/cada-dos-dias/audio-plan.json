@@ -1,8 +1,8 @@
 {
-  "status": "not-recorded",
+  "status": "song-in-workprint-review-pending",
   "sampleRate": 48000,
   "channels": 2,
-  "voicePolicy": "Record dialogue separately; no lip-sync claim",
+  "voicePolicy": "Optional dialogue not recorded; no lip-sync claim",
   "cues": [
     {
       "shotId": "s01",
@@ -125,5 +125,8 @@
     "ambience",
     "impacts"
   ],
-  "delivery": "Approved 48kHz stereo mix, -1 dBTP ceiling, timed captions from actual recordings"
+  "delivery": "Approved 48kHz stereo mix, -1 dBTP ceiling, timed captions from actual recordings",
+  "musicSource": "Muse source package: Cada_dos_di_as.mp3",
+  "musicSha256": "857ec3073a6f2fc34c907911923f9e476da938c95e953a48602f3098e152d76f",
+  "timing": "60-second guide cut; beat alignment not yet reviewed"
 }

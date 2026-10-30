@@ -24,7 +24,7 @@
     "Clinician": "An adult health-care professional in their fifties with short dark hair, muted teal scrubs under a light jacket; attentive and respectful, speaking with the interpreter at eye level, no invented medical information."
   },
   "documents": {
-    "brief": "# Brief\n\nA roughly one-minute vertical Spanish-language music video, Cada dos días, in an elegant, old-time 1990s style. Rafa and Teresa meet a verbal ambiguity with curiosity rather than blame, then a professional interpreter helps a health-care team clarify it. The instruction itself is never shown or invented. Cut timings are provisional until the actual song is available and heard.",
+    "brief": "# Brief\n\nA roughly one-minute vertical Spanish-language music video, Cada dos días, in an elegant, old-time 1990s style. Rafa and Teresa meet a verbal ambiguity with curiosity rather than blame, then a professional interpreter helps a health-care team clarify it. The instruction itself is never shown or invented. The song has been recovered from the user’s Muse project; cut timings remain provisional until checked against its beats and lyrics.",
     "script": "# Script and provisional timing\n\n00–08 La nota: Rafa finds a note, looks at a calendar, and Teresa enters with two cups. Add «Una palabra puede cambiarlo todo». No legible instructions.\n\n08–18 La confusión: Rafa points to consecutive calendar squares; Teresa tilts her head. Transform squares into two question marks in post. Optional Rafa: «¿Dos cada día… o cada dos días?» only over a musical pause.\n\n18–30 Pausa: Teresa raises a hand; freeze briefly. Add separate cards «¿Cuánto?» and «¿Cuándo?» and «No adivines. Pregunta.» Neither card shows a dose.\n\n30–43 Aclarar: a professional interpreter listens to Rafa, asks the health-care team to clarify, listens to their reply, and conveys it. Optional interpreter: «¿Puede confirmar la cantidad y la frecuencia?» The answer is not shown or invented.\n\n43–55 El sentido llega: Rafa nods, relieved. At home Teresa places separate «cantidad» and «frecuencia» cards; they exchange a look and cups gently clink on the beat.\n\n55–60 Cierre: clean background, two speech bubbles joined by a line and «Escuchar. Aclarar. Interpretar.»",
     "look-bible": "# Visual world\n\nA graceful 1990s Spanish-language music video remembered through soft film grain and a honeyed palette. Frame vertically, with intentional close-ups, consistent eyelines and open space for captions. Kitchen is sunny, warm wood and cream ceramic; the fictional consultation is calm teal and ivory. Make the warmth feel lived-in, not sepia nostalgia or comedy at a patient’s expense.",
     "characters": "# People\n\nRafa and Teresa are adults whose relationship reads through small gestures and a shared kitchen ritual. Rafa is puzzled by language, not portrayed as incompetent. Teresa gives him time. The trained interpreter is a separate professional who listens and conveys the health-care team’s clarification. The clinician listens respectfully. Keep each face and clothing consistent between takes.",
@@ -37,7 +37,7 @@
     "production-design": "Kitchen: cream cups, unmarked paper, a calendar with anonymous unnumbered squares, honey wood and a sunlit window. No visible pharmacy labels, dose numbers or instructions. Consultation: restrained desk, plain unmarked folders, muted neutral backgrounds, three separate people. Text cards and motion graphics will be authored digitally.",
     "costume-makeup": "Rafa keeps his cream knit polo and brown trousers; Teresa wears the same sage blouse and gold earrings in kitchen scenes. Interpreter wears a navy jacket and ivory shirt, clinician muted teal scrubs. Natural 1990s styling, not a celebrity likeness. Keep hands and clothing consistent from cut to cut.",
     "choreography": "Each shot contains one legible action and a held end pose. Rafa glances at paper, then calendar; Teresa enters with two cups; fingers point to two adjacent blank squares; she raises a gentle hand. In consultation, listen, ask, listen, convey in separate shots. At home the cards remain distinct and the cups meet gently.",
-    "sound-music": "Actual song, rights and mix are not yet confirmed for this production. Use its authorized audio once supplied or verifiably recovered; listen, mark beats and re-time the cut. Optional dialogue must be recorded separately and only used over a pause; never fabricate an answer. No claim of synchronized singing or finalized mix.",
+    "sound-music": "The user-provided Cada dos días song has been recovered from the Muse source package and used in the local workprint. The cut follows the script guide and has not yet been checked against the song’s beats and lyrics. Optional dialogue must be recorded separately and used only over a pause; never fabricate an answer. No claim of synchronized singing or finalized mix.",
     "editorial": "Draft timing maps to 60 seconds at 24 fps, with source takes of about ten seconds and cuts of 2–4 seconds. Generate video without text; add exact Spanish text and the two-question-mark treatment in post. Preserve clear distinctions between cantidad and frecuencia. Replace provisional cuts after hearing the song, and review the final vertical frame and mix."
   },
   "sequences": [
@@ -692,7 +692,7 @@
     ]
   },
   "rightsLedger": {
-    "status": "pending-music-verification",
+    "status": "user-supplied-audio",
     "entries": [
       {
         "kind": "story and script",
@@ -701,11 +701,18 @@
       },
       {
         "kind": "music",
-        "source": "Song not yet verified for this project",
-        "clearance": "Confirm source and authorization before publishing a soundtrack."
+        "source": "User-provided Cada dos días song recovered from the Muse source package",
+        "clearance": "Provided by the user for this music-video project; separate rights review not recorded."
       }
     ],
-    "musicStatus": "Awaiting verified audio"
+    "musicStatus": "Song included in draft; beat and final mix review pending"
   },
-  "critique": "Picture, precise typography, sound mix, actual song synchronization, medical-language accuracy and final review are pending. No clinical instruction or dose should appear."
+  "critique": "Picture, precise typography, sound mix, actual song synchronization, medical-language accuracy and final review are pending. No clinical instruction or dose should appear.",
+  "audioPlan": {
+    "status": "song-in-workprint-review-pending",
+    "musicSource": "Muse source package: Cada_dos_di_as.mp3",
+    "musicSha256": "857ec3073a6f2fc34c907911923f9e476da938c95e953a48602f3098e152d76f",
+    "timing": "60-second guide cut; beat alignment not yet reviewed",
+    "voicePolicy": "Optional dialogue not recorded; no lip-sync claim"
+  }
 }

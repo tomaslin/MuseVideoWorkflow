@@ -1,5 +1,5 @@
 {
-  "status": "pending-music-verification",
+  "status": "user-supplied-audio",
   "entries": [
     {
       "kind": "story and script",
@@ -8,9 +8,9 @@
     },
     {
       "kind": "music",
-      "source": "Song not yet verified for this project",
-      "clearance": "Confirm source and authorization before publishing a soundtrack."
+      "source": "User-provided Cada dos días song recovered from the Muse source package",
+      "clearance": "Provided by the user for this music-video project; separate rights review not recorded."
     }
   ],
-  "musicStatus": "Awaiting verified audio"
+  "musicStatus": "Song included in draft; beat and final mix review pending"
 }
