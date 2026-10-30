@@ -1,64 +1,12 @@
 # MuseVideoWorkflow
 
-The [cutting room](https://tomaslin.github.io/MuseVideoWorkflow/) shows real
-projects, short-shot trims, footage availability and selective redo requests.
-The [storyboard](https://tomaslin.github.io/MuseVideoWorkflow/storyboard.html)
-uses the same repository data.
-
-**Local processing on macOS:** [Swift video intake, edit, redo and verification](docs/local-video.md).
-Download Muse clips, import them, then stitch the strongest 2–4 seconds per shot:
-
-```bash
-./scripts/local-video.sh import projects/desert-beggars-vampires /path/to/clips
-./scripts/local-video.sh assemble projects/desert-beggars-vampires
-./scripts/local-video.sh verify projects/desert-beggars-vampires
-```
-
-Earlier takes are preserved, normalized trims are cached, and `edit.json` records
-exact source in-points and durations. A requested redo blocks that take until a
-replacement is imported. Actual footage review is separate from a plan score.
-
-A reusable video definition and asset pipeline. One project definition
+A robust, reusable video definition and asset pipeline. One project definition
 drives everything: brief, treatment, script, look bible, characters, sequences,
 shots, prompts, generated clips, critiques, assembly, and a final merged video.
 
 The pipeline is driven by Muse, not by a loose prompt. You give a video idea,
 Muse works it out, criticizes it, improves it, generates it in batches, and
 lands a finished video in the project's `final/` folder.
-
-## Multiple productions
-
-Open the [production slate](https://tomaslin.github.io/MuseVideoWorkflow/workspace.html)
-to switch between projects. Every story has independent cast, footage, edit,
-manifest and history. The shared planner rotates between active projects and
-reserves at most six clips total per Muse message:
-
-```bash
-python3 pipeline/workspace.py list
-python3 pipeline/workspace.py queue --claim
-```
-
-Archived projects and worked examples stay available for inspection and are
-excluded from generation. A long project does not have to finish before a new
-one can progress.
-
-## Develop the whole production from a story
-
-Muse authors `production.json` using `schemas/production.schema.json`. Then:
-
-```bash
-python3 pipeline/develop.py projects/the-five-outcasts/production.json
-python3 pipeline/musevideo.py validate projects/the-five-outcasts
-./scripts/local-video.sh cards projects/the-five-outcasts
-```
-
-This produces the treatment, timed script, cast, world/look bibles, department
-packets, full shots, concise prompts, storyboard, reference/audio plans, batches,
-resource budget, schedule, provenance ledger, responsibilities, edit and EDL.
-[The Five Outcasts](projects/the-five-outcasts/brief.md) is the current worked
-production: exactly 60 seconds, two Heavenly Heroes, five shunned outcasts,
-two mutually destroyed squadrons raised as a defensive cordon, and a woman
-who left the city freely. [Workflow details](docs/story-production.md).
 
 ## The trigger keyword
 
@@ -94,18 +42,24 @@ through 15 Archive & Provenance). Each chapter states its billable
 unit, its tension function, inputs, outputs, gates, cost drivers, and
 how it maps to a storyboard.
 
-## The cutting room on GitHub Pages
+## The studio UI — now on GitHub Pages
 
-The studio packages real project files with `scripts/build-studio.py`. It shows
-shot footage when available, recorded tension, production notes, short-shot
-trim controls and an individual redo request for every shot. Download `edit.json`
-and save it in the project before running local assembly. Copy redo prompts to
-Muse, then import the downloaded replacements. Browser changes stay local until
-exported; the static site does not call the generation API itself.
-
-`.github/workflows/pages.yml` builds and deploys `_site/` on main pushes. A cloud
-build can only include committed media; raw local takes remain ignored. See
-[GitHub Pages](docs/github-pages.md) and [local video processing](docs/local-video.md).
+`apps/studio/` is a prompt-first, no-server UI for the whole pipeline.
+Open `apps/studio/index.html` locally, or — once the repo is published
+— at the GitHub Pages URL (`https://<owner>.github.io/MuseVideoWorkflow/`,
+deployed by `.github/workflows/pages.yml` from `apps/studio/`; see
+`docs/github-pages.md`). You get: the video-idea prompt bar, every
+pipeline stage, every intermediary artifact to view and edit, a
+state-machine display, an append-only history log, and variant
+branching — change something via a prompt and you get an alternate
+reality of the video, with the original untouched and the lineage
+recorded. Auto-advance is on by default: no approval gate at each
+stage, but every check, edit, generation, and waiver is logged.
+The storyboard view (`apps/studio/storyboard.html`) renders every shot
+as a visual panel plus a tension curve, so you can see the arc before
+generating a single clip.
+See `docs/variants-and-history.md` and `docs/gaps-and-fixes.md`
+(10-second chaining, sound stems, determinism).
 
 ## How a project flows
 
@@ -207,8 +161,8 @@ See [docs/assembly-and-checkin.md](docs/assembly-and-checkin.md) for the
 encoding target, the GitHub 100 MB file limit, and the check-in route.
 Important, stated plainly: the Muse GitHub connector pushes text files, not
 binary video. The final `video.mp4` is checked into `projects/<slug>/final/`
-by `scripts/checkin-final.sh`, which verifies the saved media and manifest before
-committing and pushing it. Web MP4s below 100 MiB use ordinary Git blobs. The text
+by the documented git check-in (`scripts/checkin-final.sh`, run where git
+credentials live), and the pipeline then verifies it in place. The text
 definitions, manifests, EDL, and critiques go in through Muse directly.
 
 ## Quickstart
@@ -243,3 +197,7 @@ projects/    one folder per video; final/ is the shipped deliverable
 scripts/     checkin-final.sh (desktop git check-in for the final video)
 examples/    see projects/_example-long-way-home (a worked 4-minute definition)
 ```
+
+## Asset registry
+
+Every generated clip is registered with `pipeline/asset_registry.py`: its prompt, its reference images (copied in), its timestamps, five still frames, a contact sheet, a waveform, a spectrogram, and per-second loudness. See `docs/asset-registry.md`. If a clip is not in the registry, it is not a finished asset.
