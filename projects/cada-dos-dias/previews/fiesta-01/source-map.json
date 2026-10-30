@@ -1,0 +1,102 @@
+{
+  "description": "These IDs belong to the fiesta workprint, not the canonical 18-shot plan.",
+  "sources": [
+    {
+      "workprintShotId": "f01",
+      "sha256": "d21c1106a39e7086df01434cffc60db3b31b42b5393e7b00682421ff4a32d652",
+      "originalFilename": "fun-f1-rafa-sings.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "f02",
+      "sha256": "535ef1382d3bf19beffefff24d929d9f24a7b2f8cd7e902aa64ae50ed3f16c11",
+      "originalFilename": "fun-f2-teresa-sings.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "f03",
+      "sha256": "a57497de02f60aa538f7951f7fdd973816299c614abd42a40410cc58b6020c14",
+      "originalFilename": "fun-f3-interpreter-sings.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "f04",
+      "sha256": "db387eaa6e09ec5d5d5f0dcc909bfe26ccf303bcb1611fb9236b4a0a4c016a9b",
+      "originalFilename": "fun-f4-rafa-teresa-duet.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "n01",
+      "sha256": "6f7471245b0914250d1264c6576f6ff69d6d4a7997addffacc8b92c9e5744785",
+      "originalFilename": "replace-a-rafa-note.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "n02",
+      "sha256": "a678f71ccb675b8185d59439d4e8841eedc2729a08fd51fc346e0e6492405400",
+      "originalFilename": "s02-la-confusion.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "n03",
+      "sha256": "ca258cd0c67eec477a9a4947c1df23b8bd00ff88b7f0df952366d726eeb7cf40",
+      "originalFilename": "s03-pausa.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "n04",
+      "sha256": "48172ddb748d2dbe08c74e2f4efc994c203e8552d7c2fd7980360f73f1e1792f",
+      "originalFilename": "replace-b-interpreter-listens.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "n05",
+      "sha256": "7c5ad7f0ce3f189c03cd8ffc881e809f1bdaeeb62806615681eee6ca7a6f1038",
+      "originalFilename": "replace-c-interpreter-turns.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "p01",
+      "sha256": "9951913777a67fd87a9a397ee33ef24abecd382ac4c2c97ce01e2b5f65a4eabe",
+      "originalFilename": "street-p1-establishing.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "p02",
+      "sha256": "5f1b2f4f29408c4cee3805e3011edf691778e823b07f51d11983ce5c2965ff9a",
+      "originalFilename": "street-p2-female-singer.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "p03",
+      "sha256": "dc42c6cb98591f8aa3c6c53a25d977dd24750b0fd44543673705a7337e668f36",
+      "originalFilename": "street-p3-rafa-teresa-doorway.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "p04",
+      "sha256": "9c3bda6c921e69b50ca88f59c60375fd23215b1464f07fef904aa3325d7c2c06",
+      "originalFilename": "street-p4-male-singer-band.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "p05",
+      "sha256": "d5b2c9d1ab70af727646fdc4d61d73cd2e11f6d8aaa0d3b239a756a3b0ef4bfb",
+      "originalFilename": "street-p5-fruit-stand.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "p06",
+      "sha256": "b29ffca334e5eda8f89cec59bb5797d66b0547c1ed39963e2272f5c309b11fc3",
+      "originalFilename": "street-p6-group-finale.mp4",
+      "provenance": "Muse-generated; operator-mapped, exact provider prompt not independently verified"
+    },
+    {
+      "workprintShotId": "end",
+      "sha256": "4379cb192be726f2f9519419f429c7b1d3d102b58a4b942308e1c233fc7287d1",
+      "originalFilename": "fiesta-card.mp4",
+      "provenance": "local graphic"
+    }
+  ],
+  "songSha256": "857ec3073a6f2fc34c907911923f9e476da938c95e953a48602f3098e152d76f"
+}

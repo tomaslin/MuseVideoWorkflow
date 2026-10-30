@@ -1,0 +1,20 @@
+{
+  "scope": "draft-workprint",
+  "reviewState": "unreviewed",
+  "file": "video.mp4",
+  "sha256": "bde36572c537db9e05f79594185882d43d8d7ee2c23e2da6662f273ecfb08bce",
+  "durationSec": 60,
+  "videoDurationSec": 59.958333,
+  "audioDurationSec": 60,
+  "resolution": "720x1280",
+  "audio": "User-provided Cada dos días track, first 60 seconds, 1.5-second fade",
+  "timing": "2.5-second cuts on a rough 0.625-second pulse; no lyric or lip-sync claim",
+  "visualFinish": "Saturation, film grain, occasional chroma tracking shift and tape line",
+  "limitations": [
+    "Generated singing cannot be exact lip-synced to the song",
+    "Full motion, editorial and sound review remains pending",
+    "Story images and performer identity are approximate",
+    "Optional dialogue not recorded"
+  ],
+  "edl": "edl.json"
+}

@@ -1,6 +1,15 @@
 {
   "drafts": [
     {
+      "id": "fiesta-01",
+      "title": "Fiesta — 1980s street-party music video",
+      "description": "One-minute vertical music-video workprint: new street-party footage, singing and dancing, the original song and locally timed tape effects. Lip-sync and full picture/sound review remain unverified.",
+      "video": "previews/fiesta-01/video.mp4",
+      "poster": "previews/fiesta-01/poster.jpg",
+      "manifest": "previews/fiesta-01/final-manifest.json",
+      "sha256": "bde36572c537db9e05f79594185882d43d8d7ee2c23e2da6662f273ecfb08bce"
+    },
+    {
       "id": "workprint-01",
       "title": "60-second vertical music-video workprint",
       "description": "Locally rebuilt from Muse footage and the supplied song. Short cuts, targeted replacement shots and a local closing card; timing and full picture/sound review remain provisional.",

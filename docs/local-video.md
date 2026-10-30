@@ -141,3 +141,9 @@ inherit full-timeline typography. A cut can use `freezeLastSec` to hold its last
 source frame for a frame-aligned interval without changing the cut duration.
 The current audio renderer preserves source audio or silence; a verified song
 must be mixed separately and reviewed before calling the result a music video.
+
+For the fiesta workprint, `scripts/finish-fiesta.sh PICTURE.mp4 SONG.mp3 OUTPUT.mp4`
+adds the supplied soundtrack, a short end fade, gentle grain, saturation and a
+few brief chroma-tracking glitches. It writes a separate output and leaves the
+picture and music sources untouched. The finishing effect does not establish
+lyric synchronization or replace picture and sound review.
