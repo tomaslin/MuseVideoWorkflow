@@ -15,6 +15,49 @@ class LocalVideoTests(unittest.TestCase):
         self.assertEqual(result.returncode == 0, ok, result.stdout + result.stderr)
         return result.stdout + result.stderr
 
+    def test_timed_typography_renders_and_detects_changes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp)
+            for folder in ('sequences', 'prompts', 'incoming'):
+                (p / folder).mkdir()
+            (p / 'project.json').write_text(json.dumps({'slug':'type-test','title':'Typography test','durationSec':3}))
+            (p / 'sequences/seq.json').write_text(json.dumps({'shots':[{'shotId':'s01','durationSec':3}]}))
+            (p / 'prompts/s01.txt').write_text('Plain picture')
+            (p / 'edit.json').write_text(json.dumps({'width':320,'height':480,'fps':24,'shots':[{'shotId':'s01','inSec':0,'durationSec':3}]}))
+            config = {'cues':[{'startSec':1,'endSec':2,'style':'caption','texts':['No adivines. Pregunta.']}]}
+            (p / 'typography.json').write_text(json.dumps(config))
+            subprocess.run(['ffmpeg','-v','error','-y','-f','lavfi','-i','color=c=black:s=320x480:r=24:d=3','-c:v','libx264','-pix_fmt','yuv420p',str(p / 'incoming/s01.mp4')],check=True)
+            self.run_cli('import',p,p / 'incoming')
+            self.run_cli('assemble',p)
+            def sample(sec):
+                return subprocess.check_output(['ffmpeg','-v','error','-ss',str(sec),'-i',str(p / 'final/video.mp4'),'-vf','crop=30:20:145:360,scale=1:1','-frames:v','1','-f','rawvideo','-pix_fmt','rgb24','-'])
+            self.assertLess(max(sample(.5)),30)
+            self.assertGreater(max(sample(1.5)),100)
+            self.assertLess(max(sample(2.5)),30)
+            self.run_cli('verify',p)
+            config['cues'][0]['texts'] = ['Changed']
+            (p / 'typography.json').write_text(json.dumps(config))
+            self.assertIn('Typography has changed', self.run_cli('verify',p,ok=False))
+
+    def test_freeze_holds_end_of_motion(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp)
+            for folder in ('sequences', 'prompts', 'incoming'):
+                (p / folder).mkdir()
+            (p / 'project.json').write_text(json.dumps({'slug':'freeze-test','title':'Freeze test','durationSec':3}))
+            (p / 'sequences/seq.json').write_text(json.dumps({'shots':[{'shotId':'s01','durationSec':3}]}))
+            (p / 'prompts/s01.txt').write_text('Moving test pattern')
+            (p / 'edit.json').write_text(json.dumps({'width':320,'height':240,'fps':24,'shots':[{'shotId':'s01','inSec':0,'durationSec':3,'freezeLastSec':1}]}))
+            subprocess.run(['ffmpeg','-v','error','-y','-f','lavfi','-i','testsrc2=s=320x240:r=24:d=3','-c:v','libx264','-pix_fmt','yuv420p',str(p / 'incoming/s01.mp4')],check=True)
+            self.run_cli('import',p,p / 'incoming')
+            self.run_cli('assemble',p)
+            def frame(sec):
+                return subprocess.check_output(['ffmpeg','-v','error','-ss',str(sec),'-i',str(p / 'final/video.mp4'),'-frames:v','1','-f','rawvideo','-pix_fmt','rgb24','-'])
+            before, first, second = frame(1), frame(2.2), frame(2.8)
+            difference = lambda a,b: sum(abs(x-y) for x,y in zip(a,b))
+            self.assertLess(difference(first,second), difference(before,first) / 5)
+            self.assertEqual(json.loads((p / 'final/edl.json').read_text())['entries'][0]['freezeLastSec'], 1)
+
     def test_media_roundtrip_and_failure_gates(self):
         with tempfile.TemporaryDirectory(prefix="muse's footage ") as tmp:
             p = Path(tmp)

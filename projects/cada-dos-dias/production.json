@@ -1,0 +1,711 @@
+{
+  "version": 1,
+  "project": {
+    "slug": "cada-dos-dias",
+    "title": "Cada dos días",
+    "logline": "A confusing note becomes a gentle lesson in asking a professional interpreter to clarify the difference between amount and timing.",
+    "format": "vertical music video",
+    "durationSec": 60,
+    "language": "es",
+    "mood": "Warm, classy 1990s Spanish-language music video"
+  },
+  "storyContract": {
+    "source": "User-supplied script",
+    "aspect": "9:16 vertical",
+    "timing": "Guide only; recut to the supplied song after listening.",
+    "safety": "Do not show or invent a dose, regimen, medical instruction, legible prescription, pills being taken, or a clinical answer. The misunderstanding concerns words; the answer comes from the healthcare team through a professional interpreter.",
+    "text": "Add exact Spanish copy in post, not in generated images; no generated text or numerical instruction."
+  },
+  "lookBlock": "Vertical 9:16, tasteful 1990s Spanish-language music video, warmly human and elegant rather than parody: soft 35mm film grain, creamy highlights, honeyed morning sunlight, terracotta, sage green, deep walnut and muted teal, practical tungsten, polished natural wood and understated brass. Realistic adult people with consistent faces and clothes; observational, lyrical camera, gentle rhythmic movement, warm humor only at a verbal misunderstanding. No text, logos, readable notes or medical prescriptions in the generated frames. Compose for portrait and leave lower-safe space for accurate Spanish typography added in post.",
+  "characters": {
+    "Rafa": "Rafa, an adult Latino man in his early fifties, salt-and-pepper hair, soft brown eyes, a neat moustache, cream knit polo and brown trousers; affectionate, thoughtful, a little puzzled but never foolish.",
+    "Teresa": "Teresa, an adult Latina woman in her late forties, dark shoulder-length hair, sage-green blouse and simple gold earrings; warm, observant and gently reassuring, her humor affectionate and restrained.",
+    "Interpreter": "A professional adult Latina interpreter in her forties, dark hair neatly tied back, midnight-blue tailored jacket over an ivory blouse; calm, attentive, visually distinct from Teresa and accurately conveys the conversation.",
+    "Clinician": "An adult health-care professional in their fifties with short dark hair, muted teal scrubs under a light jacket; attentive and respectful, speaking with the interpreter at eye level, no invented medical information."
+  },
+  "documents": {
+    "brief": "# Brief\n\nA roughly one-minute vertical Spanish-language music video, Cada dos días, in an elegant, old-time 1990s style. Rafa and Teresa meet a verbal ambiguity with curiosity rather than blame, then a professional interpreter helps a health-care team clarify it. The instruction itself is never shown or invented. Cut timings are provisional until the actual song is available and heard.",
+    "script": "# Script and provisional timing\n\n00–08 La nota: Rafa finds a note, looks at a calendar, and Teresa enters with two cups. Add «Una palabra puede cambiarlo todo». No legible instructions.\n\n08–18 La confusión: Rafa points to consecutive calendar squares; Teresa tilts her head. Transform squares into two question marks in post. Optional Rafa: «¿Dos cada día… o cada dos días?» only over a musical pause.\n\n18–30 Pausa: Teresa raises a hand; freeze briefly. Add separate cards «¿Cuánto?» and «¿Cuándo?» and «No adivines. Pregunta.» Neither card shows a dose.\n\n30–43 Aclarar: a professional interpreter listens to Rafa, asks the health-care team to clarify, listens to their reply, and conveys it. Optional interpreter: «¿Puede confirmar la cantidad y la frecuencia?» The answer is not shown or invented.\n\n43–55 El sentido llega: Rafa nods, relieved. At home Teresa places separate «cantidad» and «frecuencia» cards; they exchange a look and cups gently clink on the beat.\n\n55–60 Cierre: clean background, two speech bubbles joined by a line and «Escuchar. Aclarar. Interpretar.»",
+    "look-bible": "# Visual world\n\nA graceful 1990s Spanish-language music video remembered through soft film grain and a honeyed palette. Frame vertically, with intentional close-ups, consistent eyelines and open space for captions. Kitchen is sunny, warm wood and cream ceramic; the fictional consultation is calm teal and ivory. Make the warmth feel lived-in, not sepia nostalgia or comedy at a patient’s expense.",
+    "characters": "# People\n\nRafa and Teresa are adults whose relationship reads through small gestures and a shared kitchen ritual. Rafa is puzzled by language, not portrayed as incompetent. Teresa gives him time. The trained interpreter is a separate professional who listens and conveys the health-care team’s clarification. The clinician listens respectfully. Keep each face and clothing consistent between takes.",
+    "lore-bible": "# Continuity and boundaries\n\nRafa wears cream and Teresa sage in the same warm kitchen. Both cups are cream ceramic. The calendar has blank, unnumbered squares and the note is deliberately illegible. The consultation is fictional. The interpreter and clinician are distinct people. No pill-taking, medical dosage, prescription, instruction or fabricated answer appears on screen or in dialogue. All legible words are added locally.",
+    "treatment": "# Treatment\n\nIn a sunlit kitchen Rafa turns an unreadable note toward the light and then looks at a calendar. Teresa arrives with two cups. His hesitant fingers mark two neighboring blank squares; her tiny head tilt makes the ambiguity human, not a joke about taking medicine. On-screen Spanish text is placed in post.\n\nTeresa gently raises her hand. A brief freeze gives two questions room to stand apart: ¿Cuánto? and ¿Cuándo? The picture resumes in a fictional consultation, where a professional interpreter listens to Rafa, asks the health-care team to clarify, receives their reply, and relays it. We never see or invent the answer.\n\nRafa relaxes. At home Teresa sets down the separate ideas cantidad and frecuencia, and the couple share a knowing look. Their cups touch on a real musical accent once the actual track is available. A spare connected-speech-bubble closing card leaves the message: Escuchar. Aclarar. Interpretar."
+  },
+  "departments": {
+    "direction": "Play the ambiguity honestly and lightly. Rafa is thinking, Teresa pauses without scolding, and the professional interpreter listens before helping to clarify. The consultation is a respectful exchange, not a demonstration of medicine or an authoritative dose. Leave space for the music and legible post-produced captions.",
+    "camera-lighting": "Use portrait 9:16 composition and coherent screen direction, with warm diffused sunlight through a kitchen window and soft fill. The consultation uses gentle teal-ivory practical light. Establish the room before restrained close-ups, compose eyes in the upper third, and leave safe space for captions and interface cropping.",
+    "production-design": "Kitchen: cream cups, unmarked paper, a calendar with anonymous unnumbered squares, honey wood and a sunlit window. No visible pharmacy labels, dose numbers or instructions. Consultation: restrained desk, plain unmarked folders, muted neutral backgrounds, three separate people. Text cards and motion graphics will be authored digitally.",
+    "costume-makeup": "Rafa keeps his cream knit polo and brown trousers; Teresa wears the same sage blouse and gold earrings in kitchen scenes. Interpreter wears a navy jacket and ivory shirt, clinician muted teal scrubs. Natural 1990s styling, not a celebrity likeness. Keep hands and clothing consistent from cut to cut.",
+    "choreography": "Each shot contains one legible action and a held end pose. Rafa glances at paper, then calendar; Teresa enters with two cups; fingers point to two adjacent blank squares; she raises a gentle hand. In consultation, listen, ask, listen, convey in separate shots. At home the cards remain distinct and the cups meet gently.",
+    "sound-music": "Actual song, rights and mix are not yet confirmed for this production. Use its authorized audio once supplied or verifiably recovered; listen, mark beats and re-time the cut. Optional dialogue must be recorded separately and only used over a pause; never fabricate an answer. No claim of synchronized singing or finalized mix.",
+    "editorial": "Draft timing maps to 60 seconds at 24 fps, with source takes of about ten seconds and cuts of 2–4 seconds. Generate video without text; add exact Spanish text and the two-question-mark treatment in post. Preserve clear distinctions between cantidad and frecuencia. Replace provisional cuts after hearing the song, and review the final vertical frame and mix."
+  },
+  "sequences": [
+    {
+      "sequenceId": "la-nota",
+      "title": "La nota",
+      "intent": "Story beat: La nota",
+      "shots": [
+        {
+          "shotId": "s01",
+          "size": "wide",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Rafa finds an unmarked note on a sunny kitchen table.",
+          "characters": [
+            "Rafa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 35,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "WIDE, vertical 9:16, sunny kitchen. Rafa finds an unmarked note on a sunny kitchen table. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Establish the room and story object.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s02",
+          "size": "close",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Rafa frowns gently, then turns his eyes toward the calendar.",
+          "characters": [
+            "Rafa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 50,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "CLOSE, vertical 9:16, sunny kitchen. Rafa frowns gently, then turns his eyes toward the calendar. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Cut on his eyeline.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s03",
+          "size": "medium",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Teresa walks in carrying two cream cups and pauses beside Rafa.",
+          "characters": [
+            "Teresa",
+            "Rafa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 35,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "MEDIUM, vertical 9:16, sunny kitchen. Teresa walks in carrying two cream cups and pauses beside Rafa. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Introduce their shared ritual.",
+          "tension": 2,
+          "durationSec": 2,
+          "sourceDurationSec": 10
+        }
+      ]
+    },
+    {
+      "sequenceId": "confusion",
+      "title": "La confusión",
+      "intent": "Story beat: La confusión",
+      "shots": [
+        {
+          "shotId": "s04",
+          "size": "insert",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Rafa points to two adjacent blank calendar squares, then holds his finger still.",
+          "characters": [
+            "Rafa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 50,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "INSERT, vertical 9:16, sunny kitchen. Rafa points to two adjacent blank calendar squares, then holds his finger still. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Give the editor a clean insert.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s05",
+          "size": "close",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Teresa tilts her head, trying to understand, with a warm questioning look.",
+          "characters": [
+            "Teresa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 50,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "CLOSE, vertical 9:16, sunny kitchen. Teresa tilts her head, trying to understand, with a warm questioning look. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Match Rafa’s eyeline.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s06",
+          "size": "two-shot",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Rafa gestures between the unmarked note and the blank calendar while Teresa listens.",
+          "characters": [
+            "Rafa",
+            "Teresa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 35,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "TWO-SHOT, vertical 9:16, sunny kitchen. Rafa gestures between the unmarked note and the blank calendar while Teresa listens. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Hold space for optional dialogue.",
+          "tension": 2,
+          "durationSec": 4,
+          "sourceDurationSec": 10
+        }
+      ]
+    },
+    {
+      "sequenceId": "pausa",
+      "title": "Pausa",
+      "intent": "Story beat: Pausa",
+      "shots": [
+        {
+          "shotId": "s07",
+          "size": "close",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Teresa gently raises her open hand and holds it with a reassuring expression.",
+          "characters": [
+            "Teresa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 50,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "CLOSE, vertical 9:16, sunny kitchen. Teresa gently raises her open hand and holds it with a reassuring expression. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Freeze the held gesture in post.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s08",
+          "size": "insert",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Two blank cream cards rest separately on a wooden table, ample clear space for post lettering.",
+          "characters": [],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 50,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "INSERT, vertical 9:16, sunny kitchen. Two blank cream cards rest separately on a wooden table, ample clear space for post lettering. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Introduce the two questions as distinct concepts.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s09",
+          "size": "close",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Rafa listens, his expression softening from concern to curiosity.",
+          "characters": [
+            "Rafa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 50,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "CLOSE, vertical 9:16, sunny kitchen. Rafa listens, his expression softening from concern to curiosity. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Cut from the cards to his reaction.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s10",
+          "size": "two-shot",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Teresa and Rafa exchange a calm understanding look across the kitchen table.",
+          "characters": [
+            "Rafa",
+            "Teresa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 35,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "TWO-SHOT, vertical 9:16, sunny kitchen. Teresa and Rafa exchange a calm understanding look across the kitchen table. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Leave negative space for the reassurance caption.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        }
+      ]
+    },
+    {
+      "sequenceId": "aclarar",
+      "title": "Aclarar",
+      "intent": "Story beat: Aclarar",
+      "shots": [
+        {
+          "shotId": "s11",
+          "size": "wide",
+          "movement": "locked-off or restrained gentle push",
+          "location": "fictional consultation room",
+          "action": "In a fictional consultation, Rafa sits across from an interpreter and a health-care professional.",
+          "characters": [
+            "Rafa",
+            "Interpreter",
+            "Clinician"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Soft ivory and muted teal consultation light.",
+          "lensMm": 35,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "WIDE, vertical 9:16, fictional consultation room. In a fictional consultation, Rafa sits across from an interpreter and a health-care professional. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Establish the geography of the conversation.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s12",
+          "size": "medium",
+          "movement": "locked-off or restrained gentle push",
+          "location": "fictional consultation room",
+          "action": "The interpreter listens attentively to Rafa without interrupting.",
+          "characters": [
+            "Interpreter",
+            "Rafa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Soft ivory and muted teal consultation light.",
+          "lensMm": 35,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "MEDIUM, vertical 9:16, fictional consultation room. The interpreter listens attentively to Rafa without interrupting. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Show the first listening step.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s13",
+          "size": "medium",
+          "movement": "locked-off or restrained gentle push",
+          "location": "fictional consultation room",
+          "action": "The interpreter turns to the clinician and asks a respectful clarifying question.",
+          "characters": [
+            "Interpreter",
+            "Clinician"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Soft ivory and muted teal consultation light.",
+          "lensMm": 35,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "MEDIUM, vertical 9:16, fictional consultation room. The interpreter turns to the clinician and asks a respectful clarifying question. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Show clarification as a professional exchange.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s14",
+          "size": "two-shot",
+          "movement": "locked-off or restrained gentle push",
+          "location": "fictional consultation room",
+          "action": "The clinician responds; the interpreter listens, then turns back toward Rafa to convey the answer.",
+          "characters": [
+            "Interpreter",
+            "Clinician",
+            "Rafa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Soft ivory and muted teal consultation light.",
+          "lensMm": 35,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "TWO-SHOT, vertical 9:16, fictional consultation room. The clinician responds; the interpreter listens, then turns back toward Rafa to convey the answer. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Leave the content of the answer unspecified.",
+          "tension": 2,
+          "durationSec": 4,
+          "sourceDurationSec": 10
+        }
+      ]
+    },
+    {
+      "sequenceId": "sentido",
+      "title": "El sentido llega",
+      "intent": "Story beat: El sentido llega",
+      "shots": [
+        {
+          "shotId": "s15",
+          "size": "close",
+          "movement": "locked-off or restrained gentle push",
+          "location": "fictional consultation room",
+          "action": "Rafa nods with relief in the consultation, no words or paperwork visible.",
+          "characters": [
+            "Rafa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Soft ivory and muted teal consultation light.",
+          "lensMm": 50,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "CLOSE, vertical 9:16, fictional consultation room. Rafa nods with relief in the consultation, no words or paperwork visible. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Let relief register before the return home.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s16",
+          "size": "insert",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Teresa places two plain blank cards separately on the kitchen table, left then right.",
+          "characters": [
+            "Teresa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 50,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "INSERT, vertical 9:16, sunny kitchen. Teresa places two plain blank cards separately on the kitchen table, left then right. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Add the two distinct labels locally.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s17",
+          "size": "two-shot",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Rafa and Teresa share a knowing, affectionate look at the kitchen table.",
+          "characters": [
+            "Rafa",
+            "Teresa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 35,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "TWO-SHOT, vertical 9:16, sunny kitchen. Rafa and Teresa share a knowing, affectionate look at the kitchen table. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Connect the clarification to their relationship.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        },
+        {
+          "shotId": "s18",
+          "size": "insert",
+          "movement": "locked-off or restrained gentle push",
+          "location": "sunny kitchen",
+          "action": "Two cream ceramic cups touch gently once above the wooden table and remain together.",
+          "characters": [
+            "Rafa",
+            "Teresa"
+          ],
+          "emotionalBeat": "Warm curiosity and mutual respect",
+          "soundMood": "Song and subtle room tone; timing provisional",
+          "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+          "choreography": "One action in the first 4 seconds, then a clean held pose.",
+          "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+          "lighting": "Warm diffused morning sunlight and soft fill.",
+          "lensMm": 50,
+          "focus": "Hold focus on the action and hands.",
+          "motion": "Natural, restrained, no sudden morphing.",
+          "extras": "None.",
+          "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+          "generationBrief": "INSERT, vertical 9:16, sunny kitchen. Two cream ceramic cups touch gently once above the wooden table and remain together. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+          "editMotivation": "Align the cup contact with a musical beat after track review.",
+          "tension": 2,
+          "durationSec": 3,
+          "sourceDurationSec": 10
+        }
+      ]
+    },
+    {
+      "sequenceId": "cierre",
+      "title": "Cierre",
+      "intent": "End on connection and the exact message.",
+      "shots": [
+        {
+          "shotId": "s19",
+          "kind": "title",
+          "titleText": "Escuchar. Aclarar. Interpretar.",
+          "size": "graphic",
+          "movement": "static",
+          "location": "clean graphic card",
+          "action": "Two connected speech bubbles on a clean background with the final message.",
+          "characters": [],
+          "emotionalBeat": "Clarity and connection",
+          "soundMood": "Hold the final musical phrase and resolve.",
+          "background": "Warm ivory ground and two connected speech bubbles.",
+          "choreography": "Hold the closing card for five seconds, allowing the message to read.",
+          "cameraChoreography": "Static portrait layout with generous margins.",
+          "lighting": "Flat warm ivory graphic background with clear dark teal linework.",
+          "lensMm": 35,
+          "focus": "Readable typography.",
+          "motion": "Static typography and still linework throughout the five-second hold.",
+          "extras": "None.",
+          "loreNotes": "Use the exact Spanish closing copy and two connected speech bubbles.",
+          "generationBrief": "Local graphic, not a video generation.",
+          "editMotivation": "Close the story with the central message.",
+          "tension": 0,
+          "durationSec": 5,
+          "sourceDurationSec": 5,
+          "titleStyle": "connected-bubbles"
+        }
+      ]
+    }
+  ],
+  "edit": {
+    "width": 720,
+    "height": 1280,
+    "fps": 24,
+    "shots": [
+      {
+        "shotId": "s01",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s02",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s03",
+        "inSec": 0,
+        "durationSec": 2
+      },
+      {
+        "shotId": "s04",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s05",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s06",
+        "inSec": 0,
+        "durationSec": 4
+      },
+      {
+        "shotId": "s07",
+        "inSec": 0,
+        "durationSec": 3,
+        "freezeLastSec": 1
+      },
+      {
+        "shotId": "s08",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s09",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s10",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s11",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s12",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s13",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s14",
+        "inSec": 0,
+        "durationSec": 4
+      },
+      {
+        "shotId": "s15",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s16",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s17",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s18",
+        "inSec": 0,
+        "durationSec": 3
+      },
+      {
+        "shotId": "s19",
+        "inSec": 0,
+        "durationSec": 5
+      }
+    ]
+  },
+  "rightsLedger": {
+    "status": "pending-music-verification",
+    "entries": [
+      {
+        "kind": "story and script",
+        "source": "User-supplied script for Cada dos días",
+        "clearance": "User-provided creative brief"
+      },
+      {
+        "kind": "music",
+        "source": "Song not yet verified for this project",
+        "clearance": "Confirm source and authorization before publishing a soundtrack."
+      }
+    ],
+    "musicStatus": "Awaiting verified audio"
+  },
+  "critique": "Picture, precise typography, sound mix, actual song synchronization, medical-language accuracy and final review are pending. No clinical instruction or dose should appear."
+}

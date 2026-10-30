@@ -200,10 +200,11 @@ def cmd_edl(args):
     for cut in cuts:
         sh = by_id[cut["shotId"]]
         duration = cut["durationSec"]
-        if duration <= 0 or cut.get("inSec", 0) < 0:
+        freeze = cut.get("freezeLastSec", 0)
+        if duration <= 0 or cut.get("inSec", 0) < 0 or freeze < 0 or freeze >= duration:
             raise ValueError("Invalid edit trim")
         entries.append({"shotId": sh["shotId"], "sequenceId": sh["sequenceId"],
-                        "sourceInSec": cut.get("inSec", 0), "sourceOutSec": cut.get("inSec", 0) + duration,
+                        "sourceInSec": cut.get("inSec", 0), "sourceOutSec": cut.get("inSec", 0) + duration - freeze, "freezeLastSec": freeze,
                         "startSec": cursor, "endSec": cursor + duration,
                         "transitionIn": cut.get("transitionIn", "cut")})
         cursor += duration
@@ -252,6 +253,7 @@ def verify_final(d):
         if len(edit) != len(entries) or any(
             cut.get("shotId") != entry.get("shotId") or
             abs(cut.get("inSec", 0) - entry.get("sourceInSec", -1)) > .001 or
+            abs(cut.get("freezeLastSec", 0) - entry.get("freezeLastSec", 0)) > .001 or
             abs(cut.get("durationSec", 0) - (entry["endSec"] - entry["startSec"])) > .001
             for cut, entry in zip(edit, entries)
         ):

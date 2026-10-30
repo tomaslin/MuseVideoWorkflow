@@ -1,0 +1,23 @@
+{
+  "clips" : [
+    {
+      "durationSec" : 5,
+      "file" : "clips/raw/s19-c102117dfb1727b697bb1ce53adbe9a137435db30fd6dc7910c3c77285adfbcc.mp4",
+      "height" : 1280,
+      "importedAt" : "2026-10-30T05:04:34Z",
+      "promptProvenance" : "local-render",
+      "promptSha256" : "3a3303e0928a643ba30758cad567a4a3a85c29789c528d0637f26845c4e8d3f3",
+      "publishedPreviewFile" : "previews/s19-c102117dfb1727b697bb1ce53adbe9a137435db30fd6dc7910c3c77285adfbcc.mp4",
+      "selected" : true,
+      "sha256" : "c102117dfb1727b697bb1ce53adbe9a137435db30fd6dc7910c3c77285adfbcc",
+      "shotId" : "s19",
+      "sourceName" : "s19.mp4",
+      "status" : "generated",
+      "width" : 720
+    }
+  ],
+  "redoRequests" : [
+
+  ],
+  "version" : 1
+}

@@ -1,0 +1,10 @@
+{
+  "status": "provisional-timing-recut-after-song-review",
+  "cues": [
+    {"startSec": 2, "endSec": 8, "style": "caption", "texts": ["Una palabra puede cambiarlo todo"]},
+    {"startSec": 12, "endSec": 18, "style": "questions", "texts": ["?", "?"]},
+    {"startSec": 20, "endSec": 27, "style": "cards", "texts": ["¿Cuánto?", "¿Cuándo?"]},
+    {"startSec": 23, "endSec": 30, "style": "caption", "texts": ["No adivines. Pregunta."]},
+    {"startSec": 46, "endSec": 52, "style": "cards", "texts": ["cantidad", "frecuencia"]}
+  ]
+}

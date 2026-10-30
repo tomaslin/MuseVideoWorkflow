@@ -1,0 +1,37 @@
+{
+  "status": "pending-generation",
+  "productionSha256": "f18a054cd8845973e7c372ccddc023753092b512739c0b90807a2e8960318742",
+  "characters": [
+    {
+      "name": "Rafa",
+      "lockedDescription": "Rafa, an adult Latino man in his early fifties, salt-and-pepper hair, soft brown eyes, a neat moustache, cream knit polo and brown trousers; affectionate, thoughtful, a little puzzled but never foolish.",
+      "imageFile": "references/rafa.png",
+      "status": "missing"
+    },
+    {
+      "name": "Teresa",
+      "lockedDescription": "Teresa, an adult Latina woman in her late forties, dark shoulder-length hair, sage-green blouse and simple gold earrings; warm, observant and gently reassuring, her humor affectionate and restrained.",
+      "imageFile": "references/teresa.png",
+      "status": "missing"
+    },
+    {
+      "name": "Interpreter",
+      "lockedDescription": "A professional adult Latina interpreter in her forties, dark hair neatly tied back, midnight-blue tailored jacket over an ivory blouse; calm, attentive, visually distinct from Teresa and accurately conveys the conversation.",
+      "imageFile": "references/interpreter.png",
+      "status": "missing"
+    },
+    {
+      "name": "Clinician",
+      "lockedDescription": "An adult health-care professional in their fifties with short dark hair, muted teal scrubs under a light jacket; attentive and respectful, speaking with the interpreter at eye level, no invented medical information.",
+      "imageFile": "references/clinician.png",
+      "status": "missing"
+    }
+  ],
+  "groupRules": {
+    "source": "User-supplied script",
+    "aspect": "9:16 vertical",
+    "timing": "Guide only; recut to the supplied song after listening.",
+    "safety": "Do not show or invent a dose, regimen, medical instruction, legible prescription, pills being taken, or a clinical answer. The misunderstanding concerns words; the answer comes from the healthcare team through a professional interpreter.",
+    "text": "Add exact Spanish copy in post, not in generated images; no generated text or numerical instruction."
+  }
+}

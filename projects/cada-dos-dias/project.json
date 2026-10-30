@@ -1,0 +1,15 @@
+{
+  "slug": "cada-dos-dias",
+  "title": "Cada dos días",
+  "logline": "A confusing note becomes a gentle lesson in asking a professional interpreter to clarify the difference between amount and timing.",
+  "format": "vertical music video",
+  "durationSec": 60,
+  "language": "es",
+  "mood": "Warm, classy 1990s Spanish-language music video",
+  "sourceShotCount": 19,
+  "generationClipSec": 10,
+  "timingMode": "edited",
+  "state": "shot-list",
+  "productionSha256": "f18a054cd8845973e7c372ccddc023753092b512739c0b90807a2e8960318742",
+  "active": true
+}

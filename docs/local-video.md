@@ -129,3 +129,15 @@ Previews are available in other checkouts even though raw work clips are
 ignored. They are shown with their actual `generated` or `redo` status and do
 not constitute an approved final. Re-importing a rejected file with the same
 checksum cannot clear a redo.
+
+## Timed typography and held frames
+
+A project's optional `typography.json` can describe timed `caption`, `cards`,
+and `questions` cues for the full edit. The Swift renderer draws the exact text
+locally and composites it after the picture cut; it records the cue file's
+checksum and verification fails if those cues subsequently change. Cue timings
+must be adjusted when the edit is retimed. Draft excerpts do not automatically
+inherit full-timeline typography. A cut can use `freezeLastSec` to hold its last
+source frame for a frame-aligned interval without changing the cut duration.
+The current audio renderer preserves source audio or silence; a verified song
+must be mixed separately and reviewed before calling the result a music video.

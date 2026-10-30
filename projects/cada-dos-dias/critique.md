@@ -1,0 +1,1 @@
+Picture, precise typography, sound mix, actual song synchronization, medical-language accuracy and final review are pending. No clinical instruction or dose should appear.

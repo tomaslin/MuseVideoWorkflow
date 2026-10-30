@@ -1,0 +1,129 @@
+{
+  "status": "not-recorded",
+  "sampleRate": 48000,
+  "channels": 2,
+  "voicePolicy": "Record dialogue separately; no lip-sync claim",
+  "cues": [
+    {
+      "shotId": "s01",
+      "startSec": 0,
+      "endSec": 3,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s02",
+      "startSec": 3,
+      "endSec": 6,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s03",
+      "startSec": 6,
+      "endSec": 8,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s04",
+      "startSec": 8,
+      "endSec": 11,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s05",
+      "startSec": 11,
+      "endSec": 14,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s06",
+      "startSec": 14,
+      "endSec": 18,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s07",
+      "startSec": 18,
+      "endSec": 21,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s08",
+      "startSec": 21,
+      "endSec": 24,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s09",
+      "startSec": 24,
+      "endSec": 27,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s10",
+      "startSec": 27,
+      "endSec": 30,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s11",
+      "startSec": 30,
+      "endSec": 33,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s12",
+      "startSec": 33,
+      "endSec": 36,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s13",
+      "startSec": 36,
+      "endSec": 39,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s14",
+      "startSec": 39,
+      "endSec": 43,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s15",
+      "startSec": 43,
+      "endSec": 46,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s16",
+      "startSec": 46,
+      "endSec": 49,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s17",
+      "startSec": 49,
+      "endSec": 52,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s18",
+      "startSec": 52,
+      "endSec": 55,
+      "intent": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s19",
+      "startSec": 55,
+      "endSec": 60,
+      "intent": "Hold the final musical phrase and resolve."
+    }
+  ],
+  "stems": [
+    "dialogue",
+    "music",
+    "ambience",
+    "impacts"
+  ],
+  "delivery": "Approved 48kHz stereo mix, -1 dBTP ceiling, timed captions from actual recordings"
+}

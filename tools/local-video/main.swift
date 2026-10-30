@@ -138,25 +138,49 @@ func ingest(_ project: Project, _ input: String, _ shot: String?, _ expectedProm
     manifest["clips"] = clips; try write(manifest, project.path("manifest.json"))
 }
 func cards(_ project: Project) throws {
+    let editURL = try project.path("edit.json")
+    let edit = fm.fileExists(atPath: editURL.path) ? try read(editURL) : [:]
+    let width = edit["width"] as? Int ?? 1280, height = edit["height"] as? Int ?? 720
+    try require(width > 0 && height > 0 && width % 2 == 0 && height % 2 == 0, "Invalid title canvas")
+    let fps = edit["fps"] as? Int ?? 24
+    try require(fps > 0 && fps <= 120, "Invalid title frame rate")
     for shot in project.shots where shot["kind"] as? String == "title" {
         guard let id = shot["shotId"] as? String, let title = shot["titleText"] as? String else { throw Failure("Invalid title card") }
-        let width = 1280, height = 720
         guard let bitmap = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: width, pixelsHigh: height, bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .deviceRGB, bytesPerRow: 0, bitsPerPixel: 0), let context = NSGraphicsContext(bitmapImageRep: bitmap) else { throw Failure("Cannot create title canvas") }
         NSGraphicsContext.saveGraphicsState(); NSGraphicsContext.current = context
-        NSColor.black.setFill(); NSRect(x: 0, y: 0, width: width, height: height).fill()
+        let isBubbles = shot["titleStyle"] as? String == "connected-bubbles"
+        (isBubbles ? NSColor(calibratedRed: 0.96, green: 0.94, blue: 0.88, alpha: 1) : NSColor.black).setFill()
+        NSRect(x: 0, y: 0, width: width, height: height).fill()
+        if isBubbles {
+            let ink = NSColor(calibratedRed: 0.20, green: 0.33, blue: 0.31, alpha: 1)
+            ink.setStroke()
+            let w = CGFloat(width), h = CGFloat(height)
+            for x in [w * 0.20, w * 0.58] {
+                let bubble = NSBezierPath(roundedRect: NSRect(x: x, y: h * 0.57, width: w * 0.22, height: h * 0.105), xRadius: w * 0.035, yRadius: w * 0.035)
+                bubble.lineWidth = max(3, w * 0.006); bubble.stroke()
+                let tail = NSBezierPath(); tail.lineWidth = bubble.lineWidth
+                tail.move(to: NSPoint(x: x + w * 0.07, y: h * 0.57))
+                tail.line(to: NSPoint(x: x + w * 0.04, y: h * 0.55))
+                tail.line(to: NSPoint(x: x + w * 0.12, y: h * 0.57)); tail.stroke()
+            }
+            let link = NSBezierPath(); link.lineWidth = max(3, w * 0.006)
+            link.move(to: NSPoint(x: w * 0.42, y: h * 0.62)); link.line(to: NSPoint(x: w * 0.58, y: h * 0.62)); link.stroke()
+        }
         let paragraph = NSMutableParagraphStyle(); paragraph.alignment = .center
-        var fontSize: CGFloat = 80
-        let safeWidth = CGFloat(width - 160)
+        var fontSize: CGFloat = isBubbles ? CGFloat(width) * 0.065 : min(80, CGFloat(width) * 0.10)
+        let margin = CGFloat(width) * 0.09, safeWidth = CGFloat(width) - 2 * margin
         while fontSize > 20 && (title as NSString).size(withAttributes: [.font: NSFont(name: "TimesNewRomanPS-BoldMT", size: fontSize) ?? NSFont.boldSystemFont(ofSize: fontSize)]).width > safeWidth { fontSize -= 2 }
-        let attributes: [NSAttributedString.Key: Any] = [.font: NSFont(name: "TimesNewRomanPS-BoldMT", size: fontSize) ?? NSFont.boldSystemFont(ofSize: fontSize), .foregroundColor: NSColor(calibratedRed: 0.78, green: 0.10, blue: 0.08, alpha: 1), .paragraphStyle: paragraph]
-        (title as NSString).draw(in: NSRect(x: 80, y: CGFloat(height)/2 - fontSize/2, width: safeWidth, height: fontSize*1.5), withAttributes: attributes)
+        let color = isBubbles ? NSColor(calibratedRed: 0.20, green: 0.33, blue: 0.31, alpha: 1) : NSColor(calibratedRed: 0.78, green: 0.10, blue: 0.08, alpha: 1)
+        let attributes: [NSAttributedString.Key: Any] = [.font: NSFont(name: "TimesNewRomanPS-BoldMT", size: fontSize) ?? NSFont.boldSystemFont(ofSize: fontSize), .foregroundColor: color, .paragraphStyle: paragraph]
+        let textY = isBubbles ? CGFloat(height) * 0.40 : CGFloat(height)/2 - fontSize/2
+        (title as NSString).draw(in: NSRect(x: margin, y: textY, width: safeWidth, height: fontSize*1.5), withAttributes: attributes)
         NSGraphicsContext.restoreGraphicsState()
         guard let png = bitmap.representation(using: .png, properties: [:]) else { throw Failure("Cannot encode title") }
         let work = try project.path("work/cards"); try fm.createDirectory(at: work, withIntermediateDirectories: true)
         let still = work.appendingPathComponent(id + ".png"), video = work.appendingPathComponent(id + ".mp4")
         try png.write(to: still)
         let duration = shot["sourceDurationSec"] as? Double ?? 5
-        try run("ffmpeg", ["-v", "error", "-nostdin", "-y", "-loop", "1", "-framerate", "24", "-i", still.path, "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-t", String(duration), "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p", "-c:a", "aac", "-movflags", "+faststart", video.path])
+        try run("ffmpeg", ["-v", "error", "-nostdin", "-y", "-loop", "1", "-framerate", String(fps), "-i", still.path, "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-t", String(duration), "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p", "-c:a", "aac", "-movflags", "+faststart", video.path])
         try ingest(project, video.path, id, project.prompt(id))
     }
     try status(project)
@@ -213,6 +237,59 @@ func redo(_ project: Project, _ id: String, _ reason: String) throws {
     manifest["clips"] = clips; manifest["redoRequests"] = requests
     try write(manifest, project.path("manifest.json")); try status(project)
 }
+// Render real text locally so generated footage never has to spell instructions.
+func typography(_ project: Project, _ work: URL, _ input: URL, _ duration: Double, _ width: Int, _ height: Int) throws -> URL {
+    let configURL = try project.path("typography.json")
+    guard fm.fileExists(atPath: configURL.path) else { return input }
+    let config = try read(configURL)
+    guard let cues = config["cues"] as? [[String: Any]], !cues.isEmpty, cues.count <= 20 else { throw Failure("Invalid typography cues") }
+    var args = ["-v", "error", "-nostdin", "-y", "-i", input.path]
+    var filters: [String] = []
+    for (i, cue) in cues.enumerated() {
+        guard let start = cue["startSec"] as? Double, let end = cue["endSec"] as? Double,
+              start.isFinite, end.isFinite, start >= 0, end > start, end <= duration + 0.001,
+              let texts = cue["texts"] as? [String], !texts.isEmpty, texts.count <= 2,
+              texts.allSatisfy({ !$0.isEmpty && $0.count <= 120 }),
+              let style = cue["style"] as? String, ["caption", "cards", "questions"].contains(style)
+        else { throw Failure("Invalid typography cue \(i + 1)") }
+        guard let bitmap = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: width, pixelsHigh: height, bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .deviceRGB, bytesPerRow: 0, bitsPerPixel: 0), let context = NSGraphicsContext(bitmapImageRep: bitmap) else { throw Failure("Cannot create typography canvas") }
+        NSGraphicsContext.saveGraphicsState(); NSGraphicsContext.current = context
+        NSColor.clear.setFill(); NSRect(x: 0, y: 0, width: width, height: height).fill()
+        let w = CGFloat(width), h = CGFloat(height), paragraph = NSMutableParagraphStyle(); paragraph.alignment = .center
+        let ink = NSColor(calibratedRed: 0.18, green: 0.29, blue: 0.27, alpha: 1)
+        if style == "caption" {
+            let box = NSRect(x: w * 0.07, y: h * 0.15, width: w * 0.86, height: h * 0.10)
+            NSColor(calibratedRed: 0.98, green: 0.96, blue: 0.90, alpha: 0.92).setFill()
+            NSBezierPath(roundedRect: box, xRadius: w * 0.02, yRadius: w * 0.02).fill()
+            var size = w * 0.052
+            while size > 15 && (texts[0] as NSString).size(withAttributes: [.font: NSFont.boldSystemFont(ofSize: size)]).width > box.width * 0.9 { size -= 1 }
+            let attr: [NSAttributedString.Key: Any] = [.font: NSFont.boldSystemFont(ofSize: size), .foregroundColor: ink, .paragraphStyle: paragraph]
+            (texts[0] as NSString).draw(in: NSRect(x: box.minX, y: box.midY - size * 0.6, width: box.width, height: size * 1.4), withAttributes: attr)
+        } else {
+            for (j, value) in texts.enumerated() {
+                let box = NSRect(x: w * (j == 0 ? 0.08 : 0.53), y: h * 0.39, width: w * 0.39, height: h * 0.12)
+                if style == "cards" {
+                    NSColor(calibratedRed: 0.98, green: 0.96, blue: 0.90, alpha: 0.96).setFill()
+                    NSBezierPath(roundedRect: box, xRadius: w * 0.02, yRadius: w * 0.02).fill()
+                }
+                var size = w * (style == "questions" ? 0.12 : 0.055)
+                while size > 15 && (value as NSString).size(withAttributes: [.font: NSFont.boldSystemFont(ofSize: size)]).width > box.width * 0.85 { size -= 1 }
+                let attr: [NSAttributedString.Key: Any] = [.font: NSFont.boldSystemFont(ofSize: size), .foregroundColor: ink, .paragraphStyle: paragraph]
+                (value as NSString).draw(in: NSRect(x: box.minX, y: box.midY - size * 0.6, width: box.width, height: size * 1.4), withAttributes: attr)
+            }
+        }
+        NSGraphicsContext.restoreGraphicsState()
+        guard let png = bitmap.representation(using: .png, properties: [:]) else { throw Failure("Cannot encode typography") }
+        let file = work.appendingPathComponent("type-\(i).png"); try png.write(to: file)
+        args += ["-loop", "1", "-i", file.path]
+        filters.append("[\(i == 0 ? "0:v" : "v\(i)")][\(i + 1):v]overlay=0:0:enable='gte(t,\(start))*lt(t,\(end))'[v\(i + 1)]")
+    }
+    let result = work.appendingPathComponent("with-typography.mp4")
+    args += ["-filter_complex", filters.joined(separator: ";"), "-map", "[v\(cues.count)]", "-map", "0:a:0", "-t", String(duration), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart", result.path]
+    try run("ffmpeg", args)
+    return result
+}
+
 func assemble(_ project: Project, editRelative: String = "edit.json", outputRelative: String = "final") throws {
     try require(outputRelative == "final" || outputRelative.hasPrefix("work/"), "Draft output must be under work/")
     let manifest = try project.manifest()
@@ -233,17 +310,20 @@ func assemble(_ project: Project, editRelative: String = "edit.json", outputRela
         try require(hash == take["sha256"] as? String, "Checksum changed: \(id)")
         let media = try Media(source)
         let start = cut["inSec"] as? Double ?? 0; let duration = cut["durationSec"] as? Double ?? 3
+        let freeze = cut["freezeLastSec"] as? Double ?? 0
         try require(start.isFinite && duration.isFinite && start >= 0 && duration > 0 && start + duration <= media.duration + 0.02, "Trim outside source duration: \(id)")
+        try require(freeze.isFinite && freeze >= 0 && freeze < duration && abs(freeze * Double(fps) - (freeze * Double(fps)).rounded()) < 0.001, "Invalid freeze duration: \(id)")
         try require(abs(duration * Double(fps) - (duration * Double(fps)).rounded()) < 0.001, "Trim duration must align to a frame at \(fps) fps: \(id)")
         try require((cut["transitionIn"] as? String ?? "cut") == "cut", "Only hard cuts are supported; unsupported transition in \(id)")
-        let key = digest("v2|\(hash)|\(start)|\(duration)|\(width)|\(height)|\(fps)")
+        let key = digest("v3|\(hash)|\(start)|\(duration)|\(width)|\(height)|\(fps)|\(freeze)")
         let output = cache.appendingPathComponent("\(key).mp4")
         if !fm.fileExists(atPath: output.path) {
             let temp = work.appendingPathComponent("\(key).mp4")
             var args = ["-v", "error", "-nostdin", "-y", "-ss", String(start), "-i", source.path]
             if !media.audio { args += ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo"] }
+            let hold = freeze > 0 ? ",trim=duration=\(duration - freeze),setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop_duration=\(freeze)" : ""
             args += ["-map", "0:v:0", "-map", media.audio ? "0:a:0" : "1:a:0", "-t", String(duration),
-                     "-vf", "scale=\(width):\(height):force_original_aspect_ratio=decrease,pad=\(width):\(height):(ow-iw)/2:(oh-ih)/2,setsar=1,fps=\(fps),setpts=PTS-STARTPTS",
+                     "-vf", "scale=\(width):\(height):force_original_aspect_ratio=decrease,pad=\(width):\(height):(ow-iw)/2:(oh-ih)/2,setsar=1,fps=\(fps),setpts=PTS-STARTPTS\(hold)",
                      "-af", "aresample=48000,apad,atrim=duration=\(duration),asetpts=PTS-STARTPTS", "-ac", "2",
                      "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
                      "-video_track_timescale", "24000", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", temp.path]
@@ -251,7 +331,7 @@ func assemble(_ project: Project, editRelative: String = "edit.json", outputRela
             try run("ffmpeg", args); try fm.moveItem(at: temp, to: output)
         } else { print("Cached \(id)") }
         normalized.append(output)
-        entries.append(["shotId": id, "sourceFile": rel, "sourceSha256": hash, "promptSha256": take["promptSha256"]!, "sourceInSec": start, "sourceOutSec": start + duration, "startSec": cursor, "endSec": cursor + duration, "transitionIn": "cut"])
+        entries.append(["shotId": id, "sourceFile": rel, "sourceSha256": hash, "promptSha256": take["promptSha256"]!, "sourceInSec": start, "sourceOutSec": start + duration - freeze, "freezeLastSec": freeze, "startSec": cursor, "endSec": cursor + duration, "transitionIn": "cut"])
         cursor += duration
     }
     if outputRelative == "final", project.definition["timingMode"] as? String == "edited", let intended = project.definition["durationSec"] as? Double {
@@ -262,16 +342,19 @@ func assemble(_ project: Project, editRelative: String = "edit.json", outputRela
     // Cache filenames are hex; escape the directory too for project paths containing apostrophes.
     let list = normalized.map { "file '\($0.path.replacingOccurrences(of: "'", with: "'\\''"))'" }.joined(separator: "\n")
     try Data(list.utf8).write(to: concat)
-    let video = work.appendingPathComponent("video.mp4")
+    let joined = work.appendingPathComponent("joined.mp4")
     // Normalize once, then concatenate video by stream copy. Re-encode audio once
     // to eliminate per-segment AAC priming gaps and keep the final timeline exact.
-    try run("ffmpeg", ["-v", "error", "-nostdin", "-y", "-f", "concat", "-safe", "0", "-i", concat.path, "-t", String(cursor), "-c:v", "copy", "-c:a", "aac", "-af", "aresample=async=1:first_pts=0", "-b:a", "160k", "-movflags", "+faststart", video.path])
+    try run("ffmpeg", ["-v", "error", "-nostdin", "-y", "-f", "concat", "-safe", "0", "-i", concat.path, "-t", String(cursor), "-c:v", "copy", "-c:a", "aac", "-af", "aresample=async=1:first_pts=0", "-b:a", "160k", "-movflags", "+faststart", joined.path])
+    let video = outputRelative == "final" ? try typography(project, work, joined, cursor, width, height) : joined
     let result = try Media(video)
     try require(abs(result.duration - cursor) <= 0.12 && result.videoCodec == "h264" && result.audioCodec == "aac", "Final media does not match edit")
     try run("ffmpeg", ["-v", "error", "-nostdin", "-y", "-ss", String(min(cursor / 2, 2)), "-i", video.path, "-frames:v", "1", work.appendingPathComponent("poster.jpg").path])
     let final = try project.path(outputRelative); try fm.createDirectory(at: final, withIntermediateDirectories: true)
     let order = entries.map { $0["shotId"]! }
-    let outManifest: [String: Any] = ["slug": project.definition["slug"]!, "title": project.definition["title"]!, "file": "video.mp4", "sha256": try sha(video), "durationSec": result.duration, "timelineDurationSec": cursor, "resolution": "\(width)x\(height)", "fps": fps, "shotOrder": order, "reviewState": "unreviewed", "scope": outputRelative == "final" ? "full-edit" : "draft-excerpt", "audioStems": [], "renderer": "Swift + FFmpeg; H.264/AAC; hard cuts", "createdAt": ISO8601DateFormatter().string(from: Date())]
+    var outManifest: [String: Any] = ["slug": project.definition["slug"]!, "title": project.definition["title"]!, "file": "video.mp4", "sha256": try sha(video), "durationSec": result.duration, "timelineDurationSec": cursor, "resolution": "\(width)x\(height)", "fps": fps, "shotOrder": order, "reviewState": "unreviewed", "scope": outputRelative == "final" ? "full-edit" : "draft-excerpt", "audioStems": [], "renderer": "Swift + FFmpeg; H.264/AAC; hard cuts", "createdAt": ISO8601DateFormatter().string(from: Date())]
+    let typographyURL = try project.path("typography.json")
+    if outputRelative == "final" && fm.fileExists(atPath: typographyURL.path) { outManifest["typographySha256"] = try sha(typographyURL) }
     try write(["shotOrder": order, "entries": entries, "totalSec": cursor], work.appendingPathComponent("edl.json"))
     try write(outManifest, work.appendingPathComponent("final-manifest.json"))
     // Keep the previous deliverable recoverable before replacing it.
@@ -279,7 +362,8 @@ func assemble(_ project: Project, editRelative: String = "edit.json", outputRela
         let archive = try project.path("work/final-history/\(UUID().uuidString)"); try fm.createDirectory(at: archive, withIntermediateDirectories: true)
         for name in ["video.mp4", "poster.jpg", "edl.json", "final-manifest.json"] where fm.fileExists(atPath: final.appendingPathComponent(name).path) { try fm.copyItem(at: final.appendingPathComponent(name), to: archive.appendingPathComponent(name)) }
     }
-    for name in ["video.mp4", "poster.jpg", "edl.json", "final-manifest.json"] { try Data(contentsOf: work.appendingPathComponent(name)).write(to: final.appendingPathComponent(name), options: .atomic) }
+    try Data(contentsOf: video).write(to: final.appendingPathComponent("video.mp4"), options: .atomic)
+    for name in ["poster.jpg", "edl.json", "final-manifest.json"] { try Data(contentsOf: work.appendingPathComponent(name)).write(to: final.appendingPathComponent(name), options: .atomic) }
     print("Saved \(final.appendingPathComponent("video.mp4").path): \(result.duration)s; visual review pending")
     try verify(project, outputRelative: outputRelative)
 }
@@ -287,6 +371,15 @@ func verify(_ project: Project, outputRelative: String = "final") throws {
     let manifest = try read(project.path("\(outputRelative)/final-manifest.json")); let edl = try read(project.path("\(outputRelative)/edl.json"))
     let video = try project.path("\(outputRelative)/video.mp4"); let media = try Media(video)
     try require(try sha(video) == manifest["sha256"] as? String, "Final SHA256 mismatch")
+    if outputRelative == "final" {
+        let typeURL = try project.path("typography.json")
+        let recorded = manifest["typographySha256"] as? String
+        if fm.fileExists(atPath: typeURL.path) {
+            try require(recorded == (try sha(typeURL)), "Typography has changed since rendering")
+        } else {
+            try require(recorded == nil, "Typography file is missing")
+        }
+    }
     guard let expected = edl["totalSec"] as? Double, let entries = edl["entries"] as? [[String: Any]], let order = edl["shotOrder"] as? [String] else { throw Failure("Invalid EDL") }
     try require(!entries.isEmpty && order == entries.compactMap { $0["shotId"] as? String } && order == manifest["shotOrder"] as? [String], "EDL shot order mismatch")
     var cursor = 0.0

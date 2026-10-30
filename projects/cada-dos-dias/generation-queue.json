@@ -1,0 +1,260 @@
+{
+  "productionSha256": "f18a054cd8845973e7c372ccddc023753092b512739c0b90807a2e8960318742",
+  "pending": [
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s01",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s01.txt",
+      "promptSha256": "a7e74cbd26e150d5a3e73a6e020608117fdf3c31d9533de537359bd0d5004044",
+      "characters": [
+        "Rafa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s02",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s02.txt",
+      "promptSha256": "456c6765cc4f5703102f002295c7f407e979bcb9320f5fc49d57d4e494462616",
+      "characters": [
+        "Rafa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s03",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s03.txt",
+      "promptSha256": "09808d74be124592a46c5b88f220da06357aeaff3971f3b31d9da44d2dd0da72",
+      "characters": [
+        "Teresa",
+        "Rafa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s04",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s04.txt",
+      "promptSha256": "88355765add3f02d3b5430ec1cd7534ec371b7eff46d5b1ba18e34cb6eba8ae0",
+      "characters": [
+        "Rafa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s05",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s05.txt",
+      "promptSha256": "2f7430ec35a1a59f442b33c36b9cd5b5cf44221de4692085ab4c7f3e107859e1",
+      "characters": [
+        "Teresa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s06",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s06.txt",
+      "promptSha256": "58d8cc5b700d64220a5127090de9e1b7beee147548039f4303d3013311f18858",
+      "characters": [
+        "Rafa",
+        "Teresa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s07",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s07.txt",
+      "promptSha256": "43b71111a803c12a590c7d9ff5dc2d09995bfc1b0981541358812e7447bb4607",
+      "characters": [
+        "Teresa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s08",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s08.txt",
+      "promptSha256": "04a525c3c94af3798fadbe8b50b353fc02002f4577bb7e91b43e9ce7d72c8c29",
+      "characters": []
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s09",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s09.txt",
+      "promptSha256": "236d0077f78038afc2cdd10bccc5e67231335d7e988c3c49ec18ba0116b834f6",
+      "characters": [
+        "Rafa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s10",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s10.txt",
+      "promptSha256": "17dae67ac849e7d5c6605cc89c9f40e65781cc9a360cda2531740e8f029c783a",
+      "characters": [
+        "Rafa",
+        "Teresa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s11",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s11.txt",
+      "promptSha256": "784b0a762cddac44916ee42a1734d53839a85cb30deda40f3f78a4cf6409ab07",
+      "characters": [
+        "Rafa",
+        "Interpreter",
+        "Clinician"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s12",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s12.txt",
+      "promptSha256": "8f01134967de4c82fa0e75142e66758392cc9fda6af6f10108e6e405f96b4249",
+      "characters": [
+        "Interpreter",
+        "Rafa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s13",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s13.txt",
+      "promptSha256": "2d5b2e4e40ee971c2e87795aeaa3ac9411d0972f180fe6c9a2be917d824885cf",
+      "characters": [
+        "Interpreter",
+        "Clinician"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s14",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s14.txt",
+      "promptSha256": "32242a82c51f63f06fe46305d27d93b13293bc2b2422dbb19ee9d3da51d712f6",
+      "characters": [
+        "Interpreter",
+        "Clinician",
+        "Rafa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s15",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s15.txt",
+      "promptSha256": "5823d866ba37ac20c7688509d4667380b3237ca9a7fb2ad9963ff3ca41308e6c",
+      "characters": [
+        "Rafa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s16",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s16.txt",
+      "promptSha256": "125c79390349f0272a6578edc8b44fc776967778b2987f39fe7ec3bbceed89c8",
+      "characters": [
+        "Teresa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s17",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s17.txt",
+      "promptSha256": "96d8081d8513dda78ae2df9c3fae5b381a32bf3a599309ddc72e8b71542abf27",
+      "characters": [
+        "Rafa",
+        "Teresa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s18",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s18.txt",
+      "promptSha256": "f1421dd09dd66ff6fcc474a5dea32d13fc4b61b83ea80ebf652d955440df1dc9",
+      "characters": [
+        "Rafa",
+        "Teresa"
+      ]
+    }
+  ],
+  "nextBatch": [
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s01",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s01.txt",
+      "promptSha256": "a7e74cbd26e150d5a3e73a6e020608117fdf3c31d9533de537359bd0d5004044",
+      "characters": [
+        "Rafa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s02",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s02.txt",
+      "promptSha256": "456c6765cc4f5703102f002295c7f407e979bcb9320f5fc49d57d4e494462616",
+      "characters": [
+        "Rafa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s03",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s03.txt",
+      "promptSha256": "09808d74be124592a46c5b88f220da06357aeaff3971f3b31d9da44d2dd0da72",
+      "characters": [
+        "Teresa",
+        "Rafa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s04",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s04.txt",
+      "promptSha256": "88355765add3f02d3b5430ec1cd7534ec371b7eff46d5b1ba18e34cb6eba8ae0",
+      "characters": [
+        "Rafa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s05",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s05.txt",
+      "promptSha256": "2f7430ec35a1a59f442b33c36b9cd5b5cf44221de4692085ab4c7f3e107859e1",
+      "characters": [
+        "Teresa"
+      ]
+    },
+    {
+      "project": "cada-dos-dias",
+      "shotId": "s06",
+      "reason": "missing",
+      "promptFile": "projects/cada-dos-dias/prompts/s06.txt",
+      "promptSha256": "58d8cc5b700d64220a5127090de9e1b7beee147548039f4303d3013311f18858",
+      "characters": [
+        "Rafa",
+        "Teresa"
+      ]
+    }
+  ],
+  "localPending": [],
+  "complete": false
+}

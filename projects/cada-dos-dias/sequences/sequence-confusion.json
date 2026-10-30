@@ -1,0 +1,105 @@
+{
+  "sequenceId": "confusion",
+  "title": "La confusión",
+  "intent": "Story beat: La confusión",
+  "shots": [
+    {
+      "shotId": "s04",
+      "size": "insert",
+      "movement": "locked-off or restrained gentle push",
+      "location": "sunny kitchen",
+      "action": "Rafa points to two adjacent blank calendar squares, then holds his finger still.",
+      "characters": [
+        "Rafa"
+      ],
+      "emotionalBeat": "Warm curiosity and mutual respect",
+      "soundMood": "Song and subtle room tone; timing provisional",
+      "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+      "choreography": "One action in the first 4 seconds, then a clean held pose.",
+      "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+      "lighting": "Warm diffused morning sunlight and soft fill.",
+      "lensMm": 50,
+      "focus": "Hold focus on the action and hands.",
+      "motion": "Natural, restrained, no sudden morphing.",
+      "extras": "None.",
+      "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+      "generationBrief": "INSERT, vertical 9:16, sunny kitchen. Rafa points to two adjacent blank calendar squares, then holds his finger still. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+      "editMotivation": "Give the editor a clean insert.",
+      "tension": 2,
+      "durationSec": 3,
+      "sourceDurationSec": 10,
+      "sequenceId": "confusion",
+      "order": 4,
+      "lockedLookBlock": "Vertical 9:16, tasteful 1990s Spanish-language music video, warmly human and elegant rather than parody: soft 35mm film grain, creamy highlights, honeyed morning sunlight, terracotta, sage green, deep walnut and muted teal, practical tungsten, polished natural wood and understated brass. Realistic adult people with consistent faces and clothes; observational, lyrical camera, gentle rhythmic movement, warm humor only at a verbal misunderstanding. No text, logos, readable notes or medical prescriptions in the generated frames. Compose for portrait and leave lower-safe space for accurate Spanish typography added in post.",
+      "lockedCharacterBlocks": {
+        "Rafa": "Rafa, an adult Latino man in his early fifties, salt-and-pepper hair, soft brown eyes, a neat moustache, cream knit polo and brown trousers; affectionate, thoughtful, a little puzzled but never foolish."
+      }
+    },
+    {
+      "shotId": "s05",
+      "size": "close",
+      "movement": "locked-off or restrained gentle push",
+      "location": "sunny kitchen",
+      "action": "Teresa tilts her head, trying to understand, with a warm questioning look.",
+      "characters": [
+        "Teresa"
+      ],
+      "emotionalBeat": "Warm curiosity and mutual respect",
+      "soundMood": "Song and subtle room tone; timing provisional",
+      "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+      "choreography": "One action in the first 4 seconds, then a clean held pose.",
+      "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+      "lighting": "Warm diffused morning sunlight and soft fill.",
+      "lensMm": 50,
+      "focus": "Hold focus on the action and hands.",
+      "motion": "Natural, restrained, no sudden morphing.",
+      "extras": "None.",
+      "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+      "generationBrief": "CLOSE, vertical 9:16, sunny kitchen. Teresa tilts her head, trying to understand, with a warm questioning look. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+      "editMotivation": "Match Rafa’s eyeline.",
+      "tension": 2,
+      "durationSec": 3,
+      "sourceDurationSec": 10,
+      "sequenceId": "confusion",
+      "order": 5,
+      "lockedLookBlock": "Vertical 9:16, tasteful 1990s Spanish-language music video, warmly human and elegant rather than parody: soft 35mm film grain, creamy highlights, honeyed morning sunlight, terracotta, sage green, deep walnut and muted teal, practical tungsten, polished natural wood and understated brass. Realistic adult people with consistent faces and clothes; observational, lyrical camera, gentle rhythmic movement, warm humor only at a verbal misunderstanding. No text, logos, readable notes or medical prescriptions in the generated frames. Compose for portrait and leave lower-safe space for accurate Spanish typography added in post.",
+      "lockedCharacterBlocks": {
+        "Teresa": "Teresa, an adult Latina woman in her late forties, dark shoulder-length hair, sage-green blouse and simple gold earrings; warm, observant and gently reassuring, her humor affectionate and restrained."
+      }
+    },
+    {
+      "shotId": "s06",
+      "size": "two-shot",
+      "movement": "locked-off or restrained gentle push",
+      "location": "sunny kitchen",
+      "action": "Rafa gestures between the unmarked note and the blank calendar while Teresa listens.",
+      "characters": [
+        "Rafa",
+        "Teresa"
+      ],
+      "emotionalBeat": "Warm curiosity and mutual respect",
+      "soundMood": "Song and subtle room tone; timing provisional",
+      "background": "Unmarked props, uncluttered portrait framing; no readable writing.",
+      "choreography": "One action in the first 4 seconds, then a clean held pose.",
+      "cameraChoreography": "Maintain eyelines and portrait-safe space for post typography.",
+      "lighting": "Warm diffused morning sunlight and soft fill.",
+      "lensMm": 35,
+      "focus": "Hold focus on the action and hands.",
+      "motion": "Natural, restrained, no sudden morphing.",
+      "extras": "None.",
+      "loreNotes": "Do not show or invent an answer, dose, or medical instructions.",
+      "generationBrief": "TWO-SHOT, vertical 9:16, sunny kitchen. Rafa gestures between the unmarked note and the blank calendar while Teresa listens. One clear action, gentle 1990s music-video rhythm, steady natural hands and faces; end in a readable held pose. No legible text, no medical labels, no dosage, no instructions, no medication taking.",
+      "editMotivation": "Hold space for optional dialogue.",
+      "tension": 2,
+      "durationSec": 4,
+      "sourceDurationSec": 10,
+      "sequenceId": "confusion",
+      "order": 6,
+      "lockedLookBlock": "Vertical 9:16, tasteful 1990s Spanish-language music video, warmly human and elegant rather than parody: soft 35mm film grain, creamy highlights, honeyed morning sunlight, terracotta, sage green, deep walnut and muted teal, practical tungsten, polished natural wood and understated brass. Realistic adult people with consistent faces and clothes; observational, lyrical camera, gentle rhythmic movement, warm humor only at a verbal misunderstanding. No text, logos, readable notes or medical prescriptions in the generated frames. Compose for portrait and leave lower-safe space for accurate Spanish typography added in post.",
+      "lockedCharacterBlocks": {
+        "Rafa": "Rafa, an adult Latino man in his early fifties, salt-and-pepper hair, soft brown eyes, a neat moustache, cream knit polo and brown trousers; affectionate, thoughtful, a little puzzled but never foolish.",
+        "Teresa": "Teresa, an adult Latina woman in her late forties, dark shoulder-length hair, sage-green blouse and simple gold earrings; warm, observant and gently reassuring, her humor affectionate and restrained."
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "cada-dos-dias",
+  "state": "shot-list",
+  "history": [
+    {
+      "at": "2026-10-30T05:03:56.102255+00:00",
+      "event": "production-materialized",
+      "productionSha256": "50927f7333f93e8c0a5a081375ce1acf1ea9e9312b391edcdd334ad7831ec83a"
+    },
+    {
+      "at": "2026-10-30T05:04:27.973770+00:00",
+      "event": "production-materialized",
+      "productionSha256": "0345e378e11f95496c9eea4cf5daa78dfe9e5f574731590a32a3e50c7381e527"
+    },
+    {
+      "at": "2026-10-30T05:05:58.698342+00:00",
+      "event": "production-materialized",
+      "productionSha256": "b8caa6d15f5ed64c5d015b7326b396fe4461cc14058af11b4e82af49b1a71ac8"
+    },
+    {
+      "at": "2026-10-30T05:06:52.591195+00:00",
+      "event": "production-materialized",
+      "productionSha256": "f18a054cd8845973e7c372ccddc023753092b512739c0b90807a2e8960318742"
+    }
+  ],
+  "openCritiques": [
+    "Generated footage, reference adherence, sound mix and final visual review pending"
+  ]
+}

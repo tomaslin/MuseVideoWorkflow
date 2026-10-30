@@ -1,0 +1,1 @@
+Each shot contains one legible action and a held end pose. Rafa glances at paper, then calendar; Teresa enters with two cups; fingers point to two adjacent blank squares; she raises a gentle hand. In consultation, listen, ask, listen, convey in separate shots. At home the cards remain distinct and the cups meet gently.

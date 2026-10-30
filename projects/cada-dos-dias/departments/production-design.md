@@ -1,0 +1,1 @@
+Kitchen: cream cups, unmarked paper, a calendar with anonymous unnumbered squares, honey wood and a sunlit window. No visible pharmacy labels, dose numbers or instructions. Consultation: restrained desk, plain unmarked folders, muted neutral backgrounds, three separate people. Text cards and motion graphics will be authored digitally.

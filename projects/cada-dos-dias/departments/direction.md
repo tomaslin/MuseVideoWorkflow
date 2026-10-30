@@ -1,0 +1,1 @@
+Play the ambiguity honestly and lightly. Rafa is thinking, Teresa pauses without scolding, and the professional interpreter listens before helping to clarify. The consultation is a respectful exchange, not a demonstration of medicine or an authoritative dose. Leave space for the music and legible post-produced captions.

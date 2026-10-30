@@ -1,0 +1,1 @@
+Use portrait 9:16 composition and coherent screen direction, with warm diffused sunlight through a kitchen window and soft fill. The consultation uses gentle teal-ivory practical light. Establish the room before restrained close-ups, compose eyes in the upper third, and leave safe space for captions and interface cropping.

@@ -1,0 +1,16 @@
+{
+  "status": "pending-music-verification",
+  "entries": [
+    {
+      "kind": "story and script",
+      "source": "User-supplied script for Cada dos días",
+      "clearance": "User-provided creative brief"
+    },
+    {
+      "kind": "music",
+      "source": "Song not yet verified for this project",
+      "clearance": "Confirm source and authorization before publishing a soundtrack."
+    }
+  ],
+  "musicStatus": "Awaiting verified audio"
+}

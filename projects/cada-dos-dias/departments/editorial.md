@@ -1,0 +1,1 @@
+Draft timing maps to 60 seconds at 24 fps, with source takes of about ten seconds and cuts of 2–4 seconds. Generate video without text; add exact Spanish text and the two-question-mark treatment in post. Preserve clear distinctions between cantidad and frecuencia. Replace provisional cuts after hearing the song, and review the final vertical frame and mix.

@@ -70,6 +70,9 @@ def validate(data):
         limit = source.get('sourceDurationSec', 10)
         if start + duration > limit: errors.append(f'{cut.get("shotId")}: trim exceeds source')
         if abs(duration * edit.get('fps', 24) - round(duration * edit.get('fps', 24))) > .001: errors.append(f'{cut.get("shotId")}: trim must align to frames')
+        freeze = cut.get('freezeLastSec', 0)
+        if not isinstance(freeze, (int, float)) or not math.isfinite(freeze) or freeze < 0 or freeze >= duration or abs(freeze * edit.get('fps', 24) - round(freeze * edit.get('fps', 24))) > .001:
+            errors.append(f'{cut.get("shotId")}: invalid freeze duration')
         total += duration
     if not cuts or abs(total - project.get('durationSec', 0)) > .001: errors.append(f'Edit must total exactly {project.get("durationSec")}s; got {total}s')
     if set(ids) != {c.get('shotId') for c in cuts}: errors.append('Every source shot must have an editorial use')
@@ -133,7 +136,8 @@ def materialize(source, output=None, refresh=False):
             write('sequences/sequence-' + seq['sequenceId'] + '.json', sequence)
         for cut in data['edit']['shots']:
             sid = cut['shotId']; duration = cut['durationSec']
-            entries.append({'shotId':sid,'sequenceId':by_id[sid]['sequenceId'],'sourceInSec':cut['inSec'],'sourceOutSec':cut['inSec']+duration,'startSec':cursor,'endSec':cursor+duration,'transitionIn':'cut','editMotivation':by_id[sid]['editMotivation']})
+            freeze = cut.get('freezeLastSec', 0)
+            entries.append({'shotId':sid,'sequenceId':by_id[sid]['sequenceId'],'sourceInSec':cut['inSec'],'sourceOutSec':cut['inSec']+duration-freeze,'freezeLastSec':freeze,'startSec':cursor,'endSec':cursor+duration,'transitionIn':'cut','editMotivation':by_id[sid]['editMotivation']})
             cursor += duration; ordered.append(sid)
         write('edit.json', data['edit']); write('storyboard.json', {'panels':panels})
         write('final/edl.json', {'shotOrder':ordered,'entries':entries,'totalSec':cursor,'status':'planned-not-rendered'})
@@ -144,7 +148,7 @@ def materialize(source, output=None, refresh=False):
         write('audio-plan.json', {'status':'not-recorded','sampleRate':48000,'channels':2,'voicePolicy':'Record dialogue separately; no lip-sync claim','cues':[{'shotId':e['shotId'],'startSec':e['startSec'],'endSec':e['endSec'],'intent':by_id[e['shotId']]['soundMood']} for e in entries],'stems':['dialogue','music','ambience','impacts'],'delivery':'Approved 48kHz stereo mix, -1 dBTP ceiling, timed captions from actual recordings'})
         write('budget.json', {'unit':'clip generations','plannedSourceClips':len(generation),'plannedRedoClips':math.ceil(len(generation)*.2),'maxClipsPerRun':6,'currencyEstimate':None,'costBasis':'Provider billing not supplied; no invented cash estimate','localTitleCards':len(shots)-len(generation)})
         write('schedule.json', {'timezone':'America/Los_Angeles','desiredIntervalMinutes':2,'status':'requires-Muse-task-confirmation','policy':'One worker, project lease, current hashes, at most six missing/stale/redo shots, retry failures only, idle on completion','batchesFile':'batches.json','generationQueue':'generation-queue.json'})
-        write('rights-ledger.json', {'status':'original-fiction-development','entries':[{'kind':'story','source':'User-supplied premise developed into original fiction','clearance':'No third-party footage or dialogue included'},{'kind':'visual-reference','source':'1970s studio wuxia horror production language','clearance':'Use original characters, sets, performances and score; retain provider provenance for generated media'}],'musicStatus':'Original score not recorded yet'})
+        write('rights-ledger.json', data.get('rightsLedger', {'status':'development','entries':[{'kind':'story','source':'User-supplied creative brief','clearance':'Retain provenance for source materials and generated media'}],'musicStatus':'Music source and clearance require verification'}))
         owners={'producer':'brief.md; budget.json; schedule.json; rights-ledger.json','director':'treatment.md; script.md; storyboard.json; departments/direction.md','cinematographer':'look-bible.md; departments/camera-lighting.md; shot camera fields','script-supervisor':'lore-bible.md; characters.md; fixed blocks and per-shot editMotivation','production-designer':'departments/production-design.md; shot background fields','costume-and-makeup':'departments/costume-makeup.md; locked character appearances','fight-coordinator':'departments/choreography.md; timed anticipation/contact/recoil','sound-and-composer':'departments/sound-music.md; audio-plan.json','editor':'edit.json; final/edl.json; departments/editorial.md','generation-operator':'prompts/; reference-plan.json; batches.json; manifest.json','delivery-QC':'evaluation.json; local Swift verify; named reviewer of final footage'}
         write('responsibilities.json', {'policy':'Responsibilities are artifact owners, not fictitious professional approvals','assignments':[{'role':role,'owns':owns,'assignee':'Muse for authored planning; local tools for materialization; user or named reviewer for footage approval','signoff':'pending actual artifact/footage checks'} for role,owns in owners.items()]})
 

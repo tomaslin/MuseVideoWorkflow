@@ -1,0 +1,1 @@
+Rafa keeps his cream knit polo and brown trousers; Teresa wears the same sage blouse and gold earrings in kitchen scenes. Interpreter wears a navy jacket and ivory shirt, clinician muted teal scrubs. Natural 1990s styling, not a celebrity likeness. Keep hands and clothing consistent from cut to cut.

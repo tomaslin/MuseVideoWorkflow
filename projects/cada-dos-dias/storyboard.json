@@ -1,0 +1,194 @@
+{
+  "panels": [
+    {
+      "shotId": "s01",
+      "size": "wide",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Rafa finds an unmarked note on a sunny kitchen table.",
+      "tension": 2,
+      "editMotivation": "Establish the room and story object.",
+      "panelId": "s01",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s02",
+      "size": "close",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Rafa frowns gently, then turns his eyes toward the calendar.",
+      "tension": 2,
+      "editMotivation": "Cut on his eyeline.",
+      "panelId": "s02",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s03",
+      "size": "medium",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Teresa walks in carrying two cream cups and pauses beside Rafa.",
+      "tension": 2,
+      "editMotivation": "Introduce their shared ritual.",
+      "panelId": "s03",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s04",
+      "size": "insert",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Rafa points to two adjacent blank calendar squares, then holds his finger still.",
+      "tension": 2,
+      "editMotivation": "Give the editor a clean insert.",
+      "panelId": "s04",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s05",
+      "size": "close",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Teresa tilts her head, trying to understand, with a warm questioning look.",
+      "tension": 2,
+      "editMotivation": "Match Rafa’s eyeline.",
+      "panelId": "s05",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s06",
+      "size": "two-shot",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Rafa gestures between the unmarked note and the blank calendar while Teresa listens.",
+      "tension": 2,
+      "editMotivation": "Hold space for optional dialogue.",
+      "panelId": "s06",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s07",
+      "size": "close",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Teresa gently raises her open hand and holds it with a reassuring expression.",
+      "tension": 2,
+      "editMotivation": "Freeze the held gesture in post.",
+      "panelId": "s07",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s08",
+      "size": "insert",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Two blank cream cards rest separately on a wooden table, ample clear space for post lettering.",
+      "tension": 2,
+      "editMotivation": "Introduce the two questions as distinct concepts.",
+      "panelId": "s08",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s09",
+      "size": "close",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Rafa listens, his expression softening from concern to curiosity.",
+      "tension": 2,
+      "editMotivation": "Cut from the cards to his reaction.",
+      "panelId": "s09",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s10",
+      "size": "two-shot",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Teresa and Rafa exchange a calm understanding look across the kitchen table.",
+      "tension": 2,
+      "editMotivation": "Leave negative space for the reassurance caption.",
+      "panelId": "s10",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s11",
+      "size": "wide",
+      "movement": "locked-off or restrained gentle push",
+      "action": "In a fictional consultation, Rafa sits across from an interpreter and a health-care professional.",
+      "tension": 2,
+      "editMotivation": "Establish the geography of the conversation.",
+      "panelId": "s11",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s12",
+      "size": "medium",
+      "movement": "locked-off or restrained gentle push",
+      "action": "The interpreter listens attentively to Rafa without interrupting.",
+      "tension": 2,
+      "editMotivation": "Show the first listening step.",
+      "panelId": "s12",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s13",
+      "size": "medium",
+      "movement": "locked-off or restrained gentle push",
+      "action": "The interpreter turns to the clinician and asks a respectful clarifying question.",
+      "tension": 2,
+      "editMotivation": "Show clarification as a professional exchange.",
+      "panelId": "s13",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s14",
+      "size": "two-shot",
+      "movement": "locked-off or restrained gentle push",
+      "action": "The clinician responds; the interpreter listens, then turns back toward Rafa to convey the answer.",
+      "tension": 2,
+      "editMotivation": "Leave the content of the answer unspecified.",
+      "panelId": "s14",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s15",
+      "size": "close",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Rafa nods with relief in the consultation, no words or paperwork visible.",
+      "tension": 2,
+      "editMotivation": "Let relief register before the return home.",
+      "panelId": "s15",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s16",
+      "size": "insert",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Teresa places two plain blank cards separately on the kitchen table, left then right.",
+      "tension": 2,
+      "editMotivation": "Add the two distinct labels locally.",
+      "panelId": "s16",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s17",
+      "size": "two-shot",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Rafa and Teresa share a knowing, affectionate look at the kitchen table.",
+      "tension": 2,
+      "editMotivation": "Connect the clarification to their relationship.",
+      "panelId": "s17",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s18",
+      "size": "insert",
+      "movement": "locked-off or restrained gentle push",
+      "action": "Two cream ceramic cups touch gently once above the wooden table and remain together.",
+      "tension": 2,
+      "editMotivation": "Align the cup contact with a musical beat after track review.",
+      "panelId": "s18",
+      "soundCue": "Song and subtle room tone; timing provisional"
+    },
+    {
+      "shotId": "s19",
+      "size": "graphic",
+      "movement": "static",
+      "action": "Two connected speech bubbles on a clean background with the final message.",
+      "tension": 0,
+      "editMotivation": "Close the story with the central message.",
+      "panelId": "s19",
+      "soundCue": "Hold the final musical phrase and resolve."
+    }
+  ]
+}
